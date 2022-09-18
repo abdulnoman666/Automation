@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "f8551a20-5ac2-40d2-a976-d8c78d757085",
+		"name": "Toptal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12125490"
+	},
+	"item": [
+		{
+			"name": "GetLists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ToptalURL}}/lists",
+					"host": [
+						"{{ToptalURL}}"
+					],
+					"path": [
+						"lists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"School\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ToptalURL}}/lists/add",
+					"host": [
+						"{{ToptalURL}}"
+					],
+					"path": [
+						"lists",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete List",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{ToptalURL}}/lists/2",
+					"host": [
+						"{{ToptalURL}}"
+					],
+					"path": [
+						"lists",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Complete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{ToptalURL}}/list/0/item/1/complete/false",
+					"host": [
+						"{{ToptalURL}}"
+					],
+					"path": [
+						"list",
+						"0",
+						"item",
+						"1",
+						"complete",
+						"false"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add List Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"label\":\"butter\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ToptalURL}}/list/0/add",
+					"host": [
+						"{{ToptalURL}}"
+					],
+					"path": [
+						"list",
+						"0",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete List Item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{ToptalURL}}/list/0/item/2",
+					"host": [
+						"{{ToptalURL}}"
+					],
+					"path": [
+						"list",
+						"0",
+						"item",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Overwrite Database",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{ToptalURL}}/overwrite_database",
+					"host": [
+						"{{ToptalURL}}"
+					],
+					"path": [
+						"overwrite_database"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
