@@ -1,4 +1,4 @@
-I am Areej Fatima.It is an industial level project with many testing activities. This test is developed in Visual Studio 2019 so it will require the same or latest version of visual studio to run this project
+My name is Areej Fatima.It is an industial level project with many testing activities. This test is developed in Visual Studio 2019 so it will require the same or latest version of visual studio to run this project
 
 Following are the steps to execute the testcases
 
