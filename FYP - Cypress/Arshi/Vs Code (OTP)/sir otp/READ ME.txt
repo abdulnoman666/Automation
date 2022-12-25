@@ -1,0 +1,28 @@
+                  <-------------OTP FILE --------------->
+
+                In order to open CYPRESS FILE,do following steps
+
+1-Open cypress folder
+
+        a-Open e2e folder
+        b-There are 2 files one with POM and second with git.cy.js name
+        c-In POM(Page Object Model) there is the file login.js where POM for login is written
+        d-git.cy.js is the MAIN CYPRESS FILE  
+        ( In terminal give the command npx cypress open)
+         Here you will see the actual website running 
+
+                             -----------------
+                             
+
+                In order to run NODE FILE,do
+
+1-Open file named  otptry.js
+   
+        a-Open the terminal and give the command node otptry.js
+        This will display the last message of the gmail 
+         
+          NOTE:In order to get the last message as OTP first run commands for the Cypress folder (written above)
+         That will send the message for authentication Then open this node file and run the command in terminal for it)
+
+
+ 
