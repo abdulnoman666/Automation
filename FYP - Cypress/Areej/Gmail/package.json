@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "node-gmail-tester": "^1.0.4"
+  },
+  "dependencies": {
+    "cypress": "^12.0.2"
+  }
+}
