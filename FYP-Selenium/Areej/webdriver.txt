@@ -1,0 +1,8 @@
+This removes the need of downloading a driver. It will search the target 
+machine for a matching browser in this case chrome and 
+download the correct driver automatically for testing.
+
+The package your will need is called webdrivermanger
+
+new DriverManager().SetUpDriver(new ChromeConfig(), VersionResolveStrategy.MatchingBrowser);
+            WebDriver = new ChromeDriver();
