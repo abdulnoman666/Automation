@@ -1,0 +1,22 @@
+﻿{
+  "account": "3698369836983698",
+  "accountOwnershipType": "Business",
+  "accountStatus": "Open",
+  "accountType": "DDA",
+  "address": "House P-1105",
+  "branch": "Branch 1",
+  "cardNumber": "3698369836983698",
+  "charter": "NOMAN",
+  "cifNumber": "3698",
+  "city": "RWP",
+  "cycleDay": 0,
+  "cycleDayString": "0",
+  "email": "abdul@finboa.com",
+  "homePhone": "051",
+  "name": "Automated Tester",
+  "nextBusinessDayStatement": true,
+  "officePhone": "042",
+  "phone": "0332",
+  "state": "PUN",
+  "zip": "46000"
+}

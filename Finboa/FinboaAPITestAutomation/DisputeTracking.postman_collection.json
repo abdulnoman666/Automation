@@ -1,0 +1,6220 @@
+{
+	"info": {
+		"_postman_id": "c7267864-5e14-41ad-a286-3a46d536caeb",
+		"name": "DisputeTracking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21016432"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "abdul@finboa.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Password@1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://finboasso.azurewebsites.net/token",
+							"protocol": "https",
+							"host": [
+								"finboasso",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Auth",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "oqiiGW7WTIrDj4lPOLKaaqg80ZHXoheNyx_nCi0GbEY8h2cPxagZX4HT5as4efiYXo_ssbz_EUTLn9zbBURrEHX4OTVx5DNlnDXaaGXkcS2Hh04XNq8CJBXuGd-U7onLOV3MIVmPrtenrHfpBrksuWKeR-9vWIeDafuMlUwNLTQOo3uvNZPov0jbXihU3t0_Pnv34iJ7zHAMY122_sShmeQZc3j5X-gxn9JB0qPswNPyLxrKzNo2SW9j3bPYANmc0i3qdkYmKGyesvsLyDFr8ZH9P8M",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://finboasso.azurewebsites.net/api/Account/otp/auth",
+							"protocol": "https",
+							"host": [
+								"finboasso",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"Account",
+								"otp",
+								"auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "antiforgerytokensso",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://finboasso.azurewebsites.net/antiforgerytokensso",
+							"protocol": "https",
+							"host": [
+								"finboasso",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"antiforgerytokensso"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Support",
+			"item": [
+				{
+					"name": "Support",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://disputedev.azurewebsites.net/backoffice/app/views/support.html",
+							"protocol": "https",
+							"host": [
+								"disputedev",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"support.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SupportTickets",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://disputedev.azurewebsites.net/finboamodules/FINBOASupport/supportTickets.html",
+							"protocol": "https",
+							"host": [
+								"disputedev",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"finboamodules",
+								"FINBOASupport",
+								"supportTickets.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CustomerTickets",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "emailFrom",
+									"value": "abdul@finboa.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://finboasupportapi.azurewebsites.net/api/case/2/customertickets",
+							"protocol": "https",
+							"host": [
+								"finboasupportapi",
+								"azurewebsites",
+								"net"
+							],
+							"path": [
+								"api",
+								"case",
+								"2",
+								"customertickets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "AppUserBundle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/bundle/appuserbundle",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"bundle",
+								"appuserbundle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "WorkflowSetting",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/workflowsetting",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"workflowsetting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AntiForgeryToken",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/antiforgerytoken",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"antiforgerytoken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InitBundle",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/bundle/initbundle?",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"bundle",
+								"initbundle"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DisputeStatus",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/dashboard/disputestatus",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"disputestatus"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BankLossTotalByYear",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/dashboard/banklosstotalbyyear",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"banklosstotalbyyear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DisputeResolutionCount",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/dashboard/disputeresolutioncount",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"disputeresolutioncount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DisputeResolutionTotal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/dashboard/disputeresolutiontotal",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"disputeresolutiontotal"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Trends",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/dashboard/trends",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"dashboard",
+								"trends"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alerts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/company/alerts",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"company",
+								"alerts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CompanySettings",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/companysetting",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"companysetting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/company/users",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"company",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customview",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customview"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "Bearer 6llLe1tI4d2hNPjl8BzBEujCZKmWmObL9penIZCc-T2E-2oXA9yycwt30r1MMWtdRG-Q7kY_g_mokszeGyG1iQbghig1I0CCfeRlKNUSugcgJgOt2iB3yGxurvCsIykgs0yC7MP1qSyAIM-FUtp4_QRWs9xcqBl2W5yoFlG5zE_yxq8TKb56-RG6VnKzFoQAMw-1oSzbXZiU4YbERozyboUvh9TNskuY-4t5LoZtpJ14VOWPEGXDKVxOFglnBHQjBDmUkWzVeqFXM9ZJPf3ftxqJ6FAH-KAA32CRH6EGySa-u6tPPfLQPNqFmewWt1EN3n0TxyqGmXWGOcXiYe_-pMly8bcNVfdzcli7PqzjCOquVGrx",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Customers",
+			"item": [
+				{
+					"name": "CustomerDetails",
+					"item": [
+						{
+							"name": "Customerlist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CompanySettings",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CustomerForm",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "CustomerSearch",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customer/0/search?redacted=false\n",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customer",
+										"0",
+										"search"
+									],
+									"query": [
+										{
+											"key": "redacted",
+											"value": "false\n"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customer\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customer\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Viewer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/document/viewer.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"document",
+								"viewer.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Documents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/document/documents.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"document",
+								"documents.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "File",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/company/2/customer/199/file\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"company",
+								"2",
+								"customer",
+								"199",
+								"file\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transactionsearchlist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customer/199/transactionsearchlist\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"199",
+								"transactionsearchlist\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transactionsearchlist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customer/199/transactionsearchlist\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"199",
+								"transactionsearchlist\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generatereporttask",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customer/199/generatereporttask\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"199",
+								"generatereporttask\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search?redacted=false",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customer/0/search?redacted=false\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"0",
+								"search"
+							],
+							"query": [
+								{
+									"key": "redacted",
+									"value": "false\n"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Submissions",
+			"item": [
+				{
+					"name": "Activityhistory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/activityhistory",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"activityhistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Searchpopup",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/finboamodules/FINBOAHelp/searchpopup.html\n",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"finboamodules",
+								"FINBOAHelp",
+								"searchpopup.html\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eventtype",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/activityhistory/eventtype",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"activityhistory",
+								"eventtype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Activityhistory",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/activityhistory",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"activityhistory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reconlist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/recon/reconlist.html\n",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"recon",
+								"reconlist.html\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recon",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/recon\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"recon\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Recon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/recon",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"recon"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Submissionwithalerts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/submissionwithalerts.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"submissionwithalerts.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alerts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/company/alerts",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"company",
+								"alerts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletedispute",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/deletedispute.html\n",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"settings",
+								"deletedispute.html\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Permdeletedispute",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/45487878/permdeletedispute",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"45487878",
+								"permdeletedispute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reversepc",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/reversepc.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"settings",
+								"reversepc.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reversepc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/2454548484/reversepc",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"2454548484",
+								"reversepc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Monthlysubmissionreports",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/reporting/monthlysubmissionreports.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"reporting",
+								"monthlysubmissionreports.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generateexporttask",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/company/generateexporttask",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"company",
+								"generateexporttask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Searchsubmissionlist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/searchsubmissionlist",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"searchsubmissionlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Companysetting",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/companysetting",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"companysetting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/company/users",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"company",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alerts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/alerts",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"alerts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Alerts Dialog",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/partials/alerts-dialog.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"partials",
+								"alerts-dialog.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customview",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customview",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customview",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customview",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchsubmissionlist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/searchsubmissionlist\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"searchsubmissionlist\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Searchsubmissionlistbyfield",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/searchsubmissionlistbyfield",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"searchsubmissionlistbyfield"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Searchsubmissionlistbyview",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/searchsubmissionlistbyview",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"searchsubmissionlistbyview"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customview/16/delete",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customview",
+								"16",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reassigndispute",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/3297/reassigndispute",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"3297",
+								"reassigndispute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletedispute",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/3297/deletedispute",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"3297",
+								"deletedispute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Withdrawdispute",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/3295/withdrawdispute?reason=dsadsad",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"3295",
+								"withdrawdispute"
+							],
+							"query": [
+								{
+									"key": "reason",
+									"value": "dsadsad"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Appuserbundle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/bundle/appuserbundlee",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"bundle",
+								"appuserbundlee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/company/users",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"company",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Initbundle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/bundle/initbundle",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"bundle",
+								"initbundle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Feereimbursementlink",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/feereimbursementlink",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"feereimbursementlink"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customerform",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/submission/app/views/partials/customerform.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"submission",
+								"app",
+								"views",
+								"partials",
+								"customerform.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customer",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Transactionsearchlist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customer/201/transactionsearchlist",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"201",
+								"transactionsearchlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pastdisputes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customer/201/pastdisputes",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"201",
+								"pastdisputes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "201",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/disputedtransaction/searchbycustomerid/201\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"disputedtransaction",
+								"searchbycustomerid",
+								"201\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Feelinks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customer/201/feelinks",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"201",
+								"feelinks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchforusers",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customer/0/searchforusers",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"0",
+								"searchforusers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "transactionsearchlist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customer/181/transactionsearchlist",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"181",
+								"transactionsearchlist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pastdisputes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customer/181/pastdisputes\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"181",
+								"pastdisputes\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "feelinks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customer/181/feelinks\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customer",
+								"181",
+								"feelinks\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "submitdispute?authuser=true",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/submitdispute?authuser=true\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"submitdispute"
+							],
+							"query": [
+								{
+									"key": "authuser",
+									"value": "true\n"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reviewletter.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/submission/app/views/reviewletter.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"submission",
+								"app",
+								"views",
+								"reviewletter.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "formdependencylist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/formdependencylist",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"formdependencylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Letter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/letter\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"letter\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fiRadiobutton.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/finboamodules/FINBOADirectives/fiRadiobutton.html\n",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"finboamodules",
+								"FINBOADirectives",
+								"fiRadiobutton.html\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "fiText.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/finboamodules/FINBOADirectives/fiText.html\n",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"finboamodules",
+								"FINBOADirectives",
+								"fiText.html\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signature.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/submission/app/views/signature/signature.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"submission",
+								"app",
+								"views",
+								"signature",
+								"signature.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "topazsignature2.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/submission/app/views/signature/topazsignature2.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"submission",
+								"app",
+								"views",
+								"signature",
+								"topazsignature2.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3300?acknowledged=false&listid=undefined",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/letter/2/saveletterinput/73/3300?acknowledged=false&listid=undefined",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"letter",
+								"2",
+								"saveletterinput",
+								"73",
+								"3300"
+							],
+							"query": [
+								{
+									"key": "acknowledged",
+									"value": "false"
+								},
+								{
+									"key": "listid",
+									"value": "undefined"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customerreviewletter.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/submission/app/views/customerreviewletter.html\n",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"submission",
+								"app",
+								"views",
+								"customerreviewletter.html\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "consentform",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/letter/0/consentform\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"letter",
+								"0",
+								"consentform\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "formdependencylist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/formdependencylist",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"formdependencylist"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TRUE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/company/2/retrieveinputform/3300/73/true\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"company",
+								"2",
+								"retrieveinputform",
+								"3300",
+								"73",
+								"true\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "15",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/formdependencylist/formlist/15\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"formdependencylist",
+								"formlist",
+								"15\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "3300",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/letter/2/getletterinputdata/73/3300\n",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"letter",
+								"2",
+								"getletterinputdata",
+								"73",
+								"3300\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "searchpopup.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/finboamodules/FINBOAHelp/searchpopup.html\n",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"finboamodules",
+								"FINBOAHelp",
+								"searchpopup.html\n"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "viewcustomerdispute.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/viewcustomerdispute.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"viewcustomerdispute.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "appuserbundle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/bundle/appuserbundle",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"bundle",
+								"appuserbundle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "workflowsetting",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/workflowsetting",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"workflowsetting"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "antiforgerytoken",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/antiforgerytoken",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"antiforgerytoken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/company/users",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"company",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "antiforgerytokensso",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURLSSO}}/antiforgerytokensso",
+							"host": [
+								"{{FINBOAURLSSO}}"
+							],
+							"path": [
+								"antiforgerytokensso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "navinstanceslist.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/finboamodules/finboainstances/navinstanceslist.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"finboamodules",
+								"finboainstances",
+								"navinstanceslist.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "contactlist.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/appmodules/casecontact/contactlist.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"appmodules",
+								"casecontact",
+								"contactlist.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "finboainputformdropdown.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/finboamodules/FINBOAForms/finboainputformdropdown.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"finboamodules",
+								"FINBOAForms",
+								"finboainputformdropdown.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "finboaformhtml.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/finboamodules/FINBOAForms/finboaformhtml.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"finboamodules",
+								"FINBOAForms",
+								"finboaformhtml.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "letterlist.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/directivehtml/letterlist.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"directivehtml",
+								"letterlist.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "complianceRegE.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/directivehtml/complianceRegE.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"directivehtml",
+								"complianceRegE.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "complianceRegZ.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/directivehtml/complianceRegZ.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"directivehtml",
+								"complianceRegZ.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "complianceNone.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/directivehtml/complianceNone.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"directivehtml",
+								"complianceNone.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "complianceNacha.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/directivehtml/complianceNacha.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"directivehtml",
+								"complianceNacha.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "documents.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/document/documents.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"document",
+								"documents.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "glAccountDefinition.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/directivehtml/glAccountDefinition.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"directivehtml",
+								"glAccountDefinition.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dispute-alert.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/workflow/dispute-alert.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"workflow",
+								"dispute-alert.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "feereimbursementlink",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/feereimbursementlink",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"feereimbursementlink"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "initbundle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/bundle/initbundle",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"bundle",
+								"initbundle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accountdefinition",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/accountdefinition",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"accountdefinition"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "finboaformbuttons.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/finboamodules/FINBOAForms/finboaformbuttons.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"finboamodules",
+								"FINBOAForms",
+								"finboaformbuttons.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "letter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/letter",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"letter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "disputedocs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"3300",
+								"disputedocs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "alerts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/company/alerts",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"company",
+								"alerts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pdfviewer.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/directivehtml/pdfviewer.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"directivehtml",
+								"pdfviewer.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "provisionalcredit.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/provisionalcredit.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"provisionalcredit.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "submitdispute?authuser=true",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/submitdispute?authuser=true",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"submitdispute"
+							],
+							"query": [
+								{
+									"key": "authuser",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "convertdispute",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/convertdispute",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"convertdispute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "disputedocs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocss",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"3300",
+								"disputedocss"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "generatereporttask",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/3300/generatereporttask",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"3300",
+								"generatereporttask"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "disputedocs",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"3300",
+								"disputedocs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatenotes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/3300/updatenotes",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"3300",
+								"updatenotes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "note",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/note",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"note"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "glentries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/3300/glentries",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"3300",
+								"glentries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updatedate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/ledger/updatedate",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"ledger",
+								"updatedate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteentry",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/ledger/deleteentry",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"ledger",
+								"deleteentry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveglentry",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/3300/saveglentry",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"3300",
+								"saveglentry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "history-dialog.html",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL2}}/backoffice/app/views/partials/history-dialog.html",
+							"host": [
+								"{{FINBOAURL2}}"
+							],
+							"path": [
+								"backoffice",
+								"app",
+								"views",
+								"partials",
+								"history-dialog.html"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "history",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{FINBOAURL}}/api/customerdispute/3300/history",
+							"host": [
+								"{{FINBOAURL}}"
+							],
+							"path": [
+								"api",
+								"customerdispute",
+								"3300",
+								"history"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Run Automation",
+			"item": [
+				{
+					"name": "Business Fraud - Issue PC",
+					"item": [
+						{
+							"name": "1544",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/runworkflow2/1544",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"runworkflow2",
+										"1544"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disputedocs",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"disputedocs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3300",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bundle/customerdispute/3300",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bundle",
+										"customerdispute",
+										"3300"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business Fraud - Issue PC / Approve Provisional Credit, Bank Loss, Print Consolidated Resolution Notice",
+					"item": [
+						{
+							"name": "1560",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/runworkflow2/1560",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"runworkflow2",
+										"1560"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disputedocs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"disputedocs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3300",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bundle/customerdispute/3300",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bundle",
+										"customerdispute",
+										"3300"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business Fraud - Issue PC / Approve Provisional Credit, Merchant Loss, Print Consolidated Resolution Notice",
+					"item": [
+						{
+							"name": "1561",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/runworkflow2/1561",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"runworkflow2",
+										"1561"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disputedocs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"disputedocs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3300",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bundle/customerdispute/3300",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bundle",
+										"customerdispute",
+										"3300"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business Fraud - Issue PC / Decline Provisional Credit for No Error, Customer Loss, Print Consolidated Resolution Notice",
+					"item": [
+						{
+							"name": "1562",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/runworkflow2/1562",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"runworkflow2",
+										"1562"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disputedocs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"disputedocs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3300",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bundle/customerdispute/3300",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bundle",
+										"customerdispute",
+										"3300"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business Fraud - Issue PC / Decline Provisional Credit for 60 Day, Customer Loss, Print Consolidated Resolution Notice",
+					"item": [
+						{
+							"name": "1563",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/runworkflow2/1563",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"runworkflow2",
+										"1563"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disputedocs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"disputedocs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3300",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bundle/customerdispute/3300",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bundle",
+										"customerdispute",
+										"3300"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business Fraud - Issue PC / Update to Pre-Arbitration",
+					"item": [
+						{
+							"name": "1699",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/runworkflow2/1699",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"runworkflow2",
+										"1699"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disputedocs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"disputedocs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3300",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bundle/customerdispute/3300",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bundle",
+										"customerdispute",
+										"3300"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business Fraud - No PC",
+					"item": [
+						{
+							"name": "1545",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/runworkflow2/1545",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"runworkflow2",
+										"1545"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disputedocs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"disputedocs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3300",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bundle/customerdispute/3300",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bundle",
+										"customerdispute",
+										"3300"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business Fraud - No PC / Approve and Issue Final Credit, Bank Loss, Print Consolidated Resolution Notice",
+					"item": [
+						{
+							"name": "1564",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/runworkflow2/1564",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"runworkflow2",
+										"1564"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disputedocs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"disputedocs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3300",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bundle/customerdispute/3300",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bundle",
+										"customerdispute",
+										"3300"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business Fraud - No PC / Approve and Issue Final Credit, Merchant Loss, Print Consolidated Resolution Notice",
+					"item": [
+						{
+							"name": "1565",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/runworkflow2/1565",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"runworkflow2",
+										"1565"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disputedocs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"disputedocs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3300",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bundle/customerdispute/3300",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bundle",
+										"customerdispute",
+										"3300"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business Fraud - No PC / Decline for No Error, Customer Loss, Print Consolidated Resolution Notice",
+					"item": [
+						{
+							"name": "1566",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/runworkflow2/1566",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"runworkflow2",
+										"1566"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disputedocs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"disputedocs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3300",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bundle/customerdispute/3300",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bundle",
+										"customerdispute",
+										"3300"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business Fraud - Issue Final Credit and Close",
+					"item": [
+						{
+							"name": "1546",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/runworkflow2/1546",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"runworkflow2",
+										"1546"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disputedocs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"disputedocs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3300",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bundle/customerdispute/3300",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bundle",
+										"customerdispute",
+										"3300"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Business Fraud - No PC / Decline for 60 Day Rule, Customer Loss, Print Consolidated Resolution Notice",
+					"item": [
+						{
+							"name": "1567",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/runworkflow2/1567",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"runworkflow2",
+										"1567"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disputedocs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"disputedocs"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3300",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bundle/customerdispute/3300",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bundle",
+										"customerdispute",
+										"3300"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "73",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/letter/73",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"letter",
+										"73"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "TRUE",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/company/2/previewinputletter/3300/73/true",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"2",
+										"previewinputletter",
+										"3300",
+										"73",
+										"true"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Submission",
+			"item": [
+				{
+					"name": "Proccess Transaction and Create Dispute",
+					"item": [
+						{
+							"name": "submitdispute?authuser=true",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/submitdispute?authuser=true",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"submitdispute"
+									],
+									"query": [
+										{
+											"key": "authuser",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "processdispute",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/processdispute",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"processdispute"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3300 (Dispute ID)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bundle/customerdispute/3300",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bundle",
+										"customerdispute",
+										"3300"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "disputedocs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/disputedocs",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"disputedocs"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Contact",
+					"item": [
+						{
+							"name": "casecontact",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/casecontact",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"casecontact"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/casecontact/40/delete",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"casecontact",
+										"40",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Update Document",
+					"item": [
+						{
+							"name": "Upload?Description",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/customerdispute/3300/upload?description=2022-03-11%2019_34_34-.png",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"customerdispute",
+										"3300",
+										"upload"
+									],
+									"query": [
+										{
+											"key": "description",
+											"value": "2022-03-11%2019_34_34-.png"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Fraud Alerts",
+			"item": [
+				{
+					"name": "Fraud Alerts Details Page",
+					"item": [
+						{
+							"name": "cams?cardNumber=123",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/cams?cardNumber=123",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"cams"
+									],
+									"query": [
+										{
+											"key": "cardNumber",
+											"value": "123"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "camslist.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/camslist.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"camslist.html"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Enter Alerts Manually",
+					"item": [
+						{
+							"name": "cams?cardNumber=123",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/cams?cardNumber=123",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"cams"
+									],
+									"query": [
+										{
+											"key": "cardNumber",
+											"value": "123"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "uploadcards?casenumber=4848448",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/cams/0/uploadcards?casenumber=4848448",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"cams",
+										"0",
+										"uploadcards"
+									],
+									"query": [
+										{
+											"key": "casenumber",
+											"value": "4848448"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Disputes",
+			"item": [
+				{
+					"name": "Provisional Credit Log",
+					"item": [
+						{
+							"name": "pclog.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/disputelists/pclog.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"disputelists",
+										"pclog.html"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Auditor Log",
+					"item": [
+						{
+							"name": "auditorlog.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/disputelists/auditorlog.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"disputelists",
+										"auditorlog.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "companysetting",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/companysetting",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"companysetting"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Disputes",
+					"item": [
+						{
+							"name": "searchdisputelist",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/dispute/searchdisputelist",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"dispute",
+										"searchdisputelist"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Ledger",
+			"item": [
+				{
+					"name": "Daily Ledger",
+					"item": [
+						{
+							"name": "ledger.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/glledger/ledger.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"glledger",
+										"ledger.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ledger",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/ledger",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"ledger"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Ledger Report",
+					"item": [
+						{
+							"name": "monthlyledgerreports.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/glledger/monthlyledgerreports.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"glledger",
+										"monthlyledgerreports.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "viewletterbyid",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/ledger/67/viewletterbyid",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"ledger",
+										"67",
+										"viewletterbyid"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ledger",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/ledger",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"ledger"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "generateexporttask",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/ledger/generateexporttask",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"ledger",
+										"generateexporttask"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Ledger Batches",
+					"item": [
+						{
+							"name": "monthlyledgerbatches.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/glledger/monthlyledgerbatches.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"glledger",
+										"monthlyledgerbatches.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ledgerentrybatch",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/ledgerentrybatch",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"ledgerentrybatch"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "viewletterbyid",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/ledgerentrybatch/232/viewletterbyid",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"ledgerentrybatch",
+										"232",
+										"viewletterbyid"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "ledger",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/ledger",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"ledger"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "generateexporttask",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/ledger/generateexporttaskk",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"ledger",
+										"generateexporttaskk"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Settings",
+			"item": [
+				{
+					"name": "Change Password",
+					"item": [
+						{
+							"name": "New Folder",
+							"item": []
+						},
+						{
+							"name": "changepassword.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/password/changepassword.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"password",
+										"changepassword.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "changepassword",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURLSSO}}/api/account/changepassword",
+									"host": [
+										"{{FINBOAURLSSO}}"
+									],
+									"path": [
+										"api",
+										"account",
+										"changepassword"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Company Settings",
+					"item": [
+						{
+							"name": "companysettings.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/companysettings.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"settings",
+										"companysettings.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "companysetting",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/companysetting",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"companysetting"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "fidatepicker.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/finboamodules/FINBOADirectives/fidatepicker.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"finboamodules",
+										"FINBOADirectives",
+										"fidatepicker.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "companysetting",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/companysettingg",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"companysettingg"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Company Details",
+					"item": [
+						{
+							"name": "update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/company/update",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"update"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "usercompany",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/appuser/{companyID}/usercompany\n",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"appuser",
+										"{companyID}",
+										"usercompany\n"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Brand",
+					"item": [
+						{
+							"name": "brands.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/brands.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"settings",
+										"brands.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "brand",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/brand",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"brand"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "brands-edit-dialog.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/brands-edit-dialog.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"settings",
+										"brands-edit-dialog.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "brand",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/brand",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"brand"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/brand/34/delete",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"brand",
+										"34",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Bank Holiday",
+					"item": [
+						{
+							"name": "bankholidays.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/bankholidays.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"settings",
+										"bankholidays.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "bankholiday",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bankholiday",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bankholiday"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "fidatepicker.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/finboamodules/FINBOADirectives/fidatepicker.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"finboamodules",
+										"FINBOADirectives",
+										"fidatepicker.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "bankholiday",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/bankholiday",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"bankholiday"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/company/users",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateuser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/company/updateuser",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"updateuser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "appuser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/appuser",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"appuser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteuser",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/company/deleteuser",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"deleteuser"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Workflow Setup",
+					"item": [
+						{
+							"name": "workflowedit.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/finboamodules/FINBOAWorkflowAutomations/workflowedit.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"finboamodules",
+										"FINBOAWorkflowAutomations",
+										"workflowedit.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "workflow",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/workflowsetting",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"workflowsetting"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "savelookupvalue",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/company/savelookupvalue",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"savelookupvalue"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "workflow",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/workflow",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"workflow"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "workflow",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/workflowsetting/{WF Name}/workflow",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"workflowsetting",
+										"{WF Name}",
+										"workflow"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "workflowsetting",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/workflowsetting",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"workflowsetting"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletelookupvalue",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/company/deletelookupvalue",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"deletelookupvalue"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Workflow Settings",
+					"item": [
+						{
+							"name": "workflowsettings.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/workflowsettings.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"settings",
+										"workflowsettings.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "workflow",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/workflowsetting",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"workflowsetting"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "accountdefinition",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/accountdefinition",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"accountdefinition"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "workflowsetting",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/workflowsetting",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"workflowsetting"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "workflowsetting",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/workflowsetting",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"workflowsetting"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/workflowsetting/216/delete",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"workflowsetting",
+										"216",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Fee Reimbursement Settings",
+					"item": [
+						{
+							"name": "feereimbursements.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/feereimbursements.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"settings",
+										"feereimbursements.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "accountdefinition",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/accountdefinition",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"accountdefinition"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "feereimbursementlink",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/feereimbursementlink",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"feereimbursementlink"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "feereimbursementlink",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/feereimbursementlink",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"feereimbursementlink"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/feereimbursementlink/delete",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"feereimbursementlink",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Transaction Processes",
+					"item": [
+						{
+							"name": "processsubmissionsetup.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/processsubmissionsetup.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"processsubmissionsetup.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "accountdefinition",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/accountdefinition",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"accountdefinition"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "savelookupvalue",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/company/savelookupvalue",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"savelookupvalue"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletelookupvalue",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/company/deletelookupvalue",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"deletelookupvalue"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Letter Templates",
+					"item": [
+						{
+							"name": "letterlist.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/letterlist.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"letterlist.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "letter",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/letter",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"letter"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "letter",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/letter",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"letter"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "templateobject",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://finboatemplatestestapi.azurewebsites.net/api/templateobject",
+									"protocol": "https",
+									"host": [
+										"finboatemplatestestapi",
+										"azurewebsites",
+										"net"
+									],
+									"path": [
+										"api",
+										"templateobject"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "letteractions",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/letter/0/letteractions",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"letter",
+										"0",
+										"letteractions"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "viewletter.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/viewletter.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"viewletter.html"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Field Update Scripts",
+					"item": [
+						{
+							"name": "scriptlist.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/scriptlist.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"settings",
+										"scriptlist.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "automationscript",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/automationscript",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"automationscript"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "automationscript",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/automationscript",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"automationscript"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{ID}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/automationscript/{ID}",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"automationscript",
+										"{ID}"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "copyscript",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/automationscript/{ID}/copyscript",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"automationscript",
+										"{ID}",
+										"copyscript"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletescript",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/automationscript/{ID}/deletescript",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"automationscript",
+										"{ID}",
+										"deletescript"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Import Configurations",
+					"item": [
+						{
+							"name": "configlist.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/configlist.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"settings",
+										"configlist.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "importconfiguration",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/importconfiguration",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"importconfiguration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "importconfiguration",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/importconfiguration",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"importconfiguration"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{ID}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/importconfiguration/6",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"importconfiguration",
+										"6"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "importconfiguration",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/importconfiguration",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"importconfiguration"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Workflow Automations",
+					"item": [
+						{
+							"name": "workflowautomationlist.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/finboamodules/FINBOAWorkflowAutomations/workflowautomationlist.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"finboamodules",
+										"FINBOAWorkflowAutomations",
+										"workflowautomationlist.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "workflow",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/workflow",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"workflow"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "copyworkflow",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/workflow/1711/copyworkflow",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"workflow",
+										"1711",
+										"copyworkflow"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{ID}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/workflow/{ID}",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"workflow",
+										"{ID}"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Questionnaire Dependency Setup",
+					"item": [
+						{
+							"name": "finboaformlist.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/finboamodules/FINBOAForms/finboaformlist.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"finboamodules",
+										"FINBOAForms",
+										"finboaformlist.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "formdependencylist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/formdependencylist",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"formdependencylist"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "formdependencylist",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/formdependencylist",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"formdependencylist"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{ID} (update)",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/formdependencylist/17",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"formdependencylist",
+										"17"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "formdependencylist",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/formdependencylist",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"formdependencylist"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "{ID} (Delete)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/formdependencylist/formlist/17",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"formdependencylist",
+										"formlist",
+										"17"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "GL Definitions",
+					"item": [
+						{
+							"name": "glaccounts.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/glaccounts.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"settings",
+										"glaccounts.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "glAccountDefinition.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/directivehtml/glAccountDefinition.htmll",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"directivehtml",
+										"glAccountDefinition.htmll"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "uploadGlDefinitionPopup.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/finboamodules/FINBOASolutionLibrary/uploadGlDefinitionPopup.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"finboamodules",
+										"FINBOASolutionLibrary",
+										"uploadGlDefinitionPopup.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "accountdefinition",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/accountdefinitionn",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"accountdefinitionn"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "glAccountDefinition.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/finboamodules/FINBOASolutionLibrary/glAccountDefinition.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"finboamodules",
+										"FINBOASolutionLibrary",
+										"glAccountDefinition.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "accountdefinition",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/accountdefinition",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"accountdefinition"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "accountdefinition (Copy)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/accountdefinition",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"accountdefinition"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "accountdefinition (Delete)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/accountdefinition",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"accountdefinition"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Cycle Code Maps",
+					"item": [
+						{
+							"name": "cyclecodemaplist.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/cyclecodemaplist.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"settings",
+										"cyclecodemaplist.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "cyclecodemap",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/cyclecodemap",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"cyclecodemap"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "cyclecodemap",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/cyclecodemap",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"cyclecodemap"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "cyclecodemap (Update)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/cyclecodemap",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"cyclecodemap"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/cyclecodemap/28/delete",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"cyclecodemap",
+										"28",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Alert Definitions",
+					"item": [
+						{
+							"name": "alertdefinition.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/alertdefinition.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"settings",
+										"alertdefinition.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "alertdefinition",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/alertdefinition",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"alertdefinition"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "copydefinition",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/alertdefinition/109/copydefinition",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"alertdefinition",
+										"109",
+										"copydefinition"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "alertdefinition",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/alertdefinition",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"alertdefinition"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deletedefinition",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/alertdefinition/125/deletedefinition",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"alertdefinition",
+										"125",
+										"deletedefinition"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Error Logs",
+					"item": [
+						{
+							"name": "errorlogs.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/settings/errorlogs.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"settings",
+										"errorlogs.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "search",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/finboaclienterrorlog/search",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"finboaclienterrorlog",
+										"search"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Batch Document",
+					"item": [
+						{
+							"name": "viewer.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/document/viewer.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"document",
+										"viewer.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "documents.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/document/documents.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"document",
+										"documents.html"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "file",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL}}/api/company/file",
+									"host": [
+										"{{FINBOAURL}}"
+									],
+									"path": [
+										"api",
+										"company",
+										"file"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "pdfviewer.html",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{FINBOAURL2}}/backoffice/app/views/directivehtml/pdfviewer.html",
+									"host": [
+										"{{FINBOAURL2}}"
+									],
+									"path": [
+										"backoffice",
+										"app",
+										"views",
+										"directivehtml",
+										"pdfviewer.html"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

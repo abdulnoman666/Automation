@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EAGetMail" Version="5.2.2.3" />
+    <PackageReference Include="Mail.dll" Version="3.0.22035.1741" />
+    <PackageReference Include="MailSystem.Net-trunk" Version="2.1.41" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+    <PackageReference Include="Octopus.Client" Version="13.0.3942" />
+    <PackageReference Include="OpenPop.NET" Version="2.0.6.1120" />
+    <PackageReference Include="RestSharp" Version="107.3.0" />
+    <PackageReference Include="SpecFlow" Version="3.9.58" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.9.58" />
+    <PackageReference Include="System.Net.Imap4" Version="1.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="JSONData\AddNewCustomer.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AddNewCustomer.json</DependentUpon>
+    </Compile>
+    <Compile Update="JSONData\SearchTransactionsList.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SearchTransactionsList.json</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="JSONData\AddNewCustomer.json">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AddNewCustomer.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="JSONData\SearchTransactionsList.json">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SearchTransactionsList.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="TestData\SubmissionList.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="TestFile\QAEngineerJD.pdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
