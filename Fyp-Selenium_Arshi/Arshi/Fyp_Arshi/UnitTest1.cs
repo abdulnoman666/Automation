@@ -17,7 +17,7 @@ namespace Fyp_Arshi
             //Open browser (provides interface to open any browser)
             //Since chrome was not updated so in order to run this we need same versions of both chrome and chrome webdriver 
             //that is why downloaded this and provide path of this
-            webDriver = new ChromeDriver("E:\\chromedriver_win32");
+            webDriver = new ChromeDriver();
             
 
             //Navigating website

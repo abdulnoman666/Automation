@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OTP-S", "OTP-S\OTP-S.csproj", "{AD6F9E30-DB96-4E2C-8039-E927B93E8788}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD6F9E30-DB96-4E2C-8039-E927B93E8788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD6F9E30-DB96-4E2C-8039-E927B93E8788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD6F9E30-DB96-4E2C-8039-E927B93E8788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD6F9E30-DB96-4E2C-8039-E927B93E8788}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C98A4CB3-3085-4DD2-9B1F-D131B973E2D3}
+	EndGlobalSection
+EndGlobal
