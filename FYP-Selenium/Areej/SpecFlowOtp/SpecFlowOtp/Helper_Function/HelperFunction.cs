@@ -1,13 +1,13 @@
-﻿using Newtonsoft.Json;
-using OpenPop.Pop3;
-using OpenQA.Selenium;
+﻿using OpenPop.Pop3;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Imap4;
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-
-namespace OTP_Selenium.HelperFunctions
+namespace OTP_S.Helper_Function
 {
     public static class HelperFunction
     {

@@ -7,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace SpecFlowProject_prac.Pages
+namespace SpecFlowOtp.Pages;
 
-public class authenicate_app: Selenium_Methods.Selenium_Methods
+public class authenicate_app : Selenium_Methods.SMethods
 
 {
 
@@ -17,9 +17,9 @@ public class authenicate_app: Selenium_Methods.Selenium_Methods
     string emailPassword = "$Pak35tan$2025";
     string otpToken = string.Empty;
 
-    By popup By.ClassName("modal-content");
-    By otpverify By.Id("otp");
-    By otpclkbtn By.ClassName("reply-button");
+    By popup = By.ClassName("modal-content");
+    By otpverify = By.Id("otp");
+    By otpclkbtn = By.ClassName("reply-button");
 
  public void Pop()
     {
@@ -39,9 +39,12 @@ public class authenicate_app: Selenium_Methods.Selenium_Methods
 
         Thread.Sleep(5000);
 
-        driver.findElement(otpverify).SendKeys(otp); }
+        driver.FindElement(otpverify).SendKeys(otp);
+    }
     public void otp_click()
 
     {
 
-        ClickOn(otpclkbtn); }
+        ClickOn(otpclkbtn);
+    }
+}

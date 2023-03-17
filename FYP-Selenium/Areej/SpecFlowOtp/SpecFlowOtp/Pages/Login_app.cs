@@ -5,39 +5,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OTP_S.Pages
+namespace SpecFlowOtp.Pages
 {
-    public class Login : Selenium_Methods.Selenium_Methods
+    public class Login_app: SpecFlowOtp.Selenium_Methods.SMethods
     {
         By Email = By.XPath("///input[@type= 'email']");
         By Password = By.CssSelector("input[type=password]");
-        By.Click_btn = By.Id("Login");
+        By Click_btn = By.Id("Login_app");
             public void initializeAndGoTo(string url)
         {
-            initilize_driver();
+            initialize_driver();
             GoTo(url);
         }
 
         public void Email_app(string username)
         {
             Thread.Sleep(3000);
-            Driver.FindElement(Email).SendKeys(username);
-            
+            driver.FindElement(Email).SendKeys(username);
+
         }
         public void Password_app(string password)
         {
-            Driver.FindElement(Password).SendKeys(password);
+            driver.FindElement(Password).SendKeys(password);
 
 
         }
         public void Click()
         {
-            ClickOn(Click_btn)
+            ClickOn(Click_btn);
         }
-        
-
-
-
 
     }
 }

@@ -10,17 +10,14 @@ namespace Fyp_Arshi
         IWebDriver webDriver;
         
 
-        //Hooks in nunit
         [SetUp]
         public void Setup()
         {
-            //Open browser (provides interface to open any browser)
-            //Since chrome was not updated so in order to run this we need same versions of both chrome and chrome webdriver 
-            //that is why downloaded this and provide path of this
+           
             webDriver = new ChromeDriver();
             
 
-            //Navigating website
+          
             webDriver.Navigate().GoToUrl("https://disputedev.azurewebsites.net/#/login");
         }
 
@@ -49,24 +46,4 @@ namespace Fyp_Arshi
 
 
 
-            //Login
-            //   IWebElement username = webDriver.FindElement(By.CssSelector("input[type=email]"));
-            //  username.SendKeys("abdul@finboa.com");
-
-
-            // IWebElement pass = webDriver.FindElement(By.CssSelector("input[type=password]"));
-            // pass.SendKeys("Password@4");
-
-            // IWebElement btn = webDriver.FindElement(By.Id("login"));
-            // btn.Click();
-
-        }
-      // [TearDown]
-      //  public void CloseBrowser()
-      //  {
-      //      webDriver.Quit();
-      //  }
-    }
-}
-//Since I am using C# (Syntax)
-//IWebElement and IWebDriver where I is interface
+        
