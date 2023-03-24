@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlowProject_prac", "SpecFlowProject_prac.csproj", "{268BAFC6-A88F-48A7-891A-FEB37F612259}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UITestAutomation", "UITestAutomation.csproj", "{268BAFC6-A88F-48A7-891A-FEB37F612259}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
