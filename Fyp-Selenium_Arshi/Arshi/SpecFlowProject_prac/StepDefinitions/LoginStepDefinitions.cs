@@ -13,7 +13,7 @@ namespace SpecFlowProject_prac.StepDefinitions
         Login login = new Login();
         LoginVerification loginVerification = new LoginVerification();
         Dashboard dashboard = new Dashboard();
-        TransactionProcesses transactionProcesses = new TransactionProcesses();
+        TransactionProcess transactionProcess = new TransactionProcess();
 
         //After
         [Given(@"User goes to DisputeDev Application")]
@@ -80,24 +80,25 @@ namespace SpecFlowProject_prac.StepDefinitions
         [Given(@"User clicks the AddTransactionProcessIcon on Transaction Process Page")]
         public void GivenUserClicksTheAddTransactionProcessIconOnTransactionProcessPage()
         {
-            transactionProcesses.ClickAddTransactionProcessesElementOnTransactionProcessPage();
+            transactionProcess.ClickAddTransactionProcessesElementOnTransactionProcessPage();
         }
 
         [Given(@"User enters the following data into the fields on Add Process Transaction Setup Dialog")]
         public void GivenUserEntersTheFollowingDataIntoTheFieldsOnAddProcessTransactionSetupDialog(Table table)
         {
-            var transactionProcessesValues = table.CreateInstance<TransactionProcesses>();
-            transactionProcesses.EnterNameOnAddProcessTransactionSetupDialog(transactionProcessesValues.Name);
-            transactionProcesses.SelectTypeOnAddProcessTransactionSetupDialog(transactionProcessesValues.Type);
-            transactionProcesses.SelectGLReferenceOnAddProcessTransactionSetupDialog(transactionProcessesValues.GLReference);
-            transactionProcesses.SelectWorkflowsOnAddProcessTransactionSetupDialog(transactionProcessesValues.Workflows);
+            // var transactionProcessesValues = table.CreateInstance<TransactionProcesses>();
+            //  transactionProcesses.EnterNameOnAddProcessTransactionSetupDialog(transactionProcessesValues.Name);
+            //  transactionProcesses.SelectTypeOnAddProcessTransactionSetupDialog(transactionProcessesValues.Type);
+            //  transactionProcesses.SelectGLReferenceOnAddProcessTransactionSetupDialog(transactionProcessesValues.GLReference);
+            //  transactionProcesses.SelectWorkflowsOnAddProcessTransactionSetupDialog(transactionProcessesValues.Workflows);
+            transactionProcess.PerformingActionsOnAddProcessTransactionSetupDialog(table);
 
         }
 
         [When(@"User clicks the Save Button on Add Process Transaction Setup Dialog")]
         public void WhenUserClicksTheSaveButtonOnAddProcessTransactionSetupDialog()
         {
-            transactionProcesses.UserClicksSaveButtonOnAddProcessTransactionSetupDialog();
+            transactionProcess.UserClicksSaveButtonOnAddProcessTransactionSetupDialog();
         }
 
         [Then(@"User should be able to see Process Transaction Setup saved on Transaction Process Page")]

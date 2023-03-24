@@ -124,7 +124,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "Fee"});
                 table1.AddRow(new string[] {
                             "GL Reference",
-                            "TestCustomer00001"});
+                            "ABC"});
                 table1.AddRow(new string[] {
                             "Workflows",
                             "Debit Card"});

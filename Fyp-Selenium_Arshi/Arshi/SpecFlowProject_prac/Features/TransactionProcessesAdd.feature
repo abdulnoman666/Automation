@@ -12,7 +12,7 @@ Scenario: TransactionAdd
 	            | Field                | Value                |
                 | Name                 |  Susan               |
                 | Type                 | Fee                  |
-                | GL Reference         | TestCustomer00001    |
+                | GL Reference         | ABC                  |
                 | Workflows            | Debit Card           |
 			      
 				  
