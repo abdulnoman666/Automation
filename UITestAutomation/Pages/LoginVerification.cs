@@ -1,14 +1,9 @@
 ﻿using Fyp_Arshi.Helper_Functions;
 using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SpecFlowProject_prac.Pages
+namespace UITestAutomation
 {
-    public class LoginVerification : Selenium_Methods.Selenium_Methods
+    public class LoginVerification : Selenium_Methods
     {
         string appUsername = "abdul@finboa.com";
         string emailPassword = "$Pak35tan$2025";

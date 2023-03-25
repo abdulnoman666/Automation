@@ -1,14 +1,8 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using OpenQA.Selenium;
 
-namespace SpecFlowProject_prac.Pages
+namespace UITestAutomation
 {
-    public class Dashboard : Selenium_Methods.Selenium_Methods
+    public class Dashboard : Selenium_Methods
     {
         By SupportElement = By.CssSelector("a[href=\"#/support\"]");
         By ProfileIconElement = By.CssSelector("a.dropdown-toggle i.fa.fa-user");

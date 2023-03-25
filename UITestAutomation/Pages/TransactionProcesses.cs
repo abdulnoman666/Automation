@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 
-namespace SpecFlowProject_prac.Pages
+namespace UITestAutomation
 {
-    public class TransactionProcesses :Selenium_Methods.Selenium_Methods
+    public class TransactionProcesses :Selenium_Methods
     {
         By AddTransactionProcessesElement = By.CssSelector("button[title='Add Transaction Process']");
         By NameElement = By.CssSelector("[ng-model='newSetup\\.description']");
