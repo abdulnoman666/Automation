@@ -52,9 +52,7 @@ namespace SpecFlowProject_prac.Pages
                         ClickOnWebElement(Name_Textbox);
                         break;
                 }
-
             }
-
         }
         public void UserClicksSaveButtonOnAddProcessTransactionSetupDialog()
         {

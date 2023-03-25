@@ -5,6 +5,7 @@
 
 	 Background: 
 	 Given User log into Dispute Tracking Application
+	 And User should be able to see Dashboard in Application
 
 @TransactionAdd
 Scenario: TransactionAdd

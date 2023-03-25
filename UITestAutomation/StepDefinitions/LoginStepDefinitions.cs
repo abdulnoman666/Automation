@@ -80,6 +80,13 @@ namespace SpecFlowProject_prac.StepDefinitions
             dashboard.DashboardVisibilityAfterClickingAuthenicateButtonOnLoginVerificationDialog();
         }
 
+        [Given(@"User should be able to see Dashboard in Application")]
+        public void GivenUserShouldBeAbleToSeeDashboardInApplication()
+        {
+            dashboard.DashboardVisibilityAfterClickingAuthenicateButtonOnLoginVerificationDialog();
+        }
+
+
         [Given(@"User clicks the Profile Icon on the Dashboard page")]
         public void GivenUserClicksTheProfileIconOnTheDashboardPage()
         {

@@ -1,16 +1,5 @@
-﻿using NUnit.Framework.Constraints;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using SeleniumExtras.WaitHelpers;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace SpecFlowProject_prac.Pages
 {
@@ -22,7 +11,6 @@ namespace SpecFlowProject_prac.Pages
         By GLReferenceElement = By.CssSelector("select[name='source']");
         By WorkflowsElement = By.CssSelector(" div.dropdown");
         By SaveButtonElement = By.CssSelector(".btn.btn-info > span:nth-of-type(1)");
-        By liElement = By.CssSelector(" [multiple] .dropdown-menu li");
 
         public void ClickAddTransactionProcessesElementOnTransactionProcessPage()
         {
