@@ -41,6 +41,25 @@ namespace SpecFlowProject_prac.StepDefinitions
            login.ClickLoginButtonOnLoginPage();
         }
 
+        [Given(@"User log into Dispute Tracking Application")]
+        public void GivenUserLogIntoDisputeTrackingApplication()
+        {
+            login.InitializeDriver();
+            login.GoToURL("https://disputedev.azurewebsites.net/#/login");
+
+            login.EnterEmailOnLoginPage("abdul@finboa.com");
+            login.EnterPasswordOnLoginPage("Password@4");
+            login.ClickLoginButtonOnLoginPage();
+
+            Thread.Sleep(5000);
+            string otpCode = loginVerification.GetOTP();
+            loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
+
+            loginVerification.ClickAuthenticateButtonOnLoginVerificationDialog();
+
+            dashboard.DashboardVisibilityAfterClickingAuthenicateButtonOnLoginVerificationDialog();
+        }
+
         [Given(@"User enters OTP on Login Verification dialog")]
         public void GivenUserEntersOTPOnLoginVerificationDialog()
         {
@@ -53,8 +72,6 @@ namespace SpecFlowProject_prac.StepDefinitions
         public void WhenUserClicksOnAuthenicateButtonOnLoginVerificationDialog()
         {
             loginVerification.ClickAuthenticateButtonOnLoginVerificationDialog();
-            
-
         }
 
         [Then(@"User should be able to see Dashboard in Application")]
@@ -63,9 +80,7 @@ namespace SpecFlowProject_prac.StepDefinitions
             dashboard.DashboardVisibilityAfterClickingAuthenicateButtonOnLoginVerificationDialog();
         }
 
-        //Futher Work
-
-        [Given(@"User clicks the ProfileIcon on the Dashboard page")]
+        [Given(@"User clicks the Profile Icon on the Dashboard page")]
         public void GivenUserClicksTheProfileIconOnTheDashboardPage()
         {
             dashboard.ClickProfileIconOnDashboardPage();
@@ -86,13 +101,7 @@ namespace SpecFlowProject_prac.StepDefinitions
         [Given(@"User enters the following data into the fields on Add Process Transaction Setup Dialog")]
         public void GivenUserEntersTheFollowingDataIntoTheFieldsOnAddProcessTransactionSetupDialog(Table table)
         {
-            // var transactionProcessesValues = table.CreateInstance<TransactionProcesses>();
-            //  transactionProcesses.EnterNameOnAddProcessTransactionSetupDialog(transactionProcessesValues.Name);
-            //  transactionProcesses.SelectTypeOnAddProcessTransactionSetupDialog(transactionProcessesValues.Type);
-            //  transactionProcesses.SelectGLReferenceOnAddProcessTransactionSetupDialog(transactionProcessesValues.GLReference);
-            //  transactionProcesses.SelectWorkflowsOnAddProcessTransactionSetupDialog(transactionProcessesValues.Workflows);
             transactionProcess.PerformingActionsOnAddProcessTransactionSetupDialog(table);
-
         }
 
         [When(@"User clicks the Save Button on Add Process Transaction Setup Dialog")]

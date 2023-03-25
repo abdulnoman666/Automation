@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
-
+using System.Collections.ObjectModel;
 
 namespace SpecFlowProject_prac.Selenium_Methods
 {
@@ -17,6 +17,7 @@ namespace SpecFlowProject_prac.Selenium_Methods
         public void GoToURL(string url)
         {
             driver.Navigate().GoToUrl(url);
+            driver.Manage().Window.Maximize();
         }
         public void ClickOnWebElement(By reference)
         {
@@ -39,8 +40,12 @@ namespace SpecFlowProject_prac.Selenium_Methods
            
         }
 
+        public ReadOnlyCollection<IWebElement> GetElements(By element)
+        {
+            var elements = driver.FindElements(element);
 
-
+            return elements;
+        }
 
 
        public void ClickTheWebElement(By reference)
