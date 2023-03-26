@@ -1,4 +1,4 @@
-namespace SpecFlowOtp.StepDefinitions
+namespace SeleniumProject.StepDefinitions
 {
     [Binding]
     public sealed class CalculatorStepDefinitions

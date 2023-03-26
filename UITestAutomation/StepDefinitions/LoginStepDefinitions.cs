@@ -87,6 +87,15 @@ namespace SpecFlowProject_prac.StepDefinitions
         }
 
 
+
+
+
+
+
+
+
+
+
         [Given(@"User clicks the Profile Icon on the Dashboard page")]
         public void GivenUserClicksTheProfileIconOnTheDashboardPage()
         {
