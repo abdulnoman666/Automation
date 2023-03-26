@@ -1,14 +1,8 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace SpecFlowProject_prac.Pages
+namespace UITestAutomation
 {
-    public class Login : Selenium_Methods.Selenium_Methods
+    public class Login : Selenium_Methods
     {
         //Locating Elements of Login-Page
         By Email =    By.XPath("//input[@type='email']");

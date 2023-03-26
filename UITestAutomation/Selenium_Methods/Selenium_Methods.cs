@@ -4,7 +4,7 @@ using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System.Collections.ObjectModel;
 
-namespace SpecFlowProject_prac.Selenium_Methods
+namespace UITestAutomation
 {
     public class Selenium_Methods
     {

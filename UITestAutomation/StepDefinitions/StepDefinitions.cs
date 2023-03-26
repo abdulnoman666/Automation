@@ -1,14 +1,8 @@
-using FluentAssertions;
-using NUnit.Framework;
-using SpecFlowProject_prac.Pages;
-using System;
-using TechTalk.SpecFlow;
-using TechTalk.SpecFlow.Assist;
 
-namespace SpecFlowProject_prac.StepDefinitions
+namespace UITestAutomation
 {
     [Binding]
-    public class LoginStepDefinitions
+    public class StepDefinitions
     {
         Login login = new Login();
         LoginVerification loginVerification = new LoginVerification();
