@@ -1,60 +1,62 @@
 ﻿using FluentAssertions;
-using SpecFlowOtp.Pages;
-using NUnit Framework;
+using NUnit.Framework;
 using SpecFlowOtp.Pages;
 using System;
 using TechTalk.SpecFlow;
 
 namespace SpecFlowOtp.StepDefinitions
-
-[Binding]
-
-public class LoginStepDef : Login
 {
-    //USER LOGIN
-
-    Login log = new Login();
-
-    [Given(@"User open the browser and Enters url")]
-    public void GivenUserOpenTheBrowserAndEntersUrl()
-
+    [Binding]
+    public class LoginStepDefinitions
     {
+        Login_app login = new Login_app();
+        LoginVerification loginVerification = new LoginVerification();
 
-        initialize_driver();
-        GoTo("https://disputedev.azurewebsites.net/#/login");
-
-        [When(@"User Enter ""([^""]*)"" Username")]|
-    public void WhenUserEntersUsername(string p0)
-
+        //After
+        [Given(@"User goes to DisputeDev Application")]
+        public void GivenUserGoesToDisputeDevApplication()
         {
-            Email_app(p0); 
+            login.InitializeDriver();
+            login.GoToURL("https://disputedev.azurewebsites.net/#/login");
         }
-    [When(@"""([^""]*)"" in Password field")]
-    public void WhenInPasswordField(string pe)
 
-{
-    Password_app(pe);
-    [Then(@"Clicks login button")]
-
-    public void ThenClicksLoginButton()
-    Click(); }
-//OTP VERIFICATION otp_verify verify = new otp_verify();
-
-[Given(@"Popup window appears")] O references public void GivenPopupWindowAppears()
-{
-    verify.Pop();
-    [When(@"Otp will be entered")]
-    public void WhenotpWillBeEntered()
-    {
-        string otp_value verify.otp_get();
-        verify verify_action(otp_value);
-
-        [Then(@"Clicks Authenticate button")]
-        public void ThenClicksAuthenticateButton()
+        [Given(@"User enters ""([^""]*)"" in Username field on Login page")]
+        public void GivenUserEntersInUsernameFieldOnLoginPage(string username)
         {
-            verify.otp_click();
-        } 
+            login.EnterEmailOnLoginPage(username);
+        }
+
+        [Given(@"User enters ""([^""]*)"" in Password field on Login page")]
+        public void GivenUserEntersInPasswordFieldOnLoginPage(string password)
+        {
+            login.EnterPasswordOnLoginPage(password);
+        }
+
+        [Given(@"User clicks on Login button on Login page")]
+        public void GivenUserClicksOnLoginButtonOnLoginPage()
+        {
+            login.ClickLoginButtonOnLoginPage();
+        }
+
+        [Given(@"User enters OTP on Login Verification dialog")]
+        public void GivenUserEntersOTPOnLoginVerificationDialog()
+        {
+            string otpCode = loginVerification.GetOTP();
+            loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
+        }
+
+        [When(@"User clicks on Authenicate button on Login Verification dialog")]
+        public void WhenUserClicksOnAuthenicateButtonOnLoginVerificationDialog()
+        {
+            loginVerification.ClickAuthenticateButtonOnLoginVerificationDialog();
+        }
+
+        [Then(@"User sholud be able to Login into Application")]
+        public void TDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHlication()
+        {
+
+        }
+
     }
-} 
 }
-}
+

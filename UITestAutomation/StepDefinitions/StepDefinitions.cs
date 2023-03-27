@@ -81,6 +81,15 @@ namespace UITestAutomation
         }
 
 
+
+
+
+
+
+
+
+
+
         [Given(@"User clicks the Profile Icon on the Dashboard page")]
         public void GivenUserClicksTheProfileIconOnTheDashboardPage()
         {
