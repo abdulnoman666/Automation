@@ -1,44 +1,58 @@
 ﻿Feature: CompanyDetails
  
+ 
  Background: 
-	Given User clicks the Profile Icon on the Dashboard page
-	And   User selects the Company Details Field from the dropdown menu of ProfileIcon
+	 Given User log into Dispute Tracking Application
+	 And User should be able to see Dashboard in Application
 
 @CompanyDetails
 
-Scenario: Basic Info 
-	When  User selects the Basic Info button on the Company Details Page
-	And   User validates the following fields on Company Details Page
-	    | Fields                   |
-	    | Company Name             |
-	    | Address                  |
-	    | City                     |
-	    | State                    |
-	    | Zip                      |
-	    | Phone                    |
-	    | Email                    |
-	    | Support Email            |
-	    | Email Distribution List  |
-	    | Time Zone                |
-	    | Read only Questionnaires |
-	 And  User validates the Save Button on Company Details Page
+Scenario: Company Details
+    Given  User clicks the Profile Icon on the Dashboard page
+	And   User selects the Company Details Field from the dropdown menu of ProfileIcon
+	And   User validates the following UI Controls on Company Details Page
+	    | UI Controls              |
+	    | Basic Info               |
+	    | General Settings         |
+	    | Lookup Values            |
+	    | Style                    |
+	    | Save                     |
+	   
+
+Scenario: Basic Info
+    And   User selects the Basic Info button on Company Details Page
+	And   User validates the following fields on Basic Info Page
+
+            | Fields                   |
+            | Company Name             |
+            | Address                  |
+            | City                     |
+            | State                    |
+            | Zip                      |
+            | Phone                    |
+            | Email                    |
+            | Support Email            |
+            | Email Distribution List  |
+            | Time Zone                |
+            | Read only Questionnaires |
+	
 	 
 
 Scenario: General Settings
     Given  User clicks on the General Settings button on Company Details Page
-    And    User validates the following fields on Company Details Page
+    And    User validates the following fields on General Settings Page
 	 | Fields                 |
 	 | Signature Pad          |
 	 | Idle Timeout (minutes) |
 	 | Statement Cycle        |
 	 | Company Logo           |
-	 And  User validates the Save Button on Company Details Page
+	
 
 
 
 Scenario: Lookup Values
    Given  User clicks on the Lookup Values button on Company Details Page
-   And    User validates the following UI Controls on Company Details Page
+   And    User validates the following UI Controls on Lookup Values Page
     | UI Controls    |
     | Add  Button    |
     | Edit  Button   |
