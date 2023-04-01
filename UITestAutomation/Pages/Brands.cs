@@ -28,5 +28,6 @@ namespace UITestAutomation.Pages
         By Fax = By.XPath("//input[@ng-model='brand.fax']");
         By SaveButton= By.ClassName("btn btn-info");
         By CloseButton = By.ClassName("btn btn-default");
+        By CrossButton = By.CssSelector(".close > span");
     }
 }
