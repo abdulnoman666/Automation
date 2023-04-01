@@ -2,8 +2,9 @@
 
 namespace UITestAutomation
 {
-    public class Login : Selenium_Methods
+    public class Login
     {
+        Selenium_Methods sM = new Selenium_Methods();
         //Locating Elements of Login-Page
         By Email =    By.XPath("//input[@type='email']");
         By Password = By.CssSelector("input[type=password]");
@@ -11,24 +12,24 @@ namespace UITestAutomation
 
         public void initializeAndGoTo(string url)
         {
-            InitializeDriver();
-            GoToURL(url);
+            Selenium_Methods.InitializeDriver();
+            Selenium_Methods.GoToURL(url);
         }
 
         public void EnterEmailOnLoginPage(string username)
         {
-            WaitForWebElementDisplayed(Email);
-            EnterValueinWebElement(Email, username);
+            sM.WaitForWebElementDisplayed(Email);
+            sM.EnterValueinWebElement(Email, username);
         }
         public void EnterPasswordOnLoginPage(string password)
         {
-            WaitForWebElementDisplayed(Password);
-            EnterValueinWebElement(Password,password);
+            sM.WaitForWebElementDisplayed(Password);
+            sM.EnterValueinWebElement(Password,password);
         }
         public void ClickLoginButtonOnLoginPage()
         {
-            WaitForWebElementDisplayed(Click_btn);
-            ClickOnWebElement(Click_btn);
+            sM.WaitForWebElementDisplayed(Click_btn);
+            sM.ClickOnWebElement(Click_btn);
         }
        
 
