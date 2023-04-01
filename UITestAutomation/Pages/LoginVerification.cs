@@ -6,7 +6,7 @@ namespace UITestAutomation
     public class LoginVerification : Selenium_Methods
     {
         string appUsername = "abdul@finboa.com";
-        string emailPassword = "$Pak35tan$2025";
+        string emailPassword = "$Pak35tan$2026";
         string otpToken = string.Empty;
         By OTP_Textbox= By.Id("otp");
         By Authenticate_Button = By.ClassName("reply-button");

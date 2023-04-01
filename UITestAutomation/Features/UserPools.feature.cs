@@ -20,22 +20,22 @@ namespace UITestAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Login")]
-    public partial class LoginFeature
+    [NUnit.Framework.DescriptionAttribute("UserPools")]
+    public partial class UserPoolsFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "Login.feature"
+#line 1 "UserPools.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Login", "User will enter the username,password and click login button ", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "UserPools", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -73,16 +73,28 @@ namespace UITestAutomation.Features
             testRunner.CollectScenarioErrors();
         }
         
+        public virtual void FeatureBackground()
+        {
+#line 3
+#line hidden
+#line 4
+ testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+#line 5
+ testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+        }
+        
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("login_app")]
-        [NUnit.Framework.CategoryAttribute("login")]
-        public virtual void Login_App()
+        [NUnit.Framework.DescriptionAttribute("UserPool_Add")]
+        [NUnit.Framework.CategoryAttribute("Add")]
+        public virtual void UserPool_Add()
         {
             string[] tagsOfScenario = new string[] {
-                    "login"};
+                    "Add"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("login_app", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 6
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("UserPool_Add", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -102,26 +114,59 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 7
- testRunner.Given("User goes to DisputeDev Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 8
- testRunner.And("User enters \"abdul@finboa.com\" in Username field on Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 3
+this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.And("User enters \"Password@5\" in Password field on Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
- testRunner.And("User clicks on Login button on Login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User selects the User Pools Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
+                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                            "UI Controls"});
+                table5.AddRow(new string[] {
+                            "Add"});
+                table5.AddRow(new string[] {
+                            "Refresh"});
+                table5.AddRow(new string[] {
+                            "Reference Search"});
+                table5.AddRow(new string[] {
+                            "Edit"});
+                table5.AddRow(new string[] {
+                            "Delete"});
+                table5.AddRow(new string[] {
+                            "Action"});
+                table5.AddRow(new string[] {
+                            "ID"});
+                table5.AddRow(new string[] {
+                            "Group Name"});
+                table5.AddRow(new string[] {
+                            "Reference"});
+                table5.AddRow(new string[] {
+                            "Users"});
+                table5.AddRow(new string[] {
+                            "Show"});
 #line 11
- testRunner.And("User enters OTP on Login Verification dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User validates the following UI Controls on User Pools Process Page", ((string)(null)), table5, "And ");
 #line hidden
-#line 12
- testRunner.When("User clicks on Authenicate button on Login Verification dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 24
+ testRunner.And("User clicks the Add Pool on Add User Pool Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 13
- testRunner.Then("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table6.AddRow(new string[] {
+                            "Pool Name"});
+                table6.AddRow(new string[] {
+                            "Pool Reference"});
+                table6.AddRow(new string[] {
+                            "Pool Users Email List"});
+                table6.AddRow(new string[] {
+                            "Close"});
+                table6.AddRow(new string[] {
+                            "Save"});
+#line 25
+ testRunner.And("User validates the following fileds on Add User Pool Page", ((string)(null)), table6, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

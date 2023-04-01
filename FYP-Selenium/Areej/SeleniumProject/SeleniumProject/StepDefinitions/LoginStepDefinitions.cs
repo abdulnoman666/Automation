@@ -119,79 +119,79 @@ namespace SpecFlowProject_prac.StepDefinitions
           
         }
         //delete
-        [Given(@"User clicks on the Delete Fee Reimbursement button on Page")]
-        public void GivenUserClicksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHage()
-        {
-            feeReimbursementSettings.UserClicksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHage();
-        }
+        //[Given(@"User clicks on the Delete Fee Reimbursement button on Page")]
+        //public void GivenUserClicksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHage()
+        //{
+          //  feeReimbursementSettings.UserClicksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHage();
+        //}
        
-        [When(@"User clicks on ""([^""]*)"" option on the popup to confirm deletion")]
-        public void WhenUserClicksOnOptionOnThePopupToConfirmDeletion(string yes)
-        {
-            throw new PendingStepException();
-        }
+      //  [When(@"User clicks on ""([^""]*)"" option on the popup to confirm deletion")]
+        //public void WhenUserClicksOnOptionOnThePopupToConfirmDeletion(string yes)
+        //{
+          //  throw new PendingStepException();
+        //}
 
-        [Then(@"User should be able to see the Fee Reimbursement Settings deleted from the page")]
-        public void TDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHmbursementSettingsDeletedFromThePage()
-        {
-            throw new PendingStepException();
-        }
+        //[Then(@"User should be able to see the Fee Reimbursement Settings deleted from the page")]
+       // public void TDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHmbursementSettingsDeletedFromThePage()
+        //{
+          //  throw new PendingStepException();
+        //}
 
         //Edit
 
-        [Given(@"User clicks on the Edit Fee Reimbursement button on the Fee Reimbursement Settings Page")]
-        public void GivenUserClicksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHFeeReimbursementSettingsPage()
-        {
-            throw new PendingStepException();
-        }
+       // [Given(@"User clicks on the Edit Fee Reimbursement button on the Fee Reimbursement Settings Page")]
+       // public void GivenUserClicksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHFeeReimbursementSettingsPage()
+       // {
+        //    throw new PendingStepException();
+      //  }
 
-        [Given(@"User edits the infromation in the Reference textbox on the Page")]
-        public void GivenUserEditsTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHxOnThePage()
-        {
-            throw new PendingStepException();
-        }
+      //  [Given(@"User edits the infromation in the Reference textbox on the Page")]
+      //  public void GivenUserEditsTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHxOnThePage()
+       // {
+       //     throw new PendingStepException();
+      //  }
 
-        [Given(@"User edits the information in the Description textbox one the Page")]
-        public void GivenUserEditsTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHboxOneThePage()
-        {
-            throw new PendingStepException();
-        }
+       // [Given(@"User edits the information in the Description textbox one the Page")]
+       // public void GivenUserEditsTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHboxOneThePage()
+       // {
+       //     throw new PendingStepException();
+      //  }
 
-        [Given(@"User unchecks the AutoGenerateGL checkbox on Fee Reimbursement Settings Page")]
-        public void GivenUserUnchecksTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHbursementSettingsPage()
-        {
-            throw new PendingStepException();
-        }
+       // [Given(@"User unchecks the AutoGenerateGL checkbox on Fee Reimbursement Settings Page")]
+       // public void GivenUserUnchecksTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHbursementSettingsPage()
+       // {
+       //     throw new PendingStepException();
+       // }
 
-        [Given(@"User selects ""([^""]*)"" from the AutoFeeGLReference dropdown menu on the Fee Reimbursement Settings Page")]
-        public void GivenUserSelectsFromTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHnTheFeeReimbursementSettingsPage(string rEF)
-        {
-            throw new PendingStepException();
-        }
+       // [Given(@"User selects ""([^""]*)"" from the AutoFeeGLReference dropdown menu on the Fee Reimbursement Settings Page")]
+       // public void GivenUserSelectsFromTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHnTheFeeReimbursementSettingsPage(string rEF)
+       // {
+        //    throw new PendingStepException();
+        //}
 
-        [Given(@"User unchecks on the showOnDsputeForm checkbox on the Fee Reimbursement Settings Page")]
-        public void GivenUserUnchecksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHeReimbursementSettingsPage()
-        {
-            throw new PendingStepException();
-        }
+       // [Given(@"User unchecks on the showOnDsputeForm checkbox on the Fee Reimbursement Settings Page")]
+       // public void GivenUserUnchecksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHeReimbursementSettingsPage()
+       // {
+       //     throw new PendingStepException();
+       // }
 
-        [Given(@"User unchecks on the createDispute checkbox on the Fee Reimbursement Settings Page")]
-        public void GivenUserUnchecksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHimbursementSettingsPage()
-        {
-            throw new PendingStepException();
-        }
+        //[Given(@"User unchecks on the createDispute checkbox on the Fee Reimbursement Settings Page")]
+       // public void GivenUserUnchecksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHimbursementSettingsPage()
+       // {
+       //     throw new PendingStepException();
+       // }
 
-        [Given(@"User unchecks on the includeInClaimTotal checkbox on the Fee Reimbursement Settings Page")]
-        public void GivenUserUnchecksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHeFeeReimbursementSettingsPage()
-        {
-            throw new PendingStepException();
-        }
+        //[Given(@"User unchecks on the includeInClaimTotal checkbox on the Fee Reimbursement Settings Page")]
+       // public void GivenUserUnchecksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHeFeeReimbursementSettingsPage()
+       // {
+        //    throw new PendingStepException();
+        //}
 
-        [When(@"User clicks on the Save button on Fee Reimbursement Settings page")]
-        public void WhenUserClicksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHtingsPage()
-        {
-            throw new PendingStepException();
-        }
-    }
-}
+        //[When(@"User clicks on the Save button on Fee Reimbursement Settings page")]
+        //public void WhenUserClicksOnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHtingsPage()
+       // {
+       //     throw new PendingStepException();
+       // }
+   // }
+//}
 

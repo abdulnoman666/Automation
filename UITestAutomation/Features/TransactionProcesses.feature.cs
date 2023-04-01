@@ -77,24 +77,24 @@ namespace UITestAutomation.Features
         public virtual void FeatureBackground()
         {
 #line 6
-  #line hidden
+#line hidden
 #line 7
-  testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 8
-  testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TransactionAdd")]
-        [NUnit.Framework.CategoryAttribute("TransactionAdd")]
-        public virtual void TransactionAdd()
+        [NUnit.Framework.DescriptionAttribute("Transaction_Add")]
+        [NUnit.Framework.CategoryAttribute("Add")]
+        public virtual void Transaction_Add()
         {
             string[] tagsOfScenario = new string[] {
-                    "TransactionAdd"};
+                    "Add"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TransactionAdd", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Transaction_Add", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 11
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -116,151 +116,57 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 6
-  this.FeatureBackground();
+this.FeatureBackground();
 #line hidden
 #line 12
- testRunner.Given("User clicks the Profile Icon on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 13
- testRunner.And("User selects the Transaction Processes Field from the dropdown menu of ProfileIco" +
-                        "n", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User selects the Transaction Processes Field from the dropdown menu of Profile Ic" +
+                        "on", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                            "UI Controls"});
+                table3.AddRow(new string[] {
+                            "Add"});
+                table3.AddRow(new string[] {
+                            "Edit"});
+                table3.AddRow(new string[] {
+                            "Delete"});
+                table3.AddRow(new string[] {
+                            "Action"});
+                table3.AddRow(new string[] {
+                            "Name"});
+                table3.AddRow(new string[] {
+                            "Process"});
+                table3.AddRow(new string[] {
+                            "GL Reference"});
+                table3.AddRow(new string[] {
+                            "Workflows"});
+                table3.AddRow(new string[] {
+                            "Refresh"});
 #line 14
- testRunner.And("User clicks the AddTransactionProcessIcon on Transaction Process Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User validates the following UI Controls on Transaction Process Page", ((string)(null)), table3, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Field",
-                            "Value"});
-                table1.AddRow(new string[] {
-                            "Name",
-                            "Susan"});
-                table1.AddRow(new string[] {
-                            "Type",
-                            "Fee"});
-                table1.AddRow(new string[] {
-                            "GL Reference",
-                            "ABC"});
-                table1.AddRow(new string[] {
-                            "Workflows",
-                            "Debit Card"});
-#line 15
- testRunner.And("User enters the following data into the fields on Add Process Transaction Setup D" +
-                        "ialog", ((string)(null)), table1, "And ");
-#line hidden
-#line 21
- testRunner.When("User clicks the Save Button on Add Process Transaction Setup Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 22
- testRunner.Then("User should be able to see Process Transaction Setup saved on Transaction Process" +
-                        " Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TransactionDelete")]
-        [NUnit.Framework.CategoryAttribute("tag1")]
-        public virtual void TransactionDelete()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "tag1"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TransactionDelete", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 25
-this.ScenarioInitialize(scenarioInfo);
+ testRunner.And("User clicks the Add Submission on Transaction Process Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 6
-  this.FeatureBackground();
-#line hidden
+                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table4.AddRow(new string[] {
+                            "Name"});
+                table4.AddRow(new string[] {
+                            "Type"});
+                table4.AddRow(new string[] {
+                            "GL Reference"});
+                table4.AddRow(new string[] {
+                            "Workflows"});
+                table4.AddRow(new string[] {
+                            "Close"});
+                table4.AddRow(new string[] {
+                            "Save"});
 #line 26
- testRunner.Given("User clicks the Delete Submission icon on Transaction Process Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 27
- testRunner.When("User clicks the YES Button on Confirm Deletion Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 28
- testRunner.Then("User should be able to see Process Transaction Setup removed on Transaction Proce" +
-                        "ss Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TransactionEdit")]
-        [NUnit.Framework.CategoryAttribute("tag1")]
-        public virtual void TransactionEdit()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "tag1"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TransactionEdit", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 31
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 6
-  this.FeatureBackground();
-#line hidden
-#line 32
- testRunner.Given("User clicks the Edit Submission icon on Transaction Process Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 33
- testRunner.And("User edits the Name as \"Sara\" in NameField on Edit Process Transaction Setup Dial" +
-                        "og", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 34
- testRunner.And("User selects \"Final Credit\" from the Dropdown menu of Type field on Edit Process " +
-                        "Transaction Setup Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 35
- testRunner.And("User selects \"FC\" from the Dropdown menu of GL Reference field on Edit Process Tr" +
-                        "ansaction Setup Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 36
- testRunner.And("User selects \"A2\" from the Dropdown menu of Workflows field on Edit Process Trans" +
-                        "action Setup Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 37
- testRunner.When("User clicks the Update Button on Edit Process Transaction Setup Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 38
- testRunner.Then("User should be able to see Process Transaction Setup saved on Transaction Process" +
-                        " Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("User validates the following fields on Add Process Transaction Setup Dialog", ((string)(null)), table4, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
