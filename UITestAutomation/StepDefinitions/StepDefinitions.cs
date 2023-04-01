@@ -18,8 +18,7 @@ namespace UITestAutomation
         [Given(@"User goes to DisputeDev Application")]
         public void GivenUserGoesToDisputeDevApplication()
         {
-            login.InitializeDriver();
-            login.GoToURL("https://disputedev.azurewebsites.net/#/login");
+            Selenium_Methods.GoToURL("https://disputedev.azurewebsites.net/#/login");
         }
 
         [Given(@"User enters ""([^""]*)"" in Username field on Login page")]
@@ -213,8 +212,6 @@ namespace UITestAutomation
         [Given(@"User log into Dispute Tracking Application")]
         public void GivenUserLogIntoDisputeTrackingApplication()
         {
-            login.InitializeDriver();
-            login.GoToURL("https://disputedev.azurewebsites.net/#/login");
             login.EnterEmailOnLoginPage("abdul@finboa.com");
             login.EnterPasswordOnLoginPage("Password@5");
             login.ClickLoginButtonOnLoginPage();
