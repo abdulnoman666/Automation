@@ -11,7 +11,7 @@ namespace UITestAutomation
 
         public void DashboardVisibilityAfterClickingAuthenicateButtonOnLoginVerificationDialog()
         {
-            WaitForWebElementDisplayed(Dashboard_Container);
+            FluentWaitForWebElement(Dashboard_Container);
         }
 
         public void ClickProfileIconOnDashboardPage()
