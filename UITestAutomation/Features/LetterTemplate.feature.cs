@@ -20,22 +20,22 @@ namespace UITestAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Import Configurations")]
-    public partial class ImportConfigurationsFeature
+    [NUnit.Framework.DescriptionAttribute("LetterTemplate")]
+    public partial class LetterTemplateFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "ImportConfigurations.feature"
+#line 1 "LetterTemplate.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Import Configurations", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "LetterTemplate", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -78,23 +78,23 @@ namespace UITestAutomation.Features
 #line 3
 #line hidden
 #line 4
-  testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
-  testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Import Configurations")]
-        [NUnit.Framework.CategoryAttribute("ImportConfigurations")]
-        public virtual void ImportConfigurations()
+        [NUnit.Framework.DescriptionAttribute("Letter Template")]
+        [NUnit.Framework.CategoryAttribute("Add")]
+        public virtual void LetterTemplate()
         {
             string[] tagsOfScenario = new string[] {
-                    "ImportConfigurations"};
+                    "Add"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Import Configurations", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 9
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Letter Template", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -117,53 +117,50 @@ this.ScenarioInitialize(scenarioInfo);
 #line 3
 this.FeatureBackground();
 #line hidden
+#line 9
+ testRunner.Given("User clicks the Profile Icon on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 10
- testRunner.Given("User clicks the ProfileIcon on the Dashboard Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.And("User selects the Letter Template Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 11
- testRunner.And("User selects the Import Configurations option from the drop down menu of the Prof" +
-                        "ileIcon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table26.AddRow(new string[] {
-                            "Import Configurations"});
-                table26.AddRow(new string[] {
-                            "Add Configuration"});
-                table26.AddRow(new string[] {
-                            "Edit Configuration"});
-                table26.AddRow(new string[] {
-                            "Refresh"});
-                table26.AddRow(new string[] {
+                table28.AddRow(new string[] {
+                            "Add"});
+                table28.AddRow(new string[] {
+                            "Delete"});
+                table28.AddRow(new string[] {
+                            "Edit"});
+                table28.AddRow(new string[] {
+                            "Download from Library"});
+                table28.AddRow(new string[] {
+                            "Copy Letter"});
+                table28.AddRow(new string[] {
                             "Action"});
-                table26.AddRow(new string[] {
+                table28.AddRow(new string[] {
+                            "Refresh"});
+                table28.AddRow(new string[] {
                             "ID"});
-                table26.AddRow(new string[] {
-                            "Name"});
-#line 12
- testRunner.And("User validates the following UI Controls on the Import Configurations Page", ((string)(null)), table26, "And ");
+                table28.AddRow(new string[] {
+                            "Title"});
+                table28.AddRow(new string[] {
+                            "Table/Module"});
+                table28.AddRow(new string[] {
+                            "Reference"});
+                table28.AddRow(new string[] {
+                            "Enter Page"});
+#line 11
+ testRunner.And("User validates the following UI Controls on Letter Template Page", ((string)(null)), table28, "And ");
 #line hidden
-#line 23
- testRunner.And("User clicks the Add Configuration Button on the Import Configurations Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 26
+ testRunner.And("User clicks the Add Letter Template Icon on Letter Template Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table27.AddRow(new string[] {
-                            "Cross Button"});
-                table27.AddRow(new string[] {
-                            "Name"});
-                table27.AddRow(new string[] {
-                            "Delimiter"});
-                table27.AddRow(new string[] {
-                            "Field List"});
-                table27.AddRow(new string[] {
-                            "Checkbox"});
-                table27.AddRow(new string[] {
-                            "Save"});
-                table27.AddRow(new string[] {
-                            "Close"});
-#line 24
- testRunner.And("User validates the following fields on the Add Import Configurations Page", ((string)(null)), table27, "And ");
+                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Field"});
+                table29.AddRow(new string[] {
+                            "Reference"});
+#line 27
+ testRunner.And("User validates following fields on Add Letter Template Dialog", ((string)(null)), table29, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

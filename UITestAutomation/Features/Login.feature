@@ -11,11 +11,3 @@ Scenario: login_app
 	And User enters OTP on Login Verification dialog
 	When User clicks on Authenicate button on Login Verification dialog
 	Then User should be able to see Dashboard in Application
-	    
-
-
-
- 
-
-   
-

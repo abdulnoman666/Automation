@@ -64,7 +64,6 @@ namespace UITestAutomation
             fluentWait.PollingInterval = TimeSpan.FromMilliseconds(1000);
             fluentWait.Message = "timeout occured";
             Assert.IsTrue(driver.FindElement(reference).Displayed, "Element is not Displayed");
-
         }
 
         public static void CloseDriver()

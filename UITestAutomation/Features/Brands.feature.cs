@@ -123,50 +123,74 @@ namespace UITestAutomation.Features
 #line 10
  testRunner.And("User selects the Brands option from the drop down menu of the ProfileIcon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table1.AddRow(new string[] {
-                            "Add Brand"});
-                table1.AddRow(new string[] {
+                table6.AddRow(new string[] {
+                            "New Case"});
+                table6.AddRow(new string[] {
                             "Update Brand"});
-                table1.AddRow(new string[] {
+                table6.AddRow(new string[] {
                             "Delete Brand"});
-                table1.AddRow(new string[] {
+                table6.AddRow(new string[] {
                             "Refresh"});
+                table6.AddRow(new string[] {
+                            "Action"});
+                table6.AddRow(new string[] {
+                            "Brand Name"});
+                table6.AddRow(new string[] {
+                            "Email"});
+                table6.AddRow(new string[] {
+                            "Address"});
+                table6.AddRow(new string[] {
+                            "City"});
+                table6.AddRow(new string[] {
+                            "State"});
+                table6.AddRow(new string[] {
+                            "Zip"});
+                table6.AddRow(new string[] {
+                            "Phone"});
+                table6.AddRow(new string[] {
+                            "Fax"});
+                table6.AddRow(new string[] {
+                            "Charter"});
+                table6.AddRow(new string[] {
+                            "Logo"});
 #line 11
- testRunner.And("User validates the following UI Controls on the Brand Page", ((string)(null)), table1, "And ");
+ testRunner.And("User validates the following UI Controls on the Brand Page", ((string)(null)), table6, "And ");
 #line hidden
-#line 18
+#line 30
     testRunner.And("User clicks the Add Brand Icon on the Brand Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table2.AddRow(new string[] {
+                table7.AddRow(new string[] {
+                            "Select Logo File"});
+                table7.AddRow(new string[] {
                             "Brand Name"});
-                table2.AddRow(new string[] {
+                table7.AddRow(new string[] {
                             "Charter"});
-                table2.AddRow(new string[] {
+                table7.AddRow(new string[] {
                             "Email"});
-                table2.AddRow(new string[] {
+                table7.AddRow(new string[] {
                             "Address"});
-                table2.AddRow(new string[] {
+                table7.AddRow(new string[] {
                             "City"});
-                table2.AddRow(new string[] {
+                table7.AddRow(new string[] {
                             "State"});
-                table2.AddRow(new string[] {
+                table7.AddRow(new string[] {
                             "Zip"});
-                table2.AddRow(new string[] {
+                table7.AddRow(new string[] {
                             "Phone"});
-                table2.AddRow(new string[] {
+                table7.AddRow(new string[] {
                             "Fax"});
-#line 19
- testRunner.And("User validates the following fields on the Brand Page", ((string)(null)), table2, "And ");
-#line hidden
+                table7.AddRow(new string[] {
+                            "Save"});
+                table7.AddRow(new string[] {
+                            "Close"});
+                table7.AddRow(new string[] {
+                            "Cross Button"});
 #line 31
-   testRunner.When("User clicks the save Button on the Brand Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 32
-   testRunner.Then("User will be able to see the new information in the fields on the Brand Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.And("User validates the following fields on the Brand Page", ((string)(null)), table7, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -12,8 +12,10 @@ Scenario: Batch Reporting
 	And User validates the following UI Controls on the Batch Reporting Page
 	
 	| UI Controls     |
+	| Batch Reporting |
 	| Batch Reference |
 	| Date Range      |
 	| Calendar Icon   |
+	| Down Arrow Icon |
 	| Print Report    |
 	| Export Disputes |

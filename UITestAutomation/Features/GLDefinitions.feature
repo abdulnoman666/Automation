@@ -10,16 +10,26 @@ Scenario: GL Definitions
 	And User selects the GL Definitions option from the drop down menu of the ProfileIcon
 	And User validates the following UI Controls on the GL Definitions Page
 	  | UI Controls                |
+	  | GL Definition Option       |
 	  | Add GL Definition          |
-	  | Download from Library      |
-	  | Show Deleted GL Definition |
+	  | Delete GL Definition       |
 	  | Edit GL Definition         |
 	  | Copy GL Definition         |
-	  | Delete GL Definition       |
 	  | Refresh                    |
+	  | Download Letter            |
+	  | Show Deleted GL Definition |
+	  | Action                     |
+	  | Transfer Type              |
+	  | GL Account                 |
+	  | Description                |
+	  | Reference                  |
+	  | Source                     |
+	  | Branch                     |
+	  | Customer Type              |
+
 
 	And  User clicks the Add GL Definition Icon on the GL Definitions Page
-	And  User validates the following fields on the GL Definitions Page
+	And  User validates the following fields on the Add GL Definitions Page
 	| Fields                           |
 	| Transfer Type                    |
 	| Transaction Type                 |
@@ -43,3 +53,15 @@ Scenario: GL Definitions
 	| Save                             |
 	| Close                            |
 	| Delete Definition                |
+
+	And  User clicks the Download from Library Button on the GL Definitions Page
+	And  User validates the following fields on the Download from Library Button Page
+	| Fields                 |
+	| Cross Button 2         |
+	| Search Bar             |
+	| Search Button          |
+	| Action                 |
+	| ID                     |
+	| Description            |
+	| Download GL Definition |
+	| Close                  |

@@ -9,13 +9,16 @@ Scenario: Field Update Scripts
 	Given User clicks the Profile Icon on the Dashboard page
 	And   User selects the Field Update Scripts option from the dropdown menu of ProfileIcon
 	And   User validates the following UI Controls on the Field Update Script Page
-	| UI Controls                  |
-	| Add Field Update Script      |
-	| Download From Library Button |
-	| Edit Script                  |
-	| Copy Script                  |
-	| Delete Script                |
-	| Refresh                      |
+	| UI Controls             |
+	| Add Field Update Script |
+	| Download Letter         |
+	| Edit Script             |
+	| Copy Script             |
+	| Delete Script           |
+	| Refresh                 |
+	| Action                  |
+	| Reference               |
+	| Name                    |
 
 	And  User clicks the Add Script Icon on the Field Update Script Page
 	And  User validates the following fields on the Field Update Script Page
@@ -26,8 +29,8 @@ Scenario: Field Update Scripts
 	| Field                |
 	| Operator             |
 	| Value/Function       |
-	| Save Button          |
-	| Close Button         |
+	| Save                 |
+	| Close                |
 	| Upload to Library    |
 	| Add Update to Script |
 
@@ -37,6 +40,10 @@ Scenario: Download From Library Button
    And   User validates the following UI Controls and fields on the Field Update Script Page
     | UI Control and Fields    |
     | Search Bar               |
+    | Search Button            |
+    | Action                   |
+    | Reference                |
+    | Name                     |
     | Download Template Option |
-    | Close Button             |
-   And User will be able to see Automation Script Added on the Field Update Script Page	
+    | Close                    |
+    | Cross Button             |
