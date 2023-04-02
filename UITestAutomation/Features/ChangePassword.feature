@@ -17,5 +17,3 @@ Scenario: Change Password
 		| Current Password |
 		| New Password     |
 		| Confirm Password |
-
-
