@@ -8,7 +8,7 @@ Background:
 Scenario: UserPool_Add
 	Given User clicks the Profile Icon on Dashboard page
 	And User selects the User Pools Field from the dropdown menu of Profile Icon
-	And User validates the following UI Controls on User Pools Process Page	      
+	And User validates the following UI Controls on User Pools Process Page
 		| UI Controls      |
 		| Add              |
 		| Refresh          |
@@ -29,6 +29,8 @@ Scenario: UserPool_Add
 		| Pool Users Email List |
 		| Close                 |
 		| Save                  |
+	And User clicks the Close Button on Add User Pool Page
+	And User clicks the Dashboard Icon
 
 #@Edit
 #Scenario: UserPool_Edit
