@@ -11,7 +11,7 @@ Background:
 Scenario: Transaction_Add
 	Given User clicks the Profile Icon on Dashboard page
 	And User selects the Transaction Processes Field from the dropdown menu of Profile Icon
-	And User validates the following UI Controls on Transaction Process Page     
+	And User validates the following UI Controls on Transaction Process Page
 		| UI Controls  |
 		| Add          |
 		| Edit         |
@@ -31,6 +31,8 @@ Scenario: Transaction_Add
 		| Workflows    |
 		| Close        |
 		| Save         |
+	And User clicks the Close Button on Add Process Transaction Setup Dialog
+	And User clicks the Dashboard Icon
 	
 
 #@Delete

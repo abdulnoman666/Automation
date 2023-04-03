@@ -125,48 +125,54 @@ this.FeatureBackground();
  testRunner.And("User selects the Transaction Processes Field from the dropdown menu of Profile Ic" +
                         "on", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table41 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table34.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "Add"});
-                table34.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "Edit"});
-                table34.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "Delete"});
-                table34.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "Action"});
-                table34.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "Name"});
-                table34.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "Process"});
-                table34.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "GL Reference"});
-                table34.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "Workflows"});
-                table34.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "Refresh"});
 #line 14
- testRunner.And("User validates the following UI Controls on Transaction Process Page", ((string)(null)), table34, "And ");
+ testRunner.And("User validates the following UI Controls on Transaction Process Page", ((string)(null)), table41, "And ");
 #line hidden
 #line 25
  testRunner.And("User clicks the Add Submission on Transaction Process Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table42 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table35.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "Name"});
-                table35.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "Type"});
-                table35.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "GL Reference"});
-                table35.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "Workflows"});
-                table35.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "Close"});
-                table35.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "Save"});
 #line 26
- testRunner.And("User validates the following fields on Add Process Transaction Setup Dialog", ((string)(null)), table35, "And ");
+ testRunner.And("User validates the following fields on Add Process Transaction Setup Dialog", ((string)(null)), table42, "And ");
+#line hidden
+#line 34
+ testRunner.And("User clicks the Close Button on Add Process Transaction Setup Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 35
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

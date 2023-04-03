@@ -1,14 +1,8 @@
-﻿using OpenQA.Selenium;
-
-namespace UITestAutomation
+﻿
+namespace UITestAutomation.Pages.Dashboard
 {
-    public class Dashboard : Selenium_Methods
+    internal partial class Dashboard : Selenium_Methods
     {
-        By SupportElement = By.CssSelector("a[href=\"#/support\"]");
-        By ProfileIconElement = By.CssSelector("a.dropdown-toggle i.fa.fa-user");
-        By TransactionProcessesElement = By.XPath("//a[contains(@href,\"processsubmissionsetup\")]");
-        By Dashboard_Container = By.XPath("//div[@class='container']");
-
         public void DashboardVisibilityAfterClickingAuthenicateButtonOnLoginVerificationDialog()
         {
             FluentWaitForWebElement(Dashboard_Container);
@@ -23,6 +17,18 @@ namespace UITestAutomation
         {
             WaitForWebElementDisplayed(TransactionProcessesElement);
             ClickOnWebElement(TransactionProcessesElement);
+        }
+
+        public void ClickCustomers()
+        {
+            WaitForWebElementDisplayed(ProfileIconElement);
+            ClickOnWebElement(Customer_Field);
+        }
+
+        public void ClickDashboard()
+        {
+            ClickOnWebElement(Dashboard_Button);
+            WaitForWebElementDisplayed(Dashboard_Container);
         }
     }
 }

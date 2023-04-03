@@ -7,9 +7,9 @@ Background:
 
 @Add
 Scenario: Workflow Settings
-	Given User clicks the Profile Icon on the Dashboard page
+	Given User clicks the Profile Icon on Dashboard page
 	And User selects the Workflow Settings Field from the dropdown menu of Profile Icon
-	And User validates the following UI Controls on Workflow Settings Page	      
+	And User validates the following UI Controls on Workflow Settings Page
 		| UI Controls     |
 		| Add             |
 		| Edit            |
@@ -86,6 +86,7 @@ Scenario: Workflow Settings
 		| Email Distribution List                 |
 		| Close                                   |
 		| Save                                    |
+	And User clicks the Close Button on Add Trigger Page
 	And User clicks the Self-Service Verbiage in Settings Page on Edit Setting Dialog
 	And User validates the following Fields in Self-Service Verbiage Page on Edit Setting Dialog
 		| Fileds                                          |
@@ -93,6 +94,8 @@ Scenario: Workflow Settings
 		| Self-Service Portal Submission Completion Note  |
 		| Close                                           |
 		| Save                                            |
+	And User clicks the Close Button on Self-Service Verbiage Page
+	And User clicks the Dashboard Icon
 
 #@Delete
 #Scenario: WorkflowSettings_Delete

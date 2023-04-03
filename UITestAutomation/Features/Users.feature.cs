@@ -20,22 +20,22 @@ namespace UITestAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("UserPools")]
-    public partial class UserPoolsFeature
+    [NUnit.Framework.DescriptionAttribute("Users")]
+    public partial class UsersFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "UserPools.feature"
+#line 1 "Users.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "UserPools", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Users", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -86,14 +86,14 @@ namespace UITestAutomation.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("UserPool_Add")]
+        [NUnit.Framework.DescriptionAttribute("Users")]
         [NUnit.Framework.CategoryAttribute("Add")]
-        public virtual void UserPool_Add()
+        public virtual void Users()
         {
             string[] tagsOfScenario = new string[] {
                     "Add"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("UserPool_Add", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Users", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -121,58 +121,80 @@ this.FeatureBackground();
  testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
- testRunner.And("User selects the User Pools Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User selects the Users Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table45 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table43.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Add"});
-                table43.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Refresh"});
-                table43.AddRow(new string[] {
-                            "Reference Search"});
-                table43.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Edit"});
-                table43.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Delete"});
-                table43.AddRow(new string[] {
+                table45.AddRow(new string[] {
+                            "Show Deleted Users"});
+                table45.AddRow(new string[] {
+                            "Go"});
+                table45.AddRow(new string[] {
+                            "Enter Page"});
+                table45.AddRow(new string[] {
                             "Action"});
-                table43.AddRow(new string[] {
-                            "ID"});
-                table43.AddRow(new string[] {
-                            "Group Name"});
-                table43.AddRow(new string[] {
-                            "Reference"});
-                table43.AddRow(new string[] {
-                            "Users"});
-                table43.AddRow(new string[] {
-                            "Show"});
+                table45.AddRow(new string[] {
+                            "Name"});
+                table45.AddRow(new string[] {
+                            "Email"});
+                table45.AddRow(new string[] {
+                            "Phone"});
+                table45.AddRow(new string[] {
+                            "Role"});
+                table45.AddRow(new string[] {
+                            "Deleted"});
+                table45.AddRow(new string[] {
+                            "Has Login"});
+                table45.AddRow(new string[] {
+                            "Branch"});
+                table45.AddRow(new string[] {
+                            "More"});
+                table45.AddRow(new string[] {
+                            "setpageDirect"});
+                table45.AddRow(new string[] {
+                            "prevpage"});
+                table45.AddRow(new string[] {
+                            "nextpage"});
+                table45.AddRow(new string[] {
+                            "setpageDirect(pages.length)"});
 #line 11
- testRunner.And("User validates the following UI Controls on User Pools Process Page", ((string)(null)), table43, "And ");
-#line hidden
-#line 24
- testRunner.And("User clicks the Add Pool on Add User Pool Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table44.AddRow(new string[] {
-                            "Pool Name"});
-                table44.AddRow(new string[] {
-                            "Pool Reference"});
-                table44.AddRow(new string[] {
-                            "Pool Users Email List"});
-                table44.AddRow(new string[] {
-                            "Close"});
-                table44.AddRow(new string[] {
-                            "Save"});
-#line 25
- testRunner.And("User validates the following fileds on Add User Pool Page", ((string)(null)), table44, "And ");
-#line hidden
-#line 32
- testRunner.And("User clicks the Close Button on Add User Pool Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User validates the following UI Controls on Users Page", ((string)(null)), table45, "And ");
 #line hidden
 #line 33
- testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User clicks the Add User on Users Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table46 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table46.AddRow(new string[] {
+                            "First Name"});
+                table46.AddRow(new string[] {
+                            "Last Name"});
+                table46.AddRow(new string[] {
+                            "Email"});
+                table46.AddRow(new string[] {
+                            "Phone"});
+                table46.AddRow(new string[] {
+                            "Role"});
+                table46.AddRow(new string[] {
+                            "Close"});
+                table46.AddRow(new string[] {
+                            "Save"});
+#line 34
+ testRunner.And("User validates the following fields on Add User Dialog", ((string)(null)), table46, "And ");
+#line hidden
+#line 43
+ testRunner.And("User clicks the Close Button on Add User Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 44
+ testRunner.And("User clicks the Dashboard Icon on Users Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();
