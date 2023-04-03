@@ -123,50 +123,50 @@ this.FeatureBackground();
 #line 10
  testRunner.And("User selects the User Pools Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Add"});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Refresh"});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Reference Search"});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Edit"});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Delete"});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Action"});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "ID"});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Group Name"});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Reference"});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Users"});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Show"});
 #line 11
- testRunner.And("User validates the following UI Controls on User Pools Process Page", ((string)(null)), table5, "And ");
+ testRunner.And("User validates the following UI Controls on User Pools Process Page", ((string)(null)), table43, "And ");
 #line hidden
 #line 24
  testRunner.And("User clicks the Add Pool on Add User Pool Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table6.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Pool Name"});
-                table6.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Pool Reference"});
-                table6.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Pool Users Email List"});
-                table6.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Close"});
-                table6.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Save"});
 #line 25
- testRunner.And("User validates the following fileds on Add User Pool Page", ((string)(null)), table6, "And ");
+ testRunner.And("User validates the following fileds on Add User Pool Page", ((string)(null)), table44, "And ");
 #line hidden
 #line 32
  testRunner.And("User clicks the Close Button on Add User Pool Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

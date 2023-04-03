@@ -22,8 +22,12 @@ namespace UITestAutomation
         UserPools userPools = new UserPools();
         TransactionProcess transactionProcess = new TransactionProcess();
         WorkflowSettings workflows = new WorkflowSettings();
+        Customer customer = new Customer();
+        Users users = new Users();
         Brands brands = new Brands();
         BatchReporting batchReporting = new BatchReporting();
+        CompanyDetails companyDetails = new CompanyDetails();
+        FieldUpdateScripts fieldUpdateScripts = new FieldUpdateScripts();
         GLDefinitions glDefinitions = new GLDefinitions();
         ImportConfigurations importConfigurations = new ImportConfigurations();
 
@@ -83,11 +87,13 @@ namespace UITestAutomation
             loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
             loginVerification.ClickAuthenticateButtonOnLoginVerificationDialog();
         }
+
         [Given(@"User should be able to see Dashboard in Application")]
         public void GivenUserShouldBeAbleToSeeDashboardInApplication()
         {
             dashboard.DashboardVisibilityAfterClickingAuthenicateButtonOnLoginVerificationDialog();
         }
+
         [Given(@"User clicks the Profile Icon on Dashboard page")]
         public void GivenUserClicksTheProfileIconOnDashboardPage()
         {
@@ -112,7 +118,7 @@ namespace UITestAutomation
             changepassword.AssertFieldsOnChangePasswordPage(table);
         }
 
-        //UserPools Done
+        //UserPools
         [Given(@"User selects the User Pools Field from the dropdown menu of Profile Icon")]
         public void GivenUserSelectsTheUserPoolsFieldFromTheDropdownMenuOfProfileIcon()
         {
@@ -139,11 +145,11 @@ namespace UITestAutomation
 
         [Given(@"User clicks the Close Button on Add User Pool Page")]
         public void GivenUserClicksTheCloseButtonOnAddUserPoolPage()
-        //{
         {
             userPools.ClickCloseButton();
         }
-        //    dashboard.ClickProfileIconOnDashboardPage();
+
+        //TransactionProcess
         [Given(@"User selects the Transaction Processes Field from the dropdown menu of Profile Icon")]
         public void GivenUserSelectsTheTransactionProcessesFieldFromTheDropdownMenuOfProfileIcon()
         {
@@ -168,10 +174,13 @@ namespace UITestAutomation
             transactionProcess.AssertFieldsOnAddTransactionProcessesDialog(table);
         }
 
-        [Given(@"User log into Dispute Tracking Application")]
-        public void GivenUserLogIntoDisputeTrackingApplication()
-            string otpCode = loginVerification.GetOTP();
-        //WorkflowSettings Done
+        [Given(@"User clicks the Close Button on Add Process Transaction Setup Dialog")]
+        public void GivenUserClicksTheCloseButtonOnAddProcessTransactionSetupDialog()
+        {
+            transactionProcess.ClickCloseButton();
+        }
+
+        //WorkflowSettings
         [Given(@"User selects the Workflow Settings Field from the dropdown menu of Profile Icon")]
         public void GivenUserSelectsTheWorkflowSettingsFieldFromTheDropdownMenuOfProfileIcon()
         {
@@ -214,7 +223,6 @@ namespace UITestAutomation
             workflows.AssertUIControlsOnEventTriggers(table);
         }
 
-
         [Given(@"User clicks the Add Event Trigger in Event Triggers Page on on Edit Setting Dialog")]
         public void GivenUserClicksTheAddEventTriggerInEventTriggersPageOnOnEditSettingDialog()
         {
@@ -245,85 +253,288 @@ namespace UITestAutomation
             workflows.AssertFieldsOnSelfServiceVerbiageDialog(table);
         }
 
+        [Given(@"User clicks the Close Button on Self-Service Verbiage Page")]
+        public void GivenUserClicksTheCloseButtonOnSelf_ServiceVerbiagePage()
+        {
+            workflows.ClickCloseButtononSelfVerbiage();
+        }
+
+        //Customers Done
+        [Given(@"User clicks the Customer Field on the Dashboard page")]
+        public void GivenUserClicksTheCustomerFieldOnTheDashboardPage()
+        {
+            dashboard.ClickCustomers();
+        }
+
+        [Given(@"User validates the following UI Controls on Customers Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnCustomersPage(Table table)
+        {
+            customer.AssertUIControlsonCustomerPage(table);
+        }
+
+        [Given(@"User clicks the Add Customer Button on Customers Page")]
+        public void GivenUserClicksTheAddCustomerButtonOnCustomersPage()
+        {
+            customer.ClickAddCustomerButton();
+        }
+
+        [Given(@"User validates the following Fields Add Customer Button Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsAddCustomerButtonDialog(Table table)
+        {
+            customer.AssertFieldssonAddCustomerDialog(table);
+        }
+
+        [Given(@"User clicks the Close Button on Add Customer Button Dialog")]
+        public void GivenUserClicksTheCloseButtonOnAddCustomerButtonDialog()
+        {
+            customer.ClickCloseAddButton();
+        }
+
+        [Given(@"User clicks the Search Button on Customers Page")]
+        public void GivenUserClicksTheSearchButtonOnCustomersPage()
+        {
+            customer.ClickSearchButton();
+        }
+
+        [Given(@"User validates the following Fields on Search Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsOnSearchDialog(Table table)
+        {
+            customer.AssertFieldssonSearchButtonPage(table);
+        }
+
+        [Given(@"User enters ""([^""]*)"" in Customer Name field on Search Dialog")]
+        public void GivenUserEntersInCustomerNameFieldOnSearchDialog(string name)
+        {
+            customer.EnterCustomerNameinSearchButtonPage("singal");
+        }
+
+        [Given(@"User clicks the Search Button on Search Dialog")]
+        public void GivenUserClicksTheSearchButtonOnSearchDialog()
+        {
+            customer.ClickSearchButtonAfterEnteringValue();
+        }
+
+        [Given(@"User validates the following UIControls on Customer Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnCustomerPage(Table table)
+        {
+            customer.AssertUIControlsonCustomerPageAfterSearch(table);
+        }
+
+        [Given(@"User clicks the View Transactions on Customer Page")]
+        public void GivenUserClicksTheViewTransactionsOnCustomerPage()
+        {
+            customer.ClickViewTransactionButton();
+        }
+
+        [Given(@"User validates the following Fields on Transaction Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTransactionPage(Table table)
+        {
+            customer.AssertFieldssonTransactionButtonPage(table);
+        }
+
+        [Given(@"User clicks the Close Button on Transaction Page")]
+        public void GivenUserClicksTheCloseButtonOnTransactionPage()
+        {
+            customer.ClickCloseButtononTransactionPage();
+        }
+
+        [Given(@"User clicks the Edit Customer on Customer Page")]
+        public void GivenUserClicksTheEditCustomerOnCustomerPage()
+        {
+            customer.ClickEditCustomerDocumentButton();
+        }
+
+        [Given(@"User validates the following Fields on Edit Customer Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsOnEditCustomerDialog(Table table)
+        {
+            customer.AssertFieldssonEditCustomerDocumentDialog(table);
+        }
+
+        [Given(@"User clicks the Close Button on Edit Customer Dialog")]
+        public void GivenUserClicksTheCloseButtonOnEditCustomerDialog()
+        {
+            customer.ClickCloseButtononEditCustomerDocumentDialog();
+        }
+
+        [Given(@"User clicks the Customer Documents on Customer Page")]
+        public void GivenUserClicksTheCustomerDocumentsOnCustomerPage()
+        {
+            customer.ClickCustomerDocumentButton();
+        }
+
+        [Given(@"User validates the following UI Controls on Document Manager Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnDocumentManagerPage(Table table)
+        {
+            customer.AssertUIControlsonDocumentManaagerPage(table);
+        }
+
+        [Given(@"User clicks the Dashboard Icon")]
+        public void GivenUserClicksTheDashboardIcon()
+        {
+            dashboard.ClickDashboard();
+        }
+
+        //users
+        [Given(@"User selects the Users Field from the dropdown menu of Profile Icon")]
+        public void GivenUserSelectsTheUsersFieldFromTheDropdownMenuOfProfileIcon()
+        {
+            users.ClickUsers();
+        }
+
+        [Given(@"User validates the following UI Controls on Users Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnUsersPage(Table table)
+        {
+            users.AssertUIControlsonUsersPage(table);
+        }
+
+        [Given(@"User clicks the Add User on Users Page")]
+        public void GivenUserClicksTheAddUserOnUsersPage()
+        {
+            users.ClickAddUsers();
+        }
+
+        [Given(@"User validates the following fields on Add User Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsOnAddUserDialog(Table table)
+        {
+            users.AssertFieldsonAddUsersDialog(table);
+        }
+
+        [Given(@"User clicks the Close Button on Add User Dialog")]
+        public void GivenUserClicksTheCloseButtonOnAddUserDialog()
+        {
+            users.ClickCloseButtononAddUsers();
+        }
+
+        [Given(@"User clicks the Dashboard Icon on Users Page")]
+        public void GivenUserClicksTheDashboardIconOnUsersPage()
+        {
+            dashboard.ClickDashboard();
+        }
+
+
         //BRANDS
 
-        
+
+        [Given(@"User selects the Brands option from the drop down menu of the ProfileIcon")]
+        public void GivenUserSelectsTheBrandsOptionFromTheDropDownMenuOfTheProfileIcon()
         {
+            brands.ClickBrandsOption();
         }
         [Given(@"User validates the following UI Controls on the Brand Page")]
         public void GivenUserValidatesTheFollowingUIControlsOnTheBrandPage(Table table)
         {
             brands.AssertUIControlsOnBrandsPage(table);
         }
+        
+        [Given(@"User clicks the Add Brand Icon on the Brand Page")]
+        public void GivenUserClicksTheAddBrandIconOnTheBrandPage()
         {
+            brands.ClickAddNewCaseBrandButton();
         }
-
+        [Given(@"User validates the following fields on the Brand Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheBrandPage(Table table)
         {
+            brands.AssertFieldsonAddBrandsPage(table);
         }
 
         //BATCH REPORTING
 
+        [Given(@"User selects the Batch Reporting option from the drop down menu of the ProfileIcon")]
+        public void GivenUserSelectsTheBatchReportingOptionFromTheDropDownMenuOfTheProfileIcon()
         {
+            batchReporting.ClickBatchReportingOption();
         }
-
+        [Given(@"User validates the following UI Controls on the Batch Reporting Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnTheBatchReportingPage(Table table)
         {
+            batchReporting.AssertUIControlsOnBatchReportingPage(table);
         }
 
         //COMPANY DETAILS
 
+        [Given(@"User selects the Company Details Option from the dropdown menu of ProfileIcon")]
+        public void GivenUserSelectsTheCompanyDetailsOptionFromTheDropdownMenuOfProfileIcon()
         {
+            companyDetails.ClickCompanyDetailsOption();
         }
         [Given(@"User validates the following UI Controls on Company Details Page")]
         public void GivenUserValidatesTheFollowingUIControlsOnCompanyDetailsPage(Table table)
         {
             companyDetails.AssertUIControlsOnCompanyDetailsPage(table);
         }
+        [Given(@"User selects the Basic Info button on Company Details Page")]
+        public void GivenUserSelectsTheBasicInfoButtonOnCompanyDetailsPage()
         {
+            companyDetails.ClickBasicInfoButtonn();
         }
-
+        [Given(@"User validates the following fields on Basic Info Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnBasicInfoPage(Table table)
         {
+            companyDetails.AssertFieldsonBasicInfoPage(table);
         }
-
+        [Given(@"User clicks on the General Settings button on Company Details Page")]
+        public void GivenUserClicksOnTheGeneralSettingsButtonOnCompanyDetailsPage()
         {
+            companyDetails.ClickGeneralSettingsButtonn();
         }
         [Given(@"User validates the following fields on General Settings Page")]
         public void GivenUserValidatesTheFollowingFieldsOnGeneralSettingsPage(Table table)
         {
             companyDetails.AssertFieldsonGeneralSettingsPage(table);
         }
+        [Given(@"User clicks on the Lookup Values button on Company Details Page")]
+        public void GivenUserClicksOnTheLookupValuesButtonOnCompanyDetailsPage()
         {
+            companyDetails.ClickLookupValuesButtonn();
         }
-
+        [Given(@"User validates the following UI Controls on Lookup Values Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnLookupValuesPage(Table table)
         {
+            companyDetails.AssertUIControlsOnLookupValuesPage(table);
         }
         [Given(@"User validates the following UI Controls on Add Lookup Values Page")]
         public void GivenUserValidatesTheFollowingUIControlsOnAddLookupValuesPage(Table table)
         {
             companyDetails.AssertFieldsonAddPagesofLookupValuesPage(table);
         }
+        [Given(@"User clicks on Style Button on Company Details Page")]
+        public void GivenUserClicksOnStyleButtonOnCompanyDetailsPage()
         {
+            companyDetails.ClickStyleButtonn();
         }
-
+        [Given(@"User validates the following UI Controls on Style Button Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnStyleButtonPage(Table table)
         {
+            companyDetails.AssertUIControlsonStylePage(table);
         }
 
 
         //FIELD UPDATE SCRIPTS
 
+        [Given(@"User selects the Field Update Scripts option from the dropdown menu of ProfileIcon")]
+        public void GivenUserSelectsTheFieldUpdateScriptsOptionFromTheDropdownMenuOfProfileIcon()
         {
+            fieldUpdateScripts.ClickFieldUpdateScriptsOption();
         }
         [Given(@"User validates the following UI Controls on the Field Update Script Page")]
         public void GivenUserValidatesTheFollowingUIControlsOnTheFieldUpdateScriptPage(Table table)
         {
             fieldUpdateScripts.AssertUIControlsonFieldUpdateScriptsPage(table);
         }
+        [Given(@"User clicks the Add Script Icon on the Field Update Script Page")]
+        public void GivenUserClicksTheAddScriptIconOnTheFieldUpdateScriptPage()
         {
+            fieldUpdateScripts.ClickAddFieldUpdateScriptOption();
         }
-
+        [Given(@"User validates the following fields on the Field Update Script Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheFieldUpdateScriptPage(Table table)
         {
+            fieldUpdateScripts.AssertFieldsonAddFieldUpdateScriptPage(table);
         }
-
+        [Given(@"User clicks the Download From Library Button on the Field Update Script Page")]
+        public void GivenUserClicksTheDownloadFromLibraryButtonOnTheFieldUpdateScriptPage()
         {
+            fieldUpdateScripts.ClickDownloadfromlibraryButton();
         }
         [Given(@"User validates the following UI Controls and fields on the Field Update Script Page")]
         public void GivenUserValidatesTheFollowingUIControlsAndFieldsOnTheFieldUpdateScriptPage(Table table)
@@ -333,13 +544,20 @@ namespace UITestAutomation
 
         //GL DEFINITIONS
 
+        [Given(@"User selects the GL Definitions option from the drop down menu of the ProfileIcon")]
+        public void GivenUserSelectsTheGLDefinitionsOptionFromTheDropDownMenuOfTheProfileIcon()
         {
+            glDefinitions.ClickGLDefinitionsOption();
         }
-
+        [Given(@"User validates the following UI Controls on the GL Definitions Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnTheGLDefinitionsPage(Table table)
         {
+            glDefinitions.AssertUIControlsonGLDefinitionsPage(table);
         }
-
+        [Given(@"User clicks the Add GL Definition Icon on the GL Definitions Page")]
+        public void GivenUserClicksTheAddGLDefinitionIconOnTheGLDefinitionsPage()
         {
+            glDefinitions.AddGLDefinitionButton();
         }
         [Given(@"User validates the following fields on the Add GL Definitions Page")]
         public void GivenUserValidatesTheFollowingFieldsOnTheAddGLDefinitionsPage(Table table)
@@ -347,29 +565,22 @@ namespace UITestAutomation
             glDefinitions.AssertFieldsonAddGLDefinitionPage(table);
         }
 
-        //users
+        [Given(@"User clicks the Download from Library Button on the GL Definitions Page")]
+        public void GivenUserClicksTheDownloadFromLibraryButtonOnTheGLDefinitionsPage()
         {
+            glDefinitions.DownloadfromLibraryButton();
         }
-
+        [Given(@"User validates the following fields on the Download from Library Button Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheDownloadFromLibraryButtonPage(Table table)
         {
+            glDefinitions.AssertFieldsonDownloadfromLibraryPage(table);
         }
 
         //IMPORT CONFIGURATIONS PAGE
-
+        [Given(@"User clicks the Profile Icon on the Dashboard page")]
+        public void GivenUserClicksTheProfileIconOnTheDashboardPage()
         {
-            login.EnterPasswordOnLoginPage("Password@5");
-            login.ClickLoginButtonOnLoginPage();
-            Thread.Sleep(5000);
-
-            string otpCode = loginVerification.GetOTP();
-            loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
-            loginVerification.ClickAuthenticateButtonOnLoginVerificationDialog();
-        }
-
-        {
-        }
-
-        {
+            dashboard.ClickProfileIconOnDashboardPage();
         }
 
         [Given(@"User selects the Import Configurations option from the drop down menu of the ProfileIcon")]
@@ -377,7 +588,10 @@ namespace UITestAutomation
         {
             importConfigurations.ClickImportConfigurationsOption();
         }
+        [Given(@"User validates the following UI Controls on the Import Configurations Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnTheImportConfigurationsPage(Table table)
         {
+            importConfigurations.AssertUIControlsonImportConfigurationsPage(table);
         }
         [Given(@"User clicks the Add Configuration Button on the Import Configurations Page")]
         public void GivenUserClicksTheAddConfigurationButtonOnTheImportConfigurationsPage()

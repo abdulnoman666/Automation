@@ -123,25 +123,25 @@ this.FeatureBackground();
 #line 10
  testRunner.And("User selects the Change Password Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Control"});
-                table1.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "Change Password"});
-                table1.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "Submit"});
 #line 11
- testRunner.And("User validates the following UI Controls on Change Password Page", ((string)(null)), table1, "And ");
+ testRunner.And("User validates the following UI Controls on Change Password Page", ((string)(null)), table8, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table2.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Current Password"});
-                table2.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "New Password"});
-                table2.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Confirm Password"});
 #line 15
- testRunner.And("User validates the following Fields on Change Password Page", ((string)(null)), table2, "And ");
+ testRunner.And("User validates the following Fields on Change Password Page", ((string)(null)), table9, "And ");
 #line hidden
 #line 20
  testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

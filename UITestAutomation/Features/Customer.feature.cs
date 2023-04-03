@@ -120,78 +120,78 @@ this.FeatureBackground();
 #line 9
  testRunner.Given("User clicks the Customer Field on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table23.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "Search and set date range"});
-                table23.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "Add Customer"});
-                table23.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "Links"});
-                table23.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "Id"});
-                table23.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "Customer Name"});
-                table23.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "Card Number"});
-                table23.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "Account Type"});
-                table23.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "Account"});
-                table23.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "Main Phone"});
-                table23.AddRow(new string[] {
+                table16.AddRow(new string[] {
                             "Email"});
 #line 10
- testRunner.And("User validates the following UI Controls on Customers Page", ((string)(null)), table23, "And ");
+ testRunner.And("User validates the following UI Controls on Customers Page", ((string)(null)), table16, "And ");
 #line hidden
 #line 22
  testRunner.And("User clicks the Add Customer Button on Customers Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table24 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "ID"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Cardholder Name"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Core Customer Key"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Card Number"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Account"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Account Status"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Account Type"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Customer Type"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Branch"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Charter / Branding"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Mobile Phone"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Home Phone"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Office Phone"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Email"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Statement Cycle Day (enter 0 for month end)"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Statement Cycle Code"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Statement Date - Next Business Day"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Address"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Close"});
-                table24.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Save"});
 #line 23
- testRunner.And("User validates the following Fields Add Customer Button Dialog", ((string)(null)), table24, "And ");
+ testRunner.And("User validates the following Fields Add Customer Button Dialog", ((string)(null)), table17, "And ");
 #line hidden
 #line 45
  testRunner.And("User clicks the Close Button on Add Customer Button Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -199,22 +199,22 @@ this.FeatureBackground();
 #line 46
  testRunner.And("User clicks the Search Button on Customers Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table25 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table25.AddRow(new string[] {
+                table18.AddRow(new string[] {
                             "Customer Name"});
-                table25.AddRow(new string[] {
+                table18.AddRow(new string[] {
                             "Full Card Number"});
-                table25.AddRow(new string[] {
+                table18.AddRow(new string[] {
                             "Full Account Number"});
-                table25.AddRow(new string[] {
+                table18.AddRow(new string[] {
                             "Reset"});
-                table25.AddRow(new string[] {
+                table18.AddRow(new string[] {
                             "Search"});
-                table25.AddRow(new string[] {
+                table18.AddRow(new string[] {
                             "Close"});
 #line 47
- testRunner.And("User validates the following Fields on Search Dialog", ((string)(null)), table25, "And ");
+ testRunner.And("User validates the following Fields on Search Dialog", ((string)(null)), table18, "And ");
 #line hidden
 #line 55
  testRunner.And("User enters \"singal\" in Customer Name field on Search Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -222,70 +222,70 @@ this.FeatureBackground();
 #line 56
  testRunner.And("User clicks the Search Button on Search Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
                             "UIControls"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Search and set date range"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Add Customer"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Links"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Id"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Customer Name"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Card Number"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Account Type"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Account"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Main Phone"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Email"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Edit"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Customer Documents"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Copy Customer Record"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "View Transactions"});
-                table26.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Print Letter"});
 #line 57
- testRunner.And("User validates the following UIControls on Customer Page", ((string)(null)), table26, "And ");
+ testRunner.And("User validates the following UIControls on Customer Page", ((string)(null)), table19, "And ");
 #line hidden
 #line 74
  testRunner.And("User clicks the View Transactions on Customer Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table20 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table27.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "From"});
-                table27.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "To"});
-                table27.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "Load Transactions"});
-                table27.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "Search for (enter description, merchant, amount)"});
-                table27.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "Id"});
-                table27.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "Date"});
-                table27.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "Description"});
-                table27.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "Amount"});
-                table27.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "Transaction Code"});
-                table27.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "Pos"});
-                table27.AddRow(new string[] {
+                table20.AddRow(new string[] {
                             "Close"});
 #line 75
- testRunner.And("User validates the following Fields on Transaction Page", ((string)(null)), table27, "And ");
+ testRunner.And("User validates the following Fields on Transaction Page", ((string)(null)), table20, "And ");
 #line hidden
 #line 88
  testRunner.And("User clicks the Close Button on Transaction Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -293,50 +293,50 @@ this.FeatureBackground();
 #line 89
  testRunner.And("User clicks the Edit Customer on Customer Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "ID"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Cardholder Name"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Core Customer Key"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Card Number"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Account"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Account Status"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Account Type"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Customer Type"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Branch"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Charter / Branding"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Mobile Phone"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Home Phone"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Office Phone"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Email"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Statement Cycle Day (enter 0 for month end)"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Statement Cycle Code"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Statement Date - Next Business Day"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Address"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Close"});
-                table28.AddRow(new string[] {
+                table21.AddRow(new string[] {
                             "Update"});
 #line 90
- testRunner.And("User validates the following Fields on Edit Customer Dialog", ((string)(null)), table28, "And ");
+ testRunner.And("User validates the following Fields on Edit Customer Dialog", ((string)(null)), table21, "And ");
 #line hidden
 #line 112
  testRunner.And("User clicks the Close Button on Edit Customer Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -344,24 +344,24 @@ this.FeatureBackground();
 #line 113
  testRunner.And("User clicks the Customer Documents on Customer Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table29.AddRow(new string[] {
+                table22.AddRow(new string[] {
                             "Download Document"});
-                table29.AddRow(new string[] {
+                table22.AddRow(new string[] {
                             "gotoPage"});
-                table29.AddRow(new string[] {
+                table22.AddRow(new string[] {
                             "prevPage"});
-                table29.AddRow(new string[] {
+                table22.AddRow(new string[] {
                             "nextPages"});
-                table29.AddRow(new string[] {
+                table22.AddRow(new string[] {
                             "gotoPage(totalPages)"});
-                table29.AddRow(new string[] {
+                table22.AddRow(new string[] {
                             "Rotate"});
-                table29.AddRow(new string[] {
+                table22.AddRow(new string[] {
                             "Print/Download"});
 #line 114
- testRunner.And("User validates the following UI Controls on Document Manager Page", ((string)(null)), table29, "And ");
+ testRunner.And("User validates the following UI Controls on Document Manager Page", ((string)(null)), table22, "And ");
 #line hidden
 #line 123
  testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
