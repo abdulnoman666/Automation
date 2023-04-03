@@ -5,14 +5,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UITestAutomation.Pages
+namespace UITestAutomation.Pages.BankHoliday
 {
-    public class BankHolidays: Selenium_Methods
+    internal partial class BankHolidays
     {
         //UI Controls on Bank Holidays Page
         By AddNewBankHolidays = By.CssSelector("button[title='Add Holiday']");
         By DeleteBankHolidays = By.CssSelector("tr:nth-of-type(1)  button[title='Delete Holiday']");
         By EditBankHolidays = By.CssSelector("tr:nth-of-type(1)  button[title='Edit Holiday']");
+        By Action= By.CssSelector("tr > th:nth-of-type(1)");   
         By RefreshIcon = By.CssSelector("button[title='Refresh']");
 
         //Add Brand Page (Field)
@@ -20,5 +21,5 @@ namespace UITestAutomation.Pages
         By SaveButton = By.ClassName("btn btn-info");
         By CloseButton = By.ClassName("btn btn-default");
     }
-  
+
 }

@@ -14,12 +14,16 @@ Scenario: Bank Holidays
 		| Add         |
 		| Delete      |
 		| Edit        |
+		| Action      |
 		| Refresh     |
 
 	And User clicks the Add Bank Holidays Icon on Bank Holidays Page
 	And User validates following fields on Add Bank Holidays Dialog
 		| Fields   |
 		| Holidays |
+		| Close    |
+		| Save     |
+	
 
 @Edit
 Scenario: BankHolidaysEdit
