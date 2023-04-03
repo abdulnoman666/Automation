@@ -20,23 +20,22 @@ namespace UITestAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("TransactionProcesses")]
-    public partial class TransactionProcessesFeature
+    [NUnit.Framework.DescriptionAttribute("LetterTemplate")]
+    public partial class LetterTemplateFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "TransactionProcesses.feature"
+#line 1 "LetterTemplate.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "TransactionProcesses", "     User clicks the Add Transaction Process to add the details on Add Process Tr" +
-                    "ansaction Setup Dialog\r\n\t and clicks the Save button", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "LetterTemplate", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -76,26 +75,26 @@ namespace UITestAutomation.Features
         
         public virtual void FeatureBackground()
         {
-#line 6
+#line 3
 #line hidden
-#line 7
+#line 4
  testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 8
+#line 5
  testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Transaction_Add")]
+        [NUnit.Framework.DescriptionAttribute("Letter Template")]
         [NUnit.Framework.CategoryAttribute("Add")]
-        public virtual void Transaction_Add()
+        public virtual void LetterTemplate()
         {
             string[] tagsOfScenario = new string[] {
                     "Add"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Transaction_Add", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 11
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Letter Template", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -115,64 +114,53 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 6
+#line 3
 this.FeatureBackground();
 #line hidden
-#line 12
- testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 9
+ testRunner.Given("User clicks the Profile Icon on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 13
- testRunner.And("User selects the Transaction Processes Field from the dropdown menu of Profile Ic" +
-                        "on", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 10
+ testRunner.And("User selects the Letter Template Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table3.AddRow(new string[] {
+                table28.AddRow(new string[] {
                             "Add"});
-                table3.AddRow(new string[] {
-                            "Edit"});
-                table3.AddRow(new string[] {
+                table28.AddRow(new string[] {
                             "Delete"});
-                table3.AddRow(new string[] {
+                table28.AddRow(new string[] {
+                            "Edit"});
+                table28.AddRow(new string[] {
+                            "Download from Library"});
+                table28.AddRow(new string[] {
+                            "Copy Letter"});
+                table28.AddRow(new string[] {
                             "Action"});
-                table3.AddRow(new string[] {
-                            "Name"});
-                table3.AddRow(new string[] {
-                            "Process"});
-                table3.AddRow(new string[] {
-                            "GL Reference"});
-                table3.AddRow(new string[] {
-                            "Workflows"});
-                table3.AddRow(new string[] {
+                table28.AddRow(new string[] {
                             "Refresh"});
-#line 14
- testRunner.And("User validates the following UI Controls on Transaction Process Page", ((string)(null)), table3, "And ");
+                table28.AddRow(new string[] {
+                            "ID"});
+                table28.AddRow(new string[] {
+                            "Title"});
+                table28.AddRow(new string[] {
+                            "Table/Module"});
+                table28.AddRow(new string[] {
+                            "Reference"});
+                table28.AddRow(new string[] {
+                            "Enter Page"});
+#line 11
+ testRunner.And("User validates the following UI Controls on Letter Template Page", ((string)(null)), table28, "And ");
 #line hidden
-#line 25
- testRunner.And("User clicks the Add Submission on Transaction Process Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table4.AddRow(new string[] {
-                            "Name"});
-                table4.AddRow(new string[] {
-                            "Type"});
-                table4.AddRow(new string[] {
-                            "GL Reference"});
-                table4.AddRow(new string[] {
-                            "Workflows"});
-                table4.AddRow(new string[] {
-                            "Close"});
-                table4.AddRow(new string[] {
-                            "Save"});
 #line 26
- testRunner.And("User validates the following fields on Add Process Transaction Setup Dialog", ((string)(null)), table4, "And ");
+ testRunner.And("User clicks the Add Letter Template Icon on Letter Template Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 34
- testRunner.And("User clicks the Close Button on Add Process Transaction Setup Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 35
- testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Field"});
+                table29.AddRow(new string[] {
+                            "Reference"});
+#line 27
+ testRunner.And("User validates following fields on Add Letter Template Dialog", ((string)(null)), table29, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

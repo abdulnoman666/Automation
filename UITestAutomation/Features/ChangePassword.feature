@@ -18,5 +18,3 @@ Scenario: Change Password
 		| New Password     |
 		| Confirm Password |
 	And User clicks the Dashboard Icon 
-
-
