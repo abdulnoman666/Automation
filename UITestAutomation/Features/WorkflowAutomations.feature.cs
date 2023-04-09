@@ -123,38 +123,38 @@ this.FeatureBackground();
 #line 10
  testRunner.And("User Selects the Workflow Automations from the dropdown menu of the Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table38 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table38.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "Add"});
-                table38.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "Delete"});
-                table38.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "Edit"});
-                table38.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "Copy Automation"});
-                table38.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "Download Automation"});
-                table38.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "Condition Search"});
 #line 11
- testRunner.And("User validates following UI controls on WorkFlow Automations Page", ((string)(null)), table38, "And ");
+ testRunner.And("User validates following UI controls on WorkFlow Automations Page", ((string)(null)), table47, "And ");
 #line hidden
 #line 20
  testRunner.And("User clicks the Add Workflow Automations Icon on Workflow Automations Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table39 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
                             "Field"});
-                table39.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Name"});
-                table39.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Conditions"});
-                table39.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Workflow Automation Reference"});
-                table39.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Scope"});
 #line 21
- testRunner.And("User validates following fields on Add Workflow Automations Dialog", ((string)(null)), table39, "And ");
+ testRunner.And("User validates following fields on Add Workflow Automations Dialog", ((string)(null)), table48, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -196,18 +196,18 @@ this.FeatureBackground();
  testRunner.Given("User clicks on the Edit Workflow Automations button on the Workflow Automations P" +
                         "age", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table40 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
                             "Field"});
-                table40.AddRow(new string[] {
+                table49.AddRow(new string[] {
                             "Name"});
-                table40.AddRow(new string[] {
+                table49.AddRow(new string[] {
                             "Conditions"});
-                table40.AddRow(new string[] {
+                table49.AddRow(new string[] {
                             "Workflow Automation Reference"});
-                table40.AddRow(new string[] {
+                table49.AddRow(new string[] {
                             "Scope"});
 #line 31
- testRunner.And("User validates the following fileds on Edit Workflow Automations Page", ((string)(null)), table40, "And ");
+ testRunner.And("User validates the following fileds on Edit Workflow Automations Page", ((string)(null)), table49, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -248,14 +248,14 @@ this.FeatureBackground();
 #line 40
  testRunner.Given("User clicks on the Delete Workflow Automation button on Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table41 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
                             "Controls"});
-                table41.AddRow(new string[] {
+                table50.AddRow(new string[] {
                             "Yes"});
-                table41.AddRow(new string[] {
+                table50.AddRow(new string[] {
                             "No"});
 #line 41
- testRunner.And("User validates the following Controls on Confirm Deletion Popup", ((string)(null)), table41, "And ");
+ testRunner.And("User validates the following Controls on Confirm Deletion Popup", ((string)(null)), table50, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

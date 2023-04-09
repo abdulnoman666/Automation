@@ -123,44 +123,44 @@ this.FeatureBackground();
 #line 10
  testRunner.And("User selects the Letter Template Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table28.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Add"});
-                table28.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Delete"});
-                table28.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Edit"});
-                table28.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Download from Library"});
-                table28.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Copy Letter"});
-                table28.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Action"});
-                table28.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Refresh"});
-                table28.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "ID"});
-                table28.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Title"});
-                table28.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Table/Module"});
-                table28.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Reference"});
-                table28.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Enter Page"});
 #line 11
- testRunner.And("User validates the following UI Controls on Letter Template Page", ((string)(null)), table28, "And ");
+ testRunner.And("User validates the following UI Controls on Letter Template Page", ((string)(null)), table35, "And ");
 #line hidden
 #line 26
  testRunner.And("User clicks the Add Letter Template Icon on Letter Template Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table36 = new TechTalk.SpecFlow.Table(new string[] {
                             "Field"});
-                table29.AddRow(new string[] {
+                table36.AddRow(new string[] {
                             "Reference"});
 #line 27
- testRunner.And("User validates following fields on Add Letter Template Dialog", ((string)(null)), table29, "And ");
+ testRunner.And("User validates following fields on Add Letter Template Dialog", ((string)(null)), table36, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

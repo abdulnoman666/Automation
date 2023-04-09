@@ -15,6 +15,7 @@ namespace UITestAutomation
     [Binding]
     public class StepDefinitions
     {
+        Configuration configuration = new Configuration();
         Login login = new Login();
         LoginVerification loginVerification = new LoginVerification();
         Dashboard dashboard = new Dashboard();
@@ -24,7 +25,7 @@ namespace UITestAutomation
         WorkflowSettings workflows = new WorkflowSettings();
         Customer customer = new Customer();
         Users users = new Users();
-        Brands brands = new Brands();
+      //  Brands brands = new Brands();
         BatchReporting batchReporting = new BatchReporting();
         CompanyDetails companyDetails = new CompanyDetails();
         FieldUpdateScripts fieldUpdateScripts = new FieldUpdateScripts();
@@ -35,19 +36,19 @@ namespace UITestAutomation
         [Given(@"User goes to DisputeDev Application")]
         public void GivenUserGoesToDisputeDevApplication()
         {
-            Selenium_Methods.GoToURL("https://disputedev.azurewebsites.net/#/login");
+            Selenium_Methods.GoToURL(configuration.Get_baseurl());
         }
 
-        [Given(@"User enters ""([^""]*)"" in Username field on Login page")]
-        public void GivenUserEntersInUsernameFieldOnLoginPage(string username)
+        [Given(@"User enters Username in Username field on Login page")]
+        public void GivenUserEntersUsernameInUsernameFieldOnLoginPage()
         {
-            login.EnterEmailOnLoginPage(username);
+            login.EnterEmailOnLoginPage(configuration.Get_email());
         }
 
-        [Given(@"User enters ""([^""]*)"" in Password field on Login page")]
-        public void GivenUserEntersInPasswordFieldOnLoginPage(string password)
+        [Given(@"User enters Password in Password field on Login page")]
+        public void GivenUserEntersPasswordInPasswordFieldOnLoginPage()
         {
-            login.EnterPasswordOnLoginPage(password);
+            login.EnterPasswordOnLoginPage(configuration.Get_password());
         }
 
         [Given(@"User clicks on Login button on Login page")]
@@ -59,7 +60,7 @@ namespace UITestAutomation
         [Given(@"User enters OTP on Login Verification dialog")]
         public void GivenUserEntersOTPOnLoginVerificationDialog()
         {
-            string otpCode = loginVerification.GetOTP();
+            string otpCode = loginVerification.GetOTP(configuration.Get_appUsername(),configuration.Get_emailPassword());
             loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
         }
 
@@ -79,10 +80,10 @@ namespace UITestAutomation
         [Given(@"User log into Dispute Tracking Application")]
         public void GivenUserLogIntoDisputeTrackingApplication()
         {
-            login.EnterEmailOnLoginPage("abdul@finboa.com");
-            login.EnterPasswordOnLoginPage("Password@5");
+            login.EnterEmailOnLoginPage(configuration.Get_email());
+            login.EnterPasswordOnLoginPage(configuration.Get_password());
             login.ClickLoginButtonOnLoginPage();
-            string otpCode = loginVerification.GetOTP();
+            string otpCode = loginVerification.GetOTP(configuration.Get_appUsername(), configuration.Get_emailPassword());
             Thread.Sleep(5000);
             loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
             loginVerification.ClickAuthenticateButtonOnLoginVerificationDialog();
@@ -415,27 +416,27 @@ namespace UITestAutomation
         //BRANDS
 
 
-        [Given(@"User selects the Brands option from the drop down menu of the ProfileIcon")]
-        public void GivenUserSelectsTheBrandsOptionFromTheDropDownMenuOfTheProfileIcon()
-        {
-            brands.ClickBrandsOption();
-        }
-        [Given(@"User validates the following UI Controls on the Brand Page")]
-        public void GivenUserValidatesTheFollowingUIControlsOnTheBrandPage(Table table)
-        {
-            brands.AssertUIControlsOnBrandsPage(table);
-        }
-        
-        [Given(@"User clicks the Add Brand Icon on the Brand Page")]
-        public void GivenUserClicksTheAddBrandIconOnTheBrandPage()
-        {
-            brands.ClickAddNewCaseBrandButton();
-        }
-        [Given(@"User validates the following fields on the Brand Page")]
-        public void GivenUserValidatesTheFollowingFieldsOnTheBrandPage(Table table)
-        {
-            brands.AssertFieldsonAddBrandsPage(table);
-        }
+        //[Given(@"User selects the Brands option from the drop down menu of the ProfileIcon")]
+        //public void GivenUserSelectsTheBrandsOptionFromTheDropDownMenuOfTheProfileIcon()
+        //{
+        //    brands.ClickBrandsOption();
+        //}
+        //[Given(@"User validates the following UI Controls on the Brand Page")]
+        //public void GivenUserValidatesTheFollowingUIControlsOnTheBrandPage(Table table)
+        //{
+        //    brands.AssertUIControlsOnBrandsPage(table);
+        //}
+
+        //[Given(@"User clicks the Add Brand Icon on the Brand Page")]
+        //public void GivenUserClicksTheAddBrandIconOnTheBrandPage()
+        //{
+        //    brands.ClickAddNewCaseBrandButton();
+        //}
+        //[Given(@"User validates the following fields on the Brand Page")]
+        //public void GivenUserValidatesTheFollowingFieldsOnTheBrandPage(Table table)
+        //{
+        //    brands.AssertFieldsonAddBrandsPage(table);
+        //}
 
         //BATCH REPORTING
 
