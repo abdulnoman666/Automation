@@ -1,8 +1,12 @@
-
-using UITestAutomation.Pages;
+using UITestAutomation.Pages.BatchReporting;
+using UITestAutomation.Pages.Brands.Brands;
 using UITestAutomation.Pages.ChangePassword;
+using UITestAutomation.Pages.CompanyDetails;
 using UITestAutomation.Pages.Customer;
 using UITestAutomation.Pages.Dashboard;
+using UITestAutomation.Pages.FieldUpdateScripts;
+using UITestAutomation.Pages.GLDefinitions;
+using UITestAutomation.Pages.ImportConfigurations;
 using UITestAutomation.Pages.Login;
 using UITestAutomation.Pages.LoginVerification;
 using UITestAutomation.Pages.TransactionProcess;
@@ -15,7 +19,6 @@ namespace UITestAutomation
     [Binding]
     public class StepDefinitions
     {
-        Configuration configuration = new Configuration();
         Login login = new Login();
         LoginVerification loginVerification = new LoginVerification();
         Dashboard dashboard = new Dashboard();
@@ -25,30 +28,31 @@ namespace UITestAutomation
         WorkflowSettings workflows = new WorkflowSettings();
         Customer customer = new Customer();
         Users users = new Users();
-      //  Brands brands = new Brands();
+        Brands brands = new Brands();
         BatchReporting batchReporting = new BatchReporting();
         CompanyDetails companyDetails = new CompanyDetails();
         FieldUpdateScripts fieldUpdateScripts = new FieldUpdateScripts();
         GLDefinitions glDefinitions = new GLDefinitions();
         ImportConfigurations importConfigurations = new ImportConfigurations();
+        Configuration configuration = new Configuration();
 
         //Login
         [Given(@"User goes to DisputeDev Application")]
         public void GivenUserGoesToDisputeDevApplication()
         {
-            Selenium_Methods.GoToURL(configuration.Get_baseurl());
+            Selenium_Methods.GoToURL("https://disputedev.azurewebsites.net/#/login");
         }
 
-        [Given(@"User enters Username in Username field on Login page")]
-        public void GivenUserEntersUsernameInUsernameFieldOnLoginPage()
+        [Given(@"User enters ""([^""]*)"" in Username field on Login page")]
+        public void GivenUserEntersInUsernameFieldOnLoginPage(string username)
         {
-            login.EnterEmailOnLoginPage(configuration.Get_email());
+            login.EnterEmailOnLoginPage(username);
         }
 
-        [Given(@"User enters Password in Password field on Login page")]
-        public void GivenUserEntersPasswordInPasswordFieldOnLoginPage()
+        [Given(@"User enters ""([^""]*)"" in Password field on Login page")]
+        public void GivenUserEntersInPasswordFieldOnLoginPage(string password)
         {
-            login.EnterPasswordOnLoginPage(configuration.Get_password());
+            login.EnterPasswordOnLoginPage(password);
         }
 
         [Given(@"User clicks on Login button on Login page")]
@@ -60,7 +64,7 @@ namespace UITestAutomation
         [Given(@"User enters OTP on Login Verification dialog")]
         public void GivenUserEntersOTPOnLoginVerificationDialog()
         {
-            string otpCode = loginVerification.GetOTP(configuration.Get_appUsername(),configuration.Get_emailPassword());
+            string otpCode = loginVerification.GetOTP(configuration.Get_appUsername(), configuration.Get_emailPassword());
             loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
         }
 
@@ -83,8 +87,8 @@ namespace UITestAutomation
             login.EnterEmailOnLoginPage(configuration.Get_email());
             login.EnterPasswordOnLoginPage(configuration.Get_password());
             login.ClickLoginButtonOnLoginPage();
-            string otpCode = loginVerification.GetOTP(configuration.Get_appUsername(), configuration.Get_emailPassword());
             Thread.Sleep(5000);
+            string otpCode = loginVerification.GetOTP(configuration.Get_appUsername(), configuration.Get_emailPassword());
             loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
             loginVerification.ClickAuthenticateButtonOnLoginVerificationDialog();
         }
@@ -416,27 +420,27 @@ namespace UITestAutomation
         //BRANDS
 
 
-        //[Given(@"User selects the Brands option from the drop down menu of the ProfileIcon")]
-        //public void GivenUserSelectsTheBrandsOptionFromTheDropDownMenuOfTheProfileIcon()
-        //{
-        //    brands.ClickBrandsOption();
-        //}
-        //[Given(@"User validates the following UI Controls on the Brand Page")]
-        //public void GivenUserValidatesTheFollowingUIControlsOnTheBrandPage(Table table)
-        //{
-        //    brands.AssertUIControlsOnBrandsPage(table);
-        //}
-
-        //[Given(@"User clicks the Add Brand Icon on the Brand Page")]
-        //public void GivenUserClicksTheAddBrandIconOnTheBrandPage()
-        //{
-        //    brands.ClickAddNewCaseBrandButton();
-        //}
-        //[Given(@"User validates the following fields on the Brand Page")]
-        //public void GivenUserValidatesTheFollowingFieldsOnTheBrandPage(Table table)
-        //{
-        //    brands.AssertFieldsonAddBrandsPage(table);
-        //}
+        [Given(@"User selects the Brands option from the drop down menu of the ProfileIcon")]
+        public void GivenUserSelectsTheBrandsOptionFromTheDropDownMenuOfTheProfileIcon()
+        {
+            brands.ClickBrandsOption();
+        }
+        [Given(@"User validates the following UI Controls on the Brand Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnTheBrandPage(Table table)
+        {
+            brands.AssertUIControlsOnBrandsPage(table);
+        }
+        
+        [Given(@"User clicks the Add Brand Icon on the Brand Page")]
+        public void GivenUserClicksTheAddBrandIconOnTheBrandPage()
+        {
+            brands.ClickAddNewCaseBrandButton();
+        }
+        [Given(@"User validates the following fields on the Brand Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheBrandPage(Table table)
+        {
+            brands.AssertFieldsonAddBrandsPage(table);
+        }
 
         //BATCH REPORTING
 
@@ -456,17 +460,17 @@ namespace UITestAutomation
         [Given(@"User selects the Company Details Option from the dropdown menu of ProfileIcon")]
         public void GivenUserSelectsTheCompanyDetailsOptionFromTheDropdownMenuOfProfileIcon()
         {
-            companyDetails.ClickCompanyDetailsOption();
+            companyDetails.ClickCompanyDetailsButton();
         }
         [Given(@"User validates the following UI Controls on Company Details Page")]
         public void GivenUserValidatesTheFollowingUIControlsOnCompanyDetailsPage(Table table)
         {
-            companyDetails.AssertUIControlsOnCompanyDetailsPage(table);
+            companyDetails.AssertUIControlsonCompanyDetailsPage(table);
         }
         [Given(@"User selects the Basic Info button on Company Details Page")]
         public void GivenUserSelectsTheBasicInfoButtonOnCompanyDetailsPage()
         {
-            companyDetails.ClickBasicInfoButtonn();
+            companyDetails.ClickBasicInfoButton();
         }
         [Given(@"User validates the following fields on Basic Info Page")]
         public void GivenUserValidatesTheFollowingFieldsOnBasicInfoPage(Table table)
@@ -476,7 +480,7 @@ namespace UITestAutomation
         [Given(@"User clicks on the General Settings button on Company Details Page")]
         public void GivenUserClicksOnTheGeneralSettingsButtonOnCompanyDetailsPage()
         {
-            companyDetails.ClickGeneralSettingsButtonn();
+            companyDetails.ClickGeneralSettingsButton();
         }
         [Given(@"User validates the following fields on General Settings Page")]
         public void GivenUserValidatesTheFollowingFieldsOnGeneralSettingsPage(Table table)
@@ -486,7 +490,7 @@ namespace UITestAutomation
         [Given(@"User clicks on the Lookup Values button on Company Details Page")]
         public void GivenUserClicksOnTheLookupValuesButtonOnCompanyDetailsPage()
         {
-            companyDetails.ClickLookupValuesButtonn();
+            companyDetails.ClickLookupValuesButton();
         }
         [Given(@"User validates the following UI Controls on Lookup Values Page")]
         public void GivenUserValidatesTheFollowingUIControlsOnLookupValuesPage(Table table)
@@ -501,7 +505,7 @@ namespace UITestAutomation
         [Given(@"User clicks on Style Button on Company Details Page")]
         public void GivenUserClicksOnStyleButtonOnCompanyDetailsPage()
         {
-            companyDetails.ClickStyleButtonn();
+            companyDetails.ClickStyleButton();
         }
         [Given(@"User validates the following UI Controls on Style Button Page")]
         public void GivenUserValidatesTheFollowingUIControlsOnStyleButtonPage(Table table)
@@ -515,7 +519,7 @@ namespace UITestAutomation
         [Given(@"User selects the Field Update Scripts option from the dropdown menu of ProfileIcon")]
         public void GivenUserSelectsTheFieldUpdateScriptsOptionFromTheDropdownMenuOfProfileIcon()
         {
-            fieldUpdateScripts.ClickFieldUpdateScriptsOption();
+            fieldUpdateScripts.ClickFieldUpdateScriptsButton();
         }
         [Given(@"User validates the following UI Controls on the Field Update Script Page")]
         public void GivenUserValidatesTheFollowingUIControlsOnTheFieldUpdateScriptPage(Table table)
@@ -525,7 +529,7 @@ namespace UITestAutomation
         [Given(@"User clicks the Add Script Icon on the Field Update Script Page")]
         public void GivenUserClicksTheAddScriptIconOnTheFieldUpdateScriptPage()
         {
-            fieldUpdateScripts.ClickAddFieldUpdateScriptOption();
+            fieldUpdateScripts.ClickAddFieldUpdateScriptButton();
         }
         [Given(@"User validates the following fields on the Field Update Script Page")]
         public void GivenUserValidatesTheFollowingFieldsOnTheFieldUpdateScriptPage(Table table)
@@ -548,7 +552,7 @@ namespace UITestAutomation
         [Given(@"User selects the GL Definitions option from the drop down menu of the ProfileIcon")]
         public void GivenUserSelectsTheGLDefinitionsOptionFromTheDropDownMenuOfTheProfileIcon()
         {
-            glDefinitions.ClickGLDefinitionsOption();
+            glDefinitions.ClickGLDefinitionsButton();
         }
         [Given(@"User validates the following UI Controls on the GL Definitions Page")]
         public void GivenUserValidatesTheFollowingUIControlsOnTheGLDefinitionsPage(Table table)
@@ -578,6 +582,7 @@ namespace UITestAutomation
         }
 
         //IMPORT CONFIGURATIONS PAGE
+
         [Given(@"User clicks the Profile Icon on the Dashboard page")]
         public void GivenUserClicksTheProfileIconOnTheDashboardPage()
         {
@@ -587,7 +592,7 @@ namespace UITestAutomation
         [Given(@"User selects the Import Configurations option from the drop down menu of the ProfileIcon")]
         public void GivenUserSelectsTheImportConfigurationsOptionFromTheDropDownMenuOfTheProfileIcon()
         {
-            importConfigurations.ClickImportConfigurationsOption();
+            importConfigurations.ClickImportConfigurationsButton();
         }
         [Given(@"User validates the following UI Controls on the Import Configurations Page")]
         public void GivenUserValidatesTheFollowingUIControlsOnTheImportConfigurationsPage(Table table)
@@ -597,7 +602,7 @@ namespace UITestAutomation
         [Given(@"User clicks the Add Configuration Button on the Import Configurations Page")]
         public void GivenUserClicksTheAddConfigurationButtonOnTheImportConfigurationsPage()
         {
-            importConfigurations.AddConfigurationButtonn();
+            importConfigurations.AddConfigurationButton();
         }
         [Given(@"User validates the following fields on the Add Import Configurations Page")]
         public void GivenUserValidatesTheFollowingFieldsOnTheAddImportConfigurationsPage(Table table)

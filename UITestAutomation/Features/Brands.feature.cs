@@ -118,79 +118,79 @@ namespace UITestAutomation.Features
  this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.Given("User clicks the ProfileIcon on the Dashboard Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
  testRunner.And("User selects the Brands option from the drop down menu of the ProfileIcon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "New Case"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Update Brand"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Delete Brand"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Refresh"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Action"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Brand Name"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Email"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Address"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "City"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "State"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Zip"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Phone"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Fax"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Charter"});
-                table6.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Logo"});
 #line 11
- testRunner.And("User validates the following UI Controls on the Brand Page", ((string)(null)), table6, "And ");
+ testRunner.And("User validates the following UI Controls on the Brand Page", ((string)(null)), table9, "And ");
 #line hidden
-#line 30
+#line 28
     testRunner.And("User clicks the Add Brand Icon on the Brand Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table7.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "Select Logo File"});
-                table7.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "Brand Name"});
-                table7.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "Charter"});
-                table7.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "Email"});
-                table7.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "Address"});
-                table7.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "City"});
-                table7.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "State"});
-                table7.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "Zip"});
-                table7.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "Phone"});
-                table7.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "Fax"});
-                table7.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "Save"});
-                table7.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "Close"});
-                table7.AddRow(new string[] {
+                table10.AddRow(new string[] {
                             "Cross Button"});
-#line 31
- testRunner.And("User validates the following fields on the Brand Page", ((string)(null)), table7, "And ");
+#line 29
+ testRunner.And("User validates the following fields on the Brand Page", ((string)(null)), table10, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
