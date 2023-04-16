@@ -6,7 +6,7 @@
 @Brands
 	
 	Scenario:  Brands 
-	Given User clicks the ProfileIcon on the Dashboard Page
+	Given User clicks the Profile Icon on Dashboard page
 	And User selects the Brands option from the drop down menu of the ProfileIcon
 	And User validates the following UI Controls on the Brand Page
 	| UI Controls  |
@@ -24,9 +24,7 @@
 	| Phone        |
 	| Fax          |
 	| Charter      |
-	| Logo         |
-
-    
+	| Logo         |    
     And  User clicks the Add Brand Icon on the Brand Page
 	And User validates the following fields on the Brand Page
 	| Fields           |

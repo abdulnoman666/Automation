@@ -118,124 +118,124 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 9
-    testRunner.Given("User clicks the ProfileIcon on the Dashboard Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
  testRunner.And("User selects the GL Definitions option from the drop down menu of the ProfileIcon" +
                         "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table37 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "GL Definition Option"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Add GL Definition"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Delete GL Definition"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Edit GL Definition"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Copy GL Definition"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Refresh"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Download Letter"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Show Deleted GL Definition"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Action"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Transfer Type"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "GL Account"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Description"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Reference"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Source"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Branch"});
-                table30.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Customer Type"});
 #line 11
- testRunner.And("User validates the following UI Controls on the GL Definitions Page", ((string)(null)), table30, "And ");
+ testRunner.And("User validates the following UI Controls on the GL Definitions Page", ((string)(null)), table37, "And ");
 #line hidden
 #line 31
  testRunner.And("User clicks the Add GL Definition Icon on the GL Definitions Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table38 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Transfer Type"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Transaction Type"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Transfer Account"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Transfer GL Code"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Transfer Account Type (DDA, SAV)"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Transfer Description"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Transfer Transaction Code"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Transfer GL Branch Code"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Transfer GL Cost Center"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "GL Account"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "GL Code"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "GL Transaction Code"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "GL Branch Code"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "GL Cost Center"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "GL Description"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Reference"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Workflow"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Branch"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Customer Type"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Save"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Close"});
-                table31.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Delete Definition"});
 #line 32
- testRunner.And("User validates the following fields on the Add GL Definitions Page", ((string)(null)), table31, "And ");
+ testRunner.And("User validates the following fields on the Add GL Definitions Page", ((string)(null)), table38, "And ");
 #line hidden
 #line 57
  testRunner.And("User clicks the Download from Library Button on the GL Definitions Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table39 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table32.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Cross Button 2"});
-                table32.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Search Bar"});
-                table32.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Search Button"});
-                table32.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Action"});
-                table32.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "ID"});
-                table32.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Description"});
-                table32.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Download GL Definition"});
-                table32.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Close"});
 #line 58
- testRunner.And("User validates the following fields on the Download from Library Button Page", ((string)(null)), table32, "And ");
+ testRunner.And("User validates the following fields on the Download from Library Button Page", ((string)(null)), table39, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
