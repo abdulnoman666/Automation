@@ -20,22 +20,22 @@ namespace UITestAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Batch Reporting")]
-    public partial class BatchReportingFeature
+    [NUnit.Framework.DescriptionAttribute("AuditorLog")]
+    public partial class AuditorLogFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "BatchReporting.feature"
+#line 1 "AuditorLog.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Batch Reporting", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "AuditorLog", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -86,15 +86,15 @@ namespace UITestAutomation.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Batch Reporting")]
-        [NUnit.Framework.CategoryAttribute("BatchReporting")]
-        public virtual void BatchReporting()
+        [NUnit.Framework.DescriptionAttribute("Auditor Log")]
+        [NUnit.Framework.CategoryAttribute("AuditorLog")]
+        public virtual void AuditorLog()
         {
             string[] tagsOfScenario = new string[] {
-                    "BatchReporting"};
+                    "AuditorLog"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Batch Reporting", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 9
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Auditor Log", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -117,31 +117,37 @@ this.ScenarioInitialize(scenarioInfo);
 #line 3
 this.FeatureBackground();
 #line hidden
+#line 9
+    testRunner.Given("User clicks the Auditor Log Icon from the dropdown of Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table4.AddRow(new string[] {
+                            "Show Closed Submissions"});
+                table4.AddRow(new string[] {
+                            "Edit Dispute"});
+                table4.AddRow(new string[] {
+                            "View Submission"});
+                table4.AddRow(new string[] {
+                            "Links"});
+                table4.AddRow(new string[] {
+                            "Reported"});
+                table4.AddRow(new string[] {
+                            "P/C"});
+                table4.AddRow(new string[] {
+                            "N/S"});
+                table4.AddRow(new string[] {
+                            "R/S"});
+                table4.AddRow(new string[] {
+                            "Resolution"});
+                table4.AddRow(new string[] {
+                            "Amount"});
+                table4.AddRow(new string[] {
+                            "Type"});
+                table4.AddRow(new string[] {
+                            "Customer"});
 #line 10
- testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-#line 11
- testRunner.And("User selects the Batch Reporting option from the drop down menu of the ProfileIco" +
-                        "n", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
-                            "UI Controls"});
-                table9.AddRow(new string[] {
-                            "Batch Reporting"});
-                table9.AddRow(new string[] {
-                            "Batch Reference"});
-                table9.AddRow(new string[] {
-                            "Date Range"});
-                table9.AddRow(new string[] {
-                            "Calendar Icon"});
-                table9.AddRow(new string[] {
-                            "Down Arrow Icon"});
-                table9.AddRow(new string[] {
-                            "Print Report"});
-                table9.AddRow(new string[] {
-                            "Export Disputes"});
-#line 12
- testRunner.And("User validates the following UI Controls on the Batch Reporting Page", ((string)(null)), table9, "And ");
+ testRunner.And("User validates the following fields on the Auditor Log Page", ((string)(null)), table4, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

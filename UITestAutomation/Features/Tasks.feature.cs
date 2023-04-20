@@ -20,22 +20,22 @@ namespace UITestAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Brands")]
-    public partial class BrandsFeature
+    [NUnit.Framework.DescriptionAttribute("Tasks")]
+    public partial class TasksFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "Brands.feature"
+#line 1 "Tasks.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Brands", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Tasks", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -86,16 +86,16 @@ namespace UITestAutomation.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Brands")]
-        [NUnit.Framework.CategoryAttribute("Brands")]
-        public virtual void Brands()
+        [NUnit.Framework.DescriptionAttribute("Tasks")]
+        [NUnit.Framework.CategoryAttribute("Tasks")]
+        public virtual void Tasks()
         {
             string[] tagsOfScenario = new string[] {
-                    "Brands"};
+                    "Tasks"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Brands", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Tasks", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 8
- this.ScenarioInitialize(scenarioInfo);
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
             bool isFeatureIgnored = default(bool);
@@ -121,76 +121,82 @@ namespace UITestAutomation.Features
  testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
- testRunner.And("User selects the Brands option from the drop down menu of the ProfileIcon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User selects the Tasks option from the drop down menu of the ProfileIcon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table73 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table10.AddRow(new string[] {
-                            "New Case"});
-                table10.AddRow(new string[] {
-                            "Update Brand"});
-                table10.AddRow(new string[] {
-                            "Delete Brand"});
-                table10.AddRow(new string[] {
+                table73.AddRow(new string[] {
+                            "Add New Task"});
+                table73.AddRow(new string[] {
+                            "Edit Task"});
+                table73.AddRow(new string[] {
+                            "Delete Task"});
+                table73.AddRow(new string[] {
                             "Refresh"});
-                table10.AddRow(new string[] {
-                            "Action"});
-                table10.AddRow(new string[] {
-                            "Brand Name"});
-                table10.AddRow(new string[] {
-                            "Email"});
-                table10.AddRow(new string[] {
-                            "Address"});
-                table10.AddRow(new string[] {
-                            "City"});
-                table10.AddRow(new string[] {
-                            "State"});
-                table10.AddRow(new string[] {
-                            "Zip"});
-                table10.AddRow(new string[] {
-                            "Phone"});
-                table10.AddRow(new string[] {
-                            "Fax"});
-                table10.AddRow(new string[] {
-                            "Charter"});
-                table10.AddRow(new string[] {
-                            "Logo"});
+                table73.AddRow(new string[] {
+                            "Actions"});
+                table73.AddRow(new string[] {
+                            "ID"});
+                table73.AddRow(new string[] {
+                            "Task Name"});
+                table73.AddRow(new string[] {
+                            "Reference"});
+                table73.AddRow(new string[] {
+                            "User Pool"});
 #line 11
- testRunner.And("User validates the following UI Controls on the Brand Page", ((string)(null)), table10, "And ");
+ testRunner.And("User validates the following UI Controls on the Tasks Page", ((string)(null)), table73, "And ");
 #line hidden
-#line 28
-    testRunner.And("User clicks the Add Brand Icon on the Brand Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Add New Tasks")]
+        public virtual void AddNewTasks()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add New Tasks", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 23
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
-                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 3
+ this.FeatureBackground();
+#line hidden
+#line 24
+    testRunner.Given("User clicks the Add New Task Icon on the Tasks Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table74 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table11.AddRow(new string[] {
-                            "Select Logo File"});
-                table11.AddRow(new string[] {
-                            "Brand Name"});
-                table11.AddRow(new string[] {
-                            "Charter"});
-                table11.AddRow(new string[] {
-                            "Email"});
-                table11.AddRow(new string[] {
-                            "Address"});
-                table11.AddRow(new string[] {
-                            "City"});
-                table11.AddRow(new string[] {
-                            "State"});
-                table11.AddRow(new string[] {
-                            "Zip"});
-                table11.AddRow(new string[] {
-                            "Phone"});
-                table11.AddRow(new string[] {
-                            "Fax"});
-                table11.AddRow(new string[] {
+                table74.AddRow(new string[] {
+                            "Task Name"});
+                table74.AddRow(new string[] {
+                            "Reference"});
+                table74.AddRow(new string[] {
+                            "User Pool"});
+                table74.AddRow(new string[] {
                             "Save"});
-                table11.AddRow(new string[] {
+                table74.AddRow(new string[] {
                             "Close"});
-                table11.AddRow(new string[] {
-                            "Cross Button"});
-#line 29
- testRunner.And("User validates the following fields on the Brand Page", ((string)(null)), table11, "And ");
+#line 25
+ testRunner.And("User validates the following fields on the Add Tasks Page", ((string)(null)), table74, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

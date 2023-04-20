@@ -20,22 +20,22 @@ namespace UITestAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("FieldUpdateScripts")]
-    public partial class FieldUpdateScriptsFeature
+    [NUnit.Framework.DescriptionAttribute("LedgerBatches")]
+    public partial class LedgerBatchesFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "FieldUpdateScripts.feature"
+#line 1 "LedgerBatches.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "FieldUpdateScripts", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "LedgerBatches", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -76,7 +76,7 @@ namespace UITestAutomation.Features
         public virtual void FeatureBackground()
         {
 #line 3
- #line hidden
+#line hidden
 #line 4
   testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
@@ -86,14 +86,14 @@ namespace UITestAutomation.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("FieldUpdateScripts")]
-        [NUnit.Framework.CategoryAttribute("FieldUpdateScript")]
-        public virtual void FieldUpdateScripts()
+        [NUnit.Framework.DescriptionAttribute("Ledger Batches")]
+        [NUnit.Framework.CategoryAttribute("LedgerBatches")]
+        public virtual void LedgerBatches()
         {
             string[] tagsOfScenario = new string[] {
-                    "FieldUpdateScript"};
+                    "LedgerBatches"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("FieldUpdateScripts", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ledger Batches", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -115,78 +115,51 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 3
- this.FeatureBackground();
+this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.Given("User clicks the Profile Icon on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.Given("User clicks the Ledger Icon on the Dashboard Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
- testRunner.And("User selects the Field Update Scripts option from the dropdown menu of ProfileIco" +
-                        "n", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User clicks the Ledger Batches Icon from the dropdown of Ledger", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table46 = new TechTalk.SpecFlow.Table(new string[] {
-                            "UI Controls"});
-                table46.AddRow(new string[] {
-                            "Add Field Update Script"});
-                table46.AddRow(new string[] {
-                            "Download Letter"});
-                table46.AddRow(new string[] {
-                            "Edit Script"});
-                table46.AddRow(new string[] {
-                            "Copy Script"});
-                table46.AddRow(new string[] {
-                            "Delete Script"});
-                table46.AddRow(new string[] {
-                            "Refresh"});
-                table46.AddRow(new string[] {
-                            "Action"});
-                table46.AddRow(new string[] {
-                            "Reference"});
-                table46.AddRow(new string[] {
-                            "Name"});
-#line 11
- testRunner.And("User validates the following UI Controls on the Field Update Script Page", ((string)(null)), table46, "And ");
-#line hidden
-#line 23
- testRunner.And("User clicks the Add Script Icon on the Field Update Script Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table59 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table47.AddRow(new string[] {
-                            "Script Name"});
-                table47.AddRow(new string[] {
-                            "Unique Reference"});
-                table47.AddRow(new string[] {
-                            "Table"});
-                table47.AddRow(new string[] {
-                            "Field"});
-                table47.AddRow(new string[] {
-                            "Operator"});
-                table47.AddRow(new string[] {
-                            "Value/Function"});
-                table47.AddRow(new string[] {
-                            "Save"});
-                table47.AddRow(new string[] {
-                            "Close"});
-                table47.AddRow(new string[] {
-                            "Upload to Library"});
-                table47.AddRow(new string[] {
-                            "Add Update to Script"});
-#line 24
- testRunner.And("User validates the following fields on the Field Update Script Page", ((string)(null)), table47, "And ");
+                table59.AddRow(new string[] {
+                            "Date Range"});
+                table59.AddRow(new string[] {
+                            "Calendar Button"});
+                table59.AddRow(new string[] {
+                            "Triangle Button"});
+                table59.AddRow(new string[] {
+                            "Action"});
+                table59.AddRow(new string[] {
+                            "ID"});
+                table59.AddRow(new string[] {
+                            "Process"});
+                table59.AddRow(new string[] {
+                            "Created"});
+                table59.AddRow(new string[] {
+                            "Print Report"});
+                table59.AddRow(new string[] {
+                            "Ledger Entries"});
+                table59.AddRow(new string[] {
+                            "Export Entries"});
+#line 11
+ testRunner.And("User validates the following fields on the Ledger Batches Page", ((string)(null)), table59, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("DownloadFromLibraryButton")]
-        public virtual void DownloadFromLibraryButton()
+        [NUnit.Framework.DescriptionAttribute("Ledger Entries")]
+        public virtual void LedgerEntries()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DownloadFromLibraryButton", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 38
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ledger Entries", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 25
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -207,32 +180,31 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 3
- this.FeatureBackground();
+this.FeatureBackground();
 #line hidden
-#line 39
-   testRunner.Given("User clicks the Download From Library Button on the Field Update Script Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 26
+ testRunner.Given("User clicks the Ledger Entries button on the Ledger Batches Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
-                            "UI Control and Fields"});
-                table48.AddRow(new string[] {
-                            "Search Bar"});
-                table48.AddRow(new string[] {
-                            "Search Button"});
-                table48.AddRow(new string[] {
-                            "Action"});
-                table48.AddRow(new string[] {
-                            "Reference"});
-                table48.AddRow(new string[] {
-                            "Name"});
-                table48.AddRow(new string[] {
-                            "Download Template Option"});
-                table48.AddRow(new string[] {
+                TechTalk.SpecFlow.Table table60 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table60.AddRow(new string[] {
+                            "Date"});
+                table60.AddRow(new string[] {
+                            "Account"});
+                table60.AddRow(new string[] {
+                            "Customer"});
+                table60.AddRow(new string[] {
+                            "Amount"});
+                table60.AddRow(new string[] {
+                            "Type"});
+                table60.AddRow(new string[] {
+                            "Tran Code"});
+                table60.AddRow(new string[] {
+                            "Description"});
+                table60.AddRow(new string[] {
                             "Close"});
-                table48.AddRow(new string[] {
-                            "Cross Button"});
-#line 40
-   testRunner.And("User validates the following UI Controls and fields on the Field Update Script Pa" +
-                        "ge", ((string)(null)), table48, "And ");
+#line 27
+ testRunner.And("User validates the following fields on the Ledger Entries Page", ((string)(null)), table60, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

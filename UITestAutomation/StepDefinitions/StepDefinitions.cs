@@ -3,12 +3,21 @@ using UITestAutomation.Pages.Brands.Brands;
 using UITestAutomation.Pages.ChangePassword;
 using UITestAutomation.Pages.CompanyDetails;
 using UITestAutomation.Pages.Customer;
+using UITestAutomation.Pages.DailyLedger;
 using UITestAutomation.Pages.Dashboard;
+using UITestAutomation.Pages.Disputes;
+using UITestAutomation.Pages.FeeSelectionSettings;
 using UITestAutomation.Pages.FieldUpdateScripts;
+using UITestAutomation.Pages.FraudAlerts;
 using UITestAutomation.Pages.GLDefinitions;
 using UITestAutomation.Pages.ImportConfigurations;
+using UITestAutomation.Pages.LedgerBatches;
+using UITestAutomation.Pages.LedgerReport;
 using UITestAutomation.Pages.Login;
 using UITestAutomation.Pages.LoginVerification;
+using UITestAutomation.Pages.MonthlyReport;
+using UITestAutomation.Pages.Tasks;
+using UITestAutomation.Pages.TransactionAlerts;
 using UITestAutomation.Pages.TransactionProcess;
 using UITestAutomation.Pages.UserPools;
 using UITestAutomation.Pages.Users;
@@ -35,6 +44,15 @@ namespace UITestAutomation
         GLDefinitions glDefinitions = new GLDefinitions();
         ImportConfigurations importConfigurations = new ImportConfigurations();
         Configuration configuration = new Configuration();
+        Tasks tasks = new Tasks();
+        FeeSelectionSettings feeSelectionSettings = new FeeSelectionSettings();
+        TransactionAlerts transactionAlerts = new TransactionAlerts();
+        Disputes disputes = new Disputes();
+        MonthlyReport monthlyReport = new MonthlyReport();
+        LedgerReport ledgerReport = new LedgerReport();
+        DailyLedger dailyLedger = new DailyLedger();
+        LedgerBatches ledgerBatches = new LedgerBatches();
+        FraudAlerts fraudAlerts = new FraudAlerts();
 
         //Login
         [Given(@"User goes to DisputeDev Application")]
@@ -423,7 +441,7 @@ namespace UITestAutomation
         [Given(@"User selects the Brands option from the drop down menu of the ProfileIcon")]
         public void GivenUserSelectsTheBrandsOptionFromTheDropDownMenuOfTheProfileIcon()
         {
-            brands.ClickBrandsOption();
+            brands.ClickBrandsButton();
         }
         [Given(@"User validates the following UI Controls on the Brand Page")]
         public void GivenUserValidatesTheFollowingUIControlsOnTheBrandPage(Table table)
@@ -610,6 +628,249 @@ namespace UITestAutomation
             importConfigurations.AssertFieldsonAddConfigurationonImportConfigurationsPage(table);
         }
 
+        //Tasks
+        [Given(@"User selects the Tasks option from the drop down menu of the ProfileIcon")]
+        public void GivenUserSelectsTheTasksOptionFromTheDropDownMenuOfTheProfileIcon()
+        {
+            tasks.ClickTasksButton();
+        }
+        [Given(@"User validates the following UI Controls on the Tasks Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnTheTasksPage(Table table)
+        {
+            tasks.AssertUIControlsOnTasksPage(table);
+        }
+        [Given(@"User clicks the Add New Task Icon on the Tasks Page")]
+        public void GivenUserClicksTheAddNewTaskIconOnTheTasksPage()
+        {
+            tasks.ClickAddNewTaskButton();
+        }
+        [Given(@"User validates the following fields on the Add Tasks Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheAddTasksPage(Table table)
+        {
+            tasks.AssertFieldsOnAddTasksPage(table);
+        }
 
+
+        // Fee Selection Settings
+        [Given(@"User selects the Fee Selection Settings option from the drop down menu of the ProfileIcon")]
+        public void GivenUserSelectsTheFeeSelectionSettingsOptionFromTheDropDownMenuOfTheProfileIcon()
+        {
+            feeSelectionSettings.ClickFeeSelectionSettingsButton();
+        }
+        [Given(@"User validates the following UI Controls on the Fee Selection Settings Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnTheFeeSelectionSettingsPage(Table table)
+        {
+            feeSelectionSettings.AssertUIControlsOnFeeSelectionSettingsPage(table);
+        }
+        [Given(@"User clicks the Add Fee Selection Icon on the Fee Selection Settings Page")]
+        public void GivenUserClicksTheAddFeeSelectionIconOnTheFeeSelectionSettingsPage()
+        {
+            feeSelectionSettings.ClickAddFeeSelectionButton();
+        }
+        [Given(@"User validates the following fields on the Add Fee Selection Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheAddFeeSelectionPage(Table table)
+        {
+            feeSelectionSettings.AssertFieldsOnAddFeeSelectionPage(table);
+        }
+
+        // Transaction Alerts
+        [Given(@"User selects the Transaction Alerts option from the drop down menu of the ProfileIcon")]
+        public void GivenUserSelectsTheTransactionAlertsOptionFromTheDropDownMenuOfTheProfileIcon()
+        {
+            transactionAlerts.ClickTransactionAlertsButton();
+        }
+        [Given(@"User validates the following UI Controls on the Transaction Alerts Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnTheTransactionAlertsPage(Table table)
+        {
+            transactionAlerts.AssertUIControlsOnTransactionAlertsPage(table);
+        }
+        [Given(@"User clicks the Add Transaction Alert Icon on the Transaction Alerts Page")]
+        public void GivenUserClicksTheAddTransactionAlertIconOnTheTransactionAlertsPage()
+        {
+            transactionAlerts.ClickAddNewTransactionAlertButton();
+        }
+        [Given(@"User validates the following fields on the Add Transaction Alerts Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheAddTransactionAlertsPage(Table table)
+        {
+            transactionAlerts.AssertFieldslsOnAddTransactionAlertsPage(table);
+        }
+
+
+
+        // DISPUTES
+        [Given(@"User clicks the Disputes Icon on Dashboard page")]
+        public void GivenUserClicksTheDisputesIconOnDashboardPage()
+        {
+            dashboard.ClickDisputeIcon();
+        }
+        [Given(@"User selects the Disputes option from the drop down menu of the Disputes Page")]
+        public void GivenUserSelectsTheDisputesOptionFromTheDropDownMenuOfTheDisputesPage()
+        {
+            disputes.ClickDisputesButton();
+        }
+        [Given(@"User validates the following UI Controls on the Disputes Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnTheDisputesPage(Table table)
+        {
+            disputes.AssertUIControlsOnDisputesPage(table);
+        }
+        [Given(@"User clicks the Alerts Button on the Disputes Page")]
+        public void GivenUserClicksTheAlertsButtonOnTheDisputesPage()
+        {
+            disputes.ClickAlertsButton();
+        }
+        [Given(@"User validates the following fields on the Alerts Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheAlertsPage(Table table)
+        {
+            disputes.AssertFieldsOnAlertsPage(table);
+        }
+        [Given(@"User clicks the Search Button on the Disputes Page")]
+        public void GivenUserClicksTheSearchButtonOnTheDisputesPage()
+        {
+            disputes.ClickSearchButton();
+        }
+        [Given(@"User validates the following fields on the Search Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheSearchPage(Table table)
+        {
+            disputes.AssertFieldsOnSearchPage(table);
+        }
+        [Given(@"User clicks the Show Closed Disputes Button on the Disputes Page")]
+        public void GivenUserClicksTheShowClosedDisputesButtonOnTheDisputesPage()
+        {
+            disputes.ClickShowClosedDisputesButton();
+        }
+        [Given(@"User validates the following fields on the Show Closed Disputes Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheShowClosedDisputesPage(Table table)
+        {
+            disputes.AssertFieldsOnShowClosedDisputesPage(table);
+        }
+        [Given(@"User clicks the Edit Disputes Button on the Disputes Page")]
+        public void GivenUserClicksTheEditDisputesButtonOnTheDisputesPage()
+        {
+            disputes.ClickEditDisputeButton();
+        }
+        [Given(@"User validates the following UI Controls and fields on the Edit Disputes Page")]
+        public void GivenUserValidatesTheFollowingUIControlsAndFieldsOnTheEditDisputesPage(Table table)
+        {
+            disputes.AssertUIControlsOnEditDisputesPage(table);
+        }
+        [Given(@"User clicks the Documents button on the Edit Disputes Page")]
+        public void GivenUserClicksTheDocumentsButtonOnTheEditDisputesPage()
+        {
+            disputes.ClickDocumentsButton();
+        }
+        [Given(@"User validates the following fields on the Documents Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheDocumentsPage(Table table)
+        {
+            disputes.AssertUIControlsOnDocumentsPage(table);
+        }
+        [Given(@"User clicks the History button on the Edit Disputes Page")]
+        public void GivenUserClicksTheHistoryButtonOnTheEditDisputesPage()
+        {
+            disputes.ClickHistoryButton();
+        }
+        [Given(@"User validates the following fields on the History Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheHistoryPage(Table table)
+        {
+            disputes.AssertUIControlsOnHistoryPage(table);
+        }
+        [Given(@"User clicks the Resolution Button on the Edit Disputes Page")]
+        public void GivenUserClicksTheResolutionButtonOnTheEditDisputesPage()
+        {
+            disputes.ClickResolutionButton();
+        }
+        [Given(@"User validates the following fields on the Resolution Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheResolutionPage(Table table)
+        {
+            disputes.AssertFieldslsOnResolutionPage(table);
+        }
+
+        // Monthly Report
+        [Given(@"User clicks the Monthly Report Icon from the dropdown of Disputes Page")]
+        public void GivenUserClicksTheMonthlyReportIconFromTheDropdownOfDisputesPage()
+        {
+            monthlyReport.ClickMonthlyReportButton();
+        }
+        [Given(@"User validates the following fields on the Monthly Report Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheMonthlyReportPage(Table table)
+        {
+            monthlyReport.AssertUIControlsOnMonthlyReportPage(table);
+        }
+        [Given(@"User clicks the Summary button on the Monthly Report Page")]
+        public void GivenUserClicksTheSummaryButtonOnTheMonthlyReportPage()
+        {
+            monthlyReport.ClickSummaryButton();
+        }
+        [Given(@"User validates the following fields on the Summary Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheSummaryPage(Table table)
+        {
+            monthlyReport.AssertFieldslsOnSummaryPage(table);
+        }
+        [Given(@"User clicks the List button on the Monthly Report Page")]
+        public void GivenUserClicksTheListButtonOnTheMonthlyReportPage()
+        {
+            monthlyReport.ClickListButton();
+        }
+        [Given(@"User validates the following fields on the List Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheListPage(Table table)
+        {
+            monthlyReport.AssertFieldsOnListsPage(table);
+        }
+
+        // Daily Ledger
+        [Given(@"User clicks the Daily Ledger Icon from the dropdown of Ledger")]
+        public void GivenUserClicksTheDailyLedgerIconFromTheDropdownOfLedger()
+        {
+            dailyLedger.ClickDailyLedgerButton();
+        }
+        [Given(@"User validates the following fields on the Daily Ledger Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheDailyLedgerPage(Table table)
+        {
+            dailyLedger.AssertUIControlsOnDailyLedgerPage(table);
+        }
+
+        //Ledger Report
+        [Given(@"User clicks the Ledger Report button from the dropdown of Ledger Page")]
+        public void GivenUserClicksTheLedgerReportButtonFromTheDropdownOfLedgerPage()
+        {
+            ledgerReport.ClickLedgerReportButton();
+        }
+        [Given(@"User validates the following fields on the Ledger Report Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheLedgerReportPage(Table table)
+        {
+            ledgerReport.AssertUIControlsOnLedgerReportPage(table);
+        }
+        [Given(@"User clicks the Ledger Entries button on the Ledger Report Page")]
+        public void GivenUserClicksTheLedgerEntriesButtonOnTheLedgerReportPage()
+        {
+            ledgerReport.ClickLedgerEntriesButton();
+        }
+        [Given(@"User validates the following fields on the Ledger Entries Page of Ledger Report Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheLedgerEntriesPageOfLedgerReportPage(Table table)
+        {
+            ledgerReport.AssertFieldsOnLedgerEntriesPage(table);
+        }
+
+
+        // Ledger Batches
+        [Given(@"User clicks the Ledger Icon on the Dashboard Page")]
+        public void GivenUserClicksTheLedgerIconOnTheDashboardPage()
+        {
+            dashboard.ClickLedgerIcon();
+        }
+        [Given(@"User clicks the Ledger Batches Icon from the dropdown of Ledger")]
+        public void GivenUserClicksTheLedgerBatchesIconFromTheDropdownOfLedger()
+        {
+            ledgerBatches.ClickLedgerBatchesButton();
+        }
+        [Given(@"User validates the following fields on the Ledger Batches Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheLedgerBatchesPage(Table table)
+        {
+            ledgerBatches.AssertUIControlsOnLedgerBatchesPage(table);
+        }
+        [Given(@"User clicks the Ledger Entries button on the Ledger Batches Page")]
+        public void GivenUserClicksTheLedgerEntriesButtonOnTheLedgerBatchesPage()
+        {
+           // ledgerBatches.
+        }
     }
 }
