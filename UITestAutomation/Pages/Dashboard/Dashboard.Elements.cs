@@ -9,6 +9,7 @@ namespace UITestAutomation.Pages.Dashboard
         By Dashboard_Container = By.XPath("//div[@class='container']");
         By Customer_Field = By.XPath("//a[@href='#/customers']");
         By Dashboard_Button = By.CssSelector("[ng-show] [href='\\#\\/dashboard']");
+        By Submission_Field = By.CssSelector("li:nth-of-type(4) > .dropdown-toggle");
 
     }
 }

@@ -30,5 +30,11 @@ namespace UITestAutomation.Pages.Dashboard
             ClickOnWebElement(Dashboard_Button);
             WaitForWebElementDisplayed(Dashboard_Container);
         }
+
+        public void ClickSubmissions()
+        {
+            WaitForWebElementDisplayed(ProfileIconElement);
+            ClickOnWebElement(Submission_Field);
+        }
     }
 }
