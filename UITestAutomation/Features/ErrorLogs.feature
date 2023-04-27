@@ -16,8 +16,8 @@ Scenario: Error Logs
 		| URL                       |
 
 	And User validates the following Fields on Search Popup on Error Logs Page
-		| Fields         |
-		| Filter By Date |
-		| Start Date     |
-		| End Date       |
+		| Fields     |
+		| Start Date |
+		| End Date   |
+		| Close      |
 		

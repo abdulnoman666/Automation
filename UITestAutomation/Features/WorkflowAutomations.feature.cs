@@ -123,139 +123,38 @@ this.FeatureBackground();
 #line 10
  testRunner.And("User Selects the Workflow Automations from the dropdown menu of the Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table54 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table47.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "Add"});
-                table47.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "Delete"});
-                table47.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "Edit"});
-                table47.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "Copy Automation"});
-                table47.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "Download Automation"});
-                table47.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "Condition Search"});
 #line 11
- testRunner.And("User validates following UI controls on WorkFlow Automations Page", ((string)(null)), table47, "And ");
+ testRunner.And("User validates following UI controls on WorkFlow Automations Page", ((string)(null)), table54, "And ");
 #line hidden
 #line 20
  testRunner.And("User clicks the Add Workflow Automations Icon on Workflow Automations Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table55 = new TechTalk.SpecFlow.Table(new string[] {
                             "Field"});
-                table48.AddRow(new string[] {
+                table55.AddRow(new string[] {
                             "Name"});
-                table48.AddRow(new string[] {
+                table55.AddRow(new string[] {
                             "Conditions"});
-                table48.AddRow(new string[] {
+                table55.AddRow(new string[] {
                             "Workflow Automation Reference"});
-                table48.AddRow(new string[] {
+                table55.AddRow(new string[] {
                             "Scope"});
 #line 21
- testRunner.And("User validates following fields on Add Workflow Automations Dialog", ((string)(null)), table48, "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit Workflow Automations")]
-        [NUnit.Framework.CategoryAttribute("Edit")]
-        public virtual void EditWorkflowAutomations()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "Edit"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit Workflow Automations", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 29
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 30
- testRunner.Given("User clicks on the Edit Workflow Automations button on the Workflow Automations P" +
-                        "age", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Field"});
-                table49.AddRow(new string[] {
-                            "Name"});
-                table49.AddRow(new string[] {
-                            "Conditions"});
-                table49.AddRow(new string[] {
-                            "Workflow Automation Reference"});
-                table49.AddRow(new string[] {
-                            "Scope"});
-#line 31
- testRunner.And("User validates the following fileds on Edit Workflow Automations Page", ((string)(null)), table49, "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Delete Workflow Automations")]
-        [NUnit.Framework.CategoryAttribute("Delete")]
-        public virtual void DeleteWorkflowAutomations()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "Delete"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete Workflow Automations", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 39
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 40
- testRunner.Given("User clicks on the Delete Workflow Automation button on Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Controls"});
-                table50.AddRow(new string[] {
-                            "Yes"});
-                table50.AddRow(new string[] {
-                            "No"});
-#line 41
- testRunner.And("User validates the following Controls on Confirm Deletion Popup", ((string)(null)), table50, "And ");
+ testRunner.And("User validates following fields on Add Workflow Automations Dialog", ((string)(null)), table55, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

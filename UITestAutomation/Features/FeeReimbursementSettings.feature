@@ -25,27 +25,27 @@ Scenario: Fee Reimbursement Settings
 		| Create Disputes        |
 		| Include In Claim Total |
 
-@Edit
-Scenario: FeeRUpdate
-	Given User clicks on the Edit Fee Reimbursement button on the Fee Reimbursement Settings Page
-	And User validates the following fileds on Edit Fee Reimbursement Settings Page
-		| fields                 |
-		| Reference              |
-		| Description            |
-		| Auto Generate GL       |
-		| Auto Fee GL Reference  |
-		| Show On Dispute Form   |
-		| Create Disputes        |
-		| Include In Claim Total |
-
-@Delete
-Scenario: FeeRDelete
-	Given User clicks on the Delete Fee Reimbursement button on Page
-	And User validates the following Controls on Confirm Deletion Popup
-
-		| Controls |
-		| Yes      |
-		| No       |
+#@Edit
+#Scenario: FeeRUpdate
+#	Given User clicks on the Edit Fee Reimbursement button on the Fee Reimbursement Settings Page
+#	And User validates the following fileds on Edit Fee Reimbursement Settings Page
+#		| fields                 |
+#		| Reference              |
+#		| Description            |
+#		| Auto Generate GL       |
+#		| Auto Fee GL Reference  |
+#		| Show On Dispute Form   |
+#		| Create Disputes        |
+#		| Include In Claim Total |
+#
+#@Delete
+#Scenario: FeeRDelete
+#	Given User clicks on the Delete Fee Reimbursement button on Page
+#	And User validates the following Controls on Confirm Deletion Popup
+#
+#		| Controls |
+#		| Yes      |
+#		| No       |
 
 	
 

@@ -20,22 +20,22 @@ namespace UITestAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("ChangePassword")]
-    public partial class ChangePasswordFeature
+    [NUnit.Framework.DescriptionAttribute("CycleCodeMaps")]
+    public partial class CycleCodeMapsFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "ChangePassword.feature"
+#line 1 "CycleCodeMaps.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "ChangePassword", "A short summary of the feature", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "CycleCodeMaps", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,25 +75,25 @@ namespace UITestAutomation.Features
         
         public virtual void FeatureBackground()
         {
-#line 4
+#line 3
 #line hidden
-#line 5
+#line 4
  testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 6
+#line 5
  testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Change Password")]
+        [NUnit.Framework.DescriptionAttribute("Cycle Code Maps")]
         [NUnit.Framework.CategoryAttribute("tag1")]
-        public virtual void ChangePassword()
+        public virtual void CycleCodeMaps()
         {
             string[] tagsOfScenario = new string[] {
                     "tag1"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Change Password", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Cycle Code Maps", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -114,37 +114,38 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 4
+#line 3
 this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the Profile Icon on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
- testRunner.And("User selects the Change Password Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User selects the Cycle Code Maps Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
-                            "UI Control"});
-                table11.AddRow(new string[] {
-                            "Change Password"});
-                table11.AddRow(new string[] {
-                            "Submit"});
+                TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
+                            "UI Controls"});
+                table26.AddRow(new string[] {
+                            "Add Cycle Code Map"});
+                table26.AddRow(new string[] {
+                            "Delete Cycle Code Map"});
+                table26.AddRow(new string[] {
+                            "Edit Cycle Code Map"});
 #line 11
- testRunner.And("User validates the following UI Controls on Change Password Page", ((string)(null)), table11, "And ");
+ testRunner.And("User validates the following UI Controls on Cycle Code Maps Page", ((string)(null)), table26, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table12.AddRow(new string[] {
-                            "Current Password"});
-                table12.AddRow(new string[] {
-                            "New Password"});
-                table12.AddRow(new string[] {
-                            "Confirm Password"});
-#line 15
- testRunner.And("User validates the following Fields on Change Password Page", ((string)(null)), table12, "And ");
-#line hidden
-#line 20
- testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+                table27.AddRow(new string[] {
+                            "Cycle Code"});
+                table27.AddRow(new string[] {
+                            "Mapped Value"});
+                table27.AddRow(new string[] {
+                            "Save"});
+                table27.AddRow(new string[] {
+                            "Close"});
+#line 17
+ testRunner.And("User validates the following Fields on Add Cycle Code Maps Popup", ((string)(null)), table27, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

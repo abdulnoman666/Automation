@@ -14,7 +14,7 @@ Scenario: Cycle Code Maps
 		| Delete Cycle Code Map |
 		| Edit Cycle Code Map   |
 
-	And User validates the following Fields on Cycle Code Maps Popup
+	And User validates the following Fields on Add Cycle Code Maps Popup
 		| Fields       |
 		| Cycle Code   |
 		| Mapped Value |

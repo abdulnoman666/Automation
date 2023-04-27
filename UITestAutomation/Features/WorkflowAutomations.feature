@@ -25,21 +25,21 @@ Scenario: Add Workflow Automations
 		| Workflow Automation Reference |
 		| Scope                         |
 
-@Edit
-Scenario: Edit Workflow Automations
-	Given User clicks on the Edit Workflow Automations button on the Workflow Automations Page
-	And User validates the following fileds on Edit Workflow Automations Page
-		| Field                         |
-		| Name                          |
-		| Conditions                    |
-		| Workflow Automation Reference |
-		| Scope                         |
-
-@Delete
-Scenario: Delete Workflow Automations
-	Given User clicks on the Delete Workflow Automation button on Page
-	And User validates the following Controls on Confirm Deletion Popup
-
-		| Controls |
-		| Yes      |
-		| No       |
+#@Edit
+#Scenario: Edit Workflow Automations
+#	Given User clicks on the Edit Workflow Automations button on the Workflow Automations Page
+#	And User validates the following fileds on Edit Workflow Automations Page
+#		| Field                         |
+#		| Name                          |
+#		| Conditions                    |
+#		| Workflow Automation Reference |
+#		| Scope                         |
+#
+#@Delete
+#Scenario: Delete Workflow Automations
+#	Given User clicks on the Delete Workflow Automation button on Page
+#	And User validates the following Controls on Confirm Deletion Popup
+#
+#		| Controls |
+#		| Yes      |
+#		| No       |

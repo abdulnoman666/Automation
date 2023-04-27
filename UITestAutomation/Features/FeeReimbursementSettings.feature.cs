@@ -123,39 +123,39 @@ this.FeatureBackground();
 #line 10
  testRunner.And("User Selects the Fee Reimbursement Settings from the dropdown menu of the Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table23.AddRow(new string[] {
+                table30.AddRow(new string[] {
                             "Add"});
-                table23.AddRow(new string[] {
+                table30.AddRow(new string[] {
                             "Delete"});
-                table23.AddRow(new string[] {
+                table30.AddRow(new string[] {
                             "Edit"});
 #line 11
- testRunner.And("User validates following UI controls on Fee Reimbursement Settings Page", ((string)(null)), table23, "And ");
+ testRunner.And("User validates following UI controls on Fee Reimbursement Settings Page", ((string)(null)), table30, "And ");
 #line hidden
 #line 17
  testRunner.And("User clicks the Add Fee Reimbursement Settings Icon on Fee Reimbursement Settings" +
                         " Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table24 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
                             "Field"});
-                table24.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Reference"});
-                table24.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Description"});
-                table24.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Auto Generate GL"});
-                table24.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Auto Fee GL Reference"});
-                table24.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Show On Dispute Form"});
-                table24.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Create Disputes"});
-                table24.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Include In Claim Total"});
 #line 18
- testRunner.And("User validates following fields on Add Fee Reimbursement Settings Dialog", ((string)(null)), table24, "And ");
+ testRunner.And("User validates following fields on Add Fee Reimbursement Settings Dialog", ((string)(null)), table31, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -197,24 +197,24 @@ this.FeatureBackground();
  testRunner.Given("User clicks on the Edit Fee Reimbursement button on the Fee Reimbursement Setting" +
                         "s Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table25 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
                             "fields"});
-                table25.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Reference"});
-                table25.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Description"});
-                table25.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Auto Generate GL"});
-                table25.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Auto Fee GL Reference"});
-                table25.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Show On Dispute Form"});
-                table25.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Create Disputes"});
-                table25.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Include In Claim Total"});
 #line 31
- testRunner.And("User validates the following fileds on Edit Fee Reimbursement Settings Page", ((string)(null)), table25, "And ");
+ testRunner.And("User validates the following fileds on Edit Fee Reimbursement Settings Page", ((string)(null)), table32, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -255,14 +255,14 @@ this.FeatureBackground();
 #line 43
  testRunner.Given("User clicks on the Delete Fee Reimbursement button on Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
                             "Controls"});
-                table26.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "Yes"});
-                table26.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "No"});
 #line 44
- testRunner.And("User validates the following Controls on Confirm Deletion Popup", ((string)(null)), table26, "And ");
+ testRunner.And("User validates the following Controls on Confirm Deletion Popup", ((string)(null)), table33, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

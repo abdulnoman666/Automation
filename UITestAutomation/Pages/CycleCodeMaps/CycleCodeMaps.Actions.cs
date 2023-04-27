@@ -4,13 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UITestAutomation.Pages
+namespace UITestAutomation.Pages.CycleCodeMaps
 {
-    public class LetterTemplate: Selenium_Methods
+    internal partial class CycleCodeMaps :Selenium_Methods
     {
-
-
-
-
     }
 }

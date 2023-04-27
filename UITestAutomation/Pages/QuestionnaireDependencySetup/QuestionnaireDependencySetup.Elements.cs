@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UITestAutomation.Pages
+namespace UITestAutomation.Pages.QuestionnaireDependencySetup
 {
-    public class QuestionnaireDependencySetup: Selenium_Methods
-    { 
+    internal partial class QuestionnaireDependencySetup 
+    {
         //UI Controls on QuestionareDPage
         By AddFormDependancyList = By.CssSelector("button[title='Add Form Dependency List']");
         By DeleteList = By.XPath("//button[@class='btn btn-danger glyphicon glyphicon-trash']");
@@ -24,4 +24,3 @@ namespace UITestAutomation.Pages
     }
 
 }
-   
