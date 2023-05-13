@@ -118,30 +118,30 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 10
- testRunner.Given("User clicks the ProfileIcon on the Dashboard Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 11
  testRunner.And("User selects the Batch Reporting option from the drop down menu of the ProfileIco" +
                         "n", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table5.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Batch Reporting"});
-                table5.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Batch Reference"});
-                table5.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Date Range"});
-                table5.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Calendar Icon"});
-                table5.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Down Arrow Icon"});
-                table5.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Print Report"});
-                table5.AddRow(new string[] {
+                table9.AddRow(new string[] {
                             "Export Disputes"});
 #line 12
- testRunner.And("User validates the following UI Controls on the Batch Reporting Page", ((string)(null)), table5, "And ");
+ testRunner.And("User validates the following UI Controls on the Batch Reporting Page", ((string)(null)), table9, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

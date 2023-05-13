@@ -7,7 +7,7 @@ Background:
 @ImportConfigurations
 
 Scenario:  Import Configurations
-	Given User clicks the ProfileIcon on the Dashboard Page
+	Given User clicks the Profile Icon on Dashboard page
 	And User selects the Import Configurations option from the drop down menu of the ProfileIcon
 	And User validates the following UI Controls on the Import Configurations Page
 	| UI Controls           |

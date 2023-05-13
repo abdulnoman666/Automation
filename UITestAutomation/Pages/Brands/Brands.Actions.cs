@@ -1,12 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace UITestAutomation.Pages.Brands
+﻿
+namespace UITestAutomation.Pages.Brands.Brands
 {
-    internal class Brands
+    internal partial class Brands : Selenium_Methods
     {
+        public void ClickBrandsButton()
+        {
+            WaitForWebElementDisplayed(BrandsOption);
+            ClickOnWebElement(BrandsOption);
+        }
+        public void ClickAddNewCaseBrandButton()
+        {
+            ClickOnWebElement(AddNewCaseBrand);
+            WaitForWebElementDisplayed(AddNewCaseBrand);
+        }
     }
 }

@@ -7,7 +7,7 @@ Background:
 
 
 Scenario: Batch Reporting
-	Given User clicks the ProfileIcon on the Dashboard Page
+	Given User clicks the Profile Icon on Dashboard page
 	And User selects the Batch Reporting option from the drop down menu of the ProfileIcon
 	And User validates the following UI Controls on the Batch Reporting Page
 	

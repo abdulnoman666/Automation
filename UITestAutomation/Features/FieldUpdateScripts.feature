@@ -5,7 +5,7 @@
 	 And   User should be able to see Dashboard in Application
 @FieldUpdateScript
 
-Scenario: Field Update Scripts
+Scenario: FieldUpdateScripts
 	Given User clicks the Profile Icon on the Dashboard page
 	And   User selects the Field Update Scripts option from the dropdown menu of ProfileIcon
 	And   User validates the following UI Controls on the Field Update Script Page
@@ -35,7 +35,7 @@ Scenario: Field Update Scripts
 	| Add Update to Script |
 
 
-Scenario: Download From Library Button
+Scenario: DownloadFromLibraryButton
    Given User clicks the Download From Library Button on the Field Update Script Page
    And   User validates the following UI Controls and fields on the Field Update Script Page
     | UI Control and Fields    |

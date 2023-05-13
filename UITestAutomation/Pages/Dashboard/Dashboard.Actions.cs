@@ -30,11 +30,21 @@ namespace UITestAutomation.Pages.Dashboard
             ClickOnWebElement(Dashboard_Button);
             WaitForWebElementDisplayed(Dashboard_Container);
         }
-
-        public void ClickSubmissions()
+        public void ClickDisputeIcon()
         {
-            WaitForWebElementDisplayed(ProfileIconElement);
-            ClickOnWebElement(Submission_Field);
+            ClickOnWebElement(DisputeIcon);
+            WaitForWebElementDisplayed(DisputeIcon);
         }
+        public void ClickLedgerIcon()
+        {
+            ClickOnWebElement(LedgerIcon);
+            WaitForWebElementDisplayed(LedgerIcon);
+        }
+        public void ClickFraudAlertsIcon()
+        {
+            ClickOnWebElement(FraudAlertsButton);
+            WaitForWebElementDisplayed(FraudAlertsButton);
+        }
+
     }
 }
