@@ -20,22 +20,22 @@ namespace UITestAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("BankHolidays")]
-    public partial class BankHolidaysFeature
+    [NUnit.Framework.DescriptionAttribute("MonthlyReport")]
+    public partial class MonthlyReportFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "BankHolidays.feature"
+#line 1 "MonthlyReport.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "BankHolidays", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "MonthlyReport", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -78,22 +78,22 @@ namespace UITestAutomation.Features
 #line 3
 #line hidden
 #line 4
- testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
- testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+  testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Bank Holidays")]
-        [NUnit.Framework.CategoryAttribute("Add")]
-        public virtual void BankHolidays()
+        [NUnit.Framework.DescriptionAttribute("Monthly Disputes Report")]
+        [NUnit.Framework.CategoryAttribute("MonthlyReport")]
+        public virtual void MonthlyDisputesReport()
         {
             string[] tagsOfScenario = new string[] {
-                    "Add"};
+                    "MonthlyReport"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bank Holidays", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Monthly Disputes Report", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -118,134 +118,162 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.Given("User clicks the Profile Icon on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.Given("User clicks the Monthly Report Icon from the dropdown of Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
+                TechTalk.SpecFlow.Table table65 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table65.AddRow(new string[] {
+                            "Reported On"});
+                table65.AddRow(new string[] {
+                            "Date Range"});
+                table65.AddRow(new string[] {
+                            "Workflows"});
+                table65.AddRow(new string[] {
+                            "Calendar Button"});
+                table65.AddRow(new string[] {
+                            "Triangle Option"});
+                table65.AddRow(new string[] {
+                            "Print Report"});
+                table65.AddRow(new string[] {
+                            "Summary"});
+                table65.AddRow(new string[] {
+                            "Charts"});
+                table65.AddRow(new string[] {
+                            "List"});
+                table65.AddRow(new string[] {
+                            "Export Disputes"});
 #line 10
- testRunner.And("User selects the Bank Holidays Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User validates the following fields on the Monthly Report Page", ((string)(null)), table65, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
-                            "UI Controls"});
-                table4.AddRow(new string[] {
-                            "Add"});
-                table4.AddRow(new string[] {
-                            "Delete"});
-                table4.AddRow(new string[] {
-                            "Edit"});
-                table4.AddRow(new string[] {
-                            "Action"});
-                table4.AddRow(new string[] {
-                            "Refresh"});
-#line 11
- testRunner.And("User validates the following UI Controls on Bank Holidays Page", ((string)(null)), table4, "And ");
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Summary")]
+        public virtual void Summary()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Summary", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 23
+this.ScenarioInitialize(scenarioInfo);
 #line hidden
-#line 20
- testRunner.And("User clicks the Add Bank Holidays Icon on Bank Holidays Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 3
+this.FeatureBackground();
 #line hidden
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+#line 24
+    testRunner.Given("User clicks the Summary button on the Monthly Report Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table66 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table5.AddRow(new string[] {
-                            "Holidays"});
-                table5.AddRow(new string[] {
+                table66.AddRow(new string[] {
+                            "Submission Count"});
+                table66.AddRow(new string[] {
+                            "Total Claimed"});
+                table66.AddRow(new string[] {
+                            "Total Disputed"});
+                table66.AddRow(new string[] {
+                            "Bank Loss"});
+                table66.AddRow(new string[] {
+                            "Merchant Loss"});
+                table66.AddRow(new string[] {
+                            "Consumer Loss"});
+                table66.AddRow(new string[] {
+                            "Recovered"});
+                table66.AddRow(new string[] {
+                            "Pending Provisional Credit"});
+                table66.AddRow(new string[] {
+                            "Export"});
+                table66.AddRow(new string[] {
                             "Close"});
-                table5.AddRow(new string[] {
-                            "Save"});
-#line 21
- testRunner.And("User validates following fields on Add Bank Holidays Dialog", ((string)(null)), table5, "And ");
+#line 25
+ testRunner.And("User validates the following fields on the Summary Page", ((string)(null)), table66, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("BankHolidaysEdit")]
-        [NUnit.Framework.CategoryAttribute("Edit")]
-        public virtual void BankHolidaysEdit()
+        [NUnit.Framework.DescriptionAttribute("List")]
+        public virtual void List()
         {
-            string[] tagsOfScenario = new string[] {
-                    "Edit"};
+            string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("BankHolidaysEdit", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 29
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 30
- testRunner.Given("User clicks on the Edit Bank Holidays button on the Fee Reimbursement Settings Pa" +
-                        "ge", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table6.AddRow(new string[] {
-                            "Holidays"});
-#line 31
- testRunner.And("User validates the following filed on Edit Bank Holidays Page", ((string)(null)), table6, "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("BankHolidaysDelete")]
-        [NUnit.Framework.CategoryAttribute("Delete")]
-        public virtual void BankHolidaysDelete()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "Delete"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("BankHolidaysDelete", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 36
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 37
- testRunner.Given("User clicks on the Delete Bank Holidays button on Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Controls"});
-                table7.AddRow(new string[] {
-                            "Yes"});
-                table7.AddRow(new string[] {
-                            "No"});
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("List", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 38
- testRunner.And("User validates the following Controls on Confirm Deletion Popup", ((string)(null)), table7, "And ");
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 3
+this.FeatureBackground();
+#line hidden
+#line 39
+    testRunner.Given("User clicks the List button on the Monthly Report Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table67 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table67.AddRow(new string[] {
+                            "Reported"});
+                table67.AddRow(new string[] {
+                            "Days"});
+                table67.AddRow(new string[] {
+                            "P/C"});
+                table67.AddRow(new string[] {
+                            "R/S"});
+                table67.AddRow(new string[] {
+                            "C/A"});
+                table67.AddRow(new string[] {
+                            "Status"});
+                table67.AddRow(new string[] {
+                            "Detail"});
+                table67.AddRow(new string[] {
+                            "Resolution"});
+                table67.AddRow(new string[] {
+                            "Amount"});
+                table67.AddRow(new string[] {
+                            "Type"});
+                table67.AddRow(new string[] {
+                            "Customer"});
+                table67.AddRow(new string[] {
+                            "Assigned To"});
+                table67.AddRow(new string[] {
+                            "Close"});
+#line 40
+ testRunner.And("User validates the following fields on the List Page", ((string)(null)), table67, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
