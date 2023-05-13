@@ -20,22 +20,22 @@ namespace UITestAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("ChangePassword")]
-    public partial class ChangePasswordFeature
+    [NUnit.Framework.DescriptionAttribute("Company Settings")]
+    public partial class CompanySettingsFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "ChangePassword.feature"
+#line 1 "Company Settings.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "ChangePassword", "A short summary of the feature", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Company Settings", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,26 +75,26 @@ namespace UITestAutomation.Features
         
         public virtual void FeatureBackground()
         {
-#line 4
+#line 3
 #line hidden
-#line 5
+#line 4
  testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 6
+#line 5
  testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Change Password")]
+        [NUnit.Framework.DescriptionAttribute("Company Settings")]
         [NUnit.Framework.CategoryAttribute("tag1")]
-        public virtual void ChangePassword()
+        public virtual void CompanySettings()
         {
             string[] tagsOfScenario = new string[] {
                     "tag1"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Change Password", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 8
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Company Settings", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -114,37 +114,53 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 4
+#line 3
 this.FeatureBackground();
 #line hidden
-#line 9
+#line 8
  testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 10
- testRunner.And("User selects the Change Password Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 9
+ testRunner.And("User selects the Company Settings Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Control"});
-                table12.AddRow(new string[] {
-                            "Change Password"});
-                table12.AddRow(new string[] {
-                            "Submit"});
-#line 11
- testRunner.And("User validates the following UI Controls on Change Password Page", ((string)(null)), table12, "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table13.AddRow(new string[] {
-                            "Current Password"});
-                table13.AddRow(new string[] {
-                            "New Password"});
-                table13.AddRow(new string[] {
-                            "Confirm Password"});
-#line 15
- testRunner.And("User validates the following Fields on Change Password Page", ((string)(null)), table13, "And ");
-#line hidden
-#line 20
- testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+                table14.AddRow(new string[] {
+                            "Provisional Credit Days"});
+                table14.AddRow(new string[] {
+                            "Audit Start"});
+                table14.AddRow(new string[] {
+                            "Audit End"});
+                table14.AddRow(new string[] {
+                            "Daily GL Cut-Off Time"});
+                table14.AddRow(new string[] {
+                            "Post On Saturdays"});
+                table14.AddRow(new string[] {
+                            "Post 7 Days a Week"});
+                table14.AddRow(new string[] {
+                            "Statement Date"});
+                table14.AddRow(new string[] {
+                            "Use Last Business Date"});
+                table14.AddRow(new string[] {
+                            "Customer Create/Update Settings"});
+                table14.AddRow(new string[] {
+                            "Hide Address2"});
+                table14.AddRow(new string[] {
+                            "Hide Address3"});
+                table14.AddRow(new string[] {
+                            "Hide Address4"});
+                table14.AddRow(new string[] {
+                            "Hide City"});
+                table14.AddRow(new string[] {
+                            "Hide State"});
+                table14.AddRow(new string[] {
+                            "Hide Zip"});
+                table14.AddRow(new string[] {
+                            "Enable Task"});
+                table14.AddRow(new string[] {
+                            "Display Task Configuration and Sections"});
+#line 10
+ testRunner.And("User validates the following UI Controls on Company Settings Page", ((string)(null)), table14, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

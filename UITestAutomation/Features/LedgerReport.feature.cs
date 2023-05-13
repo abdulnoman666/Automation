@@ -120,22 +120,22 @@ this.FeatureBackground();
 #line 10
  testRunner.Given("User clicks the Ledger Report button from the dropdown of Ledger Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table61 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table60 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table61.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Date Range"});
-                table61.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Calendar Button"});
-                table61.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Triangle Button"});
-                table61.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Print Report"});
-                table61.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Ledger Entries"});
-                table61.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Export Entries"});
 #line 11
- testRunner.And("User validates the following fields on the Ledger Report Page", ((string)(null)), table61, "And ");
+ testRunner.And("User validates the following fields on the Ledger Report Page", ((string)(null)), table60, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -174,27 +174,27 @@ this.FeatureBackground();
 #line 21
  testRunner.Given("User clicks the Ledger Entries button on the Ledger Report Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table62 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table61 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table62.AddRow(new string[] {
+                table61.AddRow(new string[] {
                             "Date"});
-                table62.AddRow(new string[] {
+                table61.AddRow(new string[] {
                             "Account"});
-                table62.AddRow(new string[] {
+                table61.AddRow(new string[] {
                             "Customer"});
-                table62.AddRow(new string[] {
+                table61.AddRow(new string[] {
                             "Amount"});
-                table62.AddRow(new string[] {
+                table61.AddRow(new string[] {
                             "Type"});
-                table62.AddRow(new string[] {
+                table61.AddRow(new string[] {
                             "Tran Code"});
-                table62.AddRow(new string[] {
+                table61.AddRow(new string[] {
                             "Description"});
-                table62.AddRow(new string[] {
+                table61.AddRow(new string[] {
                             "Close"});
 #line 22
  testRunner.And("User validates the following fields on the Ledger Entries Page of Ledger Report P" +
-                        "age", ((string)(null)), table62, "And ");
+                        "age", ((string)(null)), table61, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

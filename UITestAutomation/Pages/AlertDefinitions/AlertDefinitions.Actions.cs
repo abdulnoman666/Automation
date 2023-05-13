@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UITestAutomation.Pages.AlertDefinitions
+namespace UITestAutomation
 {
     internal partial class AlertDefinitions : Selenium_Methods
     {

@@ -124,24 +124,24 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("User selects the Fee Selection Settings option from the drop down menu of the Pro" +
                         "fileIcon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Add Fee Selection"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Edit Fee Selection"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Delete Fee Selection"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Refresh"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Actions"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "ID"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Fee Selection Reference"});
 #line 11
- testRunner.And("User validates the following UI Controls on the Fee Selection Settings Page", ((string)(null)), table44, "And ");
+ testRunner.And("User validates the following UI Controls on the Fee Selection Settings Page", ((string)(null)), table43, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -180,30 +180,30 @@ this.ScenarioInitialize(scenarioInfo);
 #line 22
     testRunner.Given("User clicks the Add Fee Selection Icon on the Fee Selection Settings Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table45 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Fee Selection Reference"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Copy Transactions from Parent Submission"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Create Case for Interest Refund"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Search for Transactions using Parameters below"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Transaction Codes"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Search from Dates"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Search through Today"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Number of Days"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Save"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Close"});
 #line 23
- testRunner.And("User validates the following fields on the Add Fee Selection Page", ((string)(null)), table45, "And ");
+ testRunner.And("User validates the following fields on the Add Fee Selection Page", ((string)(null)), table44, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

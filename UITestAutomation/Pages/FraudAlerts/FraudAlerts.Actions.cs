@@ -2,11 +2,11 @@
 {
     internal partial class FraudAlerts
     {
-        public void ClickFraudAlertsButton()
+       /* public void ClickFraudAlertsButton()
         {
             WaitForWebElementDisplayed(FraudAlertsButton);
             ClickOnWebElement(FraudAlertsButton);
-        }
+        }*/
         public void ClickUploadAlertsFileButton()
         {
             ClickOnWebElement(UploadAlertFileBtn);
@@ -19,7 +19,7 @@
         }
         public void ClickSearchSetDateRangeButton()
         {
-            WaitForWebElementDisplayed(SearchSetDateRangeBtn;
+            WaitForWebElementDisplayed(SearchSetDateRangeBtn);
             ClickOnWebElement(SearchSetDateRangeBtn);
         }
         public void ClickShowSubmissionPageButton()

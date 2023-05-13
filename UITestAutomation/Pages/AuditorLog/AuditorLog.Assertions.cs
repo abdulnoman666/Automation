@@ -1,4 +1,4 @@
-﻿namespace UITestAutomation.Pages.AuditorLog
+﻿namespace UITestAutomation
 {
     internal partial class AuditorLog: Selenium_Methods
     {

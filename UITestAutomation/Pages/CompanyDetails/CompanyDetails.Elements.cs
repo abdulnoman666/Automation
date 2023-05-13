@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-namespace UITestAutomation.Pages.CompanyDetails
+namespace UITestAutomation
 {
     internal partial class CompanyDetails
     {

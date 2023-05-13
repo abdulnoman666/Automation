@@ -123,30 +123,30 @@ this.FeatureBackground();
 #line 10
  testRunner.And("User clicks the Ledger Batches Icon from the dropdown of Ledger", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table59 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table58 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table59.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Date Range"});
-                table59.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Calendar Button"});
-                table59.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Triangle Button"});
-                table59.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Action"});
-                table59.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "ID"});
-                table59.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Process"});
-                table59.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Created"});
-                table59.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Print Report"});
-                table59.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Ledger Entries"});
-                table59.AddRow(new string[] {
+                table58.AddRow(new string[] {
                             "Export Entries"});
 #line 11
- testRunner.And("User validates the following fields on the Ledger Batches Page", ((string)(null)), table59, "And ");
+ testRunner.And("User validates the following fields on the Ledger Batches Page", ((string)(null)), table58, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -185,26 +185,26 @@ this.FeatureBackground();
 #line 26
  testRunner.Given("User clicks the Ledger Entries button on the Ledger Batches Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table60 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table59 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table60.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Date"});
-                table60.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Account"});
-                table60.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Customer"});
-                table60.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Amount"});
-                table60.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Type"});
-                table60.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Tran Code"});
-                table60.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Description"});
-                table60.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Close"});
 #line 27
- testRunner.And("User validates the following fields on the Ledger Entries Page", ((string)(null)), table60, "And ");
+ testRunner.And("User validates the following fields on the Ledger Entries Page", ((string)(null)), table59, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

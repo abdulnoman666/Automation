@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UITestAutomation.Pages.BankHoliday
+namespace UITestAutomation
 {
     internal partial class BankHolidays
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace UITestAutomation.Pages.Activity_History
+namespace UITestAutomation
 {
     internal partial class ActivityHistory
     {

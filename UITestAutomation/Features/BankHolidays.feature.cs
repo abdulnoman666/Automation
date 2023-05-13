@@ -20,22 +20,22 @@ namespace UITestAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("QuestionnaireDependencySetup")]
-    public partial class QuestionnaireDependencySetupFeature
+    [NUnit.Framework.DescriptionAttribute("BankHolidays")]
+    public partial class BankHolidaysFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "QuestionnaireDependencySetup.feature"
+#line 1 "BankHolidays.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "QuestionnaireDependencySetup", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "BankHolidays", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -86,14 +86,14 @@ namespace UITestAutomation.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add Questionnaire Dependency Setup")]
+        [NUnit.Framework.DescriptionAttribute("Bank Holidays")]
         [NUnit.Framework.CategoryAttribute("Add")]
-        public virtual void AddQuestionnaireDependencySetup()
+        public virtual void BankHolidays()
         {
             string[] tagsOfScenario = new string[] {
                     "Add"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Questionnaire Dependency Setup", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bank Holidays", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -118,52 +118,54 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.Given("User clicks the Profile Icon on the dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the Profile Icon on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
- testRunner.And("User Selects the Questionnaire Dependency Setups from the dropdown menu of the Pa" +
-                        "ge", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User selects the Bank Holidays Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table68 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table68.AddRow(new string[] {
+                table5.AddRow(new string[] {
                             "Add"});
-                table68.AddRow(new string[] {
+                table5.AddRow(new string[] {
                             "Delete"});
-                table68.AddRow(new string[] {
+                table5.AddRow(new string[] {
                             "Edit"});
-                table68.AddRow(new string[] {
-                            "Copy Form"});
-                table68.AddRow(new string[] {
-                            "Condition Search"});
+                table5.AddRow(new string[] {
+                            "Action"});
+                table5.AddRow(new string[] {
+                            "Refresh"});
 #line 11
- testRunner.And("User validates following UI controls on Questionnaire Dependency Setup Page", ((string)(null)), table68, "And ");
+ testRunner.And("User validates the following UI Controls on Bank Holidays Page", ((string)(null)), table5, "And ");
 #line hidden
-#line 19
- testRunner.And("User clicks the Add Questionnaire Dependency Setup Icon on Questionnaire Dependen" +
-                        "cy Setup Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table69 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Field"});
-                table69.AddRow(new string[] {
-                            "Workflow Name"});
 #line 20
- testRunner.And("User validates following fields on Add Questionnaire Dependency Setup", ((string)(null)), table69, "And ");
+ testRunner.And("User clicks the Add Bank Holidays Icon on Bank Holidays Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table6.AddRow(new string[] {
+                            "Holidays"});
+                table6.AddRow(new string[] {
+                            "Close"});
+                table6.AddRow(new string[] {
+                            "Save"});
+#line 21
+ testRunner.And("User validates following fields on Add Bank Holidays Dialog", ((string)(null)), table6, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit Questionnaire Dependency Setup")]
+        [NUnit.Framework.DescriptionAttribute("BankHolidaysEdit")]
         [NUnit.Framework.CategoryAttribute("Edit")]
-        public virtual void EditQuestionnaireDependencySetup()
+        public virtual void BankHolidaysEdit()
         {
             string[] tagsOfScenario = new string[] {
                     "Edit"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit Questionnaire Dependency Setup", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 25
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("BankHolidaysEdit", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 29
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -186,31 +188,31 @@ this.ScenarioInitialize(scenarioInfo);
 #line 3
 this.FeatureBackground();
 #line hidden
-#line 26
- testRunner.Given("User clicks on the Edit Questionnaire Dependency Setup button on the Questionnair" +
-                        "e Dependency Setup Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 30
+ testRunner.Given("User clicks on the Edit Bank Holidays button on the Fee Reimbursement Settings Pa" +
+                        "ge", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table70 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Field"});
-                table70.AddRow(new string[] {
-                            "Workflow Name"});
-#line 27
- testRunner.And("User validates the following fileds on Edit Questionnaire Dependency Setup Page", ((string)(null)), table70, "And ");
+                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table7.AddRow(new string[] {
+                            "Holidays"});
+#line 31
+ testRunner.And("User validates the following filed on Edit Bank Holidays Page", ((string)(null)), table7, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Delete Questionnaire Dependency Setup")]
+        [NUnit.Framework.DescriptionAttribute("BankHolidaysDelete")]
         [NUnit.Framework.CategoryAttribute("Delete")]
-        public virtual void DeleteQuestionnaireDependencySetup()
+        public virtual void BankHolidaysDelete()
         {
             string[] tagsOfScenario = new string[] {
                     "Delete"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete Questionnaire Dependency Setup", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 32
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("BankHolidaysDelete", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 36
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -233,17 +235,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 3
 this.FeatureBackground();
 #line hidden
-#line 33
- testRunner.Given("User clicks on the Delete Questionnaire Dependency Setup button on Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 37
+ testRunner.Given("User clicks on the Delete Bank Holidays button on Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table71 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
                             "Controls"});
-                table71.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "Yes"});
-                table71.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "No"});
-#line 34
- testRunner.And("User validates the following Controls on Confirm Deletion Popup", ((string)(null)), table71, "And ");
+#line 38
+ testRunner.And("User validates the following Controls on Confirm Deletion Popup", ((string)(null)), table8, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

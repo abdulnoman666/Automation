@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UITestAutomation.Pages.Company_Settngs
+namespace UITestAutomation
 {
     internal partial class CompanySettings : Selenium_Methods
     {

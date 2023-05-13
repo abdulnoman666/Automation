@@ -120,38 +120,38 @@ this.FeatureBackground();
 #line 9
     testRunner.Given("User clicks the Fraud Alerts Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Upload Alert File"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Enter Alerts Manually"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Search and set date range"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Show Submission"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Link Card Number to Customer Record"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Delete CAMS Alert"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Refresh"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Action"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Card Number"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Uploaded On"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Case Number"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Entity"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Email / Website"});
-                table49.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "Status"});
 #line 10
- testRunner.And("User validates the following UI Controls on the Fraud Alerts Page", ((string)(null)), table49, "And ");
+ testRunner.And("User validates the following UI Controls on the Fraud Alerts Page", ((string)(null)), table48, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -190,16 +190,16 @@ this.FeatureBackground();
 #line 28
     testRunner.Given("User clicks the Upload Alerts File button on Fraud Alerts page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table50.AddRow(new string[] {
+                table49.AddRow(new string[] {
                             "Default Case Number"});
-                table50.AddRow(new string[] {
+                table49.AddRow(new string[] {
                             "Select and Upload File"});
-                table50.AddRow(new string[] {
+                table49.AddRow(new string[] {
                             "Close"});
 #line 29
- testRunner.And("User validates the following UI Controls on the Upload Alerts File Page", ((string)(null)), table50, "And ");
+ testRunner.And("User validates the following UI Controls on the Upload Alerts File Page", ((string)(null)), table49, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -236,20 +236,20 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 36
-    testRunner.Given("User clicks the Upload Alerts File button on Fraud Alerts page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.Given("User clicks the Enter Alerts Manually button on Fraud Alerts page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table51.AddRow(new string[] {
+                table50.AddRow(new string[] {
                             "Default Case Number"});
-                table51.AddRow(new string[] {
+                table50.AddRow(new string[] {
                             "Enter CAMs Numbers"});
-                table51.AddRow(new string[] {
+                table50.AddRow(new string[] {
                             "Save"});
-                table51.AddRow(new string[] {
+                table50.AddRow(new string[] {
                             "Close"});
 #line 37
- testRunner.And("User validates the following UI Controls on the Upload Alerts File Page", ((string)(null)), table51, "And ");
+ testRunner.And("User validates the following UI Controls on the Enter Alerts Manually Page", ((string)(null)), table50, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -288,18 +288,18 @@ this.FeatureBackground();
 #line 45
     testRunner.Given("User clicks the Search and set date range button on Fraud Alerts page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table52 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table52.AddRow(new string[] {
+                table51.AddRow(new string[] {
                             "Start Date"});
-                table52.AddRow(new string[] {
+                table51.AddRow(new string[] {
                             "End Date"});
-                table52.AddRow(new string[] {
+                table51.AddRow(new string[] {
                             "Status"});
-                table52.AddRow(new string[] {
+                table51.AddRow(new string[] {
                             "Search"});
 #line 46
- testRunner.And("User validates the following UI Controls on the Search and set date range Page", ((string)(null)), table52, "And ");
+ testRunner.And("User validates the following UI Controls on the Search and set date range Page", ((string)(null)), table51, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -338,22 +338,22 @@ this.FeatureBackground();
 #line 54
     testRunner.Given("User clicks the Show Submissione button on Fraud Alerts page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table53 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table52 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table53.AddRow(new string[] {
+                table52.AddRow(new string[] {
                             "Reported On"});
-                table53.AddRow(new string[] {
+                table52.AddRow(new string[] {
                             "Customer"});
-                table53.AddRow(new string[] {
+                table52.AddRow(new string[] {
                             "Case #"});
-                table53.AddRow(new string[] {
+                table52.AddRow(new string[] {
                             "Third Party Breach Source"});
-                table53.AddRow(new string[] {
+                table52.AddRow(new string[] {
                             "Save"});
-                table53.AddRow(new string[] {
+                table52.AddRow(new string[] {
                             "Close"});
 #line 55
- testRunner.And("User validates the following UI Controls on the Show Submission Page", ((string)(null)), table53, "And ");
+ testRunner.And("User validates the following UI Controls on the Show Submission Page", ((string)(null)), table52, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

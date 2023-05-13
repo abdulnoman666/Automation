@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace UITestAutomation.Pages.Brands.Brands
+namespace UITestAutomation
 {
     internal partial class Brands
     {
