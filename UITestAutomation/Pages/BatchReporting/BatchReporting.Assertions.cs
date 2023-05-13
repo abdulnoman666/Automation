@@ -1,4 +1,4 @@
-﻿namespace UITestAutomation.Pages.BatchReporting
+﻿namespace UITestAutomation  
 {
     internal partial class BatchReporting
     {

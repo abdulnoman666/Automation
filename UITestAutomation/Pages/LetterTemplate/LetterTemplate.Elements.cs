@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UITestAutomation.Pages.LetterTemplate
+namespace UITestAutomation
 {
-    internal class LetterTemplate
+    internal partial class LetterTemplate
     {
     }
 }

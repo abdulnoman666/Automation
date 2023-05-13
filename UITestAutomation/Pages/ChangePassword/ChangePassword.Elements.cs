@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace UITestAutomation.Pages.ChangePassword
+namespace UITestAutomation
 {
     internal partial class ChangePassword
     {

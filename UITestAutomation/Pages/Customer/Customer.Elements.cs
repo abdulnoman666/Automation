@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace UITestAutomation.Pages.Customer
+namespace UITestAutomation
 {
     internal partial class Customer
     {

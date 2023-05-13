@@ -123,29 +123,29 @@ this.FeatureBackground();
 #line 10
  testRunner.And("User selects the Cycle Code Maps Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table26.AddRow(new string[] {
+                table28.AddRow(new string[] {
                             "Add Cycle Code Map"});
-                table26.AddRow(new string[] {
+                table28.AddRow(new string[] {
                             "Delete Cycle Code Map"});
-                table26.AddRow(new string[] {
+                table28.AddRow(new string[] {
                             "Edit Cycle Code Map"});
 #line 11
- testRunner.And("User validates the following UI Controls on Cycle Code Maps Page", ((string)(null)), table26, "And ");
+ testRunner.And("User validates the following UI Controls on Cycle Code Maps Page", ((string)(null)), table28, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table27.AddRow(new string[] {
+                table29.AddRow(new string[] {
                             "Cycle Code"});
-                table27.AddRow(new string[] {
+                table29.AddRow(new string[] {
                             "Mapped Value"});
-                table27.AddRow(new string[] {
+                table29.AddRow(new string[] {
                             "Save"});
-                table27.AddRow(new string[] {
+                table29.AddRow(new string[] {
                             "Close"});
 #line 17
- testRunner.And("User validates the following Fields on Add Cycle Code Maps Popup", ((string)(null)), table27, "And ");
+ testRunner.And("User validates the following Fields on Add Cycle Code Maps Popup", ((string)(null)), table29, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

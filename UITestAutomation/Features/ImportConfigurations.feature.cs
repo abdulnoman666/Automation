@@ -124,46 +124,46 @@ this.FeatureBackground();
  testRunner.And("User selects the Import Configurations option from the drop down menu of the Prof" +
                         "ileIcon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table57 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table56 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table57.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "Import Configurations"});
-                table57.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "Add Configuration"});
-                table57.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "Edit Configuration"});
-                table57.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "Refresh"});
-                table57.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "Action"});
-                table57.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "ID"});
-                table57.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "Name"});
 #line 12
- testRunner.And("User validates the following UI Controls on the Import Configurations Page", ((string)(null)), table57, "And ");
+ testRunner.And("User validates the following UI Controls on the Import Configurations Page", ((string)(null)), table56, "And ");
 #line hidden
 #line 23
  testRunner.And("User clicks the Add Configuration Button on the Import Configurations Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table58 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table57 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table58.AddRow(new string[] {
+                table57.AddRow(new string[] {
                             "Cross Button"});
-                table58.AddRow(new string[] {
+                table57.AddRow(new string[] {
                             "Name"});
-                table58.AddRow(new string[] {
+                table57.AddRow(new string[] {
                             "Delimiter"});
-                table58.AddRow(new string[] {
+                table57.AddRow(new string[] {
                             "Field List"});
-                table58.AddRow(new string[] {
+                table57.AddRow(new string[] {
                             "Checkbox"});
-                table58.AddRow(new string[] {
+                table57.AddRow(new string[] {
                             "Save"});
-                table58.AddRow(new string[] {
+                table57.AddRow(new string[] {
                             "Close"});
 #line 24
- testRunner.And("User validates the following fields on the Add Import Configurations Page", ((string)(null)), table58, "And ");
+ testRunner.And("User validates the following fields on the Add Import Configurations Page", ((string)(null)), table57, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -123,29 +123,29 @@ this.FeatureBackground();
 #line 10
  testRunner.And("User selects the Error Logs Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table39 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table28.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Search and set date Range"});
-                table28.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Created On"});
-                table28.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Error Message"});
-                table28.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "URL"});
 #line 11
- testRunner.And("User validates the following UI Controls on Error Logs Page", ((string)(null)), table28, "And ");
+ testRunner.And("User validates the following UI Controls on Error Logs Page", ((string)(null)), table39, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table40 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table29.AddRow(new string[] {
+                table40.AddRow(new string[] {
                             "Start Date"});
-                table29.AddRow(new string[] {
+                table40.AddRow(new string[] {
                             "End Date"});
-                table29.AddRow(new string[] {
+                table40.AddRow(new string[] {
                             "Close"});
 #line 18
- testRunner.And("User validates the following Fields on Search Popup on Error Logs Page", ((string)(null)), table29, "And ");
+ testRunner.And("User validates the following Fields on Search Popup on Error Logs Page", ((string)(null)), table40, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

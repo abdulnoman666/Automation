@@ -120,26 +120,26 @@ this.FeatureBackground();
 #line 9
   testRunner.Given("User clicks the Daily Ledger Icon from the dropdown of Ledger", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table29.AddRow(new string[] {
+                table30.AddRow(new string[] {
                             "Refresh Ledger"});
-                table29.AddRow(new string[] {
+                table30.AddRow(new string[] {
                             "Date"});
-                table29.AddRow(new string[] {
+                table30.AddRow(new string[] {
                             "Account"});
-                table29.AddRow(new string[] {
+                table30.AddRow(new string[] {
                             "Customer"});
-                table29.AddRow(new string[] {
+                table30.AddRow(new string[] {
                             "Amount"});
-                table29.AddRow(new string[] {
+                table30.AddRow(new string[] {
                             "Type"});
-                table29.AddRow(new string[] {
+                table30.AddRow(new string[] {
                             "Tran Code"});
-                table29.AddRow(new string[] {
+                table30.AddRow(new string[] {
                             "Description"});
 #line 10
- testRunner.And("User validates the following fields on the Daily Ledger Page", ((string)(null)), table29, "And ");
+ testRunner.And("User validates the following fields on the Daily Ledger Page", ((string)(null)), table30, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

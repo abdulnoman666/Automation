@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UITestAutomation.Pages.Company_Settngs
+namespace UITestAutomation
 {
     internal partial class CompanySettings
     {
@@ -19,7 +19,7 @@ namespace UITestAutomation.Pages.Company_Settngs
         By Post7DaysaWeek_CheckBox = By.CssSelector("div:nth-of-type(5) > label:nth-of-type(2) > .checkmark");
         By StatementDate_Field = By.CssSelector("div:nth-of-type(6) > .container-ch");
         By UseLastBusinessDate_Field = By.CssSelector("div > div:nth-of-type(6)");
-        By CustomerCreate/UpdateSettings_Field = By.CssSelector("div:nth-of-type(7) > label:nth-of-type(1)");
+        By UpdateSettings_Field = By.CssSelector("div:nth-of-type(7) > label:nth-of-type(1)");
         By HideAddress2_CheckBox = By.CssSelector("div:nth-of-type(7) > label:nth-of-type(2) > .checkmark");
         By HideAddress3_CheckBox = By.CssSelector("label:nth-of-type(3) > .checkmark");
         By HideAddress4_CheckBox = By.CssSelector("label:nth-of-type(4) > .checkmark");

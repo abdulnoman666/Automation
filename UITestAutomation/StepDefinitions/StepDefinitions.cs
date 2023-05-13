@@ -1,8 +1,3 @@
-using UITestAutomation.Pages.BatchReporting;
-using UITestAutomation.Pages.Brands.Brands;
-using UITestAutomation.Pages.ChangePassword;
-using UITestAutomation.Pages.CompanyDetails;
-using UITestAutomation.Pages.Customer;
 using UITestAutomation.Pages.DailyLedger;
 using UITestAutomation.Pages.Dashboard;
 using UITestAutomation.Pages.Disputes;

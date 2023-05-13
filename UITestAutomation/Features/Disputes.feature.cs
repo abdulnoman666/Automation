@@ -123,66 +123,66 @@ this.ScenarioInitialize(scenarioInfo);
 #line 10
  testRunner.And("User selects the Disputes option from the drop down menu of the Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Alerts"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Search and set date range"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Select User or Search in list..."});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Refresh Submissions"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Show Closed Disputes"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "1"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "2"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "3"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "4"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "5"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "6"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "7"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Links"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Reported"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Days"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Status"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Detail"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Resolution"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Amount"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Recovered"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Customer"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Assigned To"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Status Field"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Resolution Field"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Amount Field"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Customer Field"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "Edit Dispute"});
-                table30.AddRow(new string[] {
+                table31.AddRow(new string[] {
                             "View Original Submission"});
 #line 11
- testRunner.And("User validates the following UI Controls on the Disputes Page", ((string)(null)), table30, "And ");
+ testRunner.And("User validates the following UI Controls on the Disputes Page", ((string)(null)), table31, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -221,26 +221,26 @@ this.ScenarioInitialize(scenarioInfo);
 #line 43
     testRunner.Given("User clicks the Alerts Button on the Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table31.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Customer"});
-                table31.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Submission ID"});
-                table31.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Status"});
-                table31.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Source"});
-                table31.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Alert"});
-                table31.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Type"});
-                table31.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Deadline"});
-                table31.AddRow(new string[] {
+                table32.AddRow(new string[] {
                             "Close"});
 #line 44
- testRunner.And("User validates the following fields on the Alerts Page", ((string)(null)), table31, "And ");
+ testRunner.And("User validates the following fields on the Alerts Page", ((string)(null)), table32, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -279,28 +279,28 @@ this.ScenarioInitialize(scenarioInfo);
 #line 56
     testRunner.Given("User clicks the Search Button on the Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table32.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "Calendar"});
-                table32.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "Search"});
-                table32.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "Reset"});
-                table32.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "Status"});
-                table32.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "Full Card Number"});
-                table32.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "Full Account Number"});
-                table32.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "* Search"});
-                table32.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "Reset 2"});
-                table32.AddRow(new string[] {
+                table33.AddRow(new string[] {
                             "Close"});
 #line 57
- testRunner.And("User validates the following fields on the Search Page", ((string)(null)), table32, "And ");
+ testRunner.And("User validates the following fields on the Search Page", ((string)(null)), table33, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -339,28 +339,28 @@ this.ScenarioInitialize(scenarioInfo);
 #line 70
     testRunner.Given("User clicks the Show Closed Disputes Button on the Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table33.AddRow(new string[] {
+                table34.AddRow(new string[] {
                             "<<"});
-                table33.AddRow(new string[] {
+                table34.AddRow(new string[] {
                             "8"});
-                table33.AddRow(new string[] {
+                table34.AddRow(new string[] {
                             "9"});
-                table33.AddRow(new string[] {
+                table34.AddRow(new string[] {
                             "10"});
-                table33.AddRow(new string[] {
+                table34.AddRow(new string[] {
                             "11"});
-                table33.AddRow(new string[] {
+                table34.AddRow(new string[] {
                             "12"});
-                table33.AddRow(new string[] {
+                table34.AddRow(new string[] {
                             ">>"});
-                table33.AddRow(new string[] {
+                table34.AddRow(new string[] {
                             "Enter Page"});
-                table33.AddRow(new string[] {
+                table34.AddRow(new string[] {
                             "Go"});
 #line 71
- testRunner.And("User validates the following fields on the Show Closed Disputes Page", ((string)(null)), table33, "And ");
+ testRunner.And("User validates the following fields on the Show Closed Disputes Page", ((string)(null)), table34, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -399,90 +399,90 @@ this.ScenarioInitialize(scenarioInfo);
 #line 84
     testRunner.Given("User clicks the Edit Disputes Button on the Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls and Fields"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Research Status"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Documents"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "History"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Refresh"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Submission Disputes"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Save"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "View Submission"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Resolution Button"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Print Letter"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Dispute Details"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "POS"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Foreign Transaction"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Research"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Detail"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Closed"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Close Date"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Pre-Arbitration"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Final Resolution Date"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Notes"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Enter Notes"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Customer Provisional Credit"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Transaction Amount"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Provisional Credit Amount"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Consumer Liability"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Denial Reason"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "PC Reversal Date"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Representment"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Settlement / Representment Date"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Merchant Chargeback"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Chargeback Date"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Merchant Response Date"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Pre-Arbitration Details"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Date Requested"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Resolution"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Date Research Ended"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Date Resolution Letter Sent"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Processor Chargeback"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Amount Recovered"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Provisional Date"});
-                table34.AddRow(new string[] {
+                table35.AddRow(new string[] {
                             "Final Date"});
 #line 85
- testRunner.And("User validates the following UI Controls and fields on the Edit Disputes Page", ((string)(null)), table34, "And ");
+ testRunner.And("User validates the following UI Controls and fields on the Edit Disputes Page", ((string)(null)), table35, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -521,12 +521,12 @@ this.ScenarioInitialize(scenarioInfo);
 #line 129
     testRunner.Given("User clicks the Documents button on the Edit Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table36 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table35.AddRow(new string[] {
+                table36.AddRow(new string[] {
                             "Document List"});
 #line 130
- testRunner.And("User validates the following fields on the Documents Page", ((string)(null)), table35, "And ");
+ testRunner.And("User validates the following fields on the Documents Page", ((string)(null)), table36, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -565,18 +565,18 @@ this.ScenarioInitialize(scenarioInfo);
 #line 135
     testRunner.Given("User clicks the History button on the Edit Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table36 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table37 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table36.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Date"});
-                table36.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Description"});
-                table36.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "By"});
-                table36.AddRow(new string[] {
+                table37.AddRow(new string[] {
                             "Type"});
 #line 136
- testRunner.And("User validates the following fields on the History Page", ((string)(null)), table36, "And ");
+ testRunner.And("User validates the following fields on the History Page", ((string)(null)), table37, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -615,50 +615,50 @@ this.ScenarioInitialize(scenarioInfo);
 #line 144
     testRunner.Given("User clicks the Resolution Button on the Edit Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table37 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table38 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Claim Result"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Pending"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Claim Approved"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Claim Declined"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Merchant Credit"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Loss Status"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Not Selected"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Bank Loss"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Merchant Loss"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Consumer Loss"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Amount Recovered"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Provisional Date"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Final Date"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "PC Reversal Date"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Credit Customer Account For"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Debit Customer Account For"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Merchant Credited Customer For"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Resolve and Post to GL"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Close"});
-                table37.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Save"});
 #line 145
- testRunner.And("User validates the following fields on the Resolution Page", ((string)(null)), table37, "And ");
+ testRunner.And("User validates the following fields on the Resolution Page", ((string)(null)), table38, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

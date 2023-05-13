@@ -120,38 +120,38 @@ this.FeatureBackground();
 #line 9
     testRunner.Given("User clicks the Provisional Credit Log Icon from the dropdown of Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table68 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table67 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Refresh Submissions"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Links"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Reported"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "P/C Date"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "P/C Amount"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "C/L Amount"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Denial Reason"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Status"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Resolution"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Amount"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Type"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Customer"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Edit Dispute Research"});
-                table68.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "View Original Submission"});
 #line 10
- testRunner.And("User validates the following fields on the Provisional Credit Log Page", ((string)(null)), table68, "And ");
+ testRunner.And("User validates the following fields on the Provisional Credit Log Page", ((string)(null)), table67, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
