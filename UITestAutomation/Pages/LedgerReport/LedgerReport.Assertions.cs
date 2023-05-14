@@ -1,4 +1,4 @@
-﻿namespace UITestAutomation.Pages.LedgerReport
+﻿namespace UITestAutomation
 {
     internal partial class LedgerReport: Selenium_Methods
     {

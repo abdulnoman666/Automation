@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-namespace UITestAutomation.Pages.FeeSelectionSettings
+namespace UITestAutomation
 {
     internal partial class FeeSelectionSettings
     {

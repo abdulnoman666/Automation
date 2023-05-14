@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-namespace UITestAutomation.Pages.GLDefinitions
+namespace UITestAutomation
 {
     internal partial class GLDefinitions
     {

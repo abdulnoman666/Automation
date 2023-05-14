@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-namespace UITestAutomation.Pages.LedgerReport
+namespace UITestAutomation  
 {
     internal partial class LedgerReport
     {

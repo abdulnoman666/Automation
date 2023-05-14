@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace UITestAutomation.Pages.Reconciliation
+namespace UITestAutomation
 {
     internal partial class Reconciliation
     {

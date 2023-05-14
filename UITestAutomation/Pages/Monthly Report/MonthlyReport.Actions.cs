@@ -1,6 +1,6 @@
 ﻿
 
-namespace UITestAutomation.Pages.Monthly_Report
+namespace UITestAutomation
 {
     internal partial class MonthlyReport : Selenium_Methods
     {

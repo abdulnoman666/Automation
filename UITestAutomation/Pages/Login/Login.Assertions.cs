@@ -1,5 +1,5 @@
 ﻿
-namespace UITestAutomation.Pages.Login
+namespace UITestAutomation
 {
     internal partial class Login
     {

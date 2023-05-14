@@ -1,5 +1,5 @@
 ﻿
-namespace UITestAutomation.Pages.Submissions_With_Alerts
+namespace UITestAutomation
 {
     internal partial class SubmissionsWithAlerts : Selenium_Methods
     {

@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-namespace UITestAutomation.Pages.TransactionAlerts
+namespace UITestAutomation
 {
     internal partial class TransactionAlerts
     {

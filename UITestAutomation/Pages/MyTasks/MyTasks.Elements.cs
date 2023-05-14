@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace UITestAutomation.Pages.MyTasks
+namespace UITestAutomation
 {
     internal partial class MyTasks
     {

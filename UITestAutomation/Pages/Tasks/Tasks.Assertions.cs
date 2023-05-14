@@ -1,4 +1,4 @@
-﻿namespace UITestAutomation.Pages.Tasks
+﻿namespace UITestAutomation
 {
     internal partial class Tasks: Selenium_Methods
     {

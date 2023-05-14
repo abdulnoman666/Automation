@@ -1,5 +1,5 @@
 ﻿
-namespace UITestAutomation.Pages.TransactionProcess
+namespace UITestAutomation
 {
     internal partial class TransactionProcess
     {

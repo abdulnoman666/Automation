@@ -118,7 +118,7 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.Given("User clicks the Profile Icon on the dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
  testRunner.And("User Selects the Workflow Automations from the dropdown menu of the Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

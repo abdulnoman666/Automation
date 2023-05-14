@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace UITestAutomation.Pages.Submission_List
+namespace UITestAutomation
 {
     internal partial class SubmissionList
     {

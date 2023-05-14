@@ -1,5 +1,4 @@
-﻿namespace UITestAutomation.Pages.GLDefinitions
-{
+﻿namespace UITestAutomation { 
     internal partial class GLDefinitions
     {
         public void AssertUIControlsonGLDefinitionsPage(Table table)

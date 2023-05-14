@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-namespace UITestAutomation.Pages.FieldUpdateScripts
+namespace UITestAutomation
 {
     internal partial class FieldUpdateScripts
     {
