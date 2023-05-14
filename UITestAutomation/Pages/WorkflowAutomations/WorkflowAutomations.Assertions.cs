@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UITestAutomation.Pages.WorkflowAutomations
-{
+namespace UITestAutomation
     internal partial class WorkflowAutomations
     {
         public void AssertUIControlsOnWorkflowAutomationsPage(Table table)

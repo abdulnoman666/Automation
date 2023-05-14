@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UITestAutomation.Pages.FeeReimbursementSettings
+namespace UITestAutomation
 {
     internal partial class FeeReimbursementSettings
     {

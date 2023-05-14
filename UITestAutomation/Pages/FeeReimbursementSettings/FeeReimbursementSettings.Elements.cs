@@ -7,10 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace UITestAutomation.Pages.FeeReimbursementSettings
+namespace UITestAutomation
 {
     internal partial class FeeReimbursementSettings
     {
+        By FeeReimbursementsOption = By.LinkText("Fee Reimbursement Settings");
         By AddFeeReimbursementSettings_Button = By.CssSelector("button[title='Add Fee Reimbursement Setting']");
         By DeleteFeeReimbursementSettings_Button = By.CssSelector("tr:nth-of-type(1)  button[title='Delete Fee Reimbursement']");
         By EditFeeReimbursementSettings_Button = By.CssSelector("tr:nth-of-type(1)  button[title='Edit Fee Reimbursement']");

@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UITestAutomation.Pages.WorkflowAutomations
+namespace UITestAutomation
 {
     internal partial class WorkflowAutomations
     {
+        By WorkflowAutomationsOption = By.LinkText("Workflow Automations");
         By AddWorkflowAutomations_Button = By.CssSelector("button[title='Add Automation']");
         By DeleteWorkflowAutomations_Button = By.CssSelector("tr:nth-of-type(1) > th > button[title='Delete Automation']");
         By EditWorkflowAutomations_Button = By.CssSelector("tr:nth-of-type(1) > th > button[title='Edit Automation']");

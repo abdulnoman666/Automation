@@ -158,9 +158,49 @@ this.FeatureBackground();
                 TechTalk.SpecFlow.Table table63 = new TechTalk.SpecFlow.Table(new string[] {
                             "Field"});
                 table63.AddRow(new string[] {
+                            "Title"});
+                table63.AddRow(new string[] {
+                            "Description"});
+                table63.AddRow(new string[] {
+                            "Author"});
+                table63.AddRow(new string[] {
+                            "File name to save letter on printing"});
+                table63.AddRow(new string[] {
+                            "Subject line when sending letter via email"});
+                table63.AddRow(new string[] {
+                            "Table Name"});
+                table63.AddRow(new string[] {
                             "Reference"});
+                table63.AddRow(new string[] {
+                            "Workflows"});
+                table63.AddRow(new string[] {
+                            "SQL Command Name"});
+                table63.AddRow(new string[] {
+                            "Is input Form?"});
+                table63.AddRow(new string[] {
+                            "Is Consent notice?"});
+                table63.AddRow(new string[] {
+                            "Use Cut-Off print date?"});
+                table63.AddRow(new string[] {
+                            "Eligible for E-Signature?"});
+                table63.AddRow(new string[] {
+                            ""});
+                table63.AddRow(new string[] {
+                            ""});
+                table63.AddRow(new string[] {
+                            ""});
+                table63.AddRow(new string[] {
+                            ""});
+                table63.AddRow(new string[] {
+                            ""});
+                table63.AddRow(new string[] {
+                            ""});
+                table63.AddRow(new string[] {
+                            ""});
+                table63.AddRow(new string[] {
+                            ""});
 #line 27
- testRunner.And("User validates following fields on Add Letter Template Dialog", ((string)(null)), table63, "And ");
+ testRunner.And("User validates following fields on Letter info Dialog", ((string)(null)), table63, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
