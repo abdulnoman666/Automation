@@ -13,6 +13,5 @@ namespace UITestAutomation
             ClickOnWebElement(SearchandsetdateRange_Button);
         }
 
-        }
     }
 }

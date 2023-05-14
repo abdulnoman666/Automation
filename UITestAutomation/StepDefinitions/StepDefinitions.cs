@@ -865,7 +865,7 @@ namespace UITestAutomation
         [Given(@"User Selects the Workflow Automations from the dropdown menu of the Page")]
         public void GivenUserSelectsTheWorkflowAutomationsFromTheDropdownMenuOfThePage()
         {
-            automation.ClickWorkflowAutomation();
+            automation.ClickWorkflowAutomationsButton();
         }
 
         [Given(@"User validates following UI controls on WorkFlow Automations Page")]
@@ -877,7 +877,7 @@ namespace UITestAutomation
         [Given(@"User clicks the Add Workflow Automations Icon on Workflow Automations Page")]
         public void GivenUserClicksTheAddWorkflowAutomationsIconOnWorkflowAutomationsPage()
         {
-            automation.ClickAddWorkflowAutomations();
+            automation.ClickOnAddWorkflowAutomationsButton();
         }
 
         [Given(@"User validates following fields on Add Workflow Automations Dialog")]
