@@ -1,4 +1,4 @@
-﻿
+
 namespace UITestAutomation
 {
     internal partial class ErrorLogs
@@ -9,7 +9,7 @@ namespace UITestAutomation
             {
                 switch (item[0].Trim ())
                 {
-                    case "Search ans set date Range":
+                    case "Search and set date Range":
                         WaitForWebElementDisplayed(SearchandsetdateRange_Button);
                         FluentWaitForWebElement(SearchandsetdateRange_Button);
                         break;

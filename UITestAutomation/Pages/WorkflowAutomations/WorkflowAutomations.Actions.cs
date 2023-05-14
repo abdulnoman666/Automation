@@ -1,18 +1,18 @@
-﻿
+
 namespace UITestAutomation
 {
     internal partial class WorkflowAutomations : Selenium_Methods
     {
-        public void ClickWorkflowAutomation()
-        {
-            ClickTheWebElement(WorkflowAutomation_Icon);
-            WaitForWebElementDisplayed(ConditionSearch_Field);
-        }
 
-        public void ClickAddWorkflowAutomations()
+        public void ClickWorkflowAutomationsButton()
         {
-            ClickTheWebElement(AddWorkflowAutomations_Button);
-            WaitForWebElementDisplayed(Scope_Field);
+            WaitForWebElementDisplayed(WorkflowAutomationsOption);
+            ClickOnWebElement(WorkflowAutomationsOption);
+        }
+        public void ClickOnAddWorkflowAutomationsButton()
+        {
+            WaitForWebElementDisplayed(AddWorkflowAutomations_Button);
+            ClickOnWebElement(AddWorkflowAutomations_Button);
         }
     }
 }

@@ -4,10 +4,11 @@ namespace UITestAutomation
 {
     internal partial class CompanySettings
     {
+        By CompanySettingsOption = By.LinkText("Company Settings");
         By ProvisionalCreditDays_Field = By.CssSelector("input[name='pcDays']");
         By AuditStart_Field = By.CssSelector("md-datepicker[name='auditStart'] > .md-datepicker-input-container > .md-datepicker-input");
         By AuditEnd_Field = By.CssSelector("md-datepicker[name='auditEnd'] > .md-datepicker-input-container > .md-datepicker-input");
-            By DailyGLCutOffTime_Field = By.CssSelector("div > div:nth-of-type(4)");
+        By DailyGLCutOffTime_Field = By.CssSelector("div > div:nth-of-type(4)");
         By PostOnSaturdays_CheckBox = By.CssSelector("label:nth-of-type(1) > .checkmark");
         By Post7DaysaWeek_CheckBox = By.CssSelector("div:nth-of-type(5) > label:nth-of-type(2) > .checkmark");
         By StatementDate_Field = By.CssSelector("div:nth-of-type(6) > .container-ch");
@@ -22,9 +23,5 @@ namespace UITestAutomation
         By EnableTask_Field = By.CssSelector("div:nth-of-type(8) > label:nth-of-type(1)");
         By DisplayTaskConfigurationandSections_CheckBox = By.CssSelector("div:nth-of-type(8) > .container-ch > .checkmark");
         By Save_Button = By.CssSelector("[ng-click='savesettings\\(\\)']");
-
-
-
-
     }
 }

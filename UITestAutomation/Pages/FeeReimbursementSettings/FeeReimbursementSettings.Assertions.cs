@@ -1,4 +1,4 @@
-﻿
+
 namespace UITestAutomation
 {
     internal partial class FeeReimbursementSettings

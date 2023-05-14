@@ -1,7 +1,7 @@
-﻿
+
 namespace UITestAutomation
 {
-    internal partial class WorkflowAutomations
+  internal partial class WorkflowAutomations
     {
         public void AssertUIControlsOnWorkflowAutomationsPage(Table table)
         {

@@ -1,4 +1,3 @@
-﻿
 namespace UITestAutomation
 {
     internal partial class QuestionnaireDependencySetup
