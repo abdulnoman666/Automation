@@ -17,8 +17,5 @@ namespace UITestAutomation
         By Conditions_Field = By.CssSelector("[ng-model='newWorkflow\\.conditions']");
         By WorkflowRefrence_Field = By.CssSelector("[ng-model='newWorkflow\\.reference']");
         By Scope_Field = By.XPath("/html//div[@id='addWorkflow']//form[@name='configform']//select");
-
-
-
     }
 }

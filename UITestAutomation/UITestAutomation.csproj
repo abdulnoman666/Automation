@@ -34,4 +34,10 @@
     <PackageReference Include="System.Net.Imap4" Version="1.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
