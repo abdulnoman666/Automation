@@ -1,4 +1,4 @@
-﻿namespace UITestAutomation.Pages.ImportConfigurations
+﻿namespace UITestAutomation
 {
     internal partial class ImportConfigurations : Selenium_Methods
     {

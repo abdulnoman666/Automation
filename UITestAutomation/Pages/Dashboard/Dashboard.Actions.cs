@@ -1,5 +1,5 @@
 ﻿
-namespace UITestAutomation.Pages.Dashboard
+namespace UITestAutomation
 {
     internal partial class Dashboard : Selenium_Methods
     {
@@ -44,6 +44,11 @@ namespace UITestAutomation.Pages.Dashboard
         {
             ClickOnWebElement(FraudAlertsButton);
             WaitForWebElementDisplayed(FraudAlertsButton);
+        }
+
+        public void ClickSubmissions()
+        {
+            ClickOnWebElement(Submission_Icon);
         }
 
     }

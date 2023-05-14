@@ -1,4 +1,4 @@
-﻿namespace UITestAutomation.Pages.DailyLedger
+﻿namespace UITestAutomation
 {
     internal partial class DailyLedger: Selenium_Methods
     {

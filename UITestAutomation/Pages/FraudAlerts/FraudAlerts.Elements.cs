@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-namespace UITestAutomation.Pages.FraudAlerts
+namespace UITestAutomation
 {
     internal partial class FraudAlerts
     {

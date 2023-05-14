@@ -1,4 +1,4 @@
-﻿namespace UITestAutomation.Pages.Disputes
+﻿namespace UITestAutomation
 {
     internal partial class Disputes
     {

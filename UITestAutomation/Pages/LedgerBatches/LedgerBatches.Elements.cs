@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace UITestAutomation.Pages.LedgerBatches
+namespace UITestAutomation
 {
     internal partial class LedgerBatches
     {

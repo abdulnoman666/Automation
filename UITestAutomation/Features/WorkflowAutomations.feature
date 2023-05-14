@@ -6,7 +6,7 @@ Background:
 
 @Add
 Scenario: Add Workflow Automations
-	Given User clicks the Profile Icon on the dashboard page
+	Given User clicks the Profile Icon on Dashboard page
 	And User Selects the Workflow Automations from the dropdown menu of the Page
 	And User validates following UI controls on WorkFlow Automations Page
 	

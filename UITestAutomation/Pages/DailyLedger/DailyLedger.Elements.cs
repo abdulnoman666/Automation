@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-namespace UITestAutomation.Pages.DailyLedger
+namespace UITestAutomation
 {
     internal partial class DailyLedger
     {

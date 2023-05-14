@@ -1,7 +1,5 @@
 ﻿using OpenQA.Selenium;
-
-
-namespace UITestAutomation.Pages.Users
+namespace UITestAutomation
 {
     internal partial class Users
     {

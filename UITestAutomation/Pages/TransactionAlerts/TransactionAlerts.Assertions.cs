@@ -1,5 +1,4 @@
-﻿namespace UITestAutomation.Pages.TransactionAlerts
-{
+﻿namespace UITestAutomation { 
     internal partial class TransactionAlerts
     {
         public void AssertUIControlsOnTransactionAlertsPage(Table table)
