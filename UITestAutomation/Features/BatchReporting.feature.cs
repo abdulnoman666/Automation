@@ -94,7 +94,7 @@ namespace UITestAutomation.Features
                     "BatchReporting"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Batch Reporting", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 9
+#line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -117,10 +117,10 @@ this.ScenarioInitialize(scenarioInfo);
 #line 3
 this.FeatureBackground();
 #line hidden
-#line 10
+#line 9
  testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 11
+#line 10
  testRunner.And("User selects the Batch Reporting option from the drop down menu of the ProfileIco" +
                         "n", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
@@ -140,7 +140,7 @@ this.FeatureBackground();
                             "Print Report"});
                 table9.AddRow(new string[] {
                             "Export Disputes"});
-#line 12
+#line 11
  testRunner.And("User validates the following UI Controls on the Batch Reporting Page", ((string)(null)), table9, "And ");
 #line hidden
             }
