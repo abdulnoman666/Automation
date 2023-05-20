@@ -28,7 +28,6 @@ namespace UITestAutomation
         DailyLedger dailyLedger = new DailyLedger();
         LedgerBatches ledgerBatches = new LedgerBatches();
         FraudAlerts fraudAlerts = new FraudAlerts();
-        Configuration configuration = new Configuration();
         ProvisionalCreditLog creditLog = new ProvisionalCreditLog();
         WorkflowAutomations automation = new WorkflowAutomations();
         WorkflowSettings workflows = new WorkflowSettings();
@@ -41,25 +40,25 @@ namespace UITestAutomation
         ActivityHistory activityHistory = new ActivityHistory();
         Reconciliation reconciliation = new Reconciliation();
         SubmissionsWithAlerts alerts = new SubmissionsWithAlerts();
-
+        
 
         //Login **
         [Given(@"User goes to DisputeDev Application")]
         public void GivenUserGoesToDisputeDevApplication()
         {
-            Selenium_Methods.GoToURL(configuration.Get_baseurl());
+            Selenium_Methods.GoToURL(ConfigHelper.GetConfig("Baseurl"));
         }
 
         [Given(@"User enters Username in Username field on Login page")]
         public void GivenUserEntersUsernameInUsernameFieldOnLoginPage()
         {
-            login.EnterEmailOnLoginPage(configuration.Get_email());
+            login.EnterEmailOnLoginPage(ConfigHelper.GetConfig("applicationUsername"));
         }
 
         [Given(@"User enters Password in Password field on Login page")]
         public void GivenUserEntersPasswordInPasswordFieldOnLoginPage()
         {
-            login.EnterPasswordOnLoginPage(configuration.Get_password());
+            login.EnterPasswordOnLoginPage(ConfigHelper.GetConfig("applicationPassword"));
         }
 
         [Given(@"User clicks on Login button on Login page")]
@@ -71,7 +70,7 @@ namespace UITestAutomation
         [Given(@"User enters OTP on Login Verification dialog")]
         public void GivenUserEntersOTPOnLoginVerificationDialog()
         {
-            string otpCode = loginVerification.GetOTP(configuration.Get_appUsername(), configuration.Get_emailPassword());
+            string otpCode = loginVerification.GetOTP(ConfigHelper.GetConfig("emailUsername"), ConfigHelper.GetConfig("emailPassword"));
             loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
         }
 
@@ -91,11 +90,11 @@ namespace UITestAutomation
         [Given(@"User log into Dispute Tracking Application")]
         public void GivenUserLogIntoDisputeTrackingApplication()
         {
-            login.EnterEmailOnLoginPage(configuration.Get_email());
-            login.EnterPasswordOnLoginPage(configuration.Get_password());
+            login.EnterEmailOnLoginPage(ConfigHelper.GetConfig("applicationUsername"));
+            login.EnterPasswordOnLoginPage(ConfigHelper.GetConfig("applicationPassword"));
             login.ClickLoginButtonOnLoginPage();
             Thread.Sleep(5000);
-            string otpCode = loginVerification.GetOTP(configuration.Get_appUsername(), configuration.Get_emailPassword());
+            string otpCode = loginVerification.GetOTP(ConfigHelper.GetConfig("emailUsername"), ConfigHelper.GetConfig("emailPassword"));
             loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
             loginVerification.ClickAuthenticateButtonOnLoginVerificationDialog();
         }

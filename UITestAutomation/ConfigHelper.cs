@@ -6,11 +6,9 @@ namespace UITestAutomation
     {
         public static string GetConfig(string key)
         {
-            var configBuilder = new ConfigurationBuilder();
-            var cConfig = configBuilder.AddJsonFile("appsettings.json").Build();
-
+            ConfigurationBuilder configBuilder = new ConfigurationBuilder();
+            IConfiguration cConfig = configBuilder.AddJsonFile("Appsettings.json",false,false).Build();
             var value = cConfig.GetRequiredSection("settings").GetSection(key).Value;
-
             return value;
         }
     }

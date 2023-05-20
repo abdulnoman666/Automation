@@ -11,7 +11,7 @@ namespace UITestAutomation
         public static IWebDriver driver;
         public static void InitializeDriver()
         {    
-            driver = new ChromeDriver("C:\\CurrentSelenium");
+            driver = new ChromeDriver(ConfigHelper.GetConfig("ChromeDriver"));
         }
 
         public static void GoToURL(string url)
