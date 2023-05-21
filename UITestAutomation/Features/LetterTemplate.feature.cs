@@ -183,24 +183,32 @@ this.FeatureBackground();
                             "Use Cut-Off print date?"});
                 table63.AddRow(new string[] {
                             "Eligible for E-Signature?"});
-                table63.AddRow(new string[] {
-                            ""});
-                table63.AddRow(new string[] {
-                            ""});
-                table63.AddRow(new string[] {
-                            ""});
-                table63.AddRow(new string[] {
-                            ""});
-                table63.AddRow(new string[] {
-                            ""});
-                table63.AddRow(new string[] {
-                            ""});
-                table63.AddRow(new string[] {
-                            ""});
-                table63.AddRow(new string[] {
-                            ""});
 #line 27
  testRunner.And("User validates following fields on Letter info Dialog", ((string)(null)), table63, "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table64 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Field"});
+                table64.AddRow(new string[] {
+                            "Letter Template Form"});
+#line 43
+ testRunner.And("User validates following fields on Template Dialog", ((string)(null)), table64, "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table65 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Field"});
+                table65.AddRow(new string[] {
+                            "Title"});
+                table65.AddRow(new string[] {
+                            "Style Sheet"});
+                table65.AddRow(new string[] {
+                            "Delete Template"});
+                table65.AddRow(new string[] {
+                            "Copy Template"});
+                table65.AddRow(new string[] {
+                            "Save Template"});
+                table65.AddRow(new string[] {
+                            "Close Template"});
+#line 47
+ testRunner.And("User validates following fields on Style Sheet Dialog", ((string)(null)), table65, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

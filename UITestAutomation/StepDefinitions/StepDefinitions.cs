@@ -41,6 +41,7 @@ namespace UITestAutomation
         ActivityHistory activityHistory = new ActivityHistory();
         Reconciliation reconciliation = new Reconciliation();
         SubmissionsWithAlerts alerts = new SubmissionsWithAlerts();
+        CompanySettings settings = new CompanySettings();
 
 
         //Login **
@@ -865,7 +866,7 @@ namespace UITestAutomation
         [Given(@"User Selects the Workflow Automations from the dropdown menu of the Page")]
         public void GivenUserSelectsTheWorkflowAutomationsFromTheDropdownMenuOfThePage()
         {
-            automation.ClickWorkflowAutomation();
+            automation.ClickWorkflowAutomationsButton();
         }
 
         [Given(@"User validates following UI controls on WorkFlow Automations Page")]
@@ -877,7 +878,7 @@ namespace UITestAutomation
         [Given(@"User clicks the Add Workflow Automations Icon on Workflow Automations Page")]
         public void GivenUserClicksTheAddWorkflowAutomationsIconOnWorkflowAutomationsPage()
         {
-            automation.ClickAddWorkflowAutomations();
+            automation.ClickOnAddWorkflowAutomationsButton();
         }
 
         [Given(@"User validates following fields on Add Workflow Automations Dialog")]
@@ -1323,6 +1324,45 @@ namespace UITestAutomation
         {
             creditLog.AssertUIControlsOnProvisionalCreditLogPage(table);
         }
+
+        //company settings
+        [Given(@"User selects the Company Settings Field from the dropdown menu of Profile Icon")]
+        public void GivenUserSelectsTheCompanySettingsFieldFromTheDropdownMenuOfProfileIcon()
+        {
+           settings.ClickOnCompanySettingsButton();
+        }
+
+        [Given(@"User validates the following UI Controls on Company Settings Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnCompanySettingsPage(Table table)
+        {
+            settings.AssertUIControlsOnCompanySettingsPage(table);
+        }
+
+        //Questionaire
+        [Given(@"User Selects the Questionnaire Dependency Setups from the dropdown menu of the Page")]
+        public void GivenUserSelectsTheQuestionnaireDependencySetupsFromTheDropdownMenuOfThePage()
+        {
+            throw new PendingStepException();
+        }
+
+        [Given(@"User validates following UI controls on Questionnaire Dependency Setup Page")]
+        public void GivenUserValidatesFollowingUIControlsOnQuestionnaireDependencySetupPage(Table table)
+        {
+            throw new PendingStepException();
+        }
+
+        [Given(@"User clicks the Add Questionnaire Dependency Setup Icon on Questionnaire Dependency Setup Page")]
+        public void GivenUserClicksTheAddQuestionnaireDependencySetupIconOnQuestionnaireDependencySetupPage()
+        {
+            throw new PendingStepException();
+        }
+
+        [Given(@"User validates following fields on Add Questionnaire Dependency Setup")]
+        public void GivenUserValidatesFollowingFieldsOnAddQuestionnaireDependencySetup(Table table)
+        {
+            throw new PendingStepException();
+        }
+
 
 
     }

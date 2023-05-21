@@ -7,11 +7,5 @@
             WaitForWebElementDisplayed(CompanySettingsOption);
             ClickOnWebElement(CompanySettingsOption);
         }
-
-        public void ClickOnCompanySettingsSaveButton()
-        {
-            WaitForWebElementDisplayed(Save_Button);
-            ClickOnWebElement(Save_Button);
-        }
     }
 }

@@ -3,28 +3,27 @@ namespace UITestAutomation
 {
     internal partial class AlertDefinitions
     {
-        By AlertDefinitionButton = By.LinkText("Alert Definitions");
-        By AddAlertDefinitions_Button = By.CssSelector("button[title='Add Alert Definition']");
-        By DeleteAlertDefinitions_Button = By.CssSelector("tr:nth-of-type(1) button[title='Delete Alert Definition']");
-        By EditAlertDefinition_Button = By.CssSelector("tr:nth-of-type(1) button[title='Edit Alert Definition']");
-        By CopyAlertDefinition_Button = By.CssSelector("tr:nth-of-type(1) button[title='Copy Alert Definition']");
-        By CreateAlertDefinitons_Button = By.CssSelector("[ng-click='createDefaultDefinitions\\(\\)']");
-        By DownloadFromLibrary_Button = By.CssSelector("button[title='Download alert']");
+        By AlertDefinitionButton = By.XPath("//div[@id='myNavbar']/ul[@class='nav navbar-nav navbar-right']/li[12]/ul[@class='dropdown-menu']//a[@href='#/alertdefinitions']");
+        By AddAlertDefinitions_Button = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//button[@title='Add Alert Definition']");
+        By DeleteAlertDefinitions_Button = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-body']/table/tbody/tr[1]//button[@title='Delete Alert Definition']/span[@class='glyphicon glyphicon-trash']");
+        By CopyAlertDefinition_Button = By.XPath("/html//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-body']/table/tbody/tr[1]//button[@title='Edit Alert Definition']");
+        By CreateAlertDefinitons_Button = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-heading']/button[@class='btn btn-default']");
+        By DownloadFromLibrary_Button = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//button[@title='Download alert']");
 
         // Add Definition Dialog
-        By DefinitionName_Field = By.XPath(".ng-invalid-required .ng-scope:nth-child(2) input");
-        By AlertType_Field = By.XPath("div:nth-of-type(2) > select[name='delimiter']");
-        By TableName_Field = By.CssSelector("div:nth-of-type(1) > div:nth-of-type(3) > select[name='delimiter']");
-        By DeadlineRefrence_Field = By.CssSelector("div:nth-of-type(4) > input[name='deadlineReference']");
-        By BusinessDays_CheckBox = By.CssSelector("[class='col-md-4'] .ng-valid-parse");
-        By CalculateTheLastBusinessDay_CheckBox = By.CssSelector("[class='col-md-4'] .ng-valid-parse");
-        By Days_Field = By.CssSelector("div:nth-of-type(6) > input[name='deadlineReference']");
-        By Reference_Field = By.CssSelector("input[name='reference']");
-        By SourceList_Field = By.CssSelector("form[name='configform']  .modal-body  .tab-content > div:nth-of-type(1)  input[name='sourceList']");
-        By Save_Button = By.CssSelector("form[name='configform'] .btn.btn-info");
-        By Close_Button = By.CssSelector("form[name='configform'] .btn.btn-default");
+        By DefinitionName_Field = By.XPath("/html//div[@id='addDefinition']//form[@name='configform']//div[@class='modal-body']//div[@class='tab-content']/div[1]//input[@name='alertName']");
+        By AlertType_Field = By.XPath("/html//div[@id='addDefinition']//form[@name='configform']//div[@class='modal-body']//div[@class='tab-content']/div[1]/div[2]/select[@name='delimiter']");
+        By TableName_Field = By.XPath("/html//div[@id='addDefinition']//form[@name='configform']//div[@class='modal-body']//div[@class='tab-content']/div[1]/div[3]/select[@name='delimiter']");
+        By DeadlineRefrence_Field = By.XPath("/html//div[@id='addDefinition']//form[@name='configform']//div[@class='modal-body']//div[@class='tab-content']/div[1]/div[4]/input[@name='deadlineReference']");
+        By BusinessDays_CheckBox = By.XPath("//div[@id='addDefinition']//form[@name='configform']//div[@class='modal-body']//div[@class='tab-content']/div[1]//div[@class='col-md-4']/input[@name='businessDays']");
+        By CalculateTheLastBusinessDay_CheckBox = By.XPath("//div[@id='addDefinition']//form[@name='configform']//div[@class='modal-body']//div[@class='tab-content']/div[1]//div[@class='col-md-8']/input[@name='calculateTheLastBusinessDay']");
+        By Days_Field = By.XPath("/html//div[@id='addDefinition']//form[@name='configform']//div[@class='modal-body']//div[@class='tab-content']/div[1]/div[6]/input[@name='deadlineReference']");
+        By Reference_Field = By.XPath("/html//div[@id='addDefinition']//form[@name='configform']//div[@class='modal-body']//div[@class='tab-content']/div[1]//input[@name='reference']");
+        By SourceList_Field = By.XPath("/html//div[@id='addDefinition']//form[@name='configform']//div[@class='modal-body']//div[@class='tab-content']/div[1]//input[@name='sourceList']");
+        By Save_Button = By.XPath("/html//div[@id='addDefinition']//form[@name='configform']//div[@class='modal-footer']/button[2]");
+        By Close_Button = By.XPath("/html//div[@id='addDefinition']//form[@name='configform']//div[@class='modal-footer']/button[1]");
         //Explanation page
-        By Explanation_Form = By.CssSelector(".ng-invalid-required [heading='Explanation'] .ng-binding");
+        By Explanation_Form = By.XPath("//div[@id='addDefinition']//form[@name='configform']//div[@class='tab-content']/div[2]/div[@role='application']/div[@class='fr-wrapper show-placeholder']/div[@class='fr-element fr-view']");
 
 
 

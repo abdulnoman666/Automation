@@ -120,30 +120,30 @@ this.FeatureBackground();
 #line 9
     testRunner.Given("User clicks the Monthly Report Icon from the dropdown of Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table64 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table66 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table64.AddRow(new string[] {
+                table66.AddRow(new string[] {
                             "Reported On"});
-                table64.AddRow(new string[] {
+                table66.AddRow(new string[] {
                             "Date Range"});
-                table64.AddRow(new string[] {
+                table66.AddRow(new string[] {
                             "Workflows"});
-                table64.AddRow(new string[] {
+                table66.AddRow(new string[] {
                             "Calendar Button"});
-                table64.AddRow(new string[] {
+                table66.AddRow(new string[] {
                             "Triangle Option"});
-                table64.AddRow(new string[] {
+                table66.AddRow(new string[] {
                             "Print Report"});
-                table64.AddRow(new string[] {
+                table66.AddRow(new string[] {
                             "Summary"});
-                table64.AddRow(new string[] {
+                table66.AddRow(new string[] {
                             "Charts"});
-                table64.AddRow(new string[] {
+                table66.AddRow(new string[] {
                             "List"});
-                table64.AddRow(new string[] {
+                table66.AddRow(new string[] {
                             "Export Disputes"});
 #line 10
- testRunner.And("User validates the following fields on the Monthly Report Page", ((string)(null)), table64, "And ");
+ testRunner.And("User validates the following fields on the Monthly Report Page", ((string)(null)), table66, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -182,30 +182,30 @@ this.FeatureBackground();
 #line 24
     testRunner.Given("User clicks the Summary button on the Monthly Report Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table65 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table67 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table65.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Submission Count"});
-                table65.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Total Claimed"});
-                table65.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Total Disputed"});
-                table65.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Bank Loss"});
-                table65.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Merchant Loss"});
-                table65.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Consumer Loss"});
-                table65.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Recovered"});
-                table65.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Pending Provisional Credit"});
-                table65.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Export"});
-                table65.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Close"});
 #line 25
- testRunner.And("User validates the following fields on the Summary Page", ((string)(null)), table65, "And ");
+ testRunner.And("User validates the following fields on the Summary Page", ((string)(null)), table67, "And ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -244,36 +244,36 @@ this.FeatureBackground();
 #line 39
     testRunner.Given("User clicks the List button on the Monthly Report Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table66 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table68 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table66.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Reported"});
-                table66.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Days"});
-                table66.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "P/C"});
-                table66.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "R/S"});
-                table66.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "C/A"});
-                table66.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Status"});
-                table66.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Detail"});
-                table66.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Resolution"});
-                table66.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Amount"});
-                table66.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Type"});
-                table66.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Customer"});
-                table66.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Assigned To"});
-                table66.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Close"});
 #line 40
- testRunner.And("User validates the following fields on the List Page", ((string)(null)), table66, "And ");
+ testRunner.And("User validates the following fields on the List Page", ((string)(null)), table68, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

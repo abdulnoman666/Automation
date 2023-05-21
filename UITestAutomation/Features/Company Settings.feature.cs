@@ -159,6 +159,8 @@ this.FeatureBackground();
                             "Enable Task"});
                 table14.AddRow(new string[] {
                             "Display Task Configuration and Sections"});
+                table14.AddRow(new string[] {
+                            "Save"});
 #line 10
  testRunner.And("User validates the following UI Controls on Company Settings Page", ((string)(null)), table14, "And ");
 #line hidden

@@ -26,3 +26,4 @@ Scenario: Company Settings
 		| Hide Zip                                |
 		| Enable Task                             |
 		| Display Task Configuration and Sections |
+		| Save                                    |
