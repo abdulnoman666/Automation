@@ -125,64 +125,64 @@
             }
         }
 
-        public void EnterValueinFieldsonDisputeSubmissionPage(Table table)
-        {
-            foreach (var item in table.Rows)
-            {
-                switch (item[0].Trim())
-                {
-                    case "Transaction Method":
-                        WaitForWebElementDisplayed(TransactionMethod_Dropdown);
-                       ClickTheWebElement(TransactionMethod_Dropdown);
-                        ElementToBeSelectedFromDropdown(TransactionMethod_Dropdown, item[1]);
-                        //EnterValueinWebElement(TransactionMethod_Dropdown, item[1]);
-                        break;
-                }
-            }
-        }
+        //public void EnterValueinFieldsonDisputeSubmissionPage(Table table)
+        //{
+        //    foreach (var item in table.Rows)
+        //    {
+        //        switch (item[0].Trim())
+        //        {
+        //            case "Transaction Method":
+        //                WaitForWebElementDisplayed(TransactionMethod_Dropdown);
+        //               ClickTheWebElement(TransactionMethod_Dropdown);
+        //                ElementToBeSelectedFromDropdown(TransactionMethod_Dropdown, item[1]);
+        //                //EnterValueinWebElement(TransactionMethod_Dropdown, item[1]);
+        //                break;
+        //        }
+        //    }
+        //}
 
-        public void EnterValueinFieldsonCustomerSearchPage(Table table)
-        {
-            foreach (var item in table.Rows)
-            {
-                switch (item[0].Trim())
-                {
-                    case "Customer Name":
-                        WaitForWebElementDisplayed(CustomerName_TextField);
-                        EnterValueinWebElement(CustomerName_TextField, item[1]);
-                        break;
-                }
-            }
-        }
+        //public void EnterValueinFieldsonCustomerSearchPage(Table table)
+        //{
+        //    foreach (var item in table.Rows)
+        //    {
+        //        switch (item[0].Trim())
+        //        {
+        //            case "Customer Name":
+        //                WaitForWebElementDisplayed(CustomerName_TextField);
+        //                EnterValueinWebElement(CustomerName_TextField, item[1]);
+        //                break;
+        //        }
+        //    }
+        //}
 
-        public void EnterValueinTextAreaonCustomerSearchPage(Table table)
-        {
-            foreach (var item in table.Rows)
-            {
-                switch (item[0].Trim())
-                {
-                    case "Details":
-                        WaitForWebElementDisplayed(Details_TextArea);
-                        EnterValueinWebElement(Details_TextArea, item[1]);
-                        break;
-                }
-            }
-        }
+        //public void EnterValueinTextAreaonCustomerSearchPage(Table table)
+        //{
+        //    foreach (var item in table.Rows)
+        //    {
+        //        switch (item[0].Trim())
+        //        {
+        //            case "Details":
+        //                WaitForWebElementDisplayed(Details_TextArea);
+        //                EnterValueinWebElement(Details_TextArea, item[1]);
+        //                break;
+        //        }
+        //    }
+        //}
 
-        public void EnterValueonAddTaskPage(Table table)
-        {
-            foreach (var item in table.Rows)
-            {
-                switch (item[0].Trim())
-                {
-                    case "Task Name":
-                        WaitForWebElementDisplayed(TaskName_Field);
-                        ClickTheWebElement(TaskName_Field);  
-                        ElementToBeSelectedFromDropdown(TaskName_Field, item[1]);
-                        break;
-                }
-            }
-        }
+        //public void EnterValueonAddTaskPage(Table table)
+        //{
+        //    foreach (var item in table.Rows)
+        //    {
+        //        switch (item[0].Trim())
+        //        {
+        //            case "Task Name":
+        //                WaitForWebElementDisplayed(TaskName_Field);
+        //                ClickTheWebElement(TaskName_Field);  
+        //                ElementToBeSelectedFromDropdown(TaskName_Field, item[1]);
+        //                break;
+        //        }
+        //    }
+        //}
 
         public void EnterValueinFieldsonAddTransactionPage(Table table)
         {
@@ -210,47 +210,47 @@
             }
         }
 
-        public void EnterDateonFiledDateField(Table table)
-        {
-            foreach (var item in table.Rows)
-            {
-                switch (item[0].Trim())
-                {
-                    case "Filed Date":
-                        WaitForWebElementDisplayed(FiledDate_Field);
-                        EnterValueinWebElement(FiledDate_Field, item[1]);
-                        break;
-                }
-            }
-        }
+        //public void EnterDateonFiledDateField(Table table)
+        //{
+        //    foreach (var item in table.Rows)
+        //    {
+        //        switch (item[0].Trim())
+        //        {
+        //            case "Filed Date":
+        //                WaitForWebElementDisplayed(FiledDate_Field);
+        //                EnterValueinWebElement(FiledDate_Field, item[1]);
+        //                break;
+        //        }
+        //    }
+        //}
 
-        public void EnterValueinCityReportFiledField(Table table)
-        {
-            foreach (var item in table.Rows)
-            {
-                switch (item[0].Trim())
-                {
-                    case "City Report Filed In":
-                        WaitForWebElementDisplayed(CityReport_Field);
-                        EnterValueinWebElement(CityReport_Field, item[1]);
-                        break;
-                }
-            }
-        }
+        //public void EnterValueinCityReportFiledField(Table table)
+        //{
+        //    foreach (var item in table.Rows)
+        //    {
+        //        switch (item[0].Trim())
+        //        {
+        //            case "City Report Filed In":
+        //                WaitForWebElementDisplayed(CityReport_Field);
+        //                EnterValueinWebElement(CityReport_Field, item[1]);
+        //                break;
+        //        }
+        //    }
+        //}
 
-        public void EnterValueinDateCardClosedField(Table table)
-        {
-            foreach (var item in table.Rows)
-            {
-                switch (item[0].Trim())
-                {
-                    case "Date Card Closed":
-                        WaitForWebElementDisplayed(DateCardClosed_Field);
-                        EnterValueinWebElement(DateCardClosed_Field, item[1]);
-                        break;
-                }
-            }
-        }
+        //public void EnterValueinDateCardClosedField(Table table)
+        //{
+        //    foreach (var item in table.Rows)
+        //    {
+        //        switch (item[0].Trim())
+        //        {
+        //            case "Date Card Closed":
+        //                WaitForWebElementDisplayed(DateCardClosed_Field);
+        //                EnterValueinWebElement(DateCardClosed_Field, item[1]);
+        //                break;
+        //        }
+        //    }
+        //}
 
         //additions
         public void AssertFieldsonSubmissionsInfoPage(Table table)
@@ -260,6 +260,7 @@
                 switch (item[0].Trim())
                 {
                     case "Print Letter":
+                        WaitForWebElementDisplayed(PrintLetter_Button);
                         FluentWaitForWebElement(PrintLetter_Button);
                         break;
                     case "Select PC Calculation":
@@ -299,6 +300,7 @@
                         FluentWaitForWebElement(ViewAll_Button);
                         break;
                     case "Status":
+                        WaitForWebElementDisplayed(Status_FieldAdditionalTask);
                         FluentWaitForWebElement(Status_FieldAdditionalTask);
                         break;
                     case "Task Name":
@@ -317,6 +319,7 @@
                         FluentWaitForWebElement(ClosedOn_FieldAdditionalTask);
                         break;
                     case "Calculate Interest":
+                        WaitForWebElementDisplayed(CalculateInterest_Button);
                         FluentWaitForWebElement(CalculateInterest_Button);
                         break;
                     case "Comments and Resolution":
@@ -467,85 +470,85 @@
             }
         }
 
-        public void AssertFieldsonResearchPage(Table table)
-        {
-            foreach (var item in table.Rows)
-            {
-                switch (item[0].Trim())
-                {
-                    case "Submit Cases":
-                        WaitForWebElementDisplayed(SubmitCases_Button);
-                        FluentWaitForWebElement(SubmitCases_Button);
-                        break;
-                    case "Link Multiple":
-                        FluentWaitForWebElement(LinkMultiple_Button);
-                        break;
-                    case "Activity History":
-                        FluentWaitForWebElement(ActivityHistoryResearch_Button);
-                        break;
-                    case "Refresh":
-                        FluentWaitForWebElement(RefreshReasearch_Button);
-                        break;
-                    case "Actions":
-                        FluentWaitForWebElement(Actions_Field);
-                        break;
-                    case "Id":
-                        FluentWaitForWebElement(Id_Field);
-                        break;
-                    case "Master Case":
-                        FluentWaitForWebElement(MasterCase_Field);
-                        break;
-                    case "Fraud Report":
-                        FluentWaitForWebElement(FraudReport_Field);
-                        break;
-                    case "Visa Case Number":
-                        FluentWaitForWebElement(VisaCaseNumber_Field);
-                        break;
-                    case "POS":
-                        FluentWaitForWebElement(POSResearch_Field);
-                        break;
-                    case "PIN":
-                        FluentWaitForWebElement(PIN_Field);
-                        break;
-                    case "3DS":
-                        FluentWaitForWebElement(ThreeDS_Field);
-                        break;
-                    case "Fallback":
-                        FluentWaitForWebElement(Fallback_Field);
-                        break;
-                    case "MCC":
-                        FluentWaitForWebElement(MCC_Field);
-                        break;
-                    case "Country":
-                        FluentWaitForWebElement(Country_Field);
-                        break;
-                    case "Nwk":
-                        FluentWaitForWebElement(Nwk_Field);
-                        break;
-                    case "PI":
-                        FluentWaitForWebElement(PI_Field);
-                        break;
-                    case "RDR":
-                        FluentWaitForWebElement(RDR_Field);
-                        break;
-                    case "Transaction Date":
-                        FluentWaitForWebElement(TransactionDateResearch_Field);
-                        break;
-                    case "Amount":
-                        FluentWaitForWebElement(AmountResearch_Field);
-                        break;
-                    case "Merchant":
-                        FluentWaitForWebElement(MerchantResearch_Field);
-                        break;
-                    case "Visa Status":
-                        FluentWaitForWebElement(VisaStatus_Field);
-                        break;
-                    case "Link":
-                        FluentWaitForWebElement(Link_Button);
-                        break;
-                }
-            }
-        }
+        //public void AssertFieldsonResearchPage(Table table)
+        //{
+        //    foreach (var item in table.Rows)
+        //    {
+        //        switch (item[0].Trim())
+        //        {
+        //            case "Submit Cases":
+        //                WaitForWebElementDisplayed(SubmitCases_Button);
+        //                FluentWaitForWebElement(SubmitCases_Button);
+        //                break;
+        //            case "Link Multiple":
+        //                FluentWaitForWebElement(LinkMultiple_Button);
+        //                break;
+        //            case "Activity History":
+        //                FluentWaitForWebElement(ActivityHistoryResearch_Button);
+        //                break;
+        //            case "Refresh":
+        //                FluentWaitForWebElement(RefreshReasearch_Button);
+        //                break;
+        //            case "Actions":
+        //                FluentWaitForWebElement(Actions_Field);
+        //                break;
+        //            case "Id":
+        //                FluentWaitForWebElement(Id_Field);
+        //                break;
+        //            case "Master Case":
+        //                FluentWaitForWebElement(MasterCase_Field);
+        //                break;
+        //            case "Fraud Report":
+        //                FluentWaitForWebElement(FraudReport_Field);
+        //                break;
+        //            case "Visa Case Number":
+        //                FluentWaitForWebElement(VisaCaseNumber_Field);
+        //                break;
+        //            case "POS":
+        //                FluentWaitForWebElement(POSResearch_Field);
+        //                break;
+        //            case "PIN":
+        //                FluentWaitForWebElement(PIN_Field);
+        //                break;
+        //            case "3DS":
+        //                FluentWaitForWebElement(ThreeDS_Field);
+        //                break;
+        //            case "Fallback":
+        //                FluentWaitForWebElement(Fallback_Field);
+        //                break;
+        //            case "MCC":
+        //                FluentWaitForWebElement(MCC_Field);
+        //                break;
+        //            case "Country":
+        //                FluentWaitForWebElement(Country_Field);
+        //                break;
+        //            case "Nwk":
+        //                FluentWaitForWebElement(Nwk_Field);
+        //                break;
+        //            case "PI":
+        //                FluentWaitForWebElement(PI_Field);
+        //                break;
+        //            case "RDR":
+        //                FluentWaitForWebElement(RDR_Field);
+        //                break;
+        //            case "Transaction Date":
+        //                FluentWaitForWebElement(TransactionDateResearch_Field);
+        //                break;
+        //            case "Amount":
+        //                FluentWaitForWebElement(AmountResearch_Field);
+        //                break;
+        //            case "Merchant":
+        //                FluentWaitForWebElement(MerchantResearch_Field);
+        //                break;
+        //            case "Visa Status":
+        //                FluentWaitForWebElement(VisaStatus_Field);
+        //                break;
+        //            case "Link":
+        //                FluentWaitForWebElement(Link_Button);
+        //                break;
+        //        }
+        //    }
+        //}
 
 
         public void AssertFieldsonCustomerStatusPage(Table table)

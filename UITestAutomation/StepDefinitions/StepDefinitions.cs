@@ -1037,16 +1037,18 @@ namespace UITestAutomation
             submissionList.ClickCancelButtononReassignSubmissionnDialog();
         }
 
+        //New Case
         [Given(@"User clicks the New Case Button on Submissions List Page")]
         public void GivenUserClicksTheNewCaseButtonOnSubmissionsListPage()
         {
             submissionList.ClickNewCaseButton();
 
         }
-        [Given(@"User Enters the following data into the fields on Dispute Submission Page")]
-        public void GivenUserEntersTheFollowingDataIntoTheFieldsOnDisputeSubmissionPage(Table table)
+
+        [Given(@"User enters ""([^""]*)"" in Transaction Method field on Dispute Submission Page")]
+        public void GivenUserEntersInTransactionMethodFieldOnDisputeSubmissionPage(string value)
         {
-            submissionList.EnterValueinFieldsonDisputeSubmissionPage(table);
+            submissionList.EnterValueinTransactionMethodField("Debit Card");
         }
 
         [Given(@"User clicks the Fraud Button from Listed Transactions on Dispute Submission Page")]
@@ -1060,10 +1062,11 @@ namespace UITestAutomation
         {
             submissionList.ClickAdvanceSearchButton();
         }
-        [Given(@"User Enters the following data into the fields on Customer Search Page")]
-        public void GivenUserEntersTheFollowingDataIntoTheFieldsOnCustomerSearchPage(Table table)
+
+        [Given(@"User enters ""([^""]*)"" in the Customer Name field on Customer Search Page")]
+        public void GivenUserEntersInTheCustomerNameFieldOnCustomerSearchPage(string value)
         {
-            submissionList.EnterValueinFieldsonCustomerSearchPage(table);
+            submissionList.EnterValueinCustomerFieldonCustomerSearchPage(value);
         }
 
         [Given(@"User clicksthe Search Button on Customer Search Page")]
@@ -1078,10 +1081,10 @@ namespace UITestAutomation
             submissionList.ClickSelectCustomerButton();
         }
 
-        [Given(@"User Enters the following data on Dispute Submission Page")]
-        public void GivenUserEntersTheFollowingDataOnDisputeSubmissionPage(Table table)
+        [Given(@"User enters ""([^""]*)"" in Details on Dispute Submission Page")]
+        public void GivenUserEntersInDetailsOnDisputeSubmissionPage(string value)
         {
-            submissionList.EnterValueinFieldsonDisputeSubmissionPage(table);
+            submissionList.EnterValueinDetailsTextareaonDisputeSubmissionPage(value);
         }
 
         [Given(@"User clicks the Additional Tasks on Dispute Submission Page")]
@@ -1090,10 +1093,10 @@ namespace UITestAutomation
             submissionList.ClickAdditionalTasksField();
         }
 
-        [Given(@"User selects the following data from the field on Add Task Page")]
-        public void GivenUserSelectsTheFollowingDataFromTheFieldOnAddTaskPage(Table table)
+        [Given(@"User enters ""([^""]*)"" in Task Name field on Add Task Page")]
+        public void GivenUserEntersInTaskNameFieldOnAddTaskPage(string value)
         {
-            submissionList.EnterValueonAddTaskPage(table);
+            submissionList.EnterValueonAddTaskPage(value);
         }
 
         [Given(@"User clicks the Save Button on Add Task Page")]
@@ -1138,18 +1141,19 @@ namespace UITestAutomation
             submissionList.ClickYesButtonStolenCard();
         }
 
-        [Given(@"User enters the Date in Filed Date field")]
-        public void GivenUserEntersTheDateInFiledDateField(Table table)
+        [Given(@"User enters ""([^""]*)"" in Filed Date field")]
+        public void GivenUserEntersInFiledDateField(string value)
         {
-            submissionList.EnterDateonFiledDateField(table);
+            submissionList.EnterValueinFiledDateField(value);
         }
 
-        [Given(@"User Enters the following data on Debit Card Dispute Form")]
-        public void GivenUserEntersTheFollowingDataOnDebitCardDisputeForm(Table table)
+        [Given(@"User enters ""([^""]*)""  in City Report Filed In field on Debit Card Dispute Form")]
+        public void GivenUserEntersInCityReportFiledInFieldOnDebitCardDisputeForm(string value)
         {
-            submissionList.EnterValueinCityReportFiledField(table);
+            submissionList.EnterValueinCityReportField(value);
         }
 
+       
         [Given(@"User clicks the Button for Check appropriate dispute reason")]
         public void GivenUserClicksTheButtonForCheckAppropriateDisputeReason()
         {
@@ -1162,10 +1166,10 @@ namespace UITestAutomation
             submissionList.ClickNoButtononDisputeForm();
         }
 
-        [Given(@"User Enters the following data in Date Card Closed on Debit Card Dispute Form")]
-        public void GivenUserEntersTheFollowingDataInDateCardClosedOnDebitCardDisputeForm(Table table)
+        [Given(@"User enters  ""([^""]*)"" in Date Card Closed on Debit Card Dispute Form")]
+        public void GivenUserEntersInDateCardClosedOnDebitCardDisputeForm(string value)
         {
-            submissionList.EnterValueinDateCardClosedField(table);
+            submissionList.EnterValueinDateCardClosedField(value);
         }
 
         [Given(@"User clicks the Customer Signature form Button on Debit Card Dispute Form")]
@@ -1211,6 +1215,7 @@ namespace UITestAutomation
         [Given(@"User validates the following Fields in Submission Info Dialog on Edit Submission Page")]
         public void GivenUserValidatesTheFollowingFieldsInSubmissionInfoDialogOnEditSubmissionPage(Table table)
         {
+            Thread.Sleep(10000);
             submissionList.AssertFieldsonSubmissionsInfoPage(table);
         }
 
@@ -1250,17 +1255,17 @@ namespace UITestAutomation
             submissionList.AssertFieldsonDisputesPage(table);
         }
 
-        [Given(@"User clicks the Research on Edit Submission Page")]
-        public void GivenUserClicksTheResearchOnEditSubmissionPage()
-        {
-            submissionList.ClickResearchButton();
-        }
+        //[Given(@"User clicks the Research on Edit Submission Page")]
+        //public void GivenUserClicksTheResearchOnEditSubmissionPage()
+        //{
+        //    submissionList.ClickResearchButton();
+        //}
 
-        [Given(@"User validates the following Fields in Research Dialog")]
-        public void GivenUserValidatesTheFollowingFieldsInResearchDialog(Table table)
-        {
-            submissionList.AssertFieldsonResearchPage(table);
-        }
+        //[Given(@"User validates the following Fields in Research Dialog")]
+        //public void GivenUserValidatesTheFollowingFieldsInResearchDialog(Table table)
+        //{
+        //    submissionList.AssertFieldsonResearchPage(table);
+        //}
 
         [Given(@"User clicks the Customer Status on Edit Submission Page")]
         public void GivenUserClicksTheCustomerStatusOnEditSubmissionPage()

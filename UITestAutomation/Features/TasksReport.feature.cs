@@ -20,23 +20,22 @@ namespace UITestAutomation.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("TransactionProcesses")]
-    public partial class TransactionProcessesFeature
+    [NUnit.Framework.DescriptionAttribute("TasksReport")]
+    public partial class TasksReportFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "TransactionProcesses.feature"
+#line 1 "TasksReport.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "TransactionProcesses", "     User clicks the Add Transaction Process to add the details on Add Process Tr" +
-                    "ansaction Setup Dialog\r\n\t and clicks the Save button", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "TasksReport", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -76,26 +75,26 @@ namespace UITestAutomation.Features
         
         public virtual void FeatureBackground()
         {
-#line 6
+#line 3
 #line hidden
-#line 7
+#line 4
  testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 8
+#line 5
  testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Transaction_Add")]
-        [NUnit.Framework.CategoryAttribute("Add")]
-        public virtual void Transaction_Add()
+        [NUnit.Framework.DescriptionAttribute("TasksReport")]
+        [NUnit.Framework.CategoryAttribute("tag1")]
+        public virtual void TasksReport()
         {
             string[] tagsOfScenario = new string[] {
-                    "Add"};
+                    "tag1"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Transaction_Add", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 11
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TasksReport", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 7
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -115,63 +114,29 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 6
+#line 3
 this.FeatureBackground();
 #line hidden
-#line 12
- testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 8
+ testRunner.Given("User clicks the Submissions Field on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 13
- testRunner.And("User selects the Transaction Processes Field from the dropdown menu of Profile Ic" +
-                        "on", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 9
+ testRunner.And("User selects the Task Reports Field from the dropdown menu of Submissions", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table99 = new TechTalk.SpecFlow.Table(new string[] {
-                            "UI Controls"});
-                table99.AddRow(new string[] {
-                            "Add"});
-                table99.AddRow(new string[] {
-                            "Edit"});
-                table99.AddRow(new string[] {
-                            "Delete"});
-                table99.AddRow(new string[] {
-                            "Action"});
-                table99.AddRow(new string[] {
-                            "Name"});
-                table99.AddRow(new string[] {
-                            "Process"});
-                table99.AddRow(new string[] {
-                            "GL Reference"});
-                table99.AddRow(new string[] {
-                            "Workflows"});
-                table99.AddRow(new string[] {
-                            "Refresh"});
-#line 14
- testRunner.And("User validates the following UI Controls on Transaction Process Page", ((string)(null)), table99, "And ");
-#line hidden
-#line 25
- testRunner.And("User clicks the Add Submission on Transaction Process Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table100 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table96 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table100.AddRow(new string[] {
-                            "Name"});
-                table100.AddRow(new string[] {
-                            "Type"});
-                table100.AddRow(new string[] {
-                            "GL Reference"});
-                table100.AddRow(new string[] {
-                            "Workflows"});
-                table100.AddRow(new string[] {
-                            "Close"});
-                table100.AddRow(new string[] {
-                            "Save"});
-#line 26
- testRunner.And("User validates the following fields on Add Process Transaction Setup Dialog", ((string)(null)), table100, "And ");
+                table96.AddRow(new string[] {
+                            "Workflow"});
+                table96.AddRow(new string[] {
+                            "From"});
+                table96.AddRow(new string[] {
+                            "To"});
+                table96.AddRow(new string[] {
+                            "Export Tasks"});
+#line 10
+ testRunner.And("User validates the following Fields on Task Reports Page", ((string)(null)), table96, "And ");
 #line hidden
-#line 34
- testRunner.And("User clicks the Close Button on Add Process Transaction Setup Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 35
+#line 16
  testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }

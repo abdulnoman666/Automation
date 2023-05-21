@@ -14,9 +14,13 @@
                         break;
                     case "From":
                         FluentWaitForWebElement(From_Date);
+                        FluentWaitForWebElement(FromCalender_Button);
+                        FluentWaitForWebElement(FromDownArrow_Button);
                         break;
                     case "To":
                         FluentWaitForWebElement(To_Date);
+                        FluentWaitForWebElement(ToCalender_Button);
+                        FluentWaitForWebElement(ToDownArrow_Button);
                         break;
                     case "Export Tasks":
                         FluentWaitForWebElement(ExportTasks_Button);
