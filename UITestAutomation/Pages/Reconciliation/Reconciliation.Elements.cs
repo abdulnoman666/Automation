@@ -4,7 +4,7 @@ namespace UITestAutomation
 {
     internal partial class Reconciliation
     {
-        By Reconciliation_Dropdown = By.CssSelector("li:nth-of-type(4) > .dropdown-menu > li:nth-of-type(3) > a");
+        By Reconciliation_Dropdown = By.XPath("//a[text()=\"Reconciliation\"]");
         By ReportedOn_Field = By.XPath("//th[.='Reported On']");
         By Customer_Field = By.XPath("//th[.='Customer']");
         By Customer_TextField = By.XPath("//input[@ng-model=\"search.customerName\"]");

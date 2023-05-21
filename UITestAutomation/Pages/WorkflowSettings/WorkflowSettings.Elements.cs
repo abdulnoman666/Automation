@@ -21,11 +21,11 @@ namespace UITestAutomation
         //By Yes_Button = By.XPath("//button[@ng-click=\"dialog.hide()\"]");
 
         //Add page (Settings UI Control)
-        By Setting_Button = By.CssSelector(".ng-invalid-required [heading='Settings'] .ng-binding");
-        By EventTriggers_Button = By.CssSelector(".ng-invalid-required [heading='Event Triggers'] .ng-binding");
-        By SelfServiceVerbiage_Button = By.CssSelector("[heading='Self-Service Verbiage'] .ng-binding");
-        By Save_Button = By.CssSelector(".modal-footer [data-dismiss='modal']:nth-of-type(3)");
-        By Close_Button = By.CssSelector(".ng-invalid-required .modal-footer [data-dismiss='modal']:nth-of-type(2)");
+        By Setting_Button = By.XPath("(//a[text()=\"Settings\"])[1]");
+        By EventTriggers_Button = By.XPath("(//a[text()=\"Event Triggers\"])[1]");
+        By SelfServiceVerbiage_Button = By.XPath("(//a[text()=\"Self-Service Verbiage\"])[1]");
+        By Save_Button = By.XPath("(//button[@ng-click=\"savesetting()\"])[1]");
+        By Close_Button = By.XPath("(//button[text()=\"Close\"])[2]");
 
         //fields on setting page
         By Workflow_field = By.XPath("//input[@ng-model=\"setting.source\"]");
@@ -36,14 +36,14 @@ namespace UITestAutomation
         By DistributionList_Field = By.XPath("//input[@ng-model=\"setting.distributionList\"]");
         By TransactionType_Dropdown = By.XPath("//select[@ng-model=\"setting.transactionType\"]");
         By AccountType_Field = By.XPath("//input[@ng-model=\"setting.accountSearchCondition\"]");
-        By CloseAccount_Field = By.CssSelector(".ng-scope:nth-child(10) [name='closedAccountCondition']");
+        By CloseAccount_Field = By.XPath("//input[@ng-model=\"setting.closedAccountCondition\"]");
         By AddTransactions_Checkbox = By.XPath("//input[@ng-model=\"setting.addTransactions\"]");
         By AllowManualTransactions_Checkbox = By.XPath("//input[@ng-model=\"setting.allowManualTransactions\"]");
         By AllowUserToCopy_Checkbox = By.XPath("//input[@ng-model=\"setting.copyTransactions\"]");
         By CopyDescription_Checkbox = By.XPath("//input[@ng-model=\"setting.populateMerchantField\"]");
-        By MerchantCopySource_Field = By.CssSelector("div:nth-of-type(11) > input[name='closedAccountCondition']");
-        By TransactionFilterCondition_Field = By.CssSelector(".ng-invalid-required [name='transactionSearchCondition']");
-        By TransactionNotAllowedCondition_Field = By.CssSelector(".ng-invalid-required [name='transactionNotAllowedCondition']");
+        By MerchantCopySource_Field = By.XPath("//input[@ng-model=\"setting.merchantCopySource\"]");
+        By TransactionFilterCondition_Field = By.XPath("//input [@ng-model=\"setting.transactionSearchCondition\"]");
+        By TransactionNotAllowedCondition_Field = By.XPath("//input[@ng-model=\"setting.transactionNotAllowedCondition\"]");
         By ShowFraud_Checkbox = By.XPath("//input[@ng-model=\"setting.fraudNonFraud\"]");
         By DisableCustomerEdit_Checkbox = By.XPath("//input[@ng-model=\"setting.disableCustomerNameEdit\"]");
         By Questionnaire_Checkbox = By.XPath("//input[@ng-model=\"setting.hasQuestionnaire\"]");
@@ -51,7 +51,7 @@ namespace UITestAutomation
         By ShowCustomerType_Checkbox = By.XPath("//input[@ng-model=\"setting.customerType\"]");
         By HideComments_Checkbox = By.XPath("//input[@ng-model=\"setting.hideCommentsAndResolutionField\"]");
         By ReimburseFees_Checkbox = By.XPath("//input[@ng-model=\"setting.autoFeeReimbursement\"]");
-        By TransactionCodeFilter_Field = By.CssSelector(".ng-invalid-required [name='feeTransactionCode']");
+        By TransactionCodeFilter_Field = By.XPath("//input[@ng-model=\"setting.feeTransactionCode\"]");
         By GLReference_Dropdown = By.XPath("//select[@ng-model=\"setting.feeGLReference\"]");
         By InterestPostingGLReference_Dropdown = By.XPath("//select[@ng-model=\"setting.interestPostingGLReference\"]");
         By ComplianceRegulationScreen_Dropdown = By.XPath("//select[@ng-model=\"setting.complianceRegulationScreen\"]");
@@ -63,14 +63,14 @@ namespace UITestAutomation
         By SubmissionScreenTemplate_Dropdown = By.XPath("//select[@ng-model=\"setting.screenTemplateReference\"]");
 
         //Controls on Event Trigger page
-        By AddEventTrigger_Button = By.CssSelector(".ng-invalid-required .glyphicon-plus");
-        By ActionOnEvent_Field = By.CssSelector(".ng-invalid-required tr th:nth-of-type(1)");
-        By TriggerName_Field = By.CssSelector(".ng-invalid-required tr th:nth-of-type(2)");
-        By TriggerEventType_Field = By.CssSelector(".ng-invalid-required tr th:nth-of-type(3)");
+        By AddEventTrigger_Button = By.XPath("(//button[@ng-click=\"addTrigger()\"])[1]");
+        By ActionOnEvent_Field = By.XPath("(//th[text()=\"Action\"])[3]");
+        By TriggerName_Field = By.XPath("(//th[text()=\"Trigger Name\"])[1]");
+        By TriggerEventType_Field = By.XPath("(//th[text()=\"Trigger Event Type\"])[1]");
 
         //Fields on Add Trigger
-        By TriggerNameOnAdd_Field = By.CssSelector("form[name='eventForm'] > input[name='triggerName']");
-        By TriggerEventTypeOnAdd_Field = By.CssSelector("form[name='eventForm'] > input[name='triggerEventType']");
+        By TriggerNameOnAdd_Field = By.XPath("//input[@ng-model=\"trigger.triggerName\"]");
+        By TriggerEventTypeOnAdd_Field = By.XPath("//input[@ng-model=\"trigger.triggerEventType\"]");
         By AdditionalCondition_Checkbox = By.XPath("//input[@ng-model=\"trigger.additionalCondition\"]");
         By AccountType_Checkbox = By.XPath("//input[@ng-model=\"trigger.addAccountTypeRestriction\"]");
         By AccountTypeTrigger_Dropdown = By.XPath("//select[@ng-model=\"trigger.accountTypeRestriction\"]");
@@ -85,12 +85,12 @@ namespace UITestAutomation
         By SendEmailNotification_Checkbox = By.XPath("//input[@ng-model=\"trigger.emailNotificationFlag\"]");
         By EmailLetterTemplateReference_Dropdown = By.XPath("//select[@ng-model=\"trigger.emailTemplateReference\"]");
         By EmailDistributionList_Dropdown = By.XPath("//input[@ng-model=\"trigger.emailDistributionList\"]");
-        By CloseTrigger_Button = By.CssSelector("div#addTrigger  .modal-content  .btn.btn-default");
-        By SaveTrigger_Button = By.CssSelector("div#addTrigger  .modal-content  .btn.btn-info");
+        By CloseTrigger_Button = By.XPath("(//button[text()=\"Close\"])[4]");
+        By SaveTrigger_Button = By.XPath("//button[@ng-click=\"saveTrigger()\"]");
 
         //Fields on Self-Verbage
-        By CompletionTitle_Field = By.CssSelector(".tab-content > div:nth-of-type(3) input[name='alertName']");
-        By CompletionNote_Field = By.CssSelector(".fr-wrapper.show-placeholder > .fr-element.fr-view");
+        By CompletionTitle_Field = By.XPath("//input[@ng-model=\"setting.selfServicePortalSubmissionCompletionTitle\"]");
+        By CompletionNote_Field = By.XPath("//div[@class=\"fr-element fr-view\"]");
 
     }
 }

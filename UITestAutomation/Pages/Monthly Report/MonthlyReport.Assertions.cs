@@ -20,9 +20,13 @@
                         break;
                     case "From":
                         FluentWaitForWebElement(From_Date);
+                        FluentWaitForWebElement(FromMRCalender_Button);
+                        FluentWaitForWebElement(FromMRDownArrow_Button);
                         break;
                     case "To":
                         FluentWaitForWebElement(To_Date);
+                        FluentWaitForWebElement(ToMRCalender_Button);
+                        FluentWaitForWebElement(ToMRDownArrow_Button);
                         break;
                     case "Export Disputes":
                         FluentWaitForWebElement(ExportDispute_Button);

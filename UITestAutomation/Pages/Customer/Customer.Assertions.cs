@@ -206,9 +206,13 @@ namespace UITestAutomation
                 {
                     case "From":
                         FluentWaitForWebElement(From_Field);
+                        FluentWaitForWebElement(FromCalenderCust_Button);
+                        FluentWaitForWebElement(FromDownArrowCust_Button);
                         break;
                     case "To":
                         FluentWaitForWebElement(To_Field);
+                        FluentWaitForWebElement(ToCalenderCust_Button);
+                        FluentWaitForWebElement(ToDownArrowCust_Button);
                         break;
                     case "Load Transactions":
                         FluentWaitForWebElement(LoadTransactions_Button);
