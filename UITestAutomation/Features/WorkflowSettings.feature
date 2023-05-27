@@ -62,6 +62,56 @@ Scenario: Workflow Settings
 		| Post Submission Automation Reference          |
 		| Automation Reference On Submission Complete   |
 		| Submission Screen Template                    |
+	And User adds the following data to fields in Settings Page
+		| Fields                                        | Values      |
+		| Workflow                                      | Debit Card  |
+		| Publish                                       |             |
+		| Allow Customer Access                         |             |
+		| Customer Description                          | Casual User |
+		| Search By                                     | Card        |
+		| Send Notifications                            |             |
+		| Distribution List                             | abc         |
+		| Transaction Type                              | Default     |
+		| Account Types Allowed                         | Default     |
+		| Closed Account Status                         | Default     |
+		| Add Transactions                              |             |
+		| Allow Manual Transactions                     |             |
+		| Allow user to copy / duplicate transactions   |             |
+		| Copy Description to Merchant Field by Default |             |
+		| Merchant Copy Source Field Name               | Arshi       |
+		| Transaction Filter Condition                  | abc         |
+		| Transaction Not Allowed Condition             | abc         |
+		| Show Fraud / Non-Fraud Option                 |             |
+		| Verbiage for Fraud                            | donot       |
+		| Verbiage for Non-Fraud                        | problem     |
+		| Disable Customer Edit                         |             |
+		| Has Questionnaire                             |             |
+		| Has Provisional Credit Calculation            |             |
+		| Show Customer Type                            |             |
+		| Hide Comments And Resolution                  |             |
+		| Reimburse Fees                                |             |
+		| Transaction Code Filter                       | 123         |
+		| GL Reference                                  | Red1        |
+		| Interest Posting GL Reference                 | Red1        |
+		| Compliance Regulation Screen                  | None        |
+		| PC Business Days                              |             |
+		| Provisional Credit Days                       | 4           |
+		| Resolution Business Days                      |             |
+		| Resolution Days                               | 12          |
+		| Dispute Screen Type                           | Default     |
+		| Email Template Reference                      | DC          |
+		| Confirmation Email Template Reference         | PC          |
+		| Post Submission Automation Reference          | AC          |
+		| Automation Reference On Submission Complete   | SFFS        |
+		| Submission Screen Template                    | Default     |
+	And User validates the following Fields in Questionaire Dialog on Edit Setting Dialog
+		| Fields                             | Values      |
+		| Questionnaire Template             | Check Fraud |
+		| e-Consent Notice Template          | smart title |
+		| Read Only Questionnaire            |             |
+		| Hide Send To Customer              |             |
+		| Hide Customer Acknowledgement Form |             |
+		| Close Screen Message               |             |
 	And User clicks the Event Triggers in Settings Page on Edit Setting Dialog
 	And User validates the following Controls in Event Triggers on Edit Setting Dialog
 		| UI Controls        |
@@ -86,7 +136,25 @@ Scenario: Workflow Settings
 		| Email Distribution List                 |
 		| Close                                   |
 		| Save                                    |
-	And User clicks the Close Button on Add Trigger Page
+	And User adds the following data to fields in Add Trigger Page on Edit Setting Dialog
+		| Fields                                  | Values   |
+		| Trigger Name                            | abc      |
+		| Trigger Event Type                      | ab       |
+		| Additional Condition (search for below) |          |
+		| Account Type                            |          |
+		| Account Type Restriction                | Business |
+		| Automation Reference                    |          |
+		| Automation Reference Box                | T1       |
+		| Letter Template Reference               |          |
+		| Template Reference                      | AM1      |
+		| GL Reference                            |          |
+		| GL Reference Box                        | FC       |
+		| Run Automation                          |          |
+		| AutomationReference                     | T1       |
+		| Send Email Notification                 |          |
+		| Email Letter Template Reference         | ref      |
+		| Email Distribution List                 | abc      |
+	And User clicks the Save Button on Add Trigger Page
 	And User clicks the Self-Service Verbiage in Settings Page on Edit Setting Dialog
 	And User validates the following Fields in Self-Service Verbiage Page on Edit Setting Dialog
 		| Fileds                                          |
@@ -94,7 +162,12 @@ Scenario: Workflow Settings
 		| Self-Service Portal Submission Completion Note  |
 		| Close                                           |
 		| Save                                            |
-	And User clicks the Close Button on Self-Service Verbiage Page
+	And User adds the following data to fields in Self-Service Verbiage Page
+		| Fileds                                          | Value      |
+		| Self-Service Portal Submission Completion Title | Completion |
+		| Self-Service Portal Submission Completion Note  | Completion |
+	And User clicks the Save Button on Self-Service Verbiage Page
+	And User validates the total number of Action Fields on Workflow Settings Page
 	And User clicks the Dashboard Icon
 
 #@Delete

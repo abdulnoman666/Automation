@@ -22,14 +22,20 @@ Scenario: UserPool_Add
 		| Users            |
 		| Show             |
 	And User clicks the Add Pool on Add User Pool Page
-	And User validates the following fileds on Add User Pool Page
+	And User validates the following fields on Add User Pool Page
 		| Fields                |
 		| Pool Name             |
 		| Pool Reference        |
 		| Pool Users Email List |
 		| Close                 |
 		| Save                  |
-	And User clicks the Close Button on Add User Pool Page
+	And User adds following data to respective fields
+		| Fields                | values           |
+		| Pool Name             | Susan            |
+		| Pool Reference        | ABC              |
+		| Pool Users Email List | abdul@finboa.com |
+	And User clicks the Save Button on Add User Pool Page
+	And User validates the total number of Action Fields on User Pools Process Page
 	And User clicks the Dashboard Icon
 
 #@Edit

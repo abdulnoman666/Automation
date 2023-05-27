@@ -17,7 +17,7 @@ namespace UITestAutomation
         By Name_Field = By.XPath("(//th[2])[1]");
         By Name_Textbox = By.XPath("(//th[2])[2]");
         By Email_Field = By.XPath("(//th[3])[1]");
-        By Email_Textbox = By.XPath("(//th[3])[2]");
+        By Email_Textbox = By.XPath("(//input[@ng-model=\"$.email\"])[1]");
         By Phone_Field = By.XPath("(//th[4])[1]");
         By Role_Field = By.XPath("(//th[5])[1]");
         By Role_Textbox = By.XPath("(//th[5])[2]");
@@ -34,6 +34,6 @@ namespace UITestAutomation
         By Role_Dropdown = By.XPath("//select[@ng-model=\"newUser.role\"]");
         By SaveAddUser_Button = By.XPath("//button[@ng-click=\"addNewUser(form1)\"]");
         By CloseAddUser_Button = By.XPath("(//button[text()=\"Close\"])[2]");
-
+        By DeleteUser_Button = By.XPath("//button[@ng-click=\"dialog.hide()\"]");
     }
 }

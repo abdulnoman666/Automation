@@ -4,6 +4,8 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System.Collections.ObjectModel;
+using System.Linq;
+
 namespace UITestAutomation
 {
     public class Selenium_Methods
@@ -44,12 +46,6 @@ namespace UITestAutomation
 
         }
 
-        public ReadOnlyCollection<IWebElement> GetElements(By element)
-        {
-            var elements = driver.FindElements(element);
-            return elements;
-        }
-
         public void ClickTheWebElement(By reference)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(20));
@@ -63,6 +59,22 @@ namespace UITestAutomation
             fluentWait.PollingInterval = TimeSpan.FromMilliseconds(1000);
             fluentWait.Message = "timeout occured";
             Assert.IsTrue(driver.FindElement(reference).Displayed, "Element is not Displayed");
+        }
+
+        public  bool IsChecked(By reference)
+        {
+            if (driver.FindElement(reference).Selected) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        public ReadOnlyCollection<IWebElement> GetElements(By element)
+        {
+            var elements = driver.FindElements(element);
+            return elements;
         }
 
         public static void CloseDriver()

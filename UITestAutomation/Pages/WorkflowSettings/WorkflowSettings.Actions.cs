@@ -26,9 +26,9 @@
             WaitForWebElementDisplayed(CloseTrigger_Button);
         }
 
-        public void ClickCloseButtononAddTriggerDialog()
+        public void ClickSaveButtononAddTriggerDialog()
         {
-            ClickTheWebElement(CloseTrigger_Button);
+            ClickTheWebElement(SaveTrigger_Button);
         }
 
         public void ClickSelfServiceVerbiageButton()
@@ -37,9 +37,9 @@
             WaitForWebElementDisplayed(CompletionNote_Field);
         }
 
-        public void ClickCloseButtononSelfVerbiage()
+        public void ClickSaveButtononSelfVerbiage()
         {
-            ClickOnWebElement(Close_Button);
+            ClickOnWebElement(Save_Button);
         }
     }
 }

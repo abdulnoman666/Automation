@@ -15,14 +15,11 @@ namespace UITestAutomation
             WaitForWebElementDisplayed(Name_Textbox);
         }
 
-        public void ClickCloseButtononAddUsers()
+        public void ClickSaveButtononAddUsers()
         {
-            ClickTheWebElement(CloseAddUser_Button);
+            ClickTheWebElement(SaveAddUser_Button);
             WaitForWebElementDisplayed(Role_Field);
         }
-
-
-
 
     }
 }

@@ -123,77 +123,101 @@ this.FeatureBackground();
 #line 10
  testRunner.And("User selects the Users Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table103 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table105 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Add"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Refresh"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Edit"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Delete"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Show Deleted Users"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Go"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Enter Page"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Action"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Name"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Email"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Phone"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Role"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Deleted"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Has Login"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Branch"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "More"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "setpageDirect"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "prevpage"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "nextpage"});
-                table103.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "setpageDirect(pages.length)"});
 #line 11
- testRunner.And("User validates the following UI Controls on Users Page", ((string)(null)), table103, "And ");
+ testRunner.And("User validates the following UI Controls on Users Page", ((string)(null)), table105, "And ");
 #line hidden
 #line 33
  testRunner.And("User clicks the Add User on Users Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table104 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table106 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table104.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "First Name"});
-                table104.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Last Name"});
-                table104.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Email"});
-                table104.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Phone"});
-                table104.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Role"});
-                table104.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Close"});
-                table104.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Save"});
 #line 34
- testRunner.And("User validates the following fields on Add User Dialog", ((string)(null)), table104, "And ");
+ testRunner.And("User validates the following fields on Add User Dialog", ((string)(null)), table106, "And ");
 #line hidden
+                TechTalk.SpecFlow.Table table107 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields",
+                            "Values"});
+                table107.AddRow(new string[] {
+                            "First Name",
+                            "Susam"});
+                table107.AddRow(new string[] {
+                            "Last Name",
+                            "Dan"});
+                table107.AddRow(new string[] {
+                            "Email",
+                            "aK@gmail.com"});
+                table107.AddRow(new string[] {
+                            "Phone",
+                            "123"});
+                table107.AddRow(new string[] {
+                            "Role",
+                            "User"});
 #line 43
- testRunner.And("User clicks the Close Button on Add User Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User adds following data to respective fields on Add User Dialog", ((string)(null)), table107, "And ");
 #line hidden
-#line 44
+#line 50
+ testRunner.And("User clicks the Save Button on Add User Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 51
+ testRunner.And("User validates the total number of Action Fields on Users Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 52
  testRunner.And("User clicks the Dashboard Icon on Users Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }

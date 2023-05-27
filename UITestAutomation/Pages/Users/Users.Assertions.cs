@@ -3,6 +3,7 @@ namespace UITestAutomation
 {
     internal partial class Users
     {
+        string email;
         public void AssertUIControlsonUsersPage(Table table)
         {
             foreach (var item in table.Rows)
@@ -108,5 +109,45 @@ namespace UITestAutomation
                 }
             }
         }
+
+        public void AdddatatoFieldsonAddUserDialog(Table table)
+        {
+            foreach (var item in table.Rows)
+            {
+                switch (item[0].Trim())
+                {
+                    case "First Name":
+                        EnterValueinWebElement(FirstName_Textbox, item[1]);
+                        break;
+                    case "Last Name":
+                        EnterValueinWebElement(LastName_Textbox, item[1]);
+                        break;
+                    case "Email":
+                        EnterValueinWebElement(EmailAddUser_Textbox, item[1]);
+                        email = item[1];
+                        break;
+                    case "Phone":
+                        EnterValueinWebElement(Phone_Textbox, item[1]);
+                        break;
+                    case "Role":
+                        ClickOnWebElement(Role_Dropdown);
+                        ElementToBeSelectedFromDropdown(Role_Dropdown, item[1]);
+                        ClickOnWebElement(Role_Dropdown);
+                        break;
+                }
+            }
+        }
+
+        public void validateActionfieldsonUserDialog()
+        {
+            WaitForWebElementDisplayed(Email_Textbox);
+            ClickOnWebElement(Email_Textbox);
+            EnterValueinWebElement(Email_Textbox, email);
+            Thread.Sleep(5000);
+            ClickOnWebElement(Delete_Button);
+            Thread.Sleep(2000);
+            ClickOnWebElement(DeleteUser_Button);
+        }
+   
     }
 }

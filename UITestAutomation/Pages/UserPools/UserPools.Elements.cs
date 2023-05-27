@@ -29,6 +29,8 @@ namespace UITestAutomation
         //By Update_Button = By.XPath("//button[@ng-click=\"savePool()\"]");
         ////delete
         //By No_Button = By.XPath("//button[@ng-click=\"dialog.abort()\"]");
-        //By Yes_Button = By.XPath("//button[@ng-click=\"dialog.hide()\"]");
+        By Yes_Button = By.XPath("//button[@ng-click=\"dialog.hide()\"]");
+        By lastdelete_Element = By.XPath("(//button[@title=\"Delete Pool\"])[7]");
+        By select_otpion = By.XPath("//select[@ng-model=\"selectedPool.users\"]");
     }
 }
