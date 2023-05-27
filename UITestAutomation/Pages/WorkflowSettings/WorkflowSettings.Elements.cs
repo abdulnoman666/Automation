@@ -17,8 +17,8 @@ namespace UITestAutomation
         By WorkflowSetting_Dropdown = By.XPath("//a[@href='#/workflowsettings']");
 
         ////on Delete Page
-        //By No_Button = By.XPath("//button[@ng-click=\"dialog.abort()\"]");
-        //By Yes_Button = By.XPath("//button[@ng-click=\"dialog.hide()\"]");
+        By No_Button = By.XPath("//button[@ng-click=\"dialog.abort()\"]");
+        By Yes_Button = By.XPath("//button[@ng-click=\"dialog.hide()\"]");
 
         //Add page (Settings UI Control)
         By Setting_Button = By.XPath("(//a[text()=\"Settings\"])[1]");
@@ -62,6 +62,15 @@ namespace UITestAutomation
         By AutomationReferenceOnSubmission_Dropdown = By.XPath("//select[@ng-model=\"setting.automationReferenceSubmissionComplete\"]");
         By SubmissionScreenTemplate_Dropdown = By.XPath("//select[@ng-model=\"setting.screenTemplateReference\"]");
 
+        By CustomerDescription_Textbox = By.XPath("//input[@ng-model=\"setting.customerDescription\"]");
+        By Verbiage_Fraud = By.XPath("//input[@ng-model=\"setting.verbiageFraud\"]");
+        By Verbiage_Nonfraud = By.XPath("//input[@ng-model=\"setting.verbiageNonFraud\"]");
+        By PCBusinessDays_Checkbox = By.XPath("//input[@ng-model=\"setting.pcBusinessDays\"]");
+        By ProvisionalCreditDays_Field = By.XPath("//input[@ng-model=\"setting.pcDays\"]");
+        By LastBusiness_Checkbox = By.XPath("//input[@ng-model=\"setting.resolutionLastBusinessDay\"]");
+        By ResolutionBusiness_Checkbox = By.XPath("//input[@ng-model=\"setting.resolutionBusinessDays\"]");
+        By ResolutionDays_Field = By.XPath("//input[@ng-model=\"setting.resolutionDays\"]");
+
         //Controls on Event Trigger page
         By AddEventTrigger_Button = By.XPath("(//button[@ng-click=\"addTrigger()\"])[1]");
         By ActionOnEvent_Field = By.XPath("(//th[text()=\"Action\"])[3]");
@@ -91,6 +100,15 @@ namespace UITestAutomation
         //Fields on Self-Verbage
         By CompletionTitle_Field = By.XPath("//input[@ng-model=\"setting.selfServicePortalSubmissionCompletionTitle\"]");
         By CompletionNote_Field = By.XPath("//div[@class=\"fr-element fr-view\"]");
+
+        //questionaire
+        By Questionaire_Button = By.XPath("(//a[text()=\"Questionnaire\"])");
+        By QuestionaireTemplate_Field = By.XPath("//select[@ng-model=\"setting.letterId\"]");
+        By eConsentNoticeTemplate_Field=By.XPath("//select[@ng-model=\"setting.electronicConsentLetterId\"]");
+        By Read_Checkbox = By.XPath("(//span[@class=\"checkmark\"])[1]");
+        By HideSend_Checkbox = By.XPath("(//span[@class=\"checkmark\"])[2]");
+        By HideCustomer_Checkbox = By.XPath("(//span[@class=\"checkmark\"])[3]");
+        By CloseScreenMessage_Checkbox = By.XPath("(//span[@class=\"checkmark\"])[4]");
 
     }
 }

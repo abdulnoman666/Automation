@@ -15,10 +15,11 @@ namespace UITestAutomation
             WaitForWebElementDisplayed(PoolName_Field);
         }
 
-        public void ClickCloseButton()
+        public void ClickSaveButton()
         {
-            ClickOnWebElement(Close_Button);
+            ClickOnWebElement(Save_Button);
             WaitForWebElementDisplayed(AddPool_Button);
+            Thread.Sleep(10000);
         }
     }
 }

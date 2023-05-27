@@ -15,6 +15,7 @@ namespace UITestAutomation
         By Workflow_Field = By.XPath("//table//th[.='Workflows']");
         By Refresh_Button = By.XPath("//button[@ng-click=\"refreshSetup()\"]");
         By TransactionProcess_Dropdown = By.XPath("//a[@href='#/processsubmissionsetup']");
+        By workflows_Links = By.XPath("(//a[@ng-click=\"select(i); focus()\"])");
 
         //add
         By Name_Textbox = By.XPath("//input[@ng-model=\"newSetup.description\"]");
@@ -29,7 +30,7 @@ namespace UITestAutomation
 
         ////delete
         //By No_Button = By.XPath("//button[@ng-click=\"dialog.abort()\"]");
-        //By Yes_Button = By.XPath("//button[@ng-click=\"dialog.hide()\"]");
+        By Yes_Button = By.XPath("//button[@ng-click=\"dialog.hide()\"]");
 
     }
 }

@@ -168,10 +168,32 @@ this.FeatureBackground();
 #line 26
  testRunner.And("User validates the following fields on Add Process Transaction Setup Dialog", ((string)(null)), table100, "And ");
 #line hidden
+                TechTalk.SpecFlow.Table table101 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields",
+                            "Values"});
+                table101.AddRow(new string[] {
+                            "Name",
+                            "Abdul"});
+                table101.AddRow(new string[] {
+                            "Type",
+                            "Decline"});
+                table101.AddRow(new string[] {
+                            "GL Reference",
+                            "ABC"});
+                table101.AddRow(new string[] {
+                            "Workflows",
+                            "Debit Card"});
 #line 34
- testRunner.And("User clicks the Close Button on Add Process Transaction Setup Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User adds following data to respective fields on Add Process Transaction Setup Di" +
+                        "alog", ((string)(null)), table101, "And ");
 #line hidden
-#line 35
+#line 40
+ testRunner.And("User clicks the Save Button on Add Process Transaction Setup Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 41
+ testRunner.And("User validates the total number of Action Fields on Transaction Process Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 42
  testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
