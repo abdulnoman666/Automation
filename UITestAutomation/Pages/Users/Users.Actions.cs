@@ -1,5 +1,5 @@
 ﻿
-namespace UITestAutomation.Pages.Users
+namespace UITestAutomation
 {
     internal partial class Users :Selenium_Methods
     {

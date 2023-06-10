@@ -4,8 +4,6 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System.Collections.ObjectModel;
-using System.Configuration;
-
 namespace UITestAutomation
 {
     public class Selenium_Methods
@@ -13,7 +11,7 @@ namespace UITestAutomation
         public static IWebDriver driver;
         public static void InitializeDriver()
         {    
-            driver = new ChromeDriver("C:\\SeleniumChromeDriver");
+            driver = new ChromeDriver(ConfigHelper.GetConfig("ChromeDriver"));
         }
 
         public static void GoToURL(string url)

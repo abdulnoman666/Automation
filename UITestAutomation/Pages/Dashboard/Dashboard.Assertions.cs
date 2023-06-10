@@ -1,6 +1,6 @@
 ﻿
 
-namespace UITestAutomation.Pages.Dashboard
+namespace UITestAutomation
 {
     internal partial class Dashboard
     {

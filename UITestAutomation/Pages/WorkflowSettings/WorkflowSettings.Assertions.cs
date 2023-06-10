@@ -1,5 +1,5 @@
 ﻿
-namespace UITestAutomation.Pages.WorkflowSettings
+namespace UITestAutomation
 {
     internal partial class WorkflowSettings
     {

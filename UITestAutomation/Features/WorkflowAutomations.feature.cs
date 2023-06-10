@@ -118,43 +118,43 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.Given("User clicks the Profile Icon on the dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
  testRunner.And("User Selects the Workflow Automations from the dropdown menu of the Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table111 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table113 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table111.AddRow(new string[] {
+                table113.AddRow(new string[] {
                             "Add"});
-                table111.AddRow(new string[] {
+                table113.AddRow(new string[] {
                             "Delete"});
-                table111.AddRow(new string[] {
+                table113.AddRow(new string[] {
                             "Edit"});
-                table111.AddRow(new string[] {
+                table113.AddRow(new string[] {
                             "Copy Automation"});
-                table111.AddRow(new string[] {
+                table113.AddRow(new string[] {
                             "Download Automation"});
-                table111.AddRow(new string[] {
+                table113.AddRow(new string[] {
                             "Condition Search"});
 #line 11
- testRunner.And("User validates following UI controls on WorkFlow Automations Page", ((string)(null)), table111, "And ");
+ testRunner.And("User validates following UI controls on WorkFlow Automations Page", ((string)(null)), table113, "And ");
 #line hidden
 #line 20
  testRunner.And("User clicks the Add Workflow Automations Icon on Workflow Automations Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table112 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table114 = new TechTalk.SpecFlow.Table(new string[] {
                             "Field"});
-                table112.AddRow(new string[] {
+                table114.AddRow(new string[] {
                             "Name"});
-                table112.AddRow(new string[] {
+                table114.AddRow(new string[] {
                             "Conditions"});
-                table112.AddRow(new string[] {
+                table114.AddRow(new string[] {
                             "Workflow Automation Reference"});
-                table112.AddRow(new string[] {
+                table114.AddRow(new string[] {
                             "Scope"});
 #line 21
- testRunner.And("User validates following fields on Add Workflow Automations Dialog", ((string)(null)), table112, "And ");
+ testRunner.And("User validates following fields on Add Workflow Automations Dialog", ((string)(null)), table114, "And ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -1,25 +1,25 @@
 ﻿using OpenQA.Selenium;
-namespace UITestAutomation
+namespace UITestAutomation  
 {
     internal partial class LedgerReport
     {
         //UI Controls on Ledger Report Page
-        By LedgerReportOption = By.XPath("//a[text='Ledger Report']");
-        By DateRange = By.XPath("//select[@ng-model='dateRange']");
-        By From  = By.XPath("//button[@ng-click='ctrl.openCalendarPane($event)'][1]");
-        By To = By.XPath("//button[@ng-click='ctrl.openCalendarPane($event)'][2]");
-        By PrintReport = By.XPath("//button[@ng-disabled='disableButton']");
-        By ExportEntries = By.XPath("//button[@ng-click='exportReport()']");
-        By LedgerEntries = By.XPath("//button[@ng-click='showReport()']");
+        By LedgerReportOption = By.LinkText("Ledger Report");
+        By DateRange = By.CssSelector("//select[@ng-model='dateRange']");
+        By CalendarButton  = By.CssSelector(".panel-body .fi-field:nth-of-type(1) ._md-datepicker-has-triangle-icon > [type]");
+        By TriangleButton = By.CssSelector(".panel-body .fi-field:nth-of-type(1) [ng-class] [type]");
+        By PrintReport = By.CssSelector("button[title='Print Letter']");
+        By ExportEntries = By.CssSelector(".col-lg-12 > button:nth-of-type(2)");
+        By LedgerEntries = By.CssSelector(".col-lg-12 > button:nth-of-type(1)");
 
         // Fields on Ledger Entries Page
-        By Date = By.XPath("//th[1]");
-        By Account = By.XPath("//th[2]");
-        By Customer = By.XPath("//th[3]");
-        By Amount = By.XPath("//th[4]");
-        By Type = By.XPath("//th[5]");
-        By TranCode = By.XPath("//th[6]");
-        By Description = By.XPath("//th[7]");
-        By Close = By.XPath("btn btn-default");
+        By Date = By.CssSelector("tr > th:nth-of-type(1)");
+        By Account = By.CssSelector("tr > th:nth-of-type(2)");
+        By Customer = By.CssSelector("tr > th:nth-of-type(3)");
+        By Amount = By.CssSelector("tr > th:nth-of-type(4)");
+        By Type = By.CssSelector("tr > th:nth-of-type(5)");
+        By TranCode = By.CssSelector("tr > th:nth-of-type(6)");
+        By Description = By.CssSelector("tr > th:nth-of-type(7)");
+        By Close = By.CssSelector(".modal-dialog.modal-lg .btn.btn-default");
     }
 }

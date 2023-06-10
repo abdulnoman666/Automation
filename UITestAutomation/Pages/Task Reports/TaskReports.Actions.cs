@@ -1,6 +1,4 @@
-﻿
-
-namespace UITestAutomation.Pages.Task_Reports
+﻿namespace UITestAutomation
 {
     internal partial class TaskReports : Selenium_Methods
     {

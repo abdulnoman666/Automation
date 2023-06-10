@@ -1,15 +1,9 @@
-﻿using NUnit.Framework;
-using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using OpenQA.Selenium;
 namespace UITestAutomation
 {
     internal partial class AlertDefinitions
     {
+        By AlertDefinitionButton = By.LinkText("Alert Definitions");
         By AddAlertDefinitions_Button = By.CssSelector("button[title='Add Alert Definition']");
         By DeleteAlertDefinitions_Button = By.CssSelector("tr:nth-of-type(1) button[title='Delete Alert Definition']");
         By EditAlertDefinition_Button = By.CssSelector("tr:nth-of-type(1) button[title='Edit Alert Definition']");

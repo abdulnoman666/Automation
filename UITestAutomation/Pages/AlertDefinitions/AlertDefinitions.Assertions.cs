@@ -1,10 +1,4 @@
-﻿using OpenQA.Selenium.DevTools.V108.Page;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace UITestAutomation
 {
     internal partial class AlertDefinitions

@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace UITestAutomation.Pages.UserPools
+namespace UITestAutomation
 {
     internal partial class UserPools
     {

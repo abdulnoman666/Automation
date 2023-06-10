@@ -1,24 +1,16 @@
-using UITestAutomation.Pages.Dashboard;
-using UITestAutomation.Pages.Login;
-using UITestAutomation.Pages.LoginVerification;
-using UITestAutomation.Pages.TransactionProcess;
-using UITestAutomation.Pages.UserPools;
-using UITestAutomation.Pages.Users;
-using UITestAutomation.Pages.WorkflowSettings;
-
+using OpenQA.Selenium;
 
 namespace UITestAutomation
 {
     [Binding]
-    public class StepDefinitions
+    public class StepDefinitions 
     {
         Login login = new Login();
         LoginVerification loginVerification = new LoginVerification();
         Dashboard dashboard = new Dashboard();
         ChangePassword changepassword = new ChangePassword();
         UserPools userPools = new UserPools();
-        TransactionProcess transactionProcess = new TransactionProcess();
-        WorkflowSettings workflows = new WorkflowSettings();
+        TransactionProcess transactionProcess = new TransactionProcess(); 
         Customer customer = new Customer();
         Users users = new Users();
         Brands brands = new Brands();
@@ -27,7 +19,6 @@ namespace UITestAutomation
         FieldUpdateScripts fieldUpdateScripts = new FieldUpdateScripts();
         GLDefinitions glDefinitions = new GLDefinitions();
         ImportConfigurations importConfigurations = new ImportConfigurations();
-        Configuration configuration = new Configuration();
         Tasks tasks = new Tasks();
         FeeSelectionSettings feeSelectionSettings = new FeeSelectionSettings();
         TransactionAlerts transactionAlerts = new TransactionAlerts();
@@ -37,25 +28,37 @@ namespace UITestAutomation
         DailyLedger dailyLedger = new DailyLedger();
         LedgerBatches ledgerBatches = new LedgerBatches();
         FraudAlerts fraudAlerts = new FraudAlerts();
-        AuditorLog auditorLog = new AuditorLog();
+        ProvisionalCreditLog creditLog = new ProvisionalCreditLog();
+        WorkflowAutomations automation = new WorkflowAutomations();
+        WorkflowSettings workflows = new WorkflowSettings();
+        TaskReports taskReports = new TaskReports();
+        MonthlyReport monthlyReports = new MonthlyReport();
+        ResetSubmission resetSubmission = new ResetSubmission();
+        DeleteSubmission deleteSubmission = new DeleteSubmission();
+        MyTasks myTasks = new MyTasks();
+        SubmissionList submissionList = new SubmissionList();
+        ActivityHistory activityHistory = new ActivityHistory();
+        Reconciliation reconciliation = new Reconciliation();
+        SubmissionsWithAlerts alerts = new SubmissionsWithAlerts();
+        
 
-        //Login
+        //Login **
         [Given(@"User goes to DisputeDev Application")]
         public void GivenUserGoesToDisputeDevApplication()
         {
-            Selenium_Methods.GoToURL("https://disputedev.azurewebsites.net/#/login");
+            Selenium_Methods.GoToURL(ConfigHelper.GetConfig("Baseurl"));
         }
 
-        [Given(@"User enters ""([^""]*)"" in Username field on Login page")]
-        public void GivenUserEntersInUsernameFieldOnLoginPage(string username)
+        [Given(@"User enters Username in Username field on Login page")]
+        public void GivenUserEntersUsernameInUsernameFieldOnLoginPage()
         {
-            login.EnterEmailOnLoginPage(username);
+            login.EnterEmailOnLoginPage(ConfigHelper.GetConfig("applicationUsername"));
         }
 
-        [Given(@"User enters ""([^""]*)"" in Password field on Login page")]
-        public void GivenUserEntersInPasswordFieldOnLoginPage(string password)
+        [Given(@"User enters Password in Password field on Login page")]
+        public void GivenUserEntersPasswordInPasswordFieldOnLoginPage()
         {
-            login.EnterPasswordOnLoginPage(password);
+            login.EnterPasswordOnLoginPage(ConfigHelper.GetConfig("applicationPassword"));
         }
 
         [Given(@"User clicks on Login button on Login page")]
@@ -67,7 +70,7 @@ namespace UITestAutomation
         [Given(@"User enters OTP on Login Verification dialog")]
         public void GivenUserEntersOTPOnLoginVerificationDialog()
         {
-            string otpCode = loginVerification.GetOTP(configuration.Get_appUsername(), configuration.Get_emailPassword());
+            string otpCode = loginVerification.GetOTP(ConfigHelper.GetConfig("emailUsername"), ConfigHelper.GetConfig("emailPassword"));
             loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
         }
 
@@ -87,11 +90,11 @@ namespace UITestAutomation
         [Given(@"User log into Dispute Tracking Application")]
         public void GivenUserLogIntoDisputeTrackingApplication()
         {
-            login.EnterEmailOnLoginPage(configuration.Get_email());
-            login.EnterPasswordOnLoginPage(configuration.Get_password());
+            login.EnterEmailOnLoginPage(ConfigHelper.GetConfig("applicationUsername"));
+            login.EnterPasswordOnLoginPage(ConfigHelper.GetConfig("applicationPassword"));
             login.ClickLoginButtonOnLoginPage();
             Thread.Sleep(5000);
-            string otpCode = loginVerification.GetOTP(configuration.Get_appUsername(), configuration.Get_emailPassword());
+            string otpCode = loginVerification.GetOTP(ConfigHelper.GetConfig("emailUsername"), ConfigHelper.GetConfig("emailPassword"));
             loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
             loginVerification.ClickAuthenticateButtonOnLoginVerificationDialog();
         }
@@ -108,6 +111,7 @@ namespace UITestAutomation
             dashboard.ClickProfileIconOnDashboardPage();
         }
 
+        //changepassword **
         [Given(@"User selects the Change Password Field from the dropdown menu of Profile Icon")]
         public void GivenUserSelectsTheChangePasswordFieldFromTheDropdownMenuOfProfileIcon()
         {
@@ -126,7 +130,7 @@ namespace UITestAutomation
             changepassword.AssertFieldsOnChangePasswordPage(table);
         }
 
-        //UserPools
+        //UserPools **
         [Given(@"User selects the User Pools Field from the dropdown menu of Profile Icon")]
         public void GivenUserSelectsTheUserPoolsFieldFromTheDropdownMenuOfProfileIcon()
         {
@@ -157,7 +161,7 @@ namespace UITestAutomation
             userPools.ClickCloseButton();
         }
 
-        //TransactionProcess
+        //TransactionProcess **
         [Given(@"User selects the Transaction Processes Field from the dropdown menu of Profile Icon")]
         public void GivenUserSelectsTheTransactionProcessesFieldFromTheDropdownMenuOfProfileIcon()
         {
@@ -188,7 +192,7 @@ namespace UITestAutomation
             transactionProcess.ClickCloseButton();
         }
 
-        //WorkflowSettings
+        //WorkflowSettings **
         [Given(@"User selects the Workflow Settings Field from the dropdown menu of Profile Icon")]
         public void GivenUserSelectsTheWorkflowSettingsFieldFromTheDropdownMenuOfProfileIcon()
         {
@@ -267,7 +271,7 @@ namespace UITestAutomation
             workflows.ClickCloseButtononSelfVerbiage();
         }
 
-        //Customers Done
+        //Customers Done **
         [Given(@"User clicks the Customer Field on the Dashboard page")]
         public void GivenUserClicksTheCustomerFieldOnTheDashboardPage()
         {
@@ -382,7 +386,7 @@ namespace UITestAutomation
             dashboard.ClickDashboard();
         }
 
-        //users
+        //users **
         [Given(@"User selects the Users Field from the dropdown menu of Profile Icon")]
         public void GivenUserSelectsTheUsersFieldFromTheDropdownMenuOfProfileIcon()
         {
@@ -420,9 +424,7 @@ namespace UITestAutomation
         }
 
 
-        //BRANDS
-
-
+        //BRANDS **
         [Given(@"User selects the Brands option from the drop down menu of the ProfileIcon")]
         public void GivenUserSelectsTheBrandsOptionFromTheDropDownMenuOfTheProfileIcon()
         {
@@ -445,7 +447,7 @@ namespace UITestAutomation
             brands.AssertFieldsonAddBrandsPage(table);
         }
 
-        //BATCH REPORTING
+        //BATCH REPORTING **
 
         [Given(@"User selects the Batch Reporting option from the drop down menu of the ProfileIcon")]
         public void GivenUserSelectsTheBatchReportingOptionFromTheDropDownMenuOfTheProfileIcon()
@@ -458,7 +460,7 @@ namespace UITestAutomation
             batchReporting.AssertUIControlsOnBatchReportingPage(table);
         }
 
-        //COMPANY DETAILS
+        //COMPANY DETAILS **
 
         [Given(@"User selects the Company Details Option from the dropdown menu of ProfileIcon")]
         public void GivenUserSelectsTheCompanyDetailsOptionFromTheDropdownMenuOfProfileIcon()
@@ -517,7 +519,7 @@ namespace UITestAutomation
         }
 
 
-        //FIELD UPDATE SCRIPTS
+        //FIELD UPDATE SCRIPTS **
 
         [Given(@"User selects the Field Update Scripts option from the dropdown menu of ProfileIcon")]
         public void GivenUserSelectsTheFieldUpdateScriptsOptionFromTheDropdownMenuOfProfileIcon()
@@ -550,7 +552,7 @@ namespace UITestAutomation
             fieldUpdateScripts.AssertFieldsonDownloadfromlibraryPage(table);
         }
 
-        //GL DEFINITIONS
+        //GL DEFINITIONS **
 
         [Given(@"User selects the GL Definitions option from the drop down menu of the ProfileIcon")]
         public void GivenUserSelectsTheGLDefinitionsOptionFromTheDropDownMenuOfTheProfileIcon()
@@ -584,7 +586,7 @@ namespace UITestAutomation
             glDefinitions.AssertFieldsonDownloadfromLibraryPage(table);
         }
 
-        //IMPORT CONFIGURATIONS PAGE
+        //IMPORT CONFIGURATIONS PAGE **
 
         [Given(@"User clicks the Profile Icon on the Dashboard page")]
         public void GivenUserClicksTheProfileIconOnTheDashboardPage()
@@ -613,7 +615,7 @@ namespace UITestAutomation
             importConfigurations.AssertFieldsonAddConfigurationonImportConfigurationsPage(table);
         }
 
-        //Tasks
+        //Tasks **
         [Given(@"User selects the Tasks option from the drop down menu of the ProfileIcon")]
         public void GivenUserSelectsTheTasksOptionFromTheDropDownMenuOfTheProfileIcon()
         {
@@ -636,7 +638,7 @@ namespace UITestAutomation
         }
 
 
-        // Fee Selection Settings
+        // Fee Selection Settings **
         [Given(@"User selects the Fee Selection Settings option from the drop down menu of the ProfileIcon")]
         public void GivenUserSelectsTheFeeSelectionSettingsOptionFromTheDropDownMenuOfTheProfileIcon()
         {
@@ -658,7 +660,7 @@ namespace UITestAutomation
             feeSelectionSettings.AssertFieldsOnAddFeeSelectionPage(table);
         }
 
-        // Transaction Alerts
+        // Transaction Alerts **
         [Given(@"User selects the Transaction Alerts option from the drop down menu of the ProfileIcon")]
         public void GivenUserSelectsTheTransactionAlertsOptionFromTheDropDownMenuOfTheProfileIcon()
         {
@@ -682,7 +684,7 @@ namespace UITestAutomation
 
 
 
-        // DISPUTES
+        // DISPUTES **
         [Given(@"User clicks the Disputes Icon on Dashboard page")]
         public void GivenUserClicksTheDisputesIconOnDashboardPage()
         {
@@ -769,7 +771,7 @@ namespace UITestAutomation
             disputes.AssertFieldslsOnResolutionPage(table);
         }
 
-        // Monthly Report
+        // Monthly Report **
         [Given(@"User clicks the Monthly Report Icon from the dropdown of Disputes Page")]
         public void GivenUserClicksTheMonthlyReportIconFromTheDropdownOfDisputesPage()
         {
@@ -801,7 +803,7 @@ namespace UITestAutomation
             monthlyReport.AssertFieldsOnListsPage(table);
         }
 
-        // Daily Ledger
+        // Daily Ledger **
         [Given(@"User clicks the Daily Ledger Icon from the dropdown of Ledger")]
         public void GivenUserClicksTheDailyLedgerIconFromTheDropdownOfLedger()
         {
@@ -813,7 +815,7 @@ namespace UITestAutomation
             dailyLedger.AssertUIControlsOnDailyLedgerPage(table);
         }
 
-        //Ledger Report
+        //Ledger Report **
         [Given(@"User clicks the Ledger Report button from the dropdown of Ledger Page")]
         public void GivenUserClicksTheLedgerReportButtonFromTheDropdownOfLedgerPage()
         {
@@ -836,7 +838,7 @@ namespace UITestAutomation
         }
 
 
-        // Ledger Batches
+        // Ledger Batches **
         [Given(@"User clicks the Ledger Icon on the Dashboard Page")]
         public void GivenUserClicksTheLedgerIconOnTheDashboardPage()
         {
@@ -855,19 +857,470 @@ namespace UITestAutomation
         [Given(@"User clicks the Ledger Entries button on the Ledger Batches Page")]
         public void GivenUserClicksTheLedgerEntriesButtonOnTheLedgerBatchesPage()
         {
-           // ledgerBatches.
+           //legder
         }
 
-        // AuditorLog
-        [Given(@"User clicks the Auditor Log Icon from the dropdown of Disputes Page")]
-        public void GivenUserClicksTheAuditorLogIconFromTheDropdownOfDisputesPage()
+        //WorkflowAutomations **
+        [Given(@"User Selects the Workflow Automations from the dropdown menu of the Page")]
+        public void GivenUserSelectsTheWorkflowAutomationsFromTheDropdownMenuOfThePage()
         {
-            auditorLog.ClickAuditorLogButton();
+            automation.ClickWorkflowAutomationsButton();
         }
-        [Given(@"User validates the following fields on the Auditor Log Page")]
-        public void GivenUserValidatesTheFollowingFieldsOnTheAuditorLogPage(Table table)
+
+        [Given(@"User validates following UI controls on WorkFlow Automations Page")]
+        public void GivenUserValidatesFollowingUIControlsOnWorkFlowAutomationsPage(Table table)
         {
-            auditorLog.AssertUIControlsOnAuditorLogPage(table);
+            automation.AssertUIControlsOnWorkflowAutomationsPage(table);
+        }
+
+        [Given(@"User clicks the Add Workflow Automations Icon on Workflow Automations Page")]
+        public void GivenUserClicksTheAddWorkflowAutomationsIconOnWorkflowAutomationsPage()
+        {
+            automation.ClickOnAddWorkflowAutomationsButton();
+        }
+
+        [Given(@"User validates following fields on Add Workflow Automations Dialog")]
+        public void GivenUserValidatesFollowingFieldsOnAddWorkflowAutomationsDialog(Table table)
+        {
+            automation.AssertFieldssOnAddWorkflowAutomationsPage(table);
+        }
+
+         // (Submissions)**
+        //Taskreport
+        [Given(@"User clicks the Submissions Field on the Dashboard page")]
+        public void GivenUserClicksTheSubmissionsFieldOnTheDashboardPage()
+        {
+            dashboard.ClickSubmissions();
+        }
+
+        [Given(@"User selects the Task Reports Field from the dropdown menu of Submissions")]
+        public void GivenUserSelectsTheTaskReportsFieldFromTheDropdownMenuOfSubmissions()
+        {
+            taskReports.ClickTaskReports();
+        }
+
+        [Given(@"User validates the following Fields on Task Reports Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTaskReportsPage(Table table)
+        {
+            taskReports.AssertFieldsonTaskReportPage(table);
+        }
+
+        //monthly report
+        [Given(@"User selects the Monthly Report Field from the dropdown menu of Submissions")]
+        public void GivenUserSelectsTheMonthlyReportFieldFromTheDropdownMenuOfSubmissions()
+        {
+            monthlyReports.ClickMonthlyReports();
+        }
+
+        [Given(@"User validates the following Fields on Monthly Report Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnMonthlyReportPage(Table table)
+        {
+            monthlyReports.AssertFieldsonMonthlyReportPage(table);
+        }
+
+        //reset submission
+        [Given(@"User selects the Reset Submission Field from the dropdown menu of Submissions")]
+        public void GivenUserSelectsTheResetSubmissionFieldFromTheDropdownMenuOfSubmissions()
+        {
+            resetSubmission.ClickResetSubmission();
+        }
+
+        [Given(@"User validates the following Fields on Reset Submission Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnResetSubmissionPage(Table table)
+        {
+            resetSubmission.AssertFieldsonResetSubmissionPage(table);
+        }
+
+        //delete submission
+        [Given(@"User selects the Delete Submission Field from the dropdown menu of Submissions")]
+        public void GivenUserSelectsTheDeleteSubmissionFieldFromTheDropdownMenuOfSubmissions()
+        {
+            deleteSubmission.ClickDeleteSubmission();
+        }
+
+        [Given(@"User validates the following Fields on Delete Submission Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnDeleteSubmissionPage(Table table)
+        {
+            deleteSubmission.AssertFieldsonDeleteSubmissionPage(table);
+        }
+
+        //My Tasks
+        [Given(@"User selects the My Tasks Field from the dropdown menu of Submissions")]
+        public void GivenUserSelectsTheMyTasksFieldFromTheDropdownMenuOfSubmissions()
+        {
+            myTasks.ClickMyTasks();
+        }
+
+        [Given(@"User validates the following Fields on My Tasks Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnMyTasksPage(Table table)
+        {
+            myTasks.AssertFieldsonMyTasksPage(table);
+        }
+
+        //Reconciliation
+        [Given(@"User selects the Reconciliation Field from the dropdown menu of Submissions")]
+        public void GivenUserSelectsTheReconciliationFieldFromTheDropdownMenuOfSubmissions()
+        {
+            reconciliation.ClickReconciliation();
+        }
+
+        [Given(@"User validates the following Fields on Reconciliation Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnReconciliationPage(Table table)
+        {
+            reconciliation.AssertFieldsonReconciliationPage(table);
+        }
+
+        //Submissions With Alerts
+        [Given(@"User selects the Submissions With Alerts Field from the dropdown menu of Submissions")]
+        public void GivenUserSelectsTheSubmissionsWithAlertsFieldFromTheDropdownMenuOfSubmissions()
+        {
+            alerts.ClickSubmissionsWithAlerts();
+        }
+
+        [Given(@"User validates the following UI Controls on Submissions With Alerts Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnSubmissionsWithAlertsPage(Table table)
+        {
+            alerts.AssertUIControlsonSubmissionsWithAlertsPage(table);
+        }
+
+        [Given(@"User validates the following Fields on Submissions With Alerts Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnSubmissionsWithAlertsPage(Table table)
+        {
+            alerts.AssertFieldsonSubmissionsWithAlertsPage(table);
+        }
+
+        //ActivityHistory
+        [Given(@"User selects the Activity History Field from the dropdown menu of Submissions")]
+        public void GivenUserSelectsTheActivityHistoryFieldFromTheDropdownMenuOfSubmissions()
+        {
+            activityHistory.ClickActivityHistory();
+        }
+
+        [Given(@"User validates the following Fields on Activity History Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnActivityHistoryPage(Table table)
+        {
+            activityHistory.AssertFieldsonActivityHistoryPage(table);
+        }
+
+        //Submission List 
+        [Given(@"User selects the Submissions List Field from the dropdown menu of Submissions")]
+        public void GivenUserSelectsTheSubmissionsListFieldFromTheDropdownMenuOfSubmissions()
+        {
+            submissionList.ClickSubmissionList();
+        }
+
+        [Given(@"User validates the following UI Controls on Submissions List Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnSubmissionsListPage(Table table)
+        {
+            submissionList.AssertUIControlsonSubmissionListPage(table);
+        }
+        [Given(@"User validates the following Fields on Submissions List Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnSubmissionsListPage(Table table)
+        {
+            submissionList.AssertFieldsonSubmissionListPage(table);
+        }
+
+        [Given(@"User clicks the Reassign Submission Icon on Submissions List Page")]
+        public void GivenUserClicksTheReassignSubmissionIconOnSubmissionsListPage()
+        {
+            submissionList.ClickReassignSubmissionnButton();
+        }
+        [Given(@"User validates the following UI Controls on Reassign Submission Dialog")]
+        public void GivenUserValidatesTheFollowingUIControlsOnReassignSubmissionDialog(Table table)
+        {
+            submissionList.AssertUIControlsonReassignSubmissionPage(table);
+        }
+
+        [Given(@"User clicks the Cancel Button on Reassign Submission Dialog")]
+        public void GivenUserClicksTheCancelButtonOnReassignSubmissionDialog()
+        {
+            submissionList.ClickCancelButtononReassignSubmissionnDialog();
+        }
+
+        [Given(@"User clicks the New Case Button on Submissions List Page")]
+        public void GivenUserClicksTheNewCaseButtonOnSubmissionsListPage()
+        {
+            submissionList.ClickNewCaseButton();
+
+        }
+        [Given(@"User Enters the following data into the fields on Dispute Submission Page")]
+        public void GivenUserEntersTheFollowingDataIntoTheFieldsOnDisputeSubmissionPage(Table table)
+        {
+            submissionList.EnterValueinFieldsonDisputeSubmissionPage(table);
+        }
+
+        [Given(@"User clicks the Fraud Button from Listed Transactions on Dispute Submission Page")]
+        public void GivenUserClicksTheFraudButtonFromListedTransactionsOnDisputeSubmissionPage()
+        {
+            submissionList.ClickFruadRadioButton();
+        }
+
+        [Given(@"User clicks the Advanced Search Button on Dispute Submission Page")]
+        public void GivenUserClicksTheAdvancedSearchButtonOnDisputeSubmissionPage()
+        {
+            submissionList.ClickAdvanceSearchButton();
+        }
+        [Given(@"User Enters the following data into the fields on Customer Search Page")]
+        public void GivenUserEntersTheFollowingDataIntoTheFieldsOnCustomerSearchPage(Table table)
+        {
+            submissionList.EnterValueinFieldsonCustomerSearchPage(table);
+        }
+
+        [Given(@"User clicksthe Search Button on Customer Search Page")]
+        public void GivenUserClickstheSearchButtonOnCustomerSearchPage()
+        {
+            submissionList.ClickCustomerSearchButton();
+        }
+
+        [Given(@"User Selects the Customer from the Customers Dialog")]
+        public void GivenUserSelectsTheCustomerFromTheCustomersDialog()
+        {
+            submissionList.ClickSelectCustomerButton();
+        }
+
+        [Given(@"User Enters the following data on Dispute Submission Page")]
+        public void GivenUserEntersTheFollowingDataOnDisputeSubmissionPage(Table table)
+        {
+            submissionList.EnterValueinFieldsonDisputeSubmissionPage(table);
+        }
+
+        [Given(@"User clicks the Additional Tasks on Dispute Submission Page")]
+        public void GivenUserClicksTheAdditionalTasksOnDisputeSubmissionPage()
+        {
+            submissionList.ClickAdditionalTasksField();
+        }
+
+        [Given(@"User selects the following data from the field on Add Task Page")]
+        public void GivenUserSelectsTheFollowingDataFromTheFieldOnAddTaskPage(Table table)
+        {
+            submissionList.EnterValueonAddTaskPage(table);
+        }
+
+        [Given(@"User clicks the Save Button on Add Task Page")]
+        public void GivenUserClicksTheSaveButtonOnAddTaskPage()
+        {
+            submissionList.ClickSaveButtononAdditionalTasksField();
+        }
+
+        [Given(@"User clicks the Transaction List on Dispute Submission Page")]
+        public void GivenUserClicksTheTransactionListOnDisputeSubmissionPage()
+        {
+            submissionList.ClickTransactionListField();
+        }
+
+        [Given(@"User Enters the following data on Add Transaction Page")]
+        public void GivenUserEntersTheFollowingDataOnAddTransactionPage(Table table)
+        {
+            submissionList.EnterValueinFieldsonAddTransactionPage(table);
+        }
+
+        [Given(@"User clicks the Save Button on Add Transaction Page")]
+        public void GivenUserClicksTheSaveButtonOnAddTransactionPage()
+        {
+            submissionList.ClickSaveButtononAddTransactionField();
+        }
+
+        [Given(@"User clicks the Next Button on Dispute Submission Page")]
+        public void GivenUserClicksTheNextButtonOnDisputeSubmissionPage()
+        {
+            submissionList.ClickNextButton();
+        }
+
+        [Given(@"User clicks the Yes Button for Debit Card possession on Debit Card Dispute Form")]
+        public void GivenUserClicksTheYesButtonForDebitCardPossessionOnDebitCardDisputeForm()
+        {
+            submissionList.ClickYesButtononDisputeForm();
+        }
+
+        [Given(@"User clicks the Yes Button for Stolen Card Report")]
+        public void GivenUserClicksTheYesButtonForStolenCardReport()
+        {
+            submissionList.ClickYesButtonStolenCard();
+        }
+
+        [Given(@"User enters the Date in Filed Date field")]
+        public void GivenUserEntersTheDateInFiledDateField(Table table)
+        {
+            submissionList.EnterDateonFiledDateField(table);
+        }
+
+        [Given(@"User Enters the following data on Debit Card Dispute Form")]
+        public void GivenUserEntersTheFollowingDataOnDebitCardDisputeForm(Table table)
+        {
+            submissionList.EnterValueinCityReportFiledField(table);
+        }
+
+        [Given(@"User clicks the Button for Check appropriate dispute reason")]
+        public void GivenUserClicksTheButtonForCheckAppropriateDisputeReason()
+        {
+            submissionList.ClickDisputeReasonButton();
+        }
+
+        [Given(@"User clicks No Button for Card has been closed")]
+        public void GivenUserClicksNoButtonForCardHasBeenClosed()
+        {
+            submissionList.ClickNoButtononDisputeForm();
+        }
+
+        [Given(@"User Enters the following data in Date Card Closed on Debit Card Dispute Form")]
+        public void GivenUserEntersTheFollowingDataInDateCardClosedOnDebitCardDisputeForm(Table table)
+        {
+            submissionList.EnterValueinDateCardClosedField(table);
+        }
+
+        [Given(@"User clicks the Customer Signature form Button on Debit Card Dispute Form")]
+        public void GivenUserClicksTheCustomerSignatureFormButtonOnDebitCardDisputeForm()
+        {
+            submissionList.ClickCustomerSignatureForm();
+        }
+
+        [Given(@"User clicks the Confirm Electronic Signautre Consent Button")]
+        public void GivenUserClicksTheConfirmElectronicSignautreConsentButton()
+        {
+            submissionList.ClickElectronicSignatureConsentButton();
+        }
+
+        [Given(@"User clicks the Acknowledgment Button")]
+        public void GivenUserClicksTheAcknowledgmentButton()
+        {
+            submissionList.ClickConsentCheckbox();
+        }
+
+        [Given(@"User clicks the Confirm Button")]
+        public void GivenUserClicksTheConfirmButton()
+        {
+            submissionList.ClickConfirmButton();
+        }
+        [Given(@"User clicks in the Signature Field on Debit Card Dispute Form")]
+        public void GivenUserClicksInTheSignatureFieldOnDebitCardDisputeForm()
+        {
+            submissionList.ClickSignatureTextarea();
+        }
+
+        [Given(@"User clicks the Acknowledge Button on Debit Card Dispute Form")]
+        public void GivenUserClicksTheAcknowledgeButtonOnDebitCardDisputeForm()
+        {
+            submissionList.ClickAcknowldegeCheckbox();
+        }
+
+        [Given(@"User clicks the Done Button")]
+        public void GivenUserClicksTheDoneButton()
+        {
+            submissionList.ClickDoneButton();
+        }
+        [Given(@"User validates the following Fields in Submission Info Dialog on Edit Submission Page")]
+        public void GivenUserValidatesTheFollowingFieldsInSubmissionInfoDialogOnEditSubmissionPage(Table table)
+        {
+            submissionList.AssertFieldsonSubmissionsInfoPage(table);
+        }
+
+        [Given(@"User clicks the Questionnaire on Edit Submission Page")]
+        public void GivenUserClicksTheQuestionnaireOnEditSubmissionPage()
+        {
+            submissionList.ClickQuestionaireButton();
+        }
+
+        [Given(@"User validates the following Fields in  Questionnaire Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsInQuestionnaireDialog(Table table)
+        {
+            submissionList.AssertFieldsonQuestionairePage(table);
+        }
+
+        [Given(@"User clicks the Forms on Edit Submission Page")]
+        public void GivenUserClicksTheFormsOnEditSubmissionPage()
+        {
+            submissionList.ClickFormsButton();
+        }
+
+        [Given(@"User validates the following Fields in Forms Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsInFormsDialog(Table table)
+        {
+            submissionList.AssertFieldsonFormsPage(table);
+        }
+
+        [Given(@"User clicks the Disputes on Edit Submission Page")]
+        public void GivenUserClicksTheDisputesOnEditSubmissionPage()
+        {
+            submissionList.ClickDisputesButton();
+        }
+
+        [Given(@"User validates the following Fields in Disputes Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsInDisputesDialog(Table table)
+        {
+            submissionList.AssertFieldsonDisputesPage(table);
+        }
+
+        [Given(@"User clicks the Research on Edit Submission Page")]
+        public void GivenUserClicksTheResearchOnEditSubmissionPage()
+        {
+            submissionList.ClickResearchButton();
+        }
+
+        [Given(@"User validates the following Fields in Research Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsInResearchDialog(Table table)
+        {
+            submissionList.AssertFieldsonResearchPage(table);
+        }
+
+        [Given(@"User clicks the Customer Status on Edit Submission Page")]
+        public void GivenUserClicksTheCustomerStatusOnEditSubmissionPage()
+        {
+            submissionList.ClickCustomerStatusButton();
+        }
+
+        [Given(@"User validates the following Fields in Customer Status Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsInCustomerStatusDialog(Table table)
+        {
+            submissionList.AssertFieldsonCustomerStatusPage(table);
+        }
+
+        [Given(@"User clicks the Contacts on Edit Submission Page")]
+        public void GivenUserClicksTheContactsOnEditSubmissionPage()
+        {
+            submissionList.ClickContactsButton();
+        }
+
+        [Given(@"User validates the following Fields in Contacts Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsInContactsDialog(Table table)
+        {
+            submissionList.AssertFieldsonContactsPage(table);
+        }
+
+        [Given(@"User clicks the GL Ledger on Edit Submission Page")]
+        public void GivenUserClicksTheGLLedgerOnEditSubmissionPage()
+        {
+            submissionList.ClickGLLedgerButton();
+        }
+
+        [Given(@"User validates the following Fields in GL Ledger Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsInGLLedgerDialog(Table table)
+        {
+            submissionList.AssertFieldsonGLLedgerPage(table);
+        }
+
+        [Given(@"User clicks the Documents on Edit Submission Page")]
+        public void GivenUserClicksTheDocumentsOnEditSubmissionPage()
+        {
+            submissionList.ClickDocumentButton();
+        }
+
+        [Given(@"User validates the following Fields in Documents Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsInDocumentsDialog(Table table)
+        {
+            submissionList.AssertFieldsonDocumentsPage(table);
+        }
+
+        //Provisional Credit log **
+        [Given(@"User clicks the Provisional Credit Log Icon from the dropdown of Disputes Page")]
+        public void GivenUserClicksTheProvisionalCreditLogIconFromTheDropdownOfDisputesPage()
+        {
+            creditLog.ClickProvisionalCreditLogButton();
+        }
+
+        [Given(@"User validates the following fields on the Provisional Credit Log Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheProvisionalCreditLogPage(Table table)
+        {
+            creditLog.AssertUIControlsOnProvisionalCreditLogPage(table);
         }
 
 

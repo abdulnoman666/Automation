@@ -10,7 +10,7 @@ namespace UITestAutomation
 {
     public class Configuration
     {
-        XDocument doc = XDocument.Parse(File.ReadAllText(@"D:\Automation2\Automation\UITestAutomation\\app.config"));
+        XDocument doc = XDocument.Parse(File.ReadAllText("E:\\Microsoft Visio Studio Workspace\\SpecFlowProject_prac\\app.config"));
 
         public string Get_baseurl()
         {

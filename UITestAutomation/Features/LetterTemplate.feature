@@ -24,8 +24,34 @@ Scenario: Letter Template
 		| Reference             |
 		| Enter Page            |
 	And User clicks the Add Letter Template Icon on Letter Template Page
-	And User validates following fields on Add Letter Template Dialog
-		| Field                  |
-		| Reference              |
+	And User validates following fields on Letter info Dialog
+		| Field                                      |
+		| Title                                      |
+		| Description                                |
+		| Author                                     |
+		| File name to save letter on printing       |
+		| Subject line when sending letter via email |
+		| Table Name                                 |
+		| Reference                                  |
+		| Workflows                                  |
+		| SQL Command Name                           |
+		| Is input Form?                             |
+		| Is Consent notice?                         |
+		| Use Cut-Off print date?                    |
+		| Eligible for E-Signature?                  |
+
+	And User validates following fields on Template Dialog
+		| Field                |
+		| Letter Template Form |
+
+	And User validates following fields on Style Sheet Dialog
+		| Field           |
+		| Title           |
+		| Style Sheet     |
+		| Delete Template |
+		| Copy Template   |
+		| Save Template   |
+		| Close Template  |
+	
 		
 

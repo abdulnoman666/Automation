@@ -1,10 +1,6 @@
-﻿
-using NUnit.Framework.Internal;
-using OpenQA.Selenium;
-using System.IO;
-using System.Reflection.Metadata;
+﻿using OpenQA.Selenium;
 
-namespace UITestAutomation.Pages.Submissions_With_Alerts
+namespace UITestAutomation
 {
     internal partial class SubmissionsWithAlerts
     {

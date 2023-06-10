@@ -1,19 +1,20 @@
 ﻿using OpenQA.Selenium;
+
 namespace UITestAutomation
 {
     internal partial class LedgerBatches
     {
         //UI Controls on Ledger Batches Page
-        By LedgerBatchesOption = By.XPath("//a[text='Ledger Batches']");
-        By DateRange = By.XPath("//select[@ng-model='dateRange']");
-        By From = By.XPath("//button[@ng-click='ctrl.openCalendarPane($event)'][1]");
-        By To = By.XPath("//button[@ng-click='ctrl.openCalendarPane($event)'][2]");
-        By Action = By.XPath("//th[1][2]");
-        By Id = By.XPath("//th[2][2]");
-        By Process = By.XPath("//th[3][2]");
-        By Created = By.XPath("//th[4][2]");
-        By PrintReport = By.XPath("//span[@ng-show='showLabel']");
-        By ExportEntries = By.XPath("//button[@ng-click='exportReport()']");
-        By LedgerEntries = By.XPath("//button[@ng-click='showReport()']");      
+        By LedgerBatchesOption = By.LinkText("Ledger Batches");
+        By DateRange = By.CssSelector("//select[@ng-model='dateRange']");
+        By CalendarButton = By.CssSelector(".panel-body .fi-field:nth-of-type(1) ._md-datepicker-has-triangle-icon > [type]");
+        By TriangleButton = By.CssSelector(".panel-body .fi-field:nth-of-type(1) .md-datepicker-expand-triangle");
+        By Action = By.CssSelector("[width='100']");
+        By Id = By.CssSelector("[width='30']");
+        By Process = By.CssSelector(".panel-body tr th:nth-of-type(3)");
+        By Created = By.CssSelector(".panel-body tr th:nth-of-type(4)");
+        By PrintReport = By.CssSelector("button[title='Print Letter']");
+        By ExportEntries = By.CssSelector(".col-lg-12 > button:nth-of-type(2)");
+        By LedgerEntries = By.CssSelector(".col-lg-12 > button:nth-of-type(1)");      
     }
 }

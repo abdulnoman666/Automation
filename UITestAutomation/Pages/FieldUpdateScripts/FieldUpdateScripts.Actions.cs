@@ -1,5 +1,4 @@
-﻿namespace UITestAutomation
-{
+﻿namespace UITestAutomation { 
     internal partial class FieldUpdateScripts: Selenium_Methods
     {
         public void ClickFieldUpdateScriptsButton()

@@ -1,6 +1,6 @@
 ﻿using Fyp_Arshi.Helper_Functions;
 
-namespace UITestAutomation.Pages.LoginVerification
+namespace UITestAutomation
 {
     internal partial class LoginVerification : Selenium_Methods
     {

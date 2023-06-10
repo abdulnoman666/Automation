@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace UITestAutomation.Pages.Dashboard
+namespace UITestAutomation
 {
     internal partial class Dashboard
     {
@@ -12,5 +12,6 @@ namespace UITestAutomation.Pages.Dashboard
         By DisputeIcon = By.CssSelector("li:nth-of-type(5) > .dropdown-toggle");
         By LedgerIcon = By.CssSelector("li:nth-of-type(7) > .dropdown-toggle");
         By FraudAlertsButton = By.LinkText("Fraud Alerts");
+        By Submission_Icon = By.CssSelector("li:nth-of-type(4) > .dropdown-toggle");
     }
 }

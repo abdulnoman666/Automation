@@ -1,15 +1,11 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace UITestAutomation.Pages.QuestionnaireDependencySetup
+namespace UITestAutomation
 {
     internal partial class QuestionnaireDependencySetup 
     {
         //UI Controls on QuestionareDPage
+        By QuestionnaireDependencySetupOption = By.LinkText("Questionnaire Dependency Setup");
         By AddFormDependancyList = By.CssSelector("button[title='Add Form Dependency List']");
         By DeleteList = By.XPath("//button[@class='btn btn-danger glyphicon glyphicon-trash']");
         By EditFormDependencySetup = By.CssSelector("tr:nth-of-type(1)  button[title='Edit Form Dependency Setup']");
