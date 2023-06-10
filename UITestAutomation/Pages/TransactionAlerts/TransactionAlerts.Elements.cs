@@ -4,25 +4,27 @@ namespace UITestAutomation
     internal partial class TransactionAlerts
     {
         //UI Controls on Transaction Alerts Page
-        By TransactionAlertsButton = By.LinkText("Transaction Alerts");
-        By AddNewTransactionAlert = By.CssSelector("button[title='Add New Transaction Alert']");
-        By ActionField = By.CssSelector("tr th:nth-of-type(1)");
-        By IDField = By.CssSelector("tr th:nth-of-type(2)");
-        By TransactionAlertField = By.CssSelector("tr th:nth-of-type(3)");
-        By WorkflowsField = By.CssSelector("tr th:nth-of-type(4)");
-        By ReferenceField = By.CssSelector("tr th:nth-of-type(5)");
-        By RefreshIcon = By.CssSelector("button[title='Refresh']");
+        By TransactionAlertsButton = By.XPath("//a[text='Transaction Alerts']");
+        By AddNewTransactionAlert = By.XPath("//button[@ng-click='addNewAlert()']");
+        By DeleteAlert = By.XPath("//button[@ng-click='removeAlert($event, t);']");
+        By EditAlert = By.XPath("//button[@ng-click='editAlert(t)']");
+        By ActionField = By.XPath("//th[1]");
+        By IDField = By.XPath("//th[2]");
+        By TransactionAlertField = By.XPath("//th[3]");
+        By WorkflowsField = By.XPath("//th[4]");
+        By ReferenceField = By.XPath("//th[5]");
+        By RefreshIcon = By.XPath("//button[@ng-click='refresh()']");
 
         //Fields on Add Transaction Alerts Page 
-        By Name = By.CssSelector("form[name='fsForm'] > input[name='alertName']");
-        By Workflows = By.CssSelector(".select2-selection__rendered");
-        By Reference = By.CssSelector("form[name='fsForm'] > input[name='alertReference']");
-        By Condition = By.CssSelector("div > input:nth-of-type(7)");
+        By Name = By.XPath("//input[@ng-model='selectedTransactionAlert.alertInformation.name']");
+        By Workflows = By.XPath("//ul[class='select2-selection__rendered']");
+        By Reference = By.XPath("//input[@ng-model='selectedTransactionAlert.alertInformation.reference']");
+        By Condition = By.XPath("//input[@ng-model='newAlertCondition.condition']");
         By Action = By.XPath("//select[@ng-model='newAlertCondition.action']");
-        By Tooltip = By.CssSelector("div > input:nth-of-type(8)");
-        By SaveCondition = By.CssSelector(".btn.btn-default.btn-sm");
-        By SaveButton = By.CssSelector(".modal-footer [data-dismiss='modal']:nth-of-type(2)");
-        By CloseButton = By.CssSelector(".modal-lg .modal-footer [data-dismiss='modal']:nth-of-type(1)");
-        By CrossButton = By.CssSelector(".modal-dialog.modal-lg .close");
+        By Tooltip = By.XPath("//input[@ng-model='newAlertCondition.tooltip']");
+        By SaveCondition = By.XPath("//button[@ng-disabled='addScriptItem.$invalid']");
+        By SaveButton = By.XPath("//button[@ng-click='saveAlert()']");
+        By CloseButton = By.XPath("//button[class='btn btn-default'][2]");
+        By CrossButton = By.XPath("//button[class='close'][2]");
     }
 }

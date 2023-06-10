@@ -3,12 +3,12 @@ namespace UITestAutomation
 {
     internal partial class BatchReporting
     {
-        By BatchReportingOption = By.LinkText("Batch Reporting");
-        By BatchReference = By.CssSelector("[ng-model] option[label]");
-        By DateRange = By.CssSelector("[ng-model='dateRange'] option");
-        By CalendarIcon = By.XPath("//button[@ng-click='ctrl.openCalendarPane($event)']");
-        By DownArrowIcon = By.CssSelector(".panel-body .fi-field:nth-of-type(1) .md-datepicker-expand-triangle");
-        By PrintReport = By.CssSelector(".glyphicon-file");
+        By BatchReportingOption = By.XPath("Batch Reporting");
+        By BatchReference = By.XPath("//select[@ng-model='searchField']");
+        By DateRange = By.XPath("//select[@ng-model='dateRange']");
+        By From = By.XPath("//button[@ng-click='ctrl.openCalendarPane($event)'][1]");
+        By To = By.XPath("//button[@ng-click='ctrl.openCalendarPane($event)'][2]");
+        By PrintReport = By.XPath("//span[@ng-show='showLabel']");
         By ExportDisputes = By.XPath("//button[@ng-click='exportDisputes($event)']");
     }
 }
