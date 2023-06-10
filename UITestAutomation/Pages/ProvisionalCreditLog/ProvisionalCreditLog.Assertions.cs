@@ -1,4 +1,4 @@
-﻿namespace UITestAutomation.Pages.ProvisionalCreditLog
+﻿namespace UITestAutomation
 {
     internal partial class ProvisionalCreditLog: Selenium_Methods
     {

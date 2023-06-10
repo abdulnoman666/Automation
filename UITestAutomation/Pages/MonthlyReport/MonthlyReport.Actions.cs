@@ -1,4 +1,4 @@
-﻿namespace UITestAutomation.Pages.MonthlyReport
+﻿namespace UITestAutomation
 {
     internal partial class MonthlyReport
     {

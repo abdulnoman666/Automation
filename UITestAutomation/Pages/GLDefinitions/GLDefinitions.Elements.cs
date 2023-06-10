@@ -1,21 +1,21 @@
 ﻿using OpenQA.Selenium;
-namespace UITestAutomation.Pages.GLDefinitions
+namespace UITestAutomation
 {
     internal partial class GLDefinitions
     {
         //UI Controls on GL Definitions Page
-        By GLDefinitionsOption = By.LinkText("GL Definitions");
-        By AddGLDefinition = By.CssSelector("button[title='Add GL Definition']");
-        By DeleteGLDefinition = By.CssSelector("button[title='Delete GL Definition']");
-        By EditGLDefinition = By.CssSelector("button[title='Edit GL Definition']");
-        By CopyGLDefinition = By.CssSelector("button[title='Copy GL Definition']");
-        By RefreshIcon = By.CssSelector("button[title='Refresh']");
-        By DownloadLetter = By.CssSelector("button[title='Download Letter']");
-        By ShowDeletedGLDefinition = By.CssSelector(".page-link");
-        By ActionField = By.CssSelector(".table.table-bordered.table-striped > thead > tr > th:nth-of-type(1)");
+        By GLDefinitionsOption = By.XPath("//a[text='GL Definitions']");
+        By AddGLDefinition = By.XPath("//button[@ng-click='addDefinition()']");
+        By DeleteGLDefinition = By.XPath("//button[@ng-click='deleteTransactionType($event, definition)']");
+        By EditGLDefinition = By.XPath("//button[@ng-click='editGLTransactionType(definition)']");
+        By CopyGLDefinition = By.XPath("//button[@ng-click='copyGLTransactionType(definition)']");
+        By RefreshIcon = By.XPath("//button[@ng-click='refreshGLAccounts()']");
+        By DownloadLetter = By.XPath("//button[title='Download Letter']");
+        By ShowDeletedGLDefinition = By.XPath("//input[@ng-model='showDeleted']");
+        By ActionField = By.XPath("//th[1][1]");
         By TransferTypeField = By.XPath("//input[@ng-model='$.accountType']");
         By GLAccountField = By.XPath("//input[@ng-model='$.account']");
-        By DescriptionField = By.CssSelector("tr:nth-of-type(1) > td:nth-of-type(4)");
+        By DescriptionField = By.XPath("//th[4][1]");
         By ReferenceField = By.XPath("//input[@ng-model='$.reference']");
         By SourceField = By.XPath("//input[@ng-model='$.source']");
         By BranchField = By.XPath("//input[@ng-model='$.branchCode']");
@@ -41,19 +41,19 @@ namespace UITestAutomation.Pages.GLDefinitions
         By Workflow = By.XPath("(//select[@ng-model='newType.source'])[1]");
         By Branch = By.XPath("(//select[@ng-model='newType.branchCode'])[1]");
         By CustomerType = By.XPath("(//select[@ng-model='newType.accountOwnershipType'])[1]");
-        By CrossButton = By.XPath("form[name='definitionForm'] .close > span");
-        By SaveButton = By.XPath("form[name='definitionForm'] .btn.btn-info");
-        By CloseButton = By.XPath(".container .modal-footer [data-dismiss='modal']:nth-of-type(3)");
-        By DeleteDefinition = By.XPath("button[title='Delete Definition']");
+        By CrossButton = By.XPath("//button[class='close'][2]");
+        By SaveButton = By.XPath("//button[@ng-click='saveTransactionType()']");
+        By CloseButton = By.XPath("//button[class='btn btn-default'][2]");
+        By DeleteDefinition = By.XPath("//button[@ng-click='toggleIsDeleted($event, newType, modal, $modal)']");
 
         // Fields on Download from Library Page
-        By CrossButton2 = By.CssSelector("div#gldefinitionLibraryPopup.modal-content.close");
-        By SearchBar = By.CssSelector("[placeholder='Search']");
-        By SearchButton = By.CssSelector(".glyphicon-search");
-        By ActionField2 = By.CssSelector("gl-definition-library-popup tr th:nth-of-type(1)");
-        By IDField = By.CssSelector("gl-definition-library-popup tr th:nth-of-type(2)");
-        By DescriptionField2 = By.CssSelector("gl-definition-library-popup tr th:nth-of-type(3)");
-        By DownloadGLDefinitionField = By.CssSelector("tr:nth-of-type(1)  button[title='Downlaod GL Definition']");
-        By CloseButton2 = By.CssSelector("gl-definition-library-popup .modal-footer [data-dismiss]");
+        By CrossButton2 = By.XPath("//button[class='close'][4]");
+        By SearchBar = By.XPath("//input[@ng-model='txtSearch']");
+        By SearchButton = By.XPath("//span[class='glyphicon glyphicon-search']");
+        By ActionField2 = By.XPath("//th[1][2]");
+        By IDField = By.XPath("//th[2][2]");
+        By DescriptionField2 = By.XPath("//th[3][2]");
+        By DownloadGLDefinitionField = By.XPath("//button[@ng-click='copygldefinitionToPackage({glDefinition: t})']");
+        By CloseButton2 = By.XPath("//button[class='btn btn-default'][4]");
     }
 }

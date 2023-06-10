@@ -14,11 +14,11 @@
                     case " Date Range":
                         FluentWaitForWebElement(DateRange);
                         break;
-                    case " Calendar Icon":
-                        FluentWaitForWebElement(CalendarIcon);
+                    case " From":
+                        FluentWaitForWebElement(From);
                         break;
-                    case " Down Arrow Icon":
-                        FluentWaitForWebElement(DownArrowIcon);
+                    case " To":
+                        FluentWaitForWebElement(To);
                         break;
                     case " Print Report":
                         FluentWaitForWebElement(PrintReport);

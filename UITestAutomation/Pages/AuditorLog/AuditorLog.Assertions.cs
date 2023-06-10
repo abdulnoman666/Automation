@@ -32,6 +32,9 @@
                     case " R/S":
                         FluentWaitForWebElement(RS);
                         break;
+                    case " Status":
+                        FluentWaitForWebElement(Status);
+                        break;
                     case " Resolution":
                         FluentWaitForWebElement(Resolution);
                         break;

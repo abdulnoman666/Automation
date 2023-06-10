@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-namespace UITestAutomation.Pages.ProvisionalCreditLog
+namespace UITestAutomation
 {
     internal partial class ProvisionalCreditLog
     {

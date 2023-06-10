@@ -1,4 +1,4 @@
-﻿namespace UITestAutomation.Pages.GLDefinitions
+﻿namespace UITestAutomation
 {
     internal partial class GLDefinitions: Selenium_Methods
     {

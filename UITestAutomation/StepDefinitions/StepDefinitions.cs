@@ -1,22 +1,11 @@
-using UITestAutomation.Pages.DailyLedger;
 using UITestAutomation.Pages.Dashboard;
-using UITestAutomation.Pages.Disputes;
-using UITestAutomation.Pages.FeeSelectionSettings;
-using UITestAutomation.Pages.FieldUpdateScripts;
-using UITestAutomation.Pages.FraudAlerts;
-using UITestAutomation.Pages.GLDefinitions;
-using UITestAutomation.Pages.ImportConfigurations;
-using UITestAutomation.Pages.LedgerBatches;
-using UITestAutomation.Pages.LedgerReport;
 using UITestAutomation.Pages.Login;
 using UITestAutomation.Pages.LoginVerification;
-using UITestAutomation.Pages.MonthlyReport;
-using UITestAutomation.Pages.Tasks;
-using UITestAutomation.Pages.TransactionAlerts;
 using UITestAutomation.Pages.TransactionProcess;
 using UITestAutomation.Pages.UserPools;
 using UITestAutomation.Pages.Users;
 using UITestAutomation.Pages.WorkflowSettings;
+
 
 namespace UITestAutomation
 {
@@ -48,6 +37,7 @@ namespace UITestAutomation
         DailyLedger dailyLedger = new DailyLedger();
         LedgerBatches ledgerBatches = new LedgerBatches();
         FraudAlerts fraudAlerts = new FraudAlerts();
+        AuditorLog auditorLog = new AuditorLog();
 
         //Login
         [Given(@"User goes to DisputeDev Application")]
@@ -867,5 +857,19 @@ namespace UITestAutomation
         {
            // ledgerBatches.
         }
+
+        // AuditorLog
+        [Given(@"User clicks the Auditor Log Icon from the dropdown of Disputes Page")]
+        public void GivenUserClicksTheAuditorLogIconFromTheDropdownOfDisputesPage()
+        {
+            auditorLog.ClickAuditorLogButton();
+        }
+        [Given(@"User validates the following fields on the Auditor Log Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheAuditorLogPage(Table table)
+        {
+            auditorLog.AssertUIControlsOnAuditorLogPage(table);
+        }
+
+
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace UITestAutomation.Pages.TransactionAlerts
+﻿namespace UITestAutomation
 {
     internal partial class TransactionAlerts
     {
@@ -7,7 +7,13 @@
             foreach (var item in table.Rows)
             {
                 switch (item[0].Trim())
-                {   
+                {
+                    case " Delete Alert":
+                        FluentWaitForWebElement(DeleteAlert);
+                        break;
+                    case " Edit Alert":
+                        FluentWaitForWebElement(EditAlert);
+                        break;
                     case " Actions":
                         FluentWaitForWebElement(ActionField);
                         break;

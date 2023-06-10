@@ -1,5 +1,4 @@
-﻿namespace UITestAutomation.Pages.FeeSelectionSettings
-{
+﻿namespace UITestAutomation { 
     internal partial class FeeSelectionSettings : Selenium_Methods
     {
         public void AssertUIControlsOnFeeSelectionSettingsPage(Table table)

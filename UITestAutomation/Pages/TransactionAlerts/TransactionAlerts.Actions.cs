@@ -1,4 +1,4 @@
-﻿namespace UITestAutomation.Pages.TransactionAlerts
+﻿namespace UITestAutomation
 {
     internal partial class TransactionAlerts : Selenium_Methods
     {

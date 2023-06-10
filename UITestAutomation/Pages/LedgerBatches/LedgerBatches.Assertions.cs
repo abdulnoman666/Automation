@@ -1,4 +1,4 @@
-﻿namespace UITestAutomation.Pages.LedgerBatches
+﻿namespace UITestAutomation
 {
     internal partial class LedgerBatches : Selenium_Methods
     {
@@ -11,11 +11,11 @@
                     case " Date Range":
                         FluentWaitForWebElement(DateRange);
                         break;
-                    case " Calendar Button":
-                        FluentWaitForWebElement(CalendarButton);
+                    case " From":
+                        FluentWaitForWebElement(From);
                         break;
-                    case " Triangle Button":
-                        FluentWaitForWebElement(TriangleButton);
+                    case " To":
+                        FluentWaitForWebElement(To);
                         break;
                     case " Action":
                         FluentWaitForWebElement(Action);
