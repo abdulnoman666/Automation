@@ -15,7 +15,6 @@ namespace UITestAutomation
         By Three = By.XPath("//span[@ng-click='setpage(p)'][3]");
         By Four = By.XPath("//span[@ng-click='setpage(p)'][4]");
         By Five = By.XPath("//span[@ng-click='setpage(p)'][5]");
-        By Six = By.XPath("//span[@ng-click='setpage(p)'][6]");
         By LinksField = By.XPath("//th[1]");
         By ReportedField = By.XPath("//th[2]");
         By DaysField = By.XPath("//th[3]");
@@ -93,6 +92,13 @@ namespace UITestAutomation
         By DocumentsSenttoCardholder = By.XPath("//button[@ng-click='ctrl.openCalendarPane($event)'][16]");
         By DateResearch = By.XPath("//button[@ng-click='ctrl.openCalendarPane($event)'][18]");
         By ResolutionLetter = By.XPath("//button[@ng-click='ctrl.openCalendarPane($event)'][19]");
+
+        //UI Controls on Show Closed Disputes Page
+        By Six = By.XPath("//span[@ng-click='setpage(p)'][6]");
+        By Seven = By.XPath("//span[@ng-click='setpage(p)'][7]");
+        By Eight = By.XPath("//span[@ng-click='setpage(p)'][8]");
+        By Nine = By.XPath("//span[@ng-click='setpage(p)'][9]");
+
 
         //UI Controls on Documents Page
         By DocumentsList = By.XPath("//div[class='panel-body']");

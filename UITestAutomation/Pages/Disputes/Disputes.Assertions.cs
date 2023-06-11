@@ -8,8 +8,8 @@
             {
                 switch (item[0].Trim())
                 {
-                    case " Alerts":
-                        FluentWaitForWebElement(AlertsButton);
+                    case " Settings":
+                        FluentWaitForWebElement(SettingsButton);
                         break;
                     case " Search and set date range ":
                         FluentWaitForWebElement(SearchSetDateButton);
@@ -37,12 +37,6 @@
                         break;
                     case " 5":
                         FluentWaitForWebElement(Five);
-                        break;
-                    case " 6":
-                        FluentWaitForWebElement(Six);
-                        break;
-                    case " 7":
-                        FluentWaitForWebElement(Seven);
                         break;
                     case " Links":
                         FluentWaitForWebElement(LinksField);
@@ -92,34 +86,46 @@
                 }
             }
         }
-        public void AssertFieldsOnAlertsPage(Table table)
+        public void AssertFieldsOnSettingsPage(Table table)
         {
             foreach (var item in table.Rows)
             {
                 switch (item[0].Trim())
                 {
-                    case " Customer":
-                        FluentWaitForWebElement(Customer);
+                    case " Reported":
+                        FluentWaitForWebElement(Reported);
                         break;
-                    case " Submission ID ":
-                        FluentWaitForWebElement(SubmissionId);
+                    case " Days":
+                        FluentWaitForWebElement(Days);
                         break;
                     case " Status":
                         FluentWaitForWebElement(Status);
                         break;
-                    case " Source":
-                        FluentWaitForWebElement(Source);
+                    case " Detail":
+                        FluentWaitForWebElement(Detail);
                         break;
-                    case " Alert":
-                        FluentWaitForWebElement(Alert);
+                    case " Resolution":
+                        FluentWaitForWebElement(Resolution);
                         break;
-                    case " Type":
-                        FluentWaitForWebElement(Type);
+                    case " Amount":
+                        FluentWaitForWebElement(Amount);
                         break;
-                    case " Deadline":
-                        FluentWaitForWebElement(Deadline);
+                    case " Recovered":
+                        FluentWaitForWebElement(Recovered);
+                        break;
+                    case " Customer":
+                        FluentWaitForWebElement(Customer);
+                        break;
+                    case " Assigned To":
+                        FluentWaitForWebElement(AssignedTo);
                         break;
                     case " Close":
+                        FluentWaitForWebElement(CloseButton);
+                        break;
+                    case " Save":
+                        FluentWaitForWebElement(SaveButton);
+                        break;
+                    case " Cross":
                         FluentWaitForWebElement(CloseButton);
                         break;
                 }
@@ -131,8 +137,11 @@
             {
                 switch (item[0].Trim())
                 {
-                    case " Calendar":
-                        FluentWaitForWebElement(Calendar);
+                    case " Start Date":
+                        FluentWaitForWebElement(StartDate);
+                        break;
+                    case " End Date":
+                        FluentWaitForWebElement(EndDate);
                         break;
                     case " Search":
                         FluentWaitForWebElement(Search);
@@ -167,26 +176,17 @@
             {
                 switch (item[0].Trim())
                 {
+                    case " 6":
+                        FluentWaitForWebElement(Six);
+                        break;
+                    case " 7":
+                        FluentWaitForWebElement(Seven);
+                        break;
                     case " 8":
                         FluentWaitForWebElement(Eight);
                         break;
                     case " 9":
                         FluentWaitForWebElement(Nine);
-                        break;
-                    case " 10":
-                        FluentWaitForWebElement(Ten);
-                        break;
-                    case " 11":
-                        FluentWaitForWebElement(Eleven);
-                        break;
-                    case " 12":
-                        FluentWaitForWebElement(Twelve);
-                        break;
-                    case " Enter Page":
-                        FluentWaitForWebElement(EnterPageField);
-                        break;
-                    case " Go":
-                        FluentWaitForWebElement(GoButton);
                         break;
                 }
             }
@@ -209,9 +209,6 @@
                     case " Refresh":
                         FluentWaitForWebElement(Refresh);
                         break;
-                    case " Submission Disputes":
-                        FluentWaitForWebElement(SubmissionDisputes);
-                        break;
                     case " Save":
                         FluentWaitForWebElement(Save);
                         break;
@@ -224,9 +221,6 @@
                     case " Print Letter":
                         FluentWaitForWebElement(PrintLetter);
                         break;
-                    case " Dispute Details":
-                        FluentWaitForWebElement(DisputeDetails);
-                        break;
                     case " POS":
                         FluentWaitForWebElement(POS);
                         break;
@@ -237,7 +231,7 @@
                         FluentWaitForWebElement(Research);
                         break;
                     case " Detail":
-                        FluentWaitForWebElement(Detail);
+                        FluentWaitForWebElement(Detail2);
                         break;
                     case " Closed":
                         FluentWaitForWebElement(Closed);
@@ -251,14 +245,8 @@
                     case " Final Resolution Date":
                         FluentWaitForWebElement(FinalResolutionDate);
                         break;
-                    case " Notes":
-                        FluentWaitForWebElement(Notes);
-                        break;
                     case " Enter Notes":
                         FluentWaitForWebElement(EnterNotes);
-                        break;
-                    case " Customer Provisional Credit":
-                        FluentWaitForWebElement(CustomerCredit);
                         break;
                     case " Transaction Amount":
                         FluentWaitForWebElement(TransactionAmount);
@@ -275,47 +263,44 @@
                     case " PC Reversal Date":
                         FluentWaitForWebElement(ReversalDate);
                         break;
-                    case " Representment":
-                        FluentWaitForWebElement(Representment);
+                    case " Reversal Date":
+                        FluentWaitForWebElement(ReversalDate);
                         break;
-                    case " Settlement / Representment Date":
-                        FluentWaitForWebElement(RepresentmentDate);
+                    case " Documents Received":
+                        FluentWaitForWebElement(DocumentReceived);
                         break;
-                    case " Merchant Chargeback":
-                        FluentWaitForWebElement(MerchantChargeback);
+                    case " Documents Sent":
+                        FluentWaitForWebElement(DocumentSent);
                         break;
-                    case " Chargeback Date":
-                        FluentWaitForWebElement(ChargebackDate);
+                    case " Provisional Credit Received":
+                        FluentWaitForWebElement(ProvisionalCreditReceived);
                         break;
-                    case " Merchant Response Date":
-                        FluentWaitForWebElement(MerchantResponseDate);
-                        break;
-                    case " Pre-Arbitration Details ":
-                        FluentWaitForWebElement(PreArbitrationDetails);
-                        break;
-                    case " Date Requested":
-                        FluentWaitForWebElement(DateRequested);
-                        break;
-                    case " Resolution":
-                        FluentWaitForWebElement(Resolution);
-                        break;
-                    case " Date Research Ended":
-                        FluentWaitForWebElement(DateResearchEnded);
-                        break;
-                    case " Date Resolution Letter Sent":
-                        FluentWaitForWebElement(ResolutionLetter);
-                        break;
-                    case " Processor Chargeback":
-                        FluentWaitForWebElement(ProcessorChargeback);
-                        break;
-                    case " Amount Recovered ":
-                        FluentWaitForWebElement(AmountRecovered);
-                        break;
-                    case " Provisional Date":
+                    case " ProvisionalDate":
                         FluentWaitForWebElement(ProvisionalDate);
+                        break;
+                    case " Provisional Credit Removed":
+                        FluentWaitForWebElement(ProvisionalCreditRemoved);
+                        break;
+                    case " Removal Date":
+                        FluentWaitForWebElement(RemovalDate);
+                        break;
+                    case " Final Credit":
+                        FluentWaitForWebElement(FinalCredit);
                         break;
                     case " Final Date":
                         FluentWaitForWebElement(FinalDate);
+                        break;
+                    case " Document Received from Processor":
+                        FluentWaitForWebElement(DocumentReceivedFromProcessor);
+                        break;
+                    case " Documents Sent to Cardholder":
+                        FluentWaitForWebElement(DocumentsSenttoCardholder);
+                        break;
+                    case " Date Research Ended":
+                        FluentWaitForWebElement(DateResearch);
+                        break;
+                    case " Date Resolution Letter Sent":
+                        FluentWaitForWebElement(ResolutionLetter);
                         break;
                 }
             }

@@ -10,7 +10,7 @@ Scenario:  Disputes
 	And User selects the Disputes option from the drop down menu of the Disputes Page
 	And User validates the following UI Controls on the Disputes Page
 	| UI Controls                      |
-	| Alerts                           |
+	| Settings                         |
 	| Search and set date range        |
 	| Select User or Search in list... |
 	| Refresh Submissions              |
@@ -20,8 +20,6 @@ Scenario:  Disputes
 	| 3                                |
 	| 4                                |
 	| 5                                |
-	| 6                                |
-	| 7                                |
 	| Links                            |
 	| Reported                         |
 	| Days                             |
@@ -39,18 +37,22 @@ Scenario:  Disputes
 	| Edit Dispute                     |
 	| View Original Submission         |
 
-Scenario:  Alerts Button 
-    Given User clicks the Alerts Button on the Disputes Page
-	And User validates the following fields on the Alerts Page
-	| Fields        |
-	| Customer      |
-	| Submission ID |
-	| Status        |
-	| Source        |
-	| Alert         |
-	| Type          |
-	| Deadline      |
-	| Close         |
+Scenario:  Settings Button 
+    Given User clicks the Settings Button on the Disputes Page
+	And User validates the following fields on the Settings Page
+	| Fields      |
+	| Reported    |
+	| Days        |
+	| Status      |
+	| Detail      |
+	| Resolution  |
+	| Amount      |
+	| Recovered   |
+	| Customer    |
+	| Assigned To |
+	| Close       |
+	| Save        |
+	| Cross       |
 
 Scenario:  Search Button 
     Given User clicks the Search Button on the Disputes Page
@@ -69,16 +71,11 @@ Scenario:  Search Button
 Scenario:  Show Closed Disputes             
     Given User clicks the Show Closed Disputes Button on the Disputes Page
 	And User validates the following fields on the Show Closed Disputes Page
-	| Fields     |
-	| <<         |
-	| 8          |
-	| 9          |
-	| 10         |
-	| 11         |
-	| 12         |
-	| >>         |
-	| Enter Page |
-	| Go         |
+	| Fields |
+	| 6      |
+	| 7      |
+	| 8      |
+	| 9      |
 
 	Scenario:  Edit Dispute            
     Given User clicks the Edit Disputes Button on the Disputes Page
