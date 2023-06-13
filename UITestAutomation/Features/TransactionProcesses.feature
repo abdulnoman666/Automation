@@ -31,7 +31,14 @@ Scenario: Transaction_Add
 		| Workflows    |
 		| Close        |
 		| Save         |
-	And User clicks the Close Button on Add Process Transaction Setup Dialog
+	And User adds following data to respective fields on Add Process Transaction Setup Dialog
+		| Fields       | Values     |
+		| Name         | Abdul      |
+		| Type         | Decline    |
+		| GL Reference | ABC        |
+		| Workflows    | Debit Card |
+	And User clicks the Save Button on Add Process Transaction Setup Dialog
+	And User validates the total number of Action Fields on Transaction Process Page
 	And User clicks the Dashboard Icon
 	
 

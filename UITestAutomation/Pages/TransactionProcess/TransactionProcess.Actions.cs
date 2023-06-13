@@ -14,9 +14,9 @@
             WaitForWebElementDisplayed(Name_Textbox);
         }
 
-        public void ClickCloseButton()
+        public void ClickSaveButton()
         {
-            ClickOnWebElement(Close_Button);
+            ClickOnWebElement(Save_Button);
             WaitForWebElementDisplayed(AddTransactionProcesses_Button);
         }
     }

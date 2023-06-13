@@ -4,36 +4,36 @@ namespace UITestAutomation
     internal partial class Users
     {
         By Users_Dropdown = By.XPath("//a[@href='#/companyusers']");
-        By AddUser_Button = By.CssSelector("button[title='Add User']");
-        By Refresh_Button = By.CssSelector("button[title='Refresh']");
-        By ShowDeletedUsers_Button = By.XPath("//span[@class='page-link']");
-        By SetPage_Button = By.CssSelector("[ng-click='setpageDirect\\(1\\)']");
-        By PrevPage_Button = By.CssSelector("[ng-click='prevpage\\(\\)']");
-        By NextPage_Button = By.CssSelector("[ng-click='nextpage\\(\\)']");
-        By SetPageDirect_Button = By.CssSelector("[ng-click='setpageDirect\\(pages\\.length\\)']");
-        By EnterPage_Textbox = By.CssSelector("[ng-hide] span [type='text']");
-        By Go_Button = By.CssSelector("li[role='button'] > span");
-        By Action_Field = By.CssSelector("[width='110']");
-        By Name_Field = By.CssSelector("thead tr th:nth-of-type(2)");
-        By Name_Textbox = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//table/tbody/tr[1]/th[2]/input[@type='text']");
-        By Email_Field = By.CssSelector("thead tr th:nth-of-type(3)");
-        By Email_Textbox = By.CssSelector("tbody [width='200']:nth-of-type(3) .form-control");
-        By Phone_Field = By.CssSelector("thead tr th:nth-of-type(4)");
-        By Role_Field = By.CssSelector("thead tr th:nth-of-type(5)");
-        By Role_Textbox = By.CssSelector("[width='120'] .form-control");
-        By Deleted_Field = By.CssSelector("thead tr th:nth-of-type(6)");
-        By HasLogin_Field = By.CssSelector("thead tr th:nth-of-type(7)");
-        By Branch_Field = By.CssSelector("thead tr th:nth-of-type(8)");
-        By More_Field = By.CssSelector("thead tr th:nth-of-type(9)");
+        By AddUser_Button = By.XPath("//button[@ng-click=\"addUser()\"]");
+        By Refresh_Button = By.XPath("//button[@ng-click=\"refreshUsers()\"]");
+        By ShowDeletedUsers_Button = By.XPath("//input[@ng-model=\"showDeleted\"]");
+        By SetPage_Button = By.XPath("//span[@ng-click=\"setpageDirect(pages.length)\"]");
+        By PrevPage_Button = By.XPath("//span[@ng-click=\"prevpage()\"]");
+        By NextPage_Button = By.XPath("//span[@ng-click=\"nextpage()\"]");
+        By SetPageDirect_Button = By.XPath("//span[@ng-click='setpageDirect(1)']");
+        By EnterPage_Textbox = By.XPath("//input[@placeholder=\"Enter Page\"]");
+        By Go_Button = By.XPath("//span[text()=\"Go\"]");
+        By Action_Field = By.XPath("(//th[1])[1]");
+        By Name_Field = By.XPath("(//th[2])[1]");
+        By Name_Textbox = By.XPath("(//th[2])[2]");
+        By Email_Field = By.XPath("(//th[3])[1]");
+        By Email_Textbox = By.XPath("(//input[@ng-model=\"$.email\"])[1]");
+        By Phone_Field = By.XPath("(//th[4])[1]");
+        By Role_Field = By.XPath("(//th[5])[1]");
+        By Role_Textbox = By.XPath("(//th[5])[2]");
+        By Deleted_Field = By.XPath("(//th[6])[1]");
+        By HasLogin_Field = By.XPath("(//th[7])[1]");
+        By Branch_Field = By.XPath("(//th[8])[1]");
+        By More_Field = By.XPath("(//th[9])[1]");
         By Delete_Button = By.XPath("//button[@title='Delete User']");
         By Edit_Button = By.XPath("//button[@title='Edit User']");
-        By FirstName_Textbox = By.CssSelector("input[name='firstName']");
-        By LastName_Textbox = By.CssSelector("input[name='lastName']");
-        By EmailAddUser_Textbox = By.CssSelector("form[name='form1'] input[name='email']");
-        By Phone_Textbox = By.CssSelector("input[name='mobilePhone']");
-        By Role_Dropdown = By.XPath("//div[@id='addUser']//form[@name='form1']//select");
-        By SaveAddUser_Button = By.XPath("//button[@ng-disabled=\"!form1.$valid || (!newUser.id && newUser.hasAccount)\"]");
-        By CloseAddUser_Button = By.CssSelector("form[name='form1']  .btn.btn-default");
-
+        By FirstName_Textbox = By.XPath("//input[@ng-model=\"newUser.firstName\"]");
+        By LastName_Textbox = By.XPath("//input[@ng-model=\"newUser.lastName\"]");
+        By EmailAddUser_Textbox = By.XPath("//input[@ng-model=\"newUser.email\"]");
+        By Phone_Textbox = By.XPath("//input[@ng-model=\"newUser.mobilePhone\"]");
+        By Role_Dropdown = By.XPath("//select[@ng-model=\"newUser.role\"]");
+        By SaveAddUser_Button = By.XPath("//button[@ng-click=\"addNewUser(form1)\"]");
+        By CloseAddUser_Button = By.XPath("(//button[text()=\"Close\"])[2]");
+        By DeleteUser_Button = By.XPath("//button[@ng-click=\"dialog.hide()\"]");
     }
 }

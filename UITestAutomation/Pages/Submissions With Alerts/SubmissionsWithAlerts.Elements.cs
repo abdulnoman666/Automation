@@ -4,30 +4,30 @@ namespace UITestAutomation
 {
     internal partial class SubmissionsWithAlerts
     {
-        By SubmissionsWithAlerts_Dropdown = By.CssSelector(".dropdown-menu > li:nth-of-type(4) > a");
+        By SubmissionsWithAlerts_Dropdown = By.XPath("//a[text()=\"Submissions with Alerts\"]");
         //UI Control
-        By Settings_Button = By.CssSelector("button[title='Settings']");
-        By RefreshAlerts_Button = By.CssSelector("button[title='Refresh Alerts']");
+        By Settings_Button = By.XPath("//button[@title=\"Settings\"]");
+        By RefreshAlerts_Button = By.XPath("//button[@ng-click=\"refresh()\"]");
         By EnterPage_TextField = By.XPath("//input[@ng-model=\"pageNo\"]");
-        By Go_Button = By.CssSelector("li[role='button'] > span");
+        By Go_Button = By.XPath("//span[text()=\"Go\"]");
         By EditSubmission_Button = By.XPath("//button[@title=\"Edit Submission\"]");
 
         //Fields
-        By Action_Field = By.CssSelector("thead tr [width='50px']:nth-of-type(1)");
-        By ID_Field = By.CssSelector("th:nth-of-type(3) > a");
+        By Action_Field = By.XPath("(//th[1])[1]");
+        By ID_Field = By.XPath("//a[@ng-click=\"sorting('customId')\"]");
         By ID_TextField = By.XPath("//input[@ng-model=\"$.customerDispute.id\"]");
-        By Customer_Field = By.CssSelector("th:nth-of-type(5) > a");
+        By Customer_Field = By.XPath("//th[@ng-show=\"order.selectedColumns.indexOf('Customer')!=-1\"]");
         By Customer_TextField = By.XPath("//input[@ng-model=\"$.customerName\"]");
-        By Status_Field = By.CssSelector("th:nth-of-type(6) > a");
+        By Status_Field = By.XPath("//a[@ng-click=\"sorting('customerDispute.status')\"]");
         By Status_TextField = By.XPath("//input[@ng-model=\"$.customerDispute.status\"]");
-        By Source_Field = By.CssSelector("th:nth-of-type(7) > a");
+        By Source_Field = By.XPath("//a[@ng-click=\"sorting('source')\"]");
         By Source_TextField = By.XPath("//input[@ng-model=\"$.source\"]");
-        By Alert_Field = By.CssSelector("th:nth-of-type(8) > a");
+        By Alert_Field = By.XPath("//a[@ng-click=\"sorting('alertName')\"]");
         By Alert_TextField = By.XPath("//input[@ng-model=\"$.alertName\"]");
-        By AlertType_Field = By.CssSelector("th:nth-of-type(9) > a");
+        By AlertType_Field = By.XPath("//a[@ng-click=\"sorting('alertTypeString')\"]");
         By AlertType_TextField = By.XPath("//input[@ng-model=\"$.alertTypeString\"]");
-        By Deadline_Field = By.CssSelector("th:nth-of-type(10) > a");
-        By AssignedTo_Field = By.CssSelector("th:nth-of-type(11) > a");
+        By Deadline_Field = By.XPath("//a[@ng-click=\"sorting('deadline')\"]");
+        By AssignedTo_Field = By.XPath("//a[@ng-click=\"sorting('assignedTo')\"]");
 
         ////editsubmission
         ////submission info

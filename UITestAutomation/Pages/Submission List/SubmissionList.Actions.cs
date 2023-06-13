@@ -1,4 +1,6 @@
 ﻿
+using System.Xml.Linq;
+
 namespace UITestAutomation
 {
     internal partial class SubmissionList
@@ -20,10 +22,19 @@ namespace UITestAutomation
                 WaitForWebElementDisplayed(DeleteSubmission_Button);
        }
 
+        //NewCase
         public void ClickNewCaseButton()
         {
             ClickTheWebElement(NewCase_Button);
             WaitForWebElementDisplayed(TransactionMethod_Dropdown);
+        }
+
+        public void EnterValueinTransactionMethodField(string name)
+        {
+            ClickTheWebElement(TransactionMethod_Dropdown);
+            Thread.Sleep(5000);
+            ElementToBeSelectedFromDropdown(TransactionMethod_Dropdown, name);
+           // EnterValueinWebElement(TransactionMethod_Dropdown, name);
         }
 
         public void ClickFruadRadioButton()
@@ -38,6 +49,15 @@ namespace UITestAutomation
             WaitForWebElementDisplayed(Search_ButtonCustomerSearch);
         }
 
+        public void EnterValueinCustomerFieldonCustomerSearchPage(string name)
+        {
+            //ClickTheWebElement(CustomerName_TextField);
+            //Thread.Sleep(5000);
+            //ElementToBeSelectedFromDropdown(CustomerName_TextField, name);
+            WaitForWebElementDisplayed(CustomerName_TextField);
+            EnterValueinWebElement(CustomerName_TextField, name);
+        }
+
         public void ClickCustomerSearchButton()
         {
             ClickTheWebElement(Search_ButtonCustomerSearch);
@@ -50,10 +70,23 @@ namespace UITestAutomation
             WaitForWebElementDisplayed(Details_TextArea);
         }
 
+        public void EnterValueinDetailsTextareaonDisputeSubmissionPage(string name)
+        {
+            EnterValueinWebElement(Details_TextArea, name);
+        }
+
         public void ClickAdditionalTasksField()
         {
             ClickTheWebElement(AdditionalTasks_Field);
             WaitForWebElementDisplayed(TaskName_Field);
+        }
+
+        public void EnterValueonAddTaskPage(string value)
+        {
+            ClickTheWebElement(TaskName_Field);
+            Thread.Sleep(5000);
+            ElementToBeSelectedFromDropdown(TaskName_Field,value);
+            //EnterValueinWebElement(TaskName_Field, value);
         }
 
         public void ClickSaveButtononAdditionalTasksField()
@@ -85,6 +118,16 @@ namespace UITestAutomation
             ClickTheWebElement(YesDisputeForm_Button);
         }
 
+        public void EnterValueinFiledDateField(string value)
+        {
+            EnterValueinWebElement(FiledDate_Field, value);
+        }
+
+        public void EnterValueinCityReportField(string value)
+        {
+            EnterValueinWebElement(CityReport_Field, value);
+        }
+
         public void ClickYesButtonStolenCard()
         {
             ClickTheWebElement(YesStolenCard_Button);
@@ -93,6 +136,11 @@ namespace UITestAutomation
         public void ClickDisputeReasonButton()
         {
             ClickTheWebElement(DiaputeReason_RadioButton);
+        }
+
+        public void EnterValueinDateCardClosedField(string value)
+        {
+            EnterValueinWebElement(DateCardClosed_Field, value);
         }
 
         public void ClickNoButtononDisputeForm()
@@ -108,7 +156,7 @@ namespace UITestAutomation
 
         public void ClickElectronicSignatureConsentButton()
         {
-            Thread.Sleep(5000);
+            Thread.Sleep(10000);
             ClickTheWebElement(Proceed_Button);
             WaitForWebElementDisplayed(Consent_Checkbox);
         }
@@ -159,11 +207,11 @@ namespace UITestAutomation
             WaitForWebElementDisplayed(PC_Field);
         }
 
-        public void ClickResearchButton()
-        {
-            ClickTheWebElement(Research_Dropdown);
-            WaitForWebElementDisplayed(Nwk_Field);
-        }
+        //public void ClickResearchButton()
+        //{
+        //    ClickTheWebElement(Research_Dropdown);
+        //    WaitForWebElementDisplayed(Nwk_Field);
+        //}
 
         public void ClickCustomerStatusButton()
         {

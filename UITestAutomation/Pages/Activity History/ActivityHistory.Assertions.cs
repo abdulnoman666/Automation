@@ -18,9 +18,13 @@ namespace UITestAutomation
                         break;
                     case "Start Date":
                         FluentWaitForWebElement(StartDate_TextField);
+                        FluentWaitForWebElement(StartCalender_Button);
+                        FluentWaitForWebElement(StartCalenderDown_Button);
                         break;
                     case "End Date":
                         FluentWaitForWebElement(EndDate_TextField);
+                        FluentWaitForWebElement(EndCalender_Button);
+                        FluentWaitForWebElement(EndCalenderDown_Button);
                         break;
                     case "Event Type (select one or more event types)":
                         FluentWaitForWebElement(EventType_Dropdown);

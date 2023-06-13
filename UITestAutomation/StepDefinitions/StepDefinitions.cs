@@ -28,7 +28,6 @@ namespace UITestAutomation
         DailyLedger dailyLedger = new DailyLedger();
         LedgerBatches ledgerBatches = new LedgerBatches();
         FraudAlerts fraudAlerts = new FraudAlerts();
-        Configuration configuration = new Configuration();
         ProvisionalCreditLog creditLog = new ProvisionalCreditLog();
         WorkflowAutomations automation = new WorkflowAutomations();
         WorkflowSettings workflows = new WorkflowSettings();
@@ -41,26 +40,30 @@ namespace UITestAutomation
         ActivityHistory activityHistory = new ActivityHistory();
         Reconciliation reconciliation = new Reconciliation();
         SubmissionsWithAlerts alerts = new SubmissionsWithAlerts();
+<<<<<<< HEAD
         CompanySettings settings = new CompanySettings();
 
+=======
+        
+>>>>>>> f50fa5dd0c8af6747f2b76dcba13fdc7548de1af
 
         //Login **
         [Given(@"User goes to DisputeDev Application")]
         public void GivenUserGoesToDisputeDevApplication()
         {
-            Selenium_Methods.GoToURL(configuration.Get_baseurl());
+            Selenium_Methods.GoToURL(ConfigHelper.GetConfig("Baseurl"));
         }
 
         [Given(@"User enters Username in Username field on Login page")]
         public void GivenUserEntersUsernameInUsernameFieldOnLoginPage()
         {
-            login.EnterEmailOnLoginPage(configuration.Get_email());
+            login.EnterEmailOnLoginPage(ConfigHelper.GetConfig("applicationUsername"));
         }
 
         [Given(@"User enters Password in Password field on Login page")]
         public void GivenUserEntersPasswordInPasswordFieldOnLoginPage()
         {
-            login.EnterPasswordOnLoginPage(configuration.Get_password());
+            login.EnterPasswordOnLoginPage(ConfigHelper.GetConfig("applicationPassword"));
         }
 
         [Given(@"User clicks on Login button on Login page")]
@@ -72,7 +75,7 @@ namespace UITestAutomation
         [Given(@"User enters OTP on Login Verification dialog")]
         public void GivenUserEntersOTPOnLoginVerificationDialog()
         {
-            string otpCode = loginVerification.GetOTP(configuration.Get_appUsername(), configuration.Get_emailPassword());
+            string otpCode = loginVerification.GetOTP(ConfigHelper.GetConfig("emailUsername"), ConfigHelper.GetConfig("emailPassword"));
             loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
         }
 
@@ -92,11 +95,11 @@ namespace UITestAutomation
         [Given(@"User log into Dispute Tracking Application")]
         public void GivenUserLogIntoDisputeTrackingApplication()
         {
-            login.EnterEmailOnLoginPage(configuration.Get_email());
-            login.EnterPasswordOnLoginPage(configuration.Get_password());
+            login.EnterEmailOnLoginPage(ConfigHelper.GetConfig("applicationUsername"));
+            login.EnterPasswordOnLoginPage(ConfigHelper.GetConfig("applicationPassword"));
             login.ClickLoginButtonOnLoginPage();
             Thread.Sleep(5000);
-            string otpCode = loginVerification.GetOTP(configuration.Get_appUsername(), configuration.Get_emailPassword());
+            string otpCode = loginVerification.GetOTP(ConfigHelper.GetConfig("emailUsername"), ConfigHelper.GetConfig("emailPassword"));
             loginVerification.EnterOTPOnLoginVerificationDialog(otpCode);
             loginVerification.ClickAuthenticateButtonOnLoginVerificationDialog();
         }
@@ -132,147 +135,7 @@ namespace UITestAutomation
             changepassword.AssertFieldsOnChangePasswordPage(table);
         }
 
-        //UserPools **
-        [Given(@"User selects the User Pools Field from the dropdown menu of Profile Icon")]
-        public void GivenUserSelectsTheUserPoolsFieldFromTheDropdownMenuOfProfileIcon()
-        {
-            userPools.ClickUserPools();
-        }
-
-        [Given(@"User validates the following UI Controls on User Pools Process Page")]
-        public void GivenUserValidatesTheFollowingUIControlsOnUserPoolsProcessPage(Table table)
-        {
-            userPools.AssertUIControlsonUserPoolsPage(table);
-        }
-
-        [Given(@"User clicks the Add Pool on Add User Pool Page")]
-        public void GivenUserClicksTheAddPoolOnAddUserPoolPage()
-        {
-            userPools.ClickAddPoolButton();
-        }
-
-        [Given(@"User validates the following fileds on Add User Pool Page")]
-        public void GivenUserValidatesTheFollowingFiledsOnAddUserPoolPage(Table table)
-        {
-            userPools.AssertFieldsOnAddPoolDialog(table);
-        }
-
-        [Given(@"User clicks the Close Button on Add User Pool Page")]
-        public void GivenUserClicksTheCloseButtonOnAddUserPoolPage()
-        {
-            userPools.ClickCloseButton();
-        }
-
-        //TransactionProcess **
-        [Given(@"User selects the Transaction Processes Field from the dropdown menu of Profile Icon")]
-        public void GivenUserSelectsTheTransactionProcessesFieldFromTheDropdownMenuOfProfileIcon()
-        {
-            transactionProcess.ClickTransactionProcesses();
-        }
-
-        [Given(@"User validates the following UI Controls on Transaction Process Page")]
-        public void GivenUserValidatesTheFollowingUIControlsOnTransactionProcessPage(Table table)
-        {
-            transactionProcess.AssertUIControlsonTransactionProcessesPage(table);
-        }
-
-        [Given(@"User clicks the Add Submission on Transaction Process Page")]
-        public void GivenUserClicksTheAddSubmissionOnTransactionProcessPage()
-        {
-            transactionProcess.ClickAddTransactionProcessesButton();
-        }
-
-        [Given(@"User validates the following fields on Add Process Transaction Setup Dialog")]
-        public void GivenUserValidatesTheFollowingFieldsOnAddProcessTransactionSetupDialog(Table table)
-        {
-            transactionProcess.AssertFieldsOnAddTransactionProcessesDialog(table);
-        }
-
-        [Given(@"User clicks the Close Button on Add Process Transaction Setup Dialog")]
-        public void GivenUserClicksTheCloseButtonOnAddProcessTransactionSetupDialog()
-        {
-            transactionProcess.ClickCloseButton();
-        }
-
-        //WorkflowSettings **
-        [Given(@"User selects the Workflow Settings Field from the dropdown menu of Profile Icon")]
-        public void GivenUserSelectsTheWorkflowSettingsFieldFromTheDropdownMenuOfProfileIcon()
-        {
-            workflows.ClickWorkflowSettings();
-        }
-
-        [Given(@"User validates the following UI Controls on Workflow Settings Page")]
-        public void GivenUserValidatesTheFollowingUIControlsOnWorkflowSettingsPage(Table table)
-        {
-            workflows.AssertUIControlsonWorkflowSettingPage(table);
-        }
-
-        [Given(@"User clicks the Add Workflow Setting on on Workflow Settings Page")]
-        public void GivenUserClicksTheAddWorkflowSettingOnOnWorkflowSettingsPage()
-        {
-            workflows.ClickAddWorkflowSettings();
-        }
-
-        [Given(@"User validates the following Controls on Edit Setting Dialog")]
-        public void GivenUserValidatesTheFollowingControlsOnEditSettingDialog(Table table)
-        {
-            workflows.AssertUIControlsonEditWorkflowSettingDialog(table);
-        }
-
-        [Given(@"User validates the following Fields in Settings Page on Edit Setting Dialog")]
-        public void GivenUserValidatesTheFollowingFieldsInSettingsPageOnEditSettingDialog(Table table)
-        {
-            workflows.AssertFieldsonEditWorkflowSettingDialog(table);
-        }
-
-        [Given(@"User clicks the Event Triggers in Settings Page on Edit Setting Dialog")]
-        public void GivenUserClicksTheEventTriggersInSettingsPageOnEditSettingDialog()
-        {
-            workflows.ClickEventTrigger();
-        }
-
-        [Given(@"User validates the following Controls in Event Triggers on Edit Setting Dialog")]
-        public void GivenUserValidatesTheFollowingControlsInEventTriggersOnEditSettingDialog(Table table)
-        {
-            workflows.AssertUIControlsOnEventTriggers(table);
-        }
-
-        [Given(@"User clicks the Add Event Trigger in Event Triggers Page on on Edit Setting Dialog")]
-        public void GivenUserClicksTheAddEventTriggerInEventTriggersPageOnOnEditSettingDialog()
-        {
-            workflows.ClickAddEventTriggerButton();
-        }
-
-        [Given(@"User validates the following Fields in Add Trigger Page on Edit Setting Dialog")]
-        public void GivenUserValidatesTheFollowingFieldsInAddTriggerPageOnEditSettingDialog(Table table)
-        {
-            workflows.AssertFieldsOnAddTriggersDialog(table);
-        }
-
-        [Given(@"User clicks the Close Button on Add Trigger Page")]
-        public void GivenUserClicksTheCloseButtonOnAddTriggerPage()
-        {
-            workflows.ClickCloseButtononAddTriggerDialog();
-        }
-
-        [Given(@"User clicks the Self-Service Verbiage in Settings Page on Edit Setting Dialog")]
-        public void GivenUserClicksTheSelf_ServiceVerbiageInSettingsPageOnEditSettingDialog()
-        {
-            workflows.ClickSelfServiceVerbiageButton();
-        }
-
-        [Given(@"User validates the following Fields in Self-Service Verbiage Page on Edit Setting Dialog")]
-        public void GivenUserValidatesTheFollowingFieldsInSelf_ServiceVerbiagePageOnEditSettingDialog(Table table)
-        {
-            workflows.AssertFieldsOnSelfServiceVerbiageDialog(table);
-        }
-
-        [Given(@"User clicks the Close Button on Self-Service Verbiage Page")]
-        public void GivenUserClicksTheCloseButtonOnSelf_ServiceVerbiagePage()
-        {
-            workflows.ClickCloseButtononSelfVerbiage();
-        }
-
+        
         //Customers Done **
         [Given(@"User clicks the Customer Field on the Dashboard page")]
         public void GivenUserClicksTheCustomerFieldOnTheDashboardPage()
@@ -387,44 +250,6 @@ namespace UITestAutomation
         {
             dashboard.ClickDashboard();
         }
-
-        //users **
-        [Given(@"User selects the Users Field from the dropdown menu of Profile Icon")]
-        public void GivenUserSelectsTheUsersFieldFromTheDropdownMenuOfProfileIcon()
-        {
-            users.ClickUsers();
-        }
-
-        [Given(@"User validates the following UI Controls on Users Page")]
-        public void GivenUserValidatesTheFollowingUIControlsOnUsersPage(Table table)
-        {
-            users.AssertUIControlsonUsersPage(table);
-        }
-
-        [Given(@"User clicks the Add User on Users Page")]
-        public void GivenUserClicksTheAddUserOnUsersPage()
-        {
-            users.ClickAddUsers();
-        }
-
-        [Given(@"User validates the following fields on Add User Dialog")]
-        public void GivenUserValidatesTheFollowingFieldsOnAddUserDialog(Table table)
-        {
-            users.AssertFieldsonAddUsersDialog(table);
-        }
-
-        [Given(@"User clicks the Close Button on Add User Dialog")]
-        public void GivenUserClicksTheCloseButtonOnAddUserDialog()
-        {
-            users.ClickCloseButtononAddUsers();
-        }
-
-        [Given(@"User clicks the Dashboard Icon on Users Page")]
-        public void GivenUserClicksTheDashboardIconOnUsersPage()
-        {
-            dashboard.ClickDashboard();
-        }
-
 
         //BRANDS **
         [Given(@"User selects the Brands option from the drop down menu of the ProfileIcon")]
@@ -1039,16 +864,18 @@ namespace UITestAutomation
             submissionList.ClickCancelButtononReassignSubmissionnDialog();
         }
 
+        //New Case
         [Given(@"User clicks the New Case Button on Submissions List Page")]
         public void GivenUserClicksTheNewCaseButtonOnSubmissionsListPage()
         {
             submissionList.ClickNewCaseButton();
 
         }
-        [Given(@"User Enters the following data into the fields on Dispute Submission Page")]
-        public void GivenUserEntersTheFollowingDataIntoTheFieldsOnDisputeSubmissionPage(Table table)
+
+        [Given(@"User enters ""([^""]*)"" in Transaction Method field on Dispute Submission Page")]
+        public void GivenUserEntersInTransactionMethodFieldOnDisputeSubmissionPage(string value)
         {
-            submissionList.EnterValueinFieldsonDisputeSubmissionPage(table);
+            submissionList.EnterValueinTransactionMethodField("Debit Card");
         }
 
         [Given(@"User clicks the Fraud Button from Listed Transactions on Dispute Submission Page")]
@@ -1062,10 +889,11 @@ namespace UITestAutomation
         {
             submissionList.ClickAdvanceSearchButton();
         }
-        [Given(@"User Enters the following data into the fields on Customer Search Page")]
-        public void GivenUserEntersTheFollowingDataIntoTheFieldsOnCustomerSearchPage(Table table)
+
+        [Given(@"User enters ""([^""]*)"" in the Customer Name field on Customer Search Page")]
+        public void GivenUserEntersInTheCustomerNameFieldOnCustomerSearchPage(string value)
         {
-            submissionList.EnterValueinFieldsonCustomerSearchPage(table);
+            submissionList.EnterValueinCustomerFieldonCustomerSearchPage(value);
         }
 
         [Given(@"User clicksthe Search Button on Customer Search Page")]
@@ -1080,10 +908,10 @@ namespace UITestAutomation
             submissionList.ClickSelectCustomerButton();
         }
 
-        [Given(@"User Enters the following data on Dispute Submission Page")]
-        public void GivenUserEntersTheFollowingDataOnDisputeSubmissionPage(Table table)
+        [Given(@"User enters ""([^""]*)"" in Details on Dispute Submission Page")]
+        public void GivenUserEntersInDetailsOnDisputeSubmissionPage(string value)
         {
-            submissionList.EnterValueinFieldsonDisputeSubmissionPage(table);
+            submissionList.EnterValueinDetailsTextareaonDisputeSubmissionPage(value);
         }
 
         [Given(@"User clicks the Additional Tasks on Dispute Submission Page")]
@@ -1092,10 +920,10 @@ namespace UITestAutomation
             submissionList.ClickAdditionalTasksField();
         }
 
-        [Given(@"User selects the following data from the field on Add Task Page")]
-        public void GivenUserSelectsTheFollowingDataFromTheFieldOnAddTaskPage(Table table)
+        [Given(@"User enters ""([^""]*)"" in Task Name field on Add Task Page")]
+        public void GivenUserEntersInTaskNameFieldOnAddTaskPage(string value)
         {
-            submissionList.EnterValueonAddTaskPage(table);
+            submissionList.EnterValueonAddTaskPage(value);
         }
 
         [Given(@"User clicks the Save Button on Add Task Page")]
@@ -1140,18 +968,19 @@ namespace UITestAutomation
             submissionList.ClickYesButtonStolenCard();
         }
 
-        [Given(@"User enters the Date in Filed Date field")]
-        public void GivenUserEntersTheDateInFiledDateField(Table table)
+        [Given(@"User enters ""([^""]*)"" in Filed Date field")]
+        public void GivenUserEntersInFiledDateField(string value)
         {
-            submissionList.EnterDateonFiledDateField(table);
+            submissionList.EnterValueinFiledDateField(value);
         }
 
-        [Given(@"User Enters the following data on Debit Card Dispute Form")]
-        public void GivenUserEntersTheFollowingDataOnDebitCardDisputeForm(Table table)
+        [Given(@"User enters ""([^""]*)""  in City Report Filed In field on Debit Card Dispute Form")]
+        public void GivenUserEntersInCityReportFiledInFieldOnDebitCardDisputeForm(string value)
         {
-            submissionList.EnterValueinCityReportFiledField(table);
+            submissionList.EnterValueinCityReportField(value);
         }
 
+       
         [Given(@"User clicks the Button for Check appropriate dispute reason")]
         public void GivenUserClicksTheButtonForCheckAppropriateDisputeReason()
         {
@@ -1164,10 +993,10 @@ namespace UITestAutomation
             submissionList.ClickNoButtononDisputeForm();
         }
 
-        [Given(@"User Enters the following data in Date Card Closed on Debit Card Dispute Form")]
-        public void GivenUserEntersTheFollowingDataInDateCardClosedOnDebitCardDisputeForm(Table table)
+        [Given(@"User enters  ""([^""]*)"" in Date Card Closed on Debit Card Dispute Form")]
+        public void GivenUserEntersInDateCardClosedOnDebitCardDisputeForm(string value)
         {
-            submissionList.EnterValueinDateCardClosedField(table);
+            submissionList.EnterValueinDateCardClosedField(value);
         }
 
         [Given(@"User clicks the Customer Signature form Button on Debit Card Dispute Form")]
@@ -1213,6 +1042,7 @@ namespace UITestAutomation
         [Given(@"User validates the following Fields in Submission Info Dialog on Edit Submission Page")]
         public void GivenUserValidatesTheFollowingFieldsInSubmissionInfoDialogOnEditSubmissionPage(Table table)
         {
+            Thread.Sleep(10000);
             submissionList.AssertFieldsonSubmissionsInfoPage(table);
         }
 
@@ -1252,17 +1082,18 @@ namespace UITestAutomation
             submissionList.AssertFieldsonDisputesPage(table);
         }
 
-        [Given(@"User clicks the Research on Edit Submission Page")]
-        public void GivenUserClicksTheResearchOnEditSubmissionPage()
-        {
-            submissionList.ClickResearchButton();
-        }
+        //research comment out
+        //[Given(@"User clicks the Research on Edit Submission Page")]
+        //public void GivenUserClicksTheResearchOnEditSubmissionPage()
+        //{
+        //    submissionList.ClickResearchButton();
+        //}
 
-        [Given(@"User validates the following Fields in Research Dialog")]
-        public void GivenUserValidatesTheFollowingFieldsInResearchDialog(Table table)
-        {
-            submissionList.AssertFieldsonResearchPage(table);
-        }
+        //[Given(@"User validates the following Fields in Research Dialog")]
+        //public void GivenUserValidatesTheFollowingFieldsInResearchDialog(Table table)
+        //{
+        //    submissionList.AssertFieldsonResearchPage(table);
+        //}
 
         [Given(@"User clicks the Customer Status on Edit Submission Page")]
         public void GivenUserClicksTheCustomerStatusOnEditSubmissionPage()
@@ -1325,6 +1156,7 @@ namespace UITestAutomation
             creditLog.AssertUIControlsOnProvisionalCreditLogPage(table);
         }
 
+<<<<<<< HEAD
         //company settings
         [Given(@"User selects the Company Settings Field from the dropdown menu of Profile Icon")]
         public void GivenUserSelectsTheCompanySettingsFieldFromTheDropdownMenuOfProfileIcon()
@@ -1364,6 +1196,257 @@ namespace UITestAutomation
         }
 
 
+=======
+        //APPLYING ADD AND DELETE
+
+        //UserPools
+        [Given(@"User selects the User Pools Field from the dropdown menu of Profile Icon")]
+        public void GivenUserSelectsTheUserPoolsFieldFromTheDropdownMenuOfProfileIcon()
+        {
+            userPools.ClickUserPools();
+        }
+
+        [Given(@"User validates the following UI Controls on User Pools Process Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnUserPoolsProcessPage(Table table)
+        {
+            userPools.AssertUIControlsonUserPoolsPage(table);
+        }
+
+        [Given(@"User clicks the Add Pool on Add User Pool Page")]
+        public void GivenUserClicksTheAddPoolOnAddUserPoolPage()
+        {
+            userPools.ClickAddPoolButton();
+        }
+
+        [Given(@"User validates the following fields on Add User Pool Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnAddUserPoolPage(Table table)
+        {
+            userPools.AssertFieldsOnAddPoolDialog(table);
+        }
+
+        [Given(@"User adds following data to respective fields")]
+        public void GivenUserAddsFollowingDataToRespectiveFields(Table table)
+        {
+            userPools.AdddatatoFieldsonAddPoolDialog(table);
+        }
+
+        [Given(@"User clicks the Save Button on Add User Pool Page")]
+        public void GivenUserClicksTheSaveButtonOnAddUserPoolPage()
+        {
+            userPools.ClickSaveButton();
+        }
+
+        [Given(@"User validates the total number of Action Fields on User Pools Process Page")]
+        public void GivenUserValidatesTheTotalNumberOfActionFieldsOnUserPoolsProcessPage()
+        {
+            userPools.validateActionfields();
+        }
+
+        //users **
+        [Given(@"User selects the Users Field from the dropdown menu of Profile Icon")]
+        public void GivenUserSelectsTheUsersFieldFromTheDropdownMenuOfProfileIcon()
+        {
+            users.ClickUsers();
+        }
+
+        [Given(@"User validates the following UI Controls on Users Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnUsersPage(Table table)
+        {
+            users.AssertUIControlsonUsersPage(table);
+        }
+
+        [Given(@"User clicks the Add User on Users Page")]
+        public void GivenUserClicksTheAddUserOnUsersPage()
+        {
+            users.ClickAddUsers();
+        }
+
+        [Given(@"User validates the following fields on Add User Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsOnAddUserDialog(Table table)
+        {
+            users.AssertFieldsonAddUsersDialog(table);
+        }
+
+        [Given(@"User adds following data to respective fields on Add User Dialog")]
+        public void GivenUserAddsFollowingDataToRespectiveFieldsOnAddUserDialog(Table table)
+        {
+            users.AdddatatoFieldsonAddUserDialog(table);
+        }
+
+        [Given(@"User clicks the Save Button on Add User Dialog")]
+        public void GivenUserClicksTheSaveButtonOnAddUserDialog()
+        {
+            users.ClickSaveButtononAddUsers();
+        }
+
+        [Given(@"User validates the total number of Action Fields on Users Page")]
+        public void GivenUserValidatesTheTotalNumberOfActionFieldsOnUsersPage()
+        {
+            users.validateActionfieldsonUserDialog();
+        }
+
+        [Given(@"User clicks the Dashboard Icon on Users Page")]
+        public void GivenUserClicksTheDashboardIconOnUsersPage()
+        {
+            dashboard.ClickDashboard();
+        }
+
+        //TransactionProcess 
+        [Given(@"User selects the Transaction Processes Field from the dropdown menu of Profile Icon")]
+        public void GivenUserSelectsTheTransactionProcessesFieldFromTheDropdownMenuOfProfileIcon()
+        {
+            transactionProcess.ClickTransactionProcesses();
+        }
+
+        [Given(@"User validates the following UI Controls on Transaction Process Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnTransactionProcessPage(Table table)
+        {
+            transactionProcess.AssertUIControlsonTransactionProcessesPage(table);
+        }
+
+        [Given(@"User clicks the Add Submission on Transaction Process Page")]
+        public void GivenUserClicksTheAddSubmissionOnTransactionProcessPage()
+        {
+            transactionProcess.ClickAddTransactionProcessesButton();
+        }
+
+        [Given(@"User validates the following fields on Add Process Transaction Setup Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsOnAddProcessTransactionSetupDialog(Table table)
+        {
+            transactionProcess.AssertFieldsOnAddTransactionProcessesDialog(table);
+        }
+
+        [Given(@"User adds following data to respective fields on Add Process Transaction Setup Dialog")]
+        public void GivenUserAddsFollowingDataToRespectiveFieldsOnAddProcessTransactionSetupDialog(Table table)
+        {
+            transactionProcess.AdddatatoFieldsOnAddTransactionProcessesDialog(table);
+        }
+
+        [Given(@"User clicks the Save Button on Add Process Transaction Setup Dialog")]
+        public void GivenUserClicksTheSaveButtonOnAddProcessTransactionSetupDialog()
+        {
+            transactionProcess.ClickSaveButton();
+        }
+
+        [Given(@"User validates the total number of Action Fields on Transaction Process Page")]
+        public void GivenUserValidatesTheTotalNumberOfActionFieldsOnTransactionProcessPage()
+        {
+            transactionProcess.validateActionfieldsonTransactionProcessPage();
+        }
+
+        //WorkflowSettings **
+        [Given(@"User selects the Workflow Settings Field from the dropdown menu of Profile Icon")]
+        public void GivenUserSelectsTheWorkflowSettingsFieldFromTheDropdownMenuOfProfileIcon()
+        {
+            workflows.ClickWorkflowSettings();
+        }
+
+        [Given(@"User validates the following UI Controls on Workflow Settings Page")]
+        public void GivenUserValidatesTheFollowingUIControlsOnWorkflowSettingsPage(Table table)
+        {
+            workflows.AssertUIControlsonWorkflowSettingPage(table);
+        }
+
+        [Given(@"User clicks the Add Workflow Setting on on Workflow Settings Page")]
+        public void GivenUserClicksTheAddWorkflowSettingOnOnWorkflowSettingsPage()
+        {
+            workflows.ClickAddWorkflowSettings();
+        }
+
+        [Given(@"User validates the following Controls on Edit Setting Dialog")]
+        public void GivenUserValidatesTheFollowingControlsOnEditSettingDialog(Table table)
+        {
+            workflows.AssertUIControlsonEditWorkflowSettingDialog(table);
+        }
+
+        [Given(@"User validates the following Fields in Settings Page on Edit Setting Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsInSettingsPageOnEditSettingDialog(Table table)
+        {
+            workflows.AssertFieldsonEditWorkflowSettingDialog(table);
+        }
+
+        [Given(@"User adds the following data to fields in Settings Page")]
+        public void GivenUserAddsTheFollowingDataToFieldsInSettingsPage(Table table)
+        {
+            workflows.AddvaluesonEditWorkflowSettingDialog(table);
+        }
+
+        [Given(@"User validates the following Fields in Questionaire Dialog on Edit Setting Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsInQuestionaireDialogOnEditSettingDialog(Table table)
+        {
+            workflows.AssertFieldsOnQuestionaireDialog(table);
+        }
+
+        [Given(@"User clicks the Event Triggers in Settings Page on Edit Setting Dialog")]
+        public void GivenUserClicksTheEventTriggersInSettingsPageOnEditSettingDialog()
+        {
+            workflows.ClickEventTrigger();
+        }
+
+        [Given(@"User validates the following Controls in Event Triggers on Edit Setting Dialog")]
+        public void GivenUserValidatesTheFollowingControlsInEventTriggersOnEditSettingDialog(Table table)
+        {
+            workflows.AssertUIControlsOnEventTriggers(table);
+        }
+
+        [Given(@"User clicks the Add Event Trigger in Event Triggers Page on on Edit Setting Dialog")]
+        public void GivenUserClicksTheAddEventTriggerInEventTriggersPageOnOnEditSettingDialog()
+        {
+            workflows.ClickAddEventTriggerButton();
+        }
+
+        [Given(@"User validates the following Fields in Add Trigger Page on Edit Setting Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsInAddTriggerPageOnEditSettingDialog(Table table)
+        {
+            workflows.AssertFieldsOnAddTriggersDialog(table);
+        }
+
+        [Given(@"User adds the following data to fields in Add Trigger Page on Edit Setting Dialog")]
+        public void GivenUserAddsTheFollowingDataToFieldsInAddTriggerPageOnEditSettingDialog(Table table)
+        {
+            workflows.AddDatatofieldsOnAddTriggersDialog(table);
+        }
+
+        [Given(@"User clicks the Save Button on Add Trigger Page")]
+        public void GivenUserClicksTheSaveButtonOnAddTriggerPage()
+        {
+            workflows.ClickSaveButtononAddTriggerDialog();
+        }
+
+
+        [Given(@"User clicks the Self-Service Verbiage in Settings Page on Edit Setting Dialog")]
+        public void GivenUserClicksTheSelf_ServiceVerbiageInSettingsPageOnEditSettingDialog()
+        {
+            workflows.ClickSelfServiceVerbiageButton();
+        }
+
+        [Given(@"User validates the following Fields in Self-Service Verbiage Page on Edit Setting Dialog")]
+        public void GivenUserValidatesTheFollowingFieldsInSelf_ServiceVerbiagePageOnEditSettingDialog(Table table)
+        {
+            workflows.AssertFieldsOnSelfServiceVerbiageDialog(table);
+        }
+
+        [Given(@"User adds the following data to fields in Self-Service Verbiage Page")]
+        public void GivenUserAddsTheFollowingDataToFieldsInSelf_ServiceVerbiagePage(Table table)
+        {
+            workflows.AddvaluesonSelfServiceVerbiagePage(table);
+        }
+
+        [Given(@"User clicks the Save Button on Self-Service Verbiage Page")]
+        public void GivenUserClicksTheSaveButtonOnSelf_ServiceVerbiagePage()
+        {
+            workflows.ClickSaveButtononSelfVerbiage();
+        }
+
+        [Given(@"User validates the total number of Action Fields on Workflow Settings Page")]
+        public void GivenUserValidatesTheTotalNumberOfActionFieldsOnWorkflowSettingsPage()
+        {
+            workflows.validateActionfieldsonWorkflowSettingsPage();
+        }
+
+
+
+>>>>>>> f50fa5dd0c8af6747f2b76dcba13fdc7548de1af
 
     }
 }

@@ -7,7 +7,7 @@ namespace UITestAutomation
         public void ClickAddCustomerButton()
         {
             ClickOnWebElement(AddCustomer_Button);
-            WaitForWebElementDisplayed(CoreCustomerKey_Textbox);
+            WaitForWebElementDisplayed(ID_Label);
         }
 
         public void ClickCloseAddButton()
@@ -35,7 +35,7 @@ namespace UITestAutomation
         public void ClickViewTransactionButton()
         {
             ClickOnWebElement(ViewTransactions_Button);
-            WaitForWebElementDisplayed(From_Field);
+            WaitForWebElementDisplayed(FromCalenderCust_Button);
         }
 
         public void ClickCloseButtononTransactionPage()

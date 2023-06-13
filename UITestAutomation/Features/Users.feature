@@ -40,5 +40,13 @@ Scenario: Users
 		| Role       |
 		| Close      |
 		| Save       |
-	And User clicks the Close Button on Add User Dialog
+	And User adds following data to respective fields on Add User Dialog
+		| Fields     | Values         |
+		| First Name | Susam          |
+		| Last Name  | Dan            |
+		| Email      | aK@gmail.com  |
+		| Phone      | 123            |
+		| Role       | User           |
+	And User clicks the Save Button on Add User Dialog
+	And User validates the total number of Action Fields on Users Page
 	And User clicks the Dashboard Icon on Users Page

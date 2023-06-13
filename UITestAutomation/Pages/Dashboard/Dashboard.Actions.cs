@@ -5,7 +5,7 @@ namespace UITestAutomation
     {
         public void DashboardVisibilityAfterClickingAuthenicateButtonOnLoginVerificationDialog()
         {
-            FluentWaitForWebElement(Dashboard_Container);
+            WaitForWebElementDisplayed(NewDispute);
         }
 
         public void ClickProfileIconOnDashboardPage()
@@ -28,7 +28,7 @@ namespace UITestAutomation
         public void ClickDashboard()
         {
             ClickOnWebElement(Dashboard_Button);
-            WaitForWebElementDisplayed(Dashboard_Container);
+            WaitForWebElementDisplayed(Navigation_Bar);
         }
         public void ClickDisputeIcon()
         {
@@ -48,6 +48,7 @@ namespace UITestAutomation
 
         public void ClickSubmissions()
         {
+            WaitForWebElementDisplayed(Submission_Icon);
             ClickOnWebElement(Submission_Icon);
         }
 
