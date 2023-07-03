@@ -6,8 +6,8 @@ namespace UITestAutomation
         //UI Controls on Ledger Report Page
         By LedgerReportOption = By.LinkText("Ledger Report");
         By DateRange = By.CssSelector("//select[@ng-model='dateRange']");
-        By CalendarButton  = By.CssSelector(".panel-body .fi-field:nth-of-type(1) ._md-datepicker-has-triangle-icon > [type]");
-        By TriangleButton = By.CssSelector(".panel-body .fi-field:nth-of-type(1) [ng-class] [type]");
+        By From  = By.CssSelector(".panel-body .fi-field:nth-of-type(1) ._md-datepicker-has-triangle-icon > [type]");
+        By To = By.CssSelector(".panel-body .fi-field:nth-of-type(1) [ng-class] [type]");
         By PrintReport = By.CssSelector("button[title='Print Letter']");
         By ExportEntries = By.CssSelector(".col-lg-12 > button:nth-of-type(2)");
         By LedgerEntries = By.CssSelector(".col-lg-12 > button:nth-of-type(1)");
