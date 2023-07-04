@@ -20,14 +20,14 @@
                     case " Show Submission":
                         FluentWaitForWebElement(ShowSubmissions);
                         break;
-                    case " Print Letter":
-                        FluentWaitForWebElement(PrintLetter);
-                        break;
                     case " Delete CAMS Alert":
                         FluentWaitForWebElement(DeleteCAMS);
                         break;
                     case " Refresh":
                         FluentWaitForWebElement(Refresh);
+                        break;
+                    case " Actions":
+                        FluentWaitForWebElement(ActionsField);
                         break;
                     case " Card Number":
                         FluentWaitForWebElement(CardNumber);
@@ -128,11 +128,11 @@
                     case " Third Party Breach Source":
                         FluentWaitForWebElement(ThirdPartyBreach);
                         break;
-                    case " Save":
-                        //FluentWaitForWebElement(Save2);
+                    case " Cross":
+                        FluentWaitForWebElement(CrossButton);
                         break;
                     case " Close":
-                    //    FluentWaitForWebElement(Close3);
+                        FluentWaitForWebElement(Close3);
                         break;
                 }
             }

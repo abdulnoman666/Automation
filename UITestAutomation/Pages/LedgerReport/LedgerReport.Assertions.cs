@@ -11,11 +11,11 @@
                     case " Date Range":
                         FluentWaitForWebElement(DateRange);
                         break;
-                    case " Calendar Button":
-                        FluentWaitForWebElement(CalendarButton);
+                    case " From":
+                        FluentWaitForWebElement(From);
                         break;
-                    case " Triangle Button":
-                        FluentWaitForWebElement(TriangleButton);
+                    case " To":
+                        FluentWaitForWebElement(To);
                         break;
                     case " Print Report":
                         FluentWaitForWebElement(PrintReport);

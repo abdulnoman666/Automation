@@ -154,6 +154,15 @@
                     case " Delete Charter/Branding":
                         FluentWaitForWebElement(DeleteCharter);
                         break;
+                    case " Add Contacts Lookup":
+                        FluentWaitForWebElement(AddContactsLookup);
+                        break;
+                    case " Edit Contacts Lookup":
+                        FluentWaitForWebElement(EditContactsLookup);
+                        break;
+                    case " Delete Contacts Lookup":
+                        FluentWaitForWebElement(DeleteContactsLookup);
+                        break;
                     case " Transaction Decline Reason":
                         FluentWaitForWebElement(AddTransactionDeclineReason);
                         break;

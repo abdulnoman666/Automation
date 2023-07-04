@@ -7,10 +7,10 @@
             WaitForWebElementDisplayed(DisputesOption);
             ClickOnWebElement(DisputesOption);
         }
-        public void ClickAlertsButton()
+        public void ClickSettingsButton()
         {
-            ClickOnWebElement(AlertsButton);
-            WaitForWebElementDisplayed(AlertsButton);
+            ClickOnWebElement(SettingsButton);
+            WaitForWebElementDisplayed(SettingsButton);
         }
         public void ClickSearchButton()
         {

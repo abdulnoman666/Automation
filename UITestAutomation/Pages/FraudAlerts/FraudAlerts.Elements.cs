@@ -4,13 +4,13 @@ namespace UITestAutomation
     internal partial class FraudAlerts
     {
         //UI Controls on Fraud Alerts Page
-        By UploadAlertFileBtn = By.CssSelector(".panel-heading > div:nth-of-type(2) > .btn.btn-default");
-        By SearchSetDateRangeBtn = By.CssSelector("button[title = 'Search and set date range']");
-        By EnterAlertsBtn = By.CssSelector(".panel-heading > div:nth-of-type(3) > .btn.btn-default"); 
-        By ShowSubmissions = By.CssSelector("button[title='Show Submissions']");
-        By PrintLetter = By.CssSelector("button[title='Print Letter']");
-        By DeleteCAMS = By.CssSelector("button[title='Delete CAMS Alert']");
-        By Refresh = By.CssSelector(".btn.btn-info.glyphicon.glyphicon-refresh");
+        By UploadAlertFileBtn = By.XPath("//button[class='btn btn-default'][2]");
+        By SearchSetDateRangeBtn = By.XPath("//button[title='Search and set date range']");
+        By EnterAlertsBtn = By.XPath("//button[class='btn btn-default'][3]");
+        By ShowSubmissions = By.XPath("//button[@ng-click='showSubmissions(cams)']");
+        By DeleteCAMS = By.XPath("//button[@ng-click='deleteCAMS(cams)']");
+        By Refresh = By.XPath("//button[@ng-click='refreshCAMS()']");
+        By ActionsField = By.XPath("//th[2][1]");
         By CardNumber = By.XPath("//input[@ng-model='$.cardNumber']");
         By UploadedOn = By.XPath("//input[@ng-model='$.reportedOn']");
         By CaseNumber = By.XPath("//input[@ng-model='$.caseNumber']");
@@ -19,28 +19,28 @@ namespace UITestAutomation
         By Status = By.XPath("//select[@ng-model='$.status']");
 
         // Fields on Upload Alerts Page
-        By DefaultCaseNumber = By.CssSelector("#main [role='dialog']:nth-child(3) input");
-        By SelectUploadFile = By.CssSelector("#main [ng-model='file']");
-        By Close = By.CssSelector("#main [role='dialog']:nth-child(3) .modal-footer [data-dismiss]");
+        By DefaultCaseNumber = By.XPath("//input[@ng-model='defaultcase'][1]");
+        By SelectUploadFile = By.XPath("//button[@ng-model='file']");
+        By Close = By.XPath("//button[class='btn btn-default'][4]");
 
         // Fields on Enter Alerts Manually Page
-        By DefaultCaseNumber2 = By.CssSelector("#main [role='dialog']:nth-child(4) input");
-        By EnterCAMs = By.CssSelector("textarea");
-        By Save = By.CssSelector("#main .modal-footer [data-dismiss='modal']:nth-of-type(2)");
-        By Close2 = By.CssSelector("div#enterCAMS > .modal-dialog .btn.btn-default");
+        By DefaultCaseNumber2 = By.XPath("//input[@ng-model='defaultcase'][1]");
+        By EnterCAMs = By.XPath("//textarea[@ng-model='camsnumbers']");
+        By Save = By.XPath("//button[@ng-click='uploadcams()']");
+        By Close2 = By.XPath("//button[class='btn btn-default'][5]");
 
         // Fields on Search and set date range Page
-        By StartDate = By.CssSelector("#main .ng-valid.ng-empty:nth-child(2) > [type]");
-        By EndDate = By.CssSelector("#main .ng-valid.ng-empty:nth-child(5) > [type]");
-        By StatusField = By.CssSelector(".form-control.mb-3.ng-empty.ng-pristine.ng-touched.ng-valid");
-        By Search = By.CssSelector("#main form [data-dismiss]");
+        By StartDate = By.XPath("//button[@ng-click='ctrl.openCalendarPane($event)'][1]");
+        By EndDate = By.XPath("//button[@ng-click='ctrl.openCalendarPane($event)'][2]");
+        By StatusField = By.XPath("//select[@ng-model='searchFilter.status']");
+        By Search = By.XPath("//button[@ng-click='searchCams()']");
 
         // Fields on Show Submission Page
-        By ReportedOn = By.CssSelector("#main [role] tr th:nth-of-type(1)");
-        By Customer = By.CssSelector("#main [role] tr th:nth-of-type(2)");
-        By Case = By.CssSelector("#main [role] tr th:nth-of-type(3)");
-        By ThirdPartyBreach = By.CssSelector("#main [role] tr th:nth-of-type(4)");
-        //By Save2 = By.CssSelector("#main .ng-scope:nth-of-type(13) [ng-click='saveCaseNumber\(s\)']");
-        //By Close3 = By.CssSelector("");
+        By ReportedOn = By.XPath("//th[1][2]");
+        By Customer = By.XPath("//th[2][2]");
+        By Case = By.XPath("//th[3][2]");
+        By ThirdPartyBreach = By.XPath("//th[4][2]");
+        By CrossButton = By.XPath("//button[class='close'][4]");
+        By Close3 = By.XPath("//button[class='btn btn-default'][6]");
     }
 }

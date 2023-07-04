@@ -4,81 +4,80 @@ namespace UITestAutomation
     internal partial class CompanyDetails
     {
         //UI Controls on Company Details Page
-        By CompanyDetailsOption = By.LinkText("Company Details");
-        By BasicInfo = By.LinkText("Basic Info");
-        By GeneralSettings = By.LinkText("General Settings");
-        By LookupValues = By.LinkText("Lookup Values");
-        By Style = By.CssSelector(".nav.nav-tabs > li:nth-of-type(4) > a");
-        By Save = By.CssSelector(".ng-scope > div:nth-of-type(3) .btn.btn-default");
+        By CompanyDetailsOption = By.XPath("//a[text='Company Details']");
+        By BasicInfo = By.XPath("//a[@ng-click='tab=1']");
+        By GeneralSettings = By.XPath("//a[@ng-click='tab=2']");
+        By LookupValues = By.XPath("//a[@ng-click='tab=3']");
+        By Style = By.XPath("//a[@ng-click='tab=4']");
+        By Save = By.XPath("//button[@ng-click='updateCompany()']");
 
         //Fields of Basic Info
-        By CompanyName = By.CssSelector("input[name='companyName']");
-        By Address = By.CssSelector("input[name='address']");
-        By City = By.CssSelector("input[name='city']");
-        By State = By.CssSelector("input[name='state']");
-        By Zip = By.CssSelector("input[name='zip']");
-        By Phone = By.CssSelector("input[name='phone']");
-        By Email = By.CssSelector("input[name='email']");
-        By ResponseEmail = By.CssSelector("input[name='responseEmail']");
-        By EmailList = By.CssSelector("input[name='emailDistributionList']");
+        By CompanyName = By.XPath("//input[@ng-model='company.companyName']");
+        By Address = By.XPath("//input[@ng-model='company.address']");
+        By City = By.XPath("//input[@ng-model='company.city']");
+        By State = By.XPath("//input[@ng-model='company.state']");
+        By Zip = By.XPath("//input[@ng-model='company.zip']");
+        By Phone = By.XPath("//input[@ng-model='company.phone']");
+        By Email = By.XPath("//input[@ng-model='company.email']");
+        By ResponseEmail = By.XPath("//input[@ng-model='company.responseEmail']");
+        By EmailList = By.XPath("//input[@ng-model='company.emailDistributionList']");
         By Time = By.XPath("//select[@ng-model='company.timeZone']");
         By Questionnaires = By.XPath("//select[@ng-model='company.customerAppReadOnly']");
 
         //Fields of General Settings
         By SignaturePad = By.XPath("//select[@ng-model='company.signaturePad']");
         By Timeout = By.XPath("//input[@ng-model='company.idleTime']");
-        By StatementCycle = By.CssSelector("div:nth-of-type(4) .col-lg-4 > div:nth-of-type(1) > label");
-        By SelectFileOption = By.CssSelector("[ng-show] [ng-model='file']");
+        By StatementCycle = By.XPath("//input[@ng-model='company.defaultMEStatement']");
+        By SelectFileOption = By.XPath("//div[@ng-model='file']");
 
 
         //UI Controls on Lookup Values Page
-        By CrossButton = By.CssSelector("#main .modal-header [data-dismiss]");
-        By AddSubmissionStatus = By.CssSelector("button[title='Add Submission Status']");
-        By EditSubmissionStatus = By.CssSelector("button[title='Edit Submission Status']");
-        By DeleteSubmissionStatus = By.CssSelector("button[title='Delete Submission Status']");
+        By CrossButton = By.XPath("//button[class='close'][2]");
+        By AddSubmissionStatus = By.XPath("//button[@ng-click='AddSubmissionStatus()']");
+        By EditSubmissionStatus = By.XPath("//button[@ng-click='editLV(lvss)'][1]");
+        By DeleteSubmissionStatus = By.XPath("//button[@ng-click='removeLV(lvss)'][1]");
 
-        By AddSource = By.CssSelector("button[title='Add Source']");
-        By EditSource = By.CssSelector("button[title='Edit Source']");
-        By DeleteSource = By.CssSelector("button[title='Delete Source']");
+        By AddSource = By.XPath("//button[@ng-click='AddThirdPartyBreach()']");
+        By EditSource = By.XPath("//button[@ng-click='editLV(lv)'][1]");
+        By DeleteSource = By.XPath("//button[@ng-click='removeLV(lv)'][1]");
 
-        By AddAccountType = By.CssSelector("button[title='Add Account Type']");
-        By EditAccountType = By.CssSelector("button[title='Edit Account Type']");
-        By DeleteAccountType = By.CssSelector("button[title='Delete Account Type']");
+        By AddAccountType = By.XPath("//button[@ng-click='AddAccountType()']");
+        By EditAccountType = By.XPath("//button[@ng-click='editLV(lv)'][3]");
+        By DeleteAccountType = By.XPath("//button[@ng-click='removeLV(lv)'][3]");
 
-        By AddDisputeDetail = By.CssSelector("button[title='Add Dispute Research Detail']");
-        By EditDisputeDetail = By.CssSelector("button[title='Edit Dispute Research Detail']");
-        By DeleteDisputeDetail = By.CssSelector("button[title='Delete Dispute Research Detail']");
+        By AddDisputeDetail = By.XPath("button[title='Add Dispute Research Detail']");
+        By EditDisputeDetail = By.XPath("//button[@ng-click='editLV(lv)'][6]");
+        By DeleteDisputeDetail = By.XPath("//button[@ng-click='removeLV(lv)'][6]");
 
-        By AddBranch = By.CssSelector("button[title='Add Branch']");
-        By EditBranch = By.CssSelector("button[title='Edit Branch']");
-        By DeleteBranch = By.CssSelector("button[title='Delete Branch']");
+        By AddBranch = By.XPath("button[title='Add Branch']");
+        By EditBranch = By.XPath("//button[@ng-click='editLV(lv)'][9]");
+        By DeleteBranch = By.XPath("//button[@ng-click='removeLV(lv)'][9]");
 
-        By AddCharter = By.CssSelector("button[title='Add Charter/Branding']");
-        By EditCharter = By.CssSelector("button[title='Edit Charter/Branding']");
-        By DeleteCharter = By.CssSelector("button[title='Delete Charter/Branding']");
+        By AddCharter = By.XPath("button[title='Add Charter/Branding']");
+        By EditCharter = By.XPath("//button[@ng-click='editLV(lv)'][11]");
+        By DeleteCharter = By.XPath("button[title='Delete Charter/Branding']");
 
-        By AddContactsLookup = By.CssSelector("button[title='Contacts Lookup']");
-        //By EditContactLookup = By.CssSelector("");//code not found
-        //By DeleteContactLookup = By.CssSelector("");//code not found
+        By AddContactsLookup = By.XPath("//button[@ng-click='AddContactLookup()']");
+        By EditContactsLookup = By.XPath("//button[@ng-click='editLV(lv)'][12]");
+        By DeleteContactsLookup = By.XPath("//button[@ng-click='removeLV(lv)'][12]");
 
-        By AddTransactionDeclineReason = By.CssSelector("button[title='Transaction Decline Reason']");
-        By EditTransactionDeclineReason = By.CssSelector("button[title='Edit Transaction Decline Reason']");
-        By DeleteTransactionDeclineReason = By.CssSelector("button[title='Delete Transaction Decline Reason']");
+        By AddTransactionDeclineReason = By.XPath("//button[@ng-click='AddTransactionDeclineReason()']");
+        By EditTransactionDeclineReason = By.XPath("//button[@ng-click='editLV(lv)'][14]");
+        By DeleteTransactionDeclineReason = By.XPath("//button[@ng-click='removeLV(lv)'][14]");
 
-        By AddBatchReportingReference = By.CssSelector("button[title='Batch Reporting Reference']");
-        By EditBatchReportingReference = By.CssSelector("button[title='Edit Batch Reporting Reference']");
-        By DeleteBatchReportingReference = By.CssSelector("button[title='Delete Batch Reporting Reference']");
+        By AddBatchReportingReference = By.XPath("//button[@ng-click='AddBatchReportingReference()']");
+        By EditBatchReportingReference = By.XPath("//button[@ng-click='editLV(lv)'][21]");
+        By DeleteBatchReportingReference = By.XPath("//button[@ng-click='removeLV(lv)'][21]");
 
         //Fields on Add Pages(the path is same for all)
-        By TextArea = By.CssSelector("input[name='description']");
+        By TextArea = By.XPath("//input[@ng-model='newlv.description']");
         By SaveButton = By.XPath("//button[@ng-click='saveLookupValue()']");
-        By CloseButton = By.CssSelector(".modal-dialog .btn.btn-default");
-
+        By CloseButton = By.XPath("//button[class='btn btn-default'][6]");
 
         // Fields on Style
-        By Primary = By.CssSelector("[ng-show] .fi-field:nth-child(2) .color-picker-input-swatch");
-        By Secondary = By.CssSelector("[ng-show] .fi-field:nth-child(3) .color-picker-input-swatch");
-        By PrimaryFont = By.XPath("//input[@ng-model='AngularColorPickerController.internalNgModel']");
-        By SecondaryFont = By.CssSelector("[ng-show] .fi-field:nth-child(5) .color-picker-input-swatch");
+        By Primary = By.XPath("//input[@ng-model='AngularColorPickerController.internalNgModel'][1]");
+        By Secondary = By.XPath("//input[@ng-model='AngularColorPickerController.internalNgModel'][2]");
+        By PrimaryFont = By.XPath("//input[@ng-model='AngularColorPickerController.internalNgModel'][3]");
+        By SecondaryFont = By.XPath("//input[@ng-model='AngularColorPickerController.internalNgModel'][4]");
     }
 }

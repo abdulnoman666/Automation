@@ -5,25 +5,25 @@ namespace UITestAutomation
     internal partial class Brands
     {
         //UI Controls on Brands Page
-        By BrandsOption = By.LinkText("Brands");
-        By AddNewCaseBrand = By.CssSelector("button[title='New Case']");
-        By DeleteBrand = By.CssSelector("button[title='Edit Brand']");
-        By EditBrand = By.CssSelector("button[title='Edit Brand']");
-        By RefreshIcon = By.CssSelector("button[title = 'Refresh']");
-        By ActionField = By.CssSelector("tr > th:nth-of-type(1)");
-        By BrandNameField = By.CssSelector("tr > th:nth-of-type(2)");
-        By EmailField = By.CssSelector("tr > th:nth-of-type(3)");
-        By AddressField = By.CssSelector("tr > th:nth-of-type(4)");
-        By CityField = By.CssSelector("tr > th:nth-of-type(5)");
-        By StateField = By.CssSelector("tr > th:nth-of-type(6)");
-        By ZipField = By.CssSelector("tr > th:nth-of-type(7)");
-        By PhoneField = By.CssSelector("tr > th:nth-of-type(8)");
-        By FaxField = By.CssSelector("tr > th:nth-of-type(9)");
-        By CharterField = By.CssSelector("tr > th:nth-of-type(10)");
-        By SelectLogoFileField = By.CssSelector("tr > th:nth-of-type(11)");
+        By BrandsOption = By.XPath("//a[text='Brands']");
+        By AddNewCaseBrand = By.XPath("//button[@ng-click='addBrand()']");
+        By DeleteBrand = By.XPath("//button[@ng-click='deleteBrand($event, brand)']");
+        By EditBrand = By.XPath("//button[@ng-click='editBrand(brand)']");
+        By RefreshIcon = By.XPath("//button[@ng-click='refreshBrand()']");
+        By ActionField = By.XPath("//th[1]");
+        By BrandNameField = By.XPath("//th[2]");
+        By EmailField = By.XPath("//th[3]");
+        By AddressField = By.XPath("//th[4]");
+        By CityField = By.XPath("//th[5]");
+        By StateField = By.XPath("//th[6]");
+        By ZipField = By.XPath("//th[7]");
+        By PhoneField = By.XPath("//th[8]");
+        By FaxField = By.XPath("//th[9]");
+        By CharterField = By.XPath("//th[10]");
+        By LogoField= By.XPath("//th[11]");
 
         //Fields on Add Brand Page 
-        By SelectLogoFile = By.CssSelector("[ng-controller] [role] [ng-model='file']");
+        By SelectLogoFile = By.XPath("//div[@ng-model='file']");
         By BrandName = By.XPath("//input[@ng-model='brand.name']");
         By Charter = By.XPath("//input[@ng-model='brand.charter']");
         By Email = By.XPath("//input[@ng-model='brand.email']");
@@ -33,9 +33,8 @@ namespace UITestAutomation
         By Zip = By.XPath("//input[@ng-model='brand.zip']");
         By Phone = By.XPath("//input[@ng-model='brand.phone']");
         By Fax = By.XPath("//input[@ng-model='brand.fax']");
-        By SaveButton = By.CssSelector(".btn.btn-info > span:nth-of-type(1)");
-        By CloseButton = By.CssSelector("form[name='brandform'] .btn.btn-default");
-        By CrossButton = By.CssSelector(".close > span");
-
+        By SaveButton = By.XPath("//span[@ng-show='mode === 1'][2]");
+        By CloseButton = By.XPath("//button[@ng-click='close()'][2]");
+        By CrossButton = By.XPath("//button[@ng-click='close()'][1]");
     }
 }
