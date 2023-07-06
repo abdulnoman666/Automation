@@ -527,15 +527,15 @@ namespace UITestAutomation
         {
             disputes.AssertUIControlsOnDisputesPage(table);
         }
-        [Given(@"User clicks the Alerts Button on the Disputes Page")]
-        public void GivenUserClicksTheAlertsButtonOnTheDisputesPage()
+        [Given(@"User clicks the Settings Button on the Disputes Page")]
+        public void GivenUserClicksTheSettingsButtonOnTheDisputesPage()
         {
-            disputes.ClickAlertsButton();
+            disputes.ClickSettingsButton();
         }
-        [Given(@"User validates the following fields on the Alerts Page")]
-        public void GivenUserValidatesTheFollowingFieldsOnTheAlertsPage(Table table)
+        [Given(@"User validates the following fields on the Settings Page")]
+        public void GivenUserValidatesTheFollowingFieldsOnTheSettingsPage(Table table)
         {
-            disputes.AssertFieldsOnAlertsPage(table);
+            disputes.AssertFieldsOnSettingsPage(table);
         }
         [Given(@"User clicks the Search Button on the Disputes Page")]
         public void GivenUserClicksTheSearchButtonOnTheDisputesPage()
@@ -551,11 +551,6 @@ namespace UITestAutomation
         public void GivenUserClicksTheShowClosedDisputesButtonOnTheDisputesPage()
         {
             disputes.ClickShowClosedDisputesButton();
-        }
-        [Given(@"User validates the following fields on the Show Closed Disputes Page")]
-        public void GivenUserValidatesTheFollowingFieldsOnTheShowClosedDisputesPage(Table table)
-        {
-            disputes.AssertFieldsOnShowClosedDisputesPage(table);
         }
         [Given(@"User clicks the Edit Disputes Button on the Disputes Page")]
         public void GivenUserClicksTheEditDisputesButtonOnTheDisputesPage()

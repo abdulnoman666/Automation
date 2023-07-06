@@ -122,5 +122,6 @@ namespace UITestAutomation
         By PosttoGL = By.XPath("//button[@ng-click='resolveDispute()']");
         By Save2 = By.XPath("//button[@ng-click='saveDisputes()']");
         By Close = By.XPath("//button[@ng-click='cancelresolve()']");
+
     }
 }

@@ -51,7 +51,7 @@
                         FluentWaitForWebElement(CharterField);
                         break;
                     case " Logo":
-                        FluentWaitForWebElement(SelectLogoFileField);
+                        FluentWaitForWebElement(LogoField);
                         break;
                 }
             }
