@@ -9,6 +9,7 @@
                 switch (item[0].Trim())
                 {
                     case " Refresh Ledger":
+                        WaitForWebElementDisplayed(RefreshLedger);
                         FluentWaitForWebElement(RefreshLedger);
                         break;
                     case " Date":

@@ -14,5 +14,11 @@ namespace UITestAutomation
             WaitForWebElementDisplayed(AddFormDependancyList);
             ClickOnWebElement(AddFormDependancyList);
         }
+
+        public void ClickCloseButtononAddFormDependancyList()
+        {
+            WaitForWebElementDisplayed(CloseButton);
+            ClickOnWebElement(CloseButton);
+        }
     }
 }

@@ -9,9 +9,11 @@
                 switch (item[0].Trim())
                 {
                     case "Add Configuration":
+                        WaitForWebElementDisplayed(AddConfiguration);
                         FluentWaitForWebElement(AddConfiguration);
                         break;
                     case "Edit Configuration":
+                        WaitForWebElementDisplayed(EditConfiguration);
                         FluentWaitForWebElement(EditConfiguration);
                         break;
                     case "Refresh":
@@ -36,13 +38,12 @@
             {
                 switch (item[0].Trim())
                 {
-                    case "Cross Button":
-                        FluentWaitForWebElement(CrossButton);
-                        break;
                     case "Name ":
+                        WaitForWebElementDisplayed(Name);
                         FluentWaitForWebElement(Name);
                         break;
                     case "Delimiter":
+                        WaitForWebElementDisplayed(Delimiter);
                         FluentWaitForWebElement(Delimiter);
                         break;
                     case "FieldList":

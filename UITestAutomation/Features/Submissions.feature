@@ -22,19 +22,19 @@ Scenario: Submissions
 		| Reassign Submission           |
 		| Delete or Withdraw Submission |
 	And User validates the following Fields on Submissions List Page
-		| Fields                   |
-		| Action                   |
-		| Sub Case                 |
-		| Customer                 |
-		| Workflow                 |
-		| Reported                 |
-		| Days                     |
-		| Processor Case Reference |
-		| Status                   |
-		| PT                       |
-		| Total                    |
-		| Orig                     |
-		| Assigned To              |
+		| Fields       |
+		| Action       |
+		| ID           |
+		| Type         |
+		| Account Type |
+		| Customer     |
+		| Workflow     |
+		| Reported     |
+		| Days         |
+		| Status       |
+		| Total        |
+		| Item Count   |
+		| Assigned To  |
 	And User clicks the Reassign Submission Icon on Submissions List Page
 	And User validates the following UI Controls on Reassign Submission Dialog
 		| UI Controls |

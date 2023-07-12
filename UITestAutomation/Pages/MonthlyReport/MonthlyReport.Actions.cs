@@ -17,6 +17,15 @@
             WaitForWebElementDisplayed(SummaryButton);
             ClickOnWebElement(SummaryButton);
         }
-
+        public void ClickCloseButtononSummary()
+        {
+            WaitForWebElementDisplayed(Close);
+            ClickOnWebElement(Close);
+        }
+        public void ClickCloseButtononListPage()
+        {
+            WaitForWebElementDisplayed(Close2);
+            ClickOnWebElement(Close2);
+        }
     }
 }

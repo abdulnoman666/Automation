@@ -4,7 +4,7 @@ namespace UITestAutomation
     internal partial class Tasks
     {
         //UI Controls on Tasks Page
-        By TasksOption = By.XPath("//a[text='Tasks']");
+        By TasksOption = By.XPath("//a[text()='Tasks']");
         By AddNewTask = By.XPath("//button[@ng-click='addNewTask()']");
         By DeleteTask = By.XPath("button[title='Delete Task']");
         By EditTask = By.XPath("//button[@ng-click='editTask(st)']");
@@ -20,6 +20,6 @@ namespace UITestAutomation
         By Reference = By.XPath("//input[@ng-model='selectedSubmissionTask.reference']");
         By UserPool = By.XPath("//select[@ng-model='selectedSubmissionTask.userPoolReference']");
         By SaveButton = By.XPath("//button[@ng-click='saveTask()']");
-        By CloseButton = By.XPath("//button[class='btn btn-default'][2]");
+        By CloseButton = By.XPath("(//button[text()=\"Close\"])[1]");
     }
 }

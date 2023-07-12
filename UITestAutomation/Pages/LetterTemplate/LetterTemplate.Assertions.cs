@@ -10,6 +10,7 @@ namespace UITestAutomation
                 switch (item[0].Trim())
                 {
                     case "Add Letter Template":
+                        WaitForWebElementDisplayed(AddLetterTemplate);
                         FluentWaitForWebElement(AddLetterTemplate);
                         break;
                     case "Delete Letter Template":
@@ -22,6 +23,7 @@ namespace UITestAutomation
                         FluentWaitForWebElement(DownloadLetter);
                         break;
                     case "Copy Letter":
+                        WaitForWebElementDisplayed(CopyLetter);
                         FluentWaitForWebElement(CopyLetter);
                         break;
                     case "Action":
@@ -55,9 +57,11 @@ namespace UITestAutomation
                 switch (item[0].Trim())
                 {
                     case "Letter Title":
+                        WaitForWebElementDisplayed(LetterTitle);
                         FluentWaitForWebElement(LetterTitle);
                         break;
                     case "Description":
+                        WaitForWebElementDisplayed(LetterDescription);
                         FluentWaitForWebElement(LetterDescription);
                         break;
                     case "Author":
@@ -103,6 +107,7 @@ namespace UITestAutomation
                 switch (item[0].Trim())
                 {
                     case "Letter Template":
+                        WaitForWebElementDisplayed(LetterTemplateForm);
                         FluentWaitForWebElement(LetterTemplateForm);
                         break;
                 }
@@ -115,6 +120,7 @@ namespace UITestAutomation
                 switch (item[0].Trim())
                 {
                     case "Title":
+                        WaitForWebElementDisplayed(StyleSheetTitle);
                         FluentWaitForWebElement(StyleSheetTitle);
                         break;
                     case "Style Sheet TextBox":

@@ -1,7 +1,4 @@
-﻿
-using FluentAssertions;
-using NUnit.Framework;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace UITestAutomation
 {
@@ -559,6 +556,7 @@ namespace UITestAutomation
                         case "e-Consent Notice Template":
                             FluentWaitForWebElement(eConsentNoticeTemplate_Field);
                             ClickOnWebElement(eConsentNoticeTemplate_Field);
+                            Thread.Sleep(3000);
                             ElementToBeSelectedFromDropdown(eConsentNoticeTemplate_Field, item[1]);
                             ClickOnWebElement(eConsentNoticeTemplate_Field);
                             break;

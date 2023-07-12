@@ -9,6 +9,8 @@ namespace UITestAutomation
         By CopyAlertDefinition_Button = By.XPath("/html//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-body']/table/tbody/tr[1]//button[@title='Edit Alert Definition']");
         By CreateAlertDefinitons_Button = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-heading']/button[@class='btn btn-default']");
         By DownloadFromLibrary_Button = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//button[@title='Download alert']");
+        By EditAlertDefinition_Button=  By.XPath("//button[@title=\"Edit Alert Definition\"]");
+        By Explanation_Button = By.XPath("(//a[@ng-click=\"select($event)\"])[2]");
 
         // Add Definition Dialog
         By DefinitionName_Field = By.XPath("/html//div[@id='addDefinition']//form[@name='configform']//div[@class='modal-body']//div[@class='tab-content']/div[1]//input[@name='alertName']");

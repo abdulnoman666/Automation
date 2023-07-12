@@ -6,8 +6,8 @@ namespace UITestAutomation
     {
         By CompanySettingsOption = By.XPath("//div[@id='myNavbar']/ul[@class='nav navbar-nav navbar-right']/li[12]/ul[@class='dropdown-menu']//a[@href='#/companysettings']");
         By ProvisionalCreditDays_Field = By.XPath("/html//div[@id='main']/div[@class='container']/div[@class='ng-scope']//input[@name='pcDays']");
-        By AuditStart_Field = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//md-datepicker[@name='auditStart']/div[@class='md-datepicker-input-container']/input[@class='md-datepicker-input']");
-        By AuditEnd_Field = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//md-datepicker[@name='auditEnd']/div[@class='md-datepicker-input-container']/input[@class='md-datepicker-input']");
+        By AuditStart_Field = By.XPath("(//input[@class=\"md-datepicker-input\"])[1]");
+        By AuditEnd_Field = By.XPath("(//input[@class=\"md-datepicker-input\"])[2]");
         By DailyGLCutOffTime_Field = By.XPath("/html//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-body']/div/div[4]//label[.='Daily GL Cut-Off Time']");
         By PostOnSaturdays_CheckBox = By.XPath("/html//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-body']/div/div[5]/label[1]/span[@class='checkmark']");
         By Post7DaysaWeek_CheckBox = By.XPath("/html//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-body']/div/div[5]/label[2]/span[@class='checkmark']");

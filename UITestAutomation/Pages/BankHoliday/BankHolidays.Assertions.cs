@@ -10,9 +10,11 @@ namespace UITestAutomation
                 switch (item[0].Trim())
                 {
                     case "Add Holiday":
+                        WaitForWebElementDisplayed(AddNewBankHolidays);
                         FluentWaitForWebElement(AddNewBankHolidays);
                         break;
                     case "Delete":
+                        WaitForWebElementDisplayed(DeleteBankHolidays);
                         FluentWaitForWebElement(DeleteBankHolidays);
                         break;
                     case "Edit":

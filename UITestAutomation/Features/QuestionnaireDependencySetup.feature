@@ -9,7 +9,6 @@ Scenario: Add Questionnaire Dependency Setup
 	Given User clicks the Profile Icon on Dashboard page
 	And User Selects the Questionnaire Dependency Setups from the dropdown menu of the Page
 	And User validates following UI controls on Questionnaire Dependency Setup Page
-	
 		| UI Controls      |
 		| Add              |
 		| Delete           |
@@ -20,6 +19,10 @@ Scenario: Add Questionnaire Dependency Setup
 	And User validates following fields on Add Questionnaire Dependency Setup
 		| Field         |
 		| Workflow Name |
+		| Close         |
+		| Save          |
+		And User clicks the Close button on Add Questionnaire Dependency Setup
+	And User clicks the Dashboard Icon
 
 #@Edit
 #Scenario: Edit Questionnaire Dependency Setup

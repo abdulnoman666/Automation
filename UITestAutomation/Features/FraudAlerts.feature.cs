@@ -78,10 +78,10 @@ namespace UITestAutomation.Features
 #line 3
 #line hidden
 #line 4
-  testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
-  testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
@@ -118,242 +118,121 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 9
-    testRunner.Given("User clicks the Fraud Alerts Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the Fraud Alerts Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
+                            "UI Controls"});
+                table47.AddRow(new string[] {
+                            "Upload Alert File"});
+                table47.AddRow(new string[] {
+                            "Enter Alerts Manually"});
+                table47.AddRow(new string[] {
+                            "Search and set date range"});
+                table47.AddRow(new string[] {
+                            "Show Submission"});
+                table47.AddRow(new string[] {
+                            "Link Card Number to Customer Record"});
+                table47.AddRow(new string[] {
+                            "Delete CAMS Alert"});
+                table47.AddRow(new string[] {
+                            "Refresh"});
+                table47.AddRow(new string[] {
+                            "Action"});
+                table47.AddRow(new string[] {
+                            "Card Number"});
+                table47.AddRow(new string[] {
+                            "Uploaded On"});
+                table47.AddRow(new string[] {
+                            "Case Number"});
+                table47.AddRow(new string[] {
+                            "Entity"});
+                table47.AddRow(new string[] {
+                            "Email / Website"});
+                table47.AddRow(new string[] {
+                            "Status"});
+#line 10
+ testRunner.And("User validates the following UI Controls on the Fraud Alerts Page", ((string)(null)), table47, "And ");
+#line hidden
+#line 28
+ testRunner.And("User clicks the Upload Alerts File button on Fraud Alerts page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
                 table48.AddRow(new string[] {
-                            "Upload Alert File"});
+                            "Default Case Number"});
                 table48.AddRow(new string[] {
-                            "Enter Alerts Manually"});
+                            "Select and Upload File"});
                 table48.AddRow(new string[] {
-                            "Search and set date range"});
-                table48.AddRow(new string[] {
-                            "Show Submission"});
-                table48.AddRow(new string[] {
-                            "Link Card Number to Customer Record"});
-                table48.AddRow(new string[] {
-                            "Delete CAMS Alert"});
-                table48.AddRow(new string[] {
-                            "Refresh"});
-                table48.AddRow(new string[] {
-                            "Action"});
-                table48.AddRow(new string[] {
-                            "Card Number"});
-                table48.AddRow(new string[] {
-                            "Uploaded On"});
-                table48.AddRow(new string[] {
-                            "Case Number"});
-                table48.AddRow(new string[] {
-                            "Entity"});
-                table48.AddRow(new string[] {
-                            "Email / Website"});
-                table48.AddRow(new string[] {
-                            "Status"});
-#line 10
- testRunner.And("User validates the following UI Controls on the Fraud Alerts Page", ((string)(null)), table48, "And ");
+                            "Close"});
+#line 29
+ testRunner.And("User validates the following UI Controls on the Upload Alerts File Page", ((string)(null)), table48, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Upload Alerts File")]
-        public virtual void UploadAlertsFile()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Upload Alerts File", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 27
-this.ScenarioInitialize(scenarioInfo);
+#line 34
+ testRunner.And("User clicks the close button on Upload Alerts File Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 28
-    testRunner.Given("User clicks the Upload Alerts File button on Fraud Alerts page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 35
+ testRunner.And("User clicks the Enter Alerts Manually button on Fraud Alerts page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
                 table49.AddRow(new string[] {
                             "Default Case Number"});
                 table49.AddRow(new string[] {
-                            "Select and Upload File"});
+                            "Enter CAMs Numbers"});
+                table49.AddRow(new string[] {
+                            "Save"});
                 table49.AddRow(new string[] {
                             "Close"});
-#line 29
- testRunner.And("User validates the following UI Controls on the Upload Alerts File Page", ((string)(null)), table49, "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Enter Alerts Manually")]
-        public virtual void EnterAlertsManually()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Enter Alerts Manually", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 35
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
 #line 36
-    testRunner.Given("User clicks the Enter Alerts Manually button on Fraud Alerts page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.And("User validates the following UI Controls on the Enter Alerts Manually Page", ((string)(null)), table49, "And ");
+#line hidden
+#line 42
+ testRunner.And("User clicks the close button on the Enter Alerts Manually Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 43
+ testRunner.And("User clicks the Search and set date range button on Fraud Alerts page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
                 table50.AddRow(new string[] {
-                            "Default Case Number"});
+                            "Start Date"});
                 table50.AddRow(new string[] {
-                            "Enter CAMs Numbers"});
+                            "End Date"});
                 table50.AddRow(new string[] {
-                            "Save"});
+                            "Status"});
                 table50.AddRow(new string[] {
-                            "Close"});
-#line 37
- testRunner.And("User validates the following UI Controls on the Enter Alerts Manually Page", ((string)(null)), table50, "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Search and set date range")]
-        public virtual void SearchAndSetDateRange()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search and set date range", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+                            "Search"});
 #line 44
-this.ScenarioInitialize(scenarioInfo);
+ testRunner.And("User validates the following UI Controls on the Search and set date range Page", ((string)(null)), table50, "And ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
-this.FeatureBackground();
+#line 50
+ testRunner.And("User clicks the close icon on the Search and set date range Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 45
-    testRunner.Given("User clicks the Search and set date range button on Fraud Alerts page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 51
+ testRunner.And("User clicks the Show Submissione button on Fraud Alerts page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
                 table51.AddRow(new string[] {
-                            "Start Date"});
-                table51.AddRow(new string[] {
-                            "End Date"});
-                table51.AddRow(new string[] {
-                            "Status"});
-                table51.AddRow(new string[] {
-                            "Search"});
-#line 46
- testRunner.And("User validates the following UI Controls on the Search and set date range Page", ((string)(null)), table51, "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Show Submission")]
-        public virtual void ShowSubmission()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Show Submission", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 53
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 54
-    testRunner.Given("User clicks the Show Submissione button on Fraud Alerts page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table52 = new TechTalk.SpecFlow.Table(new string[] {
-                            "UI Controls"});
-                table52.AddRow(new string[] {
                             "Reported On"});
-                table52.AddRow(new string[] {
+                table51.AddRow(new string[] {
                             "Customer"});
-                table52.AddRow(new string[] {
+                table51.AddRow(new string[] {
                             "Case #"});
-                table52.AddRow(new string[] {
+                table51.AddRow(new string[] {
                             "Third Party Breach Source"});
-                table52.AddRow(new string[] {
+                table51.AddRow(new string[] {
                             "Save"});
-                table52.AddRow(new string[] {
+                table51.AddRow(new string[] {
                             "Close"});
-#line 55
- testRunner.And("User validates the following UI Controls on the Show Submission Page", ((string)(null)), table52, "And ");
+#line 52
+ testRunner.And("User validates the following UI Controls on the Show Submission Page", ((string)(null)), table51, "And ");
+#line hidden
+#line 60
+ testRunner.And("User clicks the Close Button on Show Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 61
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

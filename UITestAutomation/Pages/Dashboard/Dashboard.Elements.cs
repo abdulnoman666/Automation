@@ -9,7 +9,7 @@ namespace UITestAutomation
         By NewDispute = By.XPath("//a[@ng-click='startNewDispute()']");
         By Customer_Field = By.XPath("//a[@href='#/customers']");
         By Dashboard_Button = By.XPath("//div[@class=\"navbar-header\"]");
-        By DisputeIcon = By.CssSelector("li:nth-of-type(5) > .dropdown-toggle");
+        By DisputeIcon = By.XPath("(//a[@class=\"dropdown-toggle\"])[2]");
         By LedgerIcon = By.CssSelector("li:nth-of-type(7) > .dropdown-toggle");
         By FraudAlertsButton = By.LinkText("Fraud Alerts");
         By Submission_Icon = By.XPath("(//a[@class=\"dropdown-toggle\"])[1]");

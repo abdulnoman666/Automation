@@ -5,8 +5,9 @@ Background:
 	 And User should be able to see Dashboard in Application
 
 @MonthlyReport
-Scenario:  Monthly Disputes Report             
-    Given User clicks the Monthly Report Icon from the dropdown of Disputes Page
+Scenario:  Monthly Disputes Report   
+Given User clicks the dispute icon on the dashboard
+    And User clicks the Monthly Report Icon from the dropdown of Disputes Page
 	And User validates the following fields on the Monthly Report Page
 	| Fields          |
 	| Reported On     |
@@ -18,10 +19,8 @@ Scenario:  Monthly Disputes Report
 	| Summary         |
 	| Charts          |
 	| List            |
-	| Export Disputes |
-
-Scenario:  Summary            
-    Given User clicks the Summary button on the Monthly Report Page 
+	| Export Disputes |        
+    And User clicks the Summary button on the Monthly Report Page 
 	And User validates the following fields on the Summary Page
 	| Fields                     |
 	| Submission Count           |
@@ -33,10 +32,9 @@ Scenario:  Summary
 	| Recovered                  |
 	| Pending Provisional Credit |
 	| Export                     |
-	| Close                      |
-
-Scenario:  List           
-    Given User clicks the List button on the Monthly Report Page 
+	| Close                      | 
+	And User clicks the close button on the Summary Page
+    And User clicks the List button on the Monthly Report Page 
 	And User validates the following fields on the List Page
 	| Fields      |
 	| Reported    |
@@ -52,3 +50,5 @@ Scenario:  List
 	| Customer    |
 	| Assigned To |
 	| Close       |
+	And User clicks the close button on the List Page
+	And User clicks the Dashboard Icon

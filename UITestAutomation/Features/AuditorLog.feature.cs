@@ -78,10 +78,10 @@ namespace UITestAutomation.Features
 #line 3
 #line hidden
 #line 4
-  testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
-  testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
@@ -118,36 +118,42 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 9
-    testRunner.Given("User clicks the Auditor Log Icon from the dropdown of Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the dispute icon on the dashboard", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table4.AddRow(new string[] {
-                            "Show Closed Submissions"});
-                table4.AddRow(new string[] {
-                            "Edit Dispute"});
-                table4.AddRow(new string[] {
-                            "View Submission"});
-                table4.AddRow(new string[] {
-                            "Links"});
-                table4.AddRow(new string[] {
-                            "Reported"});
-                table4.AddRow(new string[] {
-                            "P/C"});
-                table4.AddRow(new string[] {
-                            "N/S"});
-                table4.AddRow(new string[] {
-                            "R/S"});
-                table4.AddRow(new string[] {
-                            "Resolution"});
-                table4.AddRow(new string[] {
-                            "Amount"});
-                table4.AddRow(new string[] {
-                            "Type"});
-                table4.AddRow(new string[] {
-                            "Customer"});
 #line 10
- testRunner.And("User validates the following fields on the Auditor Log Page", ((string)(null)), table4, "And ");
+ testRunner.And("User clicks the Auditor Log Icon from the dropdown of Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table5.AddRow(new string[] {
+                            "Show Closed Submissions"});
+                table5.AddRow(new string[] {
+                            "Edit Dispute"});
+                table5.AddRow(new string[] {
+                            "View Submission"});
+                table5.AddRow(new string[] {
+                            "Links"});
+                table5.AddRow(new string[] {
+                            "Reported"});
+                table5.AddRow(new string[] {
+                            "P/C"});
+                table5.AddRow(new string[] {
+                            "N/S"});
+                table5.AddRow(new string[] {
+                            "R/S"});
+                table5.AddRow(new string[] {
+                            "Resolution"});
+                table5.AddRow(new string[] {
+                            "Amount"});
+                table5.AddRow(new string[] {
+                            "Type"});
+                table5.AddRow(new string[] {
+                            "Customer"});
+#line 11
+ testRunner.And("User validates the following fields on the Auditor Log Page", ((string)(null)), table5, "And ");
+#line hidden
+#line 25
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -9,6 +9,7 @@
                 switch (item[0].Trim())
                 {
                     case " New Case":
+                        WaitForWebElementDisplayed(AddNewCaseBrand);
                         FluentWaitForWebElement(AddNewCaseBrand);
                         break;
                     case " Delete Brand":

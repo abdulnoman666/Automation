@@ -7,7 +7,8 @@ Background:
 @LedgerReport
 
 Scenario: Ledger Report
-	Given User clicks the Ledger Report button from the dropdown of Ledger Page
+Given User clicks the Ledger Icon on the Dashboard Page
+	And User clicks the Ledger Report button from the dropdown of Ledger Page
 	And User validates the following fields on the Ledger Report Page
 	| Fields          |
     | Date Range      |
@@ -16,9 +17,7 @@ Scenario: Ledger Report
     | Print Report    |
     | Ledger Entries  |
     | Export Entries  |
-
-Scenario: Ledger Entries
-	Given User clicks the Ledger Entries button on the Ledger Report Page
+	And User clicks the Ledger Entries button on the Ledger Report Page
 	And User validates the following fields on the Ledger Entries Page of Ledger Report Page
 	| Fields      |
 	| Date        |
@@ -29,3 +28,6 @@ Scenario: Ledger Entries
 	| Tran Code   |
 	| Description |
 	| Close       |
+	And User clicks the Close button on the Ledger Entries Page 
+	And User clicks the Dashboard Icon
+	

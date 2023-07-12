@@ -9,10 +9,11 @@
                 switch (item[0].Trim())
                 { 
                     case " Upload Alert File":
+                        WaitForWebElementDisplayed(UploadAlertFileBtn);
                         FluentWaitForWebElement(UploadAlertFileBtn);
                         break;
                     case " Enter Alerts Manually":
-                        FluentWaitForWebElement(EnterAlertsBtn);
+                        FluentWaitForWebElement(EntermanuallyButton);
                         break;
                     case " Search and set date range":
                         FluentWaitForWebElement(SearchSetDateRangeBtn);
@@ -57,13 +58,15 @@
                 switch (item[0].Trim())
                 {
                     case " Default Case Number":
+                        WaitForWebElementDisplayed(DefaultCaseNumber);
                         FluentWaitForWebElement(DefaultCaseNumber);
                         break;
                     case " Select and Upload File":
                         FluentWaitForWebElement(SelectUploadFile);
                         break;
                     case " Close":
-                        FluentWaitForWebElement(Close);
+                        WaitForWebElementDisplayed(Close_upload);
+                        FluentWaitForWebElement(Close_upload);
                         break;
                 }
             }
@@ -75,6 +78,7 @@
                 switch (item[0].Trim())
                 {
                     case " Default Case Number":
+                        WaitForWebElementDisplayed(DefaultCaseNumber2);
                         FluentWaitForWebElement(DefaultCaseNumber2);
                         break;
                     case " Enter CAMs Numbers":
@@ -84,7 +88,7 @@
                         FluentWaitForWebElement(Save);
                         break;
                     case " Close":
-                        FluentWaitForWebElement(Close2);
+                        FluentWaitForWebElement(CloseManual);
                         break;
                 }
             }
@@ -96,6 +100,7 @@
                 switch (item[0].Trim())
                 {
                     case " Start Date":
+                        WaitForWebElementDisplayed(StartDate);
                         FluentWaitForWebElement(StartDate);
                         break;
                     case " End Date":
@@ -117,6 +122,7 @@
                 switch (item[0].Trim())
                 {
                     case " Reported On":
+                        WaitForWebElementDisplayed(ReportedOn);
                         FluentWaitForWebElement(ReportedOn);
                         break;
                     case " Customer":

@@ -4,13 +4,20 @@
     {
         public void ClickLedgerReportButton()
         {
-            ClickOnWebElement(LedgerReportOption);
             WaitForWebElementDisplayed(LedgerReportOption);
+            ClickOnWebElement(LedgerReportOption);
+           
         }
         public void ClickLedgerEntriesButton()
         {
-            ClickOnWebElement(LedgerEntries);
             WaitForWebElementDisplayed(LedgerEntries);
+            ClickOnWebElement(LedgerEntries);
+            WaitForWebElementDisplayed(Close);
+        }
+        public void ClickCloseButtononLedgerEntries()
+        {
+            ClickOnWebElement(Close);
+            WaitForWebElementDisplayed(Close);
         }
     }
 }

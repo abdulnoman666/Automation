@@ -18,8 +18,6 @@ Scenario:  Import Configurations
 	| Action                |
 	| ID                    |
 	| Name                  |
-	
-
 	And  User clicks the Add Configuration Button on the Import Configurations Page
 	And User validates the following fields on the Add Import Configurations Page
 	| Fields       |
@@ -30,3 +28,5 @@ Scenario:  Import Configurations
 	| Checkbox     |
 	| Save         |
 	| Close        |
+	And User clicks the close button on the Add Import Configurations Page
+	And User clicks the Dashboard Icon

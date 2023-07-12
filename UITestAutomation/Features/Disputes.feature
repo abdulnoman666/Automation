@@ -37,9 +37,7 @@ Scenario:  Disputes
 	| Customer Field                   |
 	| Edit Dispute                     |
 	| View Original Submission         |
-
-Scenario:  Settings Button 
-    Given User clicks the Settings Button on the Disputes Page
+    And User clicks the Settings Button on the Disputes Page
 	And User validates the following fields on the Settings Page
 	| Fields      |
 	| Reported    |
@@ -51,9 +49,8 @@ Scenario:  Settings Button
 	| Recovered   |	
 	| Customer    |
 	| Assigned To |
-
-Scenario:  Search Button 
-    Given User clicks the Search Button on the Disputes Page
+	And User clicks the close button on customized page
+    And User clicks the Search Button on the Disputes Page
 	And User validates the following fields on the Search Page
 	| Fields              |
 	| Start Date          |
@@ -65,11 +62,9 @@ Scenario:  Search Button
 	| Full Account Number |
 	| * Search            |
 	| Reset 2             |
-	| Close               |
-
-
-	Scenario:  Edit Dispute            
-    Given User clicks the Edit Disputes Button on the Disputes Page
+	| Close               |     
+	And user clicks the close button on search page 
+    And User clicks the Edit Disputes Button on the Disputes Page
 	And User validates the following UI Controls and fields on the Edit Disputes Page
 	| UI Controls and Fields           |
 	| Research Status                  |
@@ -106,24 +101,7 @@ Scenario:  Search Button
 	| Documents Sent to Cardholder     |
 	| Date Research Ended              |
 	| Date Resolution Letter Sent      |
-
-Scenario:  Documents Button 
-    Given User clicks the Documents button on the Edit Disputes Page
-	And User validates the following fields on the Documents Page
-	| Fields        |
-	| Document List |
-
-Scenario:  History Button 
-    Given User clicks the History button on the Edit Disputes Page
-	And User validates the following fields on the History Page
-	| Fields      |
-	| Date        |
-	| Description |
-	| By          |
-	| Type        |
-
-Scenario:  Resolution Button 
-    Given User clicks the Resolution Button on the Edit Disputes Page
+    And User clicks the Resolution Button on the Edit Disputes Page
 	And User validates the following fields on the Resolution Page
 	| Fields                         |
 	| Claim Result                   |
@@ -146,3 +124,16 @@ Scenario:  Resolution Button
 	| Resolve and Post to GL         |
 	| Close                          |
 	| Save                           |
+	And user clicks the close button on resolution page
+	 And User clicks the Documents button on the Edit Disputes Page
+	And User validates the following fields on the Documents Page
+	| Fields        |
+	| Document List |
+    And User clicks the History button on the Edit Disputes Page
+	And User validates the following fields on the History Page
+	| Fields      |
+	| Date        |
+	| Description |
+	| By          |
+	| Type        |
+	And User clicks the Dashboard Icon

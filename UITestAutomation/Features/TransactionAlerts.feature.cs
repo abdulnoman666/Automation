@@ -124,86 +124,58 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("User selects the Transaction Alerts option from the drop down menu of the Profile" +
                         "Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table105 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table90 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table105.AddRow(new string[] {
+                table90.AddRow(new string[] {
                             "Add New Transaction Alert"});
-                table105.AddRow(new string[] {
+                table90.AddRow(new string[] {
                             "Actions"});
-                table105.AddRow(new string[] {
+                table90.AddRow(new string[] {
                             "ID"});
-                table105.AddRow(new string[] {
+                table90.AddRow(new string[] {
                             "Transaction Alert"});
-                table105.AddRow(new string[] {
+                table90.AddRow(new string[] {
                             "Workflows"});
-                table105.AddRow(new string[] {
+                table90.AddRow(new string[] {
                             "Reference"});
-                table105.AddRow(new string[] {
+                table90.AddRow(new string[] {
                             "Refresh"});
 #line 11
- testRunner.And("User validates the following UI Controls on the Transaction Alerts Page", ((string)(null)), table105, "And ");
+ testRunner.And("User validates the following UI Controls on the Transaction Alerts Page", ((string)(null)), table90, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add New Transaction Alert")]
-        public virtual void AddNewTransactionAlert()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add New Transaction Alert", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 21
-this.ScenarioInitialize(scenarioInfo);
+#line 20
+    testRunner.And("User clicks the Add Transaction Alert Icon on the Transaction Alerts Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
- this.FeatureBackground();
-#line hidden
-#line 22
-    testRunner.Given("User clicks the Add Transaction Alert Icon on the Transaction Alerts Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table106 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table91 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table106.AddRow(new string[] {
+                table91.AddRow(new string[] {
                             "Name"});
-                table106.AddRow(new string[] {
+                table91.AddRow(new string[] {
                             "Workflows"});
-                table106.AddRow(new string[] {
+                table91.AddRow(new string[] {
                             "Reference"});
-                table106.AddRow(new string[] {
+                table91.AddRow(new string[] {
                             "Condition"});
-                table106.AddRow(new string[] {
+                table91.AddRow(new string[] {
                             "Action"});
-                table106.AddRow(new string[] {
+                table91.AddRow(new string[] {
                             "Tooltip"});
-                table106.AddRow(new string[] {
+                table91.AddRow(new string[] {
                             "Save"});
-                table106.AddRow(new string[] {
+                table91.AddRow(new string[] {
                             "Close"});
-                table106.AddRow(new string[] {
+                table91.AddRow(new string[] {
                             "Save Condition"});
-                table106.AddRow(new string[] {
+                table91.AddRow(new string[] {
                             "Cross Button"});
-#line 23
- testRunner.And("User validates the following fields on the Add Transaction Alerts Page", ((string)(null)), table106, "And ");
+#line 21
+ testRunner.And("User validates the following fields on the Add Transaction Alerts Page", ((string)(null)), table91, "And ");
+#line hidden
+#line 33
+ testRunner.And("User clicks the close button on the Add Transaction Alerts Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 34
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -32,8 +32,9 @@ Scenario: NewCase
 	And User enters "11/31/2022" in Filed Date field
 	And User enters "abc"  in City Report Filed In field on Debit Card Dispute Form
 	And User clicks the Button for Check appropriate dispute reason
-	And User clicks No Button for Card has been closed
-	And User enters  "abc" in Date Card Closed on Debit Card Dispute Form
+	And User enters "4/31/2023" in appropriate dispute reason
+	#And User clicks No Button for Card has been closed
+	#And User enters  "abc" in Date Card Closed on Debit Card Dispute Form
 	And User clicks the Customer Signature form Button on Debit Card Dispute Form
 	And User clicks the Confirm Electronic Signautre Consent Button
 	And User clicks the Acknowledgment Button

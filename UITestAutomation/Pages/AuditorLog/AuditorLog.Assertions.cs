@@ -9,6 +9,7 @@
                 switch (item[0].Trim())
                 {
                     case " Show Closed Submissions":
+                        WaitForWebElementDisplayed(ShowClosedSubButton);
                         FluentWaitForWebElement(ShowClosedSubButton);
                         break;
                     case " Edit Dispute":

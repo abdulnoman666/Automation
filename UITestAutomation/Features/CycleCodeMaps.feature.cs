@@ -118,34 +118,43 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.Given("User clicks the Profile Icon on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
  testRunner.And("User selects the Cycle Code Maps Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table28.AddRow(new string[] {
+                table27.AddRow(new string[] {
                             "Add Cycle Code Map"});
-                table28.AddRow(new string[] {
+                table27.AddRow(new string[] {
                             "Delete Cycle Code Map"});
-                table28.AddRow(new string[] {
+                table27.AddRow(new string[] {
                             "Edit Cycle Code Map"});
 #line 11
- testRunner.And("User validates the following UI Controls on Cycle Code Maps Page", ((string)(null)), table28, "And ");
+ testRunner.And("User validates the following UI Controls on Cycle Code Maps Page", ((string)(null)), table27, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+#line 16
+ testRunner.And("user clicks the add cycle code map on Cycle Code Maps Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table29.AddRow(new string[] {
+                table28.AddRow(new string[] {
                             "Cycle Code"});
-                table29.AddRow(new string[] {
+                table28.AddRow(new string[] {
                             "Mapped Value"});
-                table29.AddRow(new string[] {
+                table28.AddRow(new string[] {
                             "Save"});
-                table29.AddRow(new string[] {
+                table28.AddRow(new string[] {
                             "Close"});
 #line 17
- testRunner.And("User validates the following Fields on Add Cycle Code Maps Popup", ((string)(null)), table29, "And ");
+ testRunner.And("User validates the following Fields on Add Cycle Code Maps Popup", ((string)(null)), table28, "And ");
+#line hidden
+#line 23
+ testRunner.And("user clicks the close button on add cycle code map on Cycle Code Maps Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 24
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

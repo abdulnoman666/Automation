@@ -4,11 +4,11 @@ namespace UITestAutomation
     internal partial class CompanyDetails
     {
         //UI Controls on Company Details Page
-        By CompanyDetailsOption = By.XPath("//a[text='Company Details']");
-        By BasicInfo = By.XPath("//a[@ng-click='tab=1']");
-        By GeneralSettings = By.XPath("//a[@ng-click='tab=2']");
-        By LookupValues = By.XPath("//a[@ng-click='tab=3']");
-        By Style = By.XPath("//a[@ng-click='tab=4']");
+        By CompanyDetailsOption = By.XPath("//a[@href=\"#/editcompany\"]");
+        By BasicInfo = By.XPath("//li/a[text()=\"Basic Info\"]");
+        By GeneralSettings = By.XPath("//li/a[text()=\"General Settings\"]");
+        By LookupValues = By.XPath("//li/a[text()=\"Lookup Values\"]");
+        By Style = By.XPath("//li/a[text()=\"Style\"]");
         By Save = By.XPath("//button[@ng-click='updateCompany()']");
 
         //Fields of Basic Info
@@ -70,14 +70,15 @@ namespace UITestAutomation
         By DeleteBatchReportingReference = By.XPath("//button[@ng-click='removeLV(lv)'][21]");
 
         //Fields on Add Pages(the path is same for all)
+        By AddSubmission_Button = By.XPath("//button[@ng-click=\"AddSubmissionStatus()\"]");
         By TextArea = By.XPath("//input[@ng-model='newlv.description']");
         By SaveButton = By.XPath("//button[@ng-click='saveLookupValue()']");
-        By CloseButton = By.XPath("//button[class='btn btn-default'][6]");
+        By CloseButton = By.XPath("(//button[text()=\"Close\"])[1]");
 
         // Fields on Style
-        By Primary = By.XPath("//input[@ng-model='AngularColorPickerController.internalNgModel'][1]");
-        By Secondary = By.XPath("//input[@ng-model='AngularColorPickerController.internalNgModel'][2]");
-        By PrimaryFont = By.XPath("//input[@ng-model='AngularColorPickerController.internalNgModel'][3]");
-        By SecondaryFont = By.XPath("//input[@ng-model='AngularColorPickerController.internalNgModel'][4]");
+        By Primary = By.XPath("(//input[@ng-model='AngularColorPickerController.internalNgModel'])[1]");
+        By Secondary = By.XPath("(//input[@ng-model='AngularColorPickerController.internalNgModel'])[2]");
+        By PrimaryFont = By.XPath("(//input[@ng-model='AngularColorPickerController.internalNgModel'])[3]");
+        By SecondaryFont = By.XPath("(//input[@ng-model='AngularColorPickerController.internalNgModel'])[4]");
     }
 }

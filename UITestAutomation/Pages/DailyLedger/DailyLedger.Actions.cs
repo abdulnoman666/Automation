@@ -4,8 +4,9 @@
     {
         public void ClickDailyLedgerButton()
         {
-            ClickOnWebElement(DailyLedgerOption);
             WaitForWebElementDisplayed(DailyLedgerOption);
+            ClickOnWebElement(DailyLedgerOption);
+           
         }
     }
 }

@@ -124,129 +124,41 @@ this.FeatureBackground();
  testRunner.And("User Selects the Questionnaire Dependency Setups from the dropdown menu of the Pa" +
                         "ge", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table70 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table78 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table70.AddRow(new string[] {
+                table78.AddRow(new string[] {
                             "Add"});
-                table70.AddRow(new string[] {
+                table78.AddRow(new string[] {
                             "Delete"});
-                table70.AddRow(new string[] {
+                table78.AddRow(new string[] {
                             "Edit"});
-                table70.AddRow(new string[] {
+                table78.AddRow(new string[] {
                             "Copy Form"});
-                table70.AddRow(new string[] {
+                table78.AddRow(new string[] {
                             "Condition Search"});
 #line 11
- testRunner.And("User validates following UI controls on Questionnaire Dependency Setup Page", ((string)(null)), table70, "And ");
+ testRunner.And("User validates following UI controls on Questionnaire Dependency Setup Page", ((string)(null)), table78, "And ");
 #line hidden
-#line 19
+#line 18
  testRunner.And("User clicks the Add Questionnaire Dependency Setup Icon on Questionnaire Dependen" +
                         "cy Setup Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table71 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table79 = new TechTalk.SpecFlow.Table(new string[] {
                             "Field"});
-                table71.AddRow(new string[] {
+                table79.AddRow(new string[] {
                             "Workflow Name"});
-#line 20
- testRunner.And("User validates following fields on Add Questionnaire Dependency Setup", ((string)(null)), table71, "And ");
-<<<<<<< HEAD
-=======
+                table79.AddRow(new string[] {
+                            "Close"});
+                table79.AddRow(new string[] {
+                            "Save"});
+#line 19
+ testRunner.And("User validates following fields on Add Questionnaire Dependency Setup", ((string)(null)), table79, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit Questionnaire Dependency Setup")]
-        [NUnit.Framework.CategoryAttribute("Edit")]
-        public virtual void EditQuestionnaireDependencySetup()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "Edit"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit Questionnaire Dependency Setup", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 24
+  testRunner.And("User clicks the Close button on Add Questionnaire Dependency Setup", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
 #line 25
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 26
- testRunner.Given("User clicks on the Edit Questionnaire Dependency Setup button on the Questionnair" +
-                        "e Dependency Setup Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table72 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Field"});
-                table72.AddRow(new string[] {
-                            "Workflow Name"});
-#line 27
- testRunner.And("User validates the following fileds on Edit Questionnaire Dependency Setup Page", ((string)(null)), table72, "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Delete Questionnaire Dependency Setup")]
-        [NUnit.Framework.CategoryAttribute("Delete")]
-        public virtual void DeleteQuestionnaireDependencySetup()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "Delete"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Delete Questionnaire Dependency Setup", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 32
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 33
- testRunner.Given("User clicks on the Delete Questionnaire Dependency Setup button on Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table73 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Controls"});
-                table73.AddRow(new string[] {
-                            "Yes"});
-                table73.AddRow(new string[] {
-                            "No"});
-#line 34
- testRunner.And("User validates the following Controls on Confirm Deletion Popup", ((string)(null)), table73, "And ");
->>>>>>> f50fa5dd0c8af6747f2b76dcba13fdc7548de1af
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

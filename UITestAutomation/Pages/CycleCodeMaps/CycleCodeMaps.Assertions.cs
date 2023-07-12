@@ -29,6 +29,7 @@ namespace UITestAutomation
                 switch (item[0].Trim())
                 {
                     case "Cycle Code":
+                        WaitForWebElementDisplayed(CycleCode_Field);
                         FluentWaitForWebElement(CycleCode_Field);
                         break;
                     case "Mapped Vale":

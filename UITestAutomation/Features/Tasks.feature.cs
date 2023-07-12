@@ -123,80 +123,52 @@ this.ScenarioInitialize(scenarioInfo);
 #line 10
  testRunner.And("User selects the Tasks option from the drop down menu of the ProfileIcon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table103 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table87 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table103.AddRow(new string[] {
+                table87.AddRow(new string[] {
                             "Add New Task"});
-                table103.AddRow(new string[] {
+                table87.AddRow(new string[] {
                             "Edit Task"});
-                table103.AddRow(new string[] {
+                table87.AddRow(new string[] {
                             "Delete Task"});
-                table103.AddRow(new string[] {
+                table87.AddRow(new string[] {
                             "Refresh"});
-                table103.AddRow(new string[] {
+                table87.AddRow(new string[] {
                             "Actions"});
-                table103.AddRow(new string[] {
+                table87.AddRow(new string[] {
                             "ID"});
-                table103.AddRow(new string[] {
+                table87.AddRow(new string[] {
                             "Task Name"});
-                table103.AddRow(new string[] {
+                table87.AddRow(new string[] {
                             "Reference"});
-                table103.AddRow(new string[] {
+                table87.AddRow(new string[] {
                             "User Pool"});
 #line 11
- testRunner.And("User validates the following UI Controls on the Tasks Page", ((string)(null)), table103, "And ");
+ testRunner.And("User validates the following UI Controls on the Tasks Page", ((string)(null)), table87, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add New Tasks")]
-        public virtual void AddNewTasks()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add New Tasks", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 23
-this.ScenarioInitialize(scenarioInfo);
+#line 22
+    testRunner.And("User clicks the Add New Task Icon on the Tasks Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
- this.FeatureBackground();
-#line hidden
-#line 24
-    testRunner.Given("User clicks the Add New Task Icon on the Tasks Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table104 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table88 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table104.AddRow(new string[] {
+                table88.AddRow(new string[] {
                             "Task Name"});
-                table104.AddRow(new string[] {
+                table88.AddRow(new string[] {
                             "Reference"});
-                table104.AddRow(new string[] {
+                table88.AddRow(new string[] {
                             "User Pool"});
-                table104.AddRow(new string[] {
+                table88.AddRow(new string[] {
                             "Save"});
-                table104.AddRow(new string[] {
+                table88.AddRow(new string[] {
                             "Close"});
-#line 25
- testRunner.And("User validates the following fields on the Add Tasks Page", ((string)(null)), table104, "And ");
+#line 23
+ testRunner.And("User validates the following fields on the Add Tasks Page", ((string)(null)), table88, "And ");
+#line hidden
+#line 30
+ testRunner.And("User clicks the close button on the Add Tasks Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 31
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

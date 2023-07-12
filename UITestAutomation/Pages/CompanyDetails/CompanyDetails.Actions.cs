@@ -7,11 +7,6 @@
             WaitForWebElementDisplayed(CompanyDetailsOption);
             ClickOnWebElement(CompanyDetailsOption);
         }
-        public void ClickBasicInfoButton()
-        {
-            WaitForWebElementDisplayed(BasicInfo);
-            ClickOnWebElement(BasicInfo);
-        }
         public void ClickGeneralSettingsButton()
         {
             WaitForWebElementDisplayed(GeneralSettings);
@@ -21,6 +16,16 @@
         {
             WaitForWebElementDisplayed(LookupValues);
             ClickOnWebElement(LookupValues);
+        }
+        public void ClickaddSubmissionButton()
+        {
+            WaitForWebElementDisplayed(AddSubmission_Button);
+            ClickOnWebElement(AddSubmission_Button);
+        }
+        public void ClickCloseButtononaddSubmission()
+        {
+            WaitForWebElementDisplayed(CloseButton);
+            ClickOnWebElement(CloseButton);
         }
         public void ClickStyleButton()
         {

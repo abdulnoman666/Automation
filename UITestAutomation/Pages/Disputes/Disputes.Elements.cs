@@ -4,9 +4,11 @@ namespace UITestAutomation
     internal partial class Disputes
     {
         //UI Controls on Disputes Page
-        By DisputesOption = By.XPath("//a[text='Disputes']");
-        By SettingsButton = By.XPath("//button[@ng-click='setTempOrder()']");
-        By SearchSetDateButton = By.XPath("//button[class='btn btn-info  btn-sm glyphicon glyphicon-search']");
+        By closesearch_Button = By.XPath("//button[@ng-click=\"close()\"]");
+        By closecustomizes_Button = By.XPath("(//button[text()=\"Close\"])[2]");
+        By DisputesOption = By.XPath("//a[@href=\"#/disputes\"]");
+        By SettingsButton = By.XPath("//button[@title=\"Settings\"]");
+        By SearchSetDateButton = By.XPath("//button[@class='btn btn-info  btn-sm glyphicon glyphicon-search']");
         By SearchUser = By.XPath("//span[@ng-show='$select.isEmpty()']");
         By RefreshSubmissions = By.XPath("//button[@ng-click='refreshDisputes()']");
         By ShowClosedDisputesButton = By.XPath("//input[@ng-model='showClosed']");

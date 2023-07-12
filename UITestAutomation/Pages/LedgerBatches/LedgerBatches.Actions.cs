@@ -4,8 +4,8 @@
     {
         public void ClickLedgerBatchesButton()
         {
-            ClickOnWebElement(LedgerBatchesOption);
             WaitForWebElementDisplayed(LedgerBatchesOption);
+            ClickOnWebElement(LedgerBatchesOption);
         }
     }
 }

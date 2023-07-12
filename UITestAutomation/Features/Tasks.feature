@@ -19,13 +19,13 @@ Scenario:  Tasks
 	| Task Name    |
 	| Reference    |
 	| User Pool    |
-
-Scenario:  Add New Tasks 
-    Given User clicks the Add New Task Icon on the Tasks Page
+    And User clicks the Add New Task Icon on the Tasks Page
 	And User validates the following fields on the Add Tasks Page
 	| Fields       |
 	| Task Name    |
 	| Reference    |
 	| User Pool    |
 	| Save         |
-	| Close        |	
+	| Close        |
+	And User clicks the close button on the Add Tasks Page
+	And User clicks the Dashboard Icon

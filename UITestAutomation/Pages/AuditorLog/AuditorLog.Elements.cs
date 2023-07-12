@@ -3,7 +3,7 @@ namespace UITestAutomation
 {
     internal partial class AuditorLog
     {
-        By AuditorLogButton = By.XPath("//a[text='Auditor Log']");
+        By AuditorLogButton = By.XPath("//a[@href=\"#/auditorlog\"]");
         By ShowClosedSubButton = By.XPath("//input[@ng-model='showClosed']");
         By EditDispute = By.XPath("//button[@ng-click='disputeDocs($event, dispute.id)']");
         By ViewSubmission = By.XPath("//button[@ng-click='customerDispute($event, dispute.batchNumber);']");

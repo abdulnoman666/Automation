@@ -118,121 +118,96 @@ this.ScenarioInitialize(scenarioInfo);
  this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.Given("User clicks the Profile Icon on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
  testRunner.And("User selects the Field Update Scripts option from the dropdown menu of ProfileIco" +
                         "n", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table45 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Add Field Update Script"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Download Letter"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Edit Script"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Copy Script"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Delete Script"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Refresh"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Action"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Reference"});
-                table45.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "Name"});
 #line 11
- testRunner.And("User validates the following UI Controls on the Field Update Script Page", ((string)(null)), table45, "And ");
+ testRunner.And("User validates the following UI Controls on the Field Update Script Page", ((string)(null)), table44, "And ");
 #line hidden
-#line 23
+#line 22
  testRunner.And("User clicks the Add Script Icon on the Field Update Script Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table46 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table45 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table46.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Script Name"});
-                table46.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Unique Reference"});
-                table46.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Table"});
-                table46.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Field"});
-                table46.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Operator"});
-                table46.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Value/Function"});
-                table46.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Save"});
-                table46.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Close"});
-                table46.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Upload to Library"});
-                table46.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "Add Update to Script"});
-#line 24
- testRunner.And("User validates the following fields on the Field Update Script Page", ((string)(null)), table46, "And ");
+#line 23
+ testRunner.And("User validates the following fields on the Field Update Script Page", ((string)(null)), table45, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("DownloadFromLibraryButton")]
-        public virtual void DownloadFromLibraryButton()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("DownloadFromLibraryButton", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 38
-this.ScenarioInitialize(scenarioInfo);
+#line 35
+ testRunner.And("User clicks the Close Button on the Field Update Script Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
- this.FeatureBackground();
+#line 36
+   testRunner.And("User clicks the Download From Library Button on the Field Update Script Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 39
-   testRunner.Given("User clicks the Download From Library Button on the Field Update Script Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table46 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Control and Fields"});
-                table47.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "Search Bar"});
-                table47.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "Search Button"});
-                table47.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "Action"});
-                table47.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "Reference"});
-                table47.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "Name"});
-                table47.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "Download Template Option"});
-                table47.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "Close"});
-                table47.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "Cross Button"});
-#line 40
+#line 37
    testRunner.And("User validates the following UI Controls and fields on the Field Update Script Pa" +
-                        "ge", ((string)(null)), table47, "And ");
+                        "ge", ((string)(null)), table46, "And ");
+#line hidden
+#line 47
+ testRunner.And("User clicks the Close Button on FieldScript Library Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 48
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

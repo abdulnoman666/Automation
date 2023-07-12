@@ -118,34 +118,43 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.Given("User clicks the Profile Icon on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
  testRunner.And("User selects the Error Logs Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table39 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table38 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table39.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Search and set date Range"});
-                table39.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Created On"});
-                table39.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "Error Message"});
-                table39.AddRow(new string[] {
+                table38.AddRow(new string[] {
                             "URL"});
 #line 11
- testRunner.And("User validates the following UI Controls on Error Logs Page", ((string)(null)), table39, "And ");
+ testRunner.And("User validates the following UI Controls on Error Logs Page", ((string)(null)), table38, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table40 = new TechTalk.SpecFlow.Table(new string[] {
+#line 17
+ testRunner.And("User clicks the search button on Error Logs Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table39 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table40.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Start Date"});
-                table40.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "End Date"});
-                table40.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "Close"});
 #line 18
- testRunner.And("User validates the following Fields on Search Popup on Error Logs Page", ((string)(null)), table40, "And ");
+ testRunner.And("User validates the following Fields on Search Popup on Error Logs Page", ((string)(null)), table39, "And ");
+#line hidden
+#line 23
+    testRunner.And("User clicks the close button on Search Popup", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 24
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

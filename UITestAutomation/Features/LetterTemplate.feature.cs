@@ -118,97 +118,106 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.Given("User clicks the Profile Icon on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
  testRunner.And("User selects the Letter Template Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table62 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table60 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table62.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Add"});
-                table62.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Delete"});
-                table62.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Edit"});
-                table62.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Download from Library"});
-                table62.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Copy Letter"});
-                table62.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Action"});
-                table62.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Refresh"});
-                table62.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "ID"});
-                table62.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Title"});
-                table62.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Table/Module"});
-                table62.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Reference"});
-                table62.AddRow(new string[] {
+                table60.AddRow(new string[] {
                             "Enter Page"});
 #line 11
- testRunner.And("User validates the following UI Controls on Letter Template Page", ((string)(null)), table62, "And ");
+ testRunner.And("User validates the following UI Controls on Letter Template Page", ((string)(null)), table60, "And ");
+#line hidden
+#line 25
+ testRunner.And("User clicks the Add Letter Template Icon on Letter Template Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 26
- testRunner.And("User clicks the Add Letter Template Icon on Letter Template Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User clicks the Letterinfo icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table61 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Field"});
+                table61.AddRow(new string[] {
+                            "Title"});
+                table61.AddRow(new string[] {
+                            "Description"});
+                table61.AddRow(new string[] {
+                            "Author"});
+                table61.AddRow(new string[] {
+                            "File name to save letter on printing"});
+                table61.AddRow(new string[] {
+                            "Subject line when sending letter via email"});
+                table61.AddRow(new string[] {
+                            "Table Name"});
+                table61.AddRow(new string[] {
+                            "Reference"});
+                table61.AddRow(new string[] {
+                            "Workflows"});
+                table61.AddRow(new string[] {
+                            "SQL Command Name"});
+                table61.AddRow(new string[] {
+                            "Is input Form?"});
+                table61.AddRow(new string[] {
+                            "Is Consent notice?"});
+                table61.AddRow(new string[] {
+                            "Use Cut-Off print date?"});
+                table61.AddRow(new string[] {
+                            "Eligible for E-Signature?"});
+#line 27
+ testRunner.And("User validates following fields on Letter info Dialog", ((string)(null)), table61, "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table62 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Field"});
+                table62.AddRow(new string[] {
+                            "Letter Template Form"});
+#line 42
+ testRunner.And("User validates following fields on Template Dialog", ((string)(null)), table62, "And ");
+#line hidden
+#line 45
+ testRunner.And("User clicks the Style Sheet", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table63 = new TechTalk.SpecFlow.Table(new string[] {
                             "Field"});
                 table63.AddRow(new string[] {
                             "Title"});
                 table63.AddRow(new string[] {
-                            "Description"});
-                table63.AddRow(new string[] {
-                            "Author"});
-                table63.AddRow(new string[] {
-                            "File name to save letter on printing"});
-                table63.AddRow(new string[] {
-                            "Subject line when sending letter via email"});
-                table63.AddRow(new string[] {
-                            "Table Name"});
-                table63.AddRow(new string[] {
-                            "Reference"});
-                table63.AddRow(new string[] {
-                            "Workflows"});
-                table63.AddRow(new string[] {
-                            "SQL Command Name"});
-                table63.AddRow(new string[] {
-                            "Is input Form?"});
-                table63.AddRow(new string[] {
-                            "Is Consent notice?"});
-                table63.AddRow(new string[] {
-                            "Use Cut-Off print date?"});
-                table63.AddRow(new string[] {
-                            "Eligible for E-Signature?"});
-#line 27
- testRunner.And("User validates following fields on Letter info Dialog", ((string)(null)), table63, "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table64 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Field"});
-                table64.AddRow(new string[] {
-                            "Letter Template Form"});
-#line 43
- testRunner.And("User validates following fields on Template Dialog", ((string)(null)), table64, "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table65 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Field"});
-                table65.AddRow(new string[] {
-                            "Title"});
-                table65.AddRow(new string[] {
                             "Style Sheet"});
-                table65.AddRow(new string[] {
+                table63.AddRow(new string[] {
                             "Delete Template"});
-                table65.AddRow(new string[] {
+                table63.AddRow(new string[] {
                             "Copy Template"});
-                table65.AddRow(new string[] {
+                table63.AddRow(new string[] {
                             "Save Template"});
-                table65.AddRow(new string[] {
+                table63.AddRow(new string[] {
                             "Close Template"});
-#line 47
- testRunner.And("User validates following fields on Style Sheet Dialog", ((string)(null)), table65, "And ");
+#line 46
+ testRunner.And("User validates following fields on Style Sheet Dialog", ((string)(null)), table63, "And ");
+#line hidden
+#line 54
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

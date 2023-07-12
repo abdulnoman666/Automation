@@ -9,6 +9,7 @@
                 switch (item[0].Trim())
                 {
                     case " Add GL Definition":
+                        WaitForWebElementDisplayed(AddGLDefinition);
                         FluentWaitForWebElement(AddGLDefinition);
                         break;
                     case " Delete GL Definition":
@@ -64,6 +65,7 @@
                 switch (item[0].Trim())
                 {
                     case " Transfer Type":
+                        WaitForWebElementDisplayed(TransferType);
                         FluentWaitForWebElement(TransferType);
                         break;
                     case " Transaction Type":
@@ -144,6 +146,7 @@
                 switch (item[0].Trim())
                 {
                     case " Cross Button 2":
+                        WaitForWebElementDisplayed(CrossButton2);
                         FluentWaitForWebElement(CrossButton2);
                         break;
                     case " Search Bar":

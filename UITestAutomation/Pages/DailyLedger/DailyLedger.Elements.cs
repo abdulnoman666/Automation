@@ -3,7 +3,7 @@ namespace UITestAutomation
 {
     internal partial class DailyLedger
     {
-        By DailyLedgerOption = By.XPath("//a[text='Daily Ledger']");
+        By DailyLedgerOption = By.XPath("//a[@href=\"#/ledgerlist\"]");
         By RefreshLedger = By.XPath("//button[@ng-click='refreshLedger()']");
         By Date = By.XPath("//th[1]");
         By Account = By.XPath("//th[2]");

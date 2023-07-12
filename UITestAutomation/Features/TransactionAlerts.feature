@@ -17,9 +17,7 @@ Scenario:  Transaction Alerts
 	| Workflows                 |
 	| Reference                 |
 	| Refresh                   |
-
-Scenario:  Add New Transaction Alert 
-    Given User clicks the Add Transaction Alert Icon on the Transaction Alerts Page
+    And User clicks the Add Transaction Alert Icon on the Transaction Alerts Page
 	And User validates the following fields on the Add Transaction Alerts Page
 	| Fields         |
 	| Name           |
@@ -32,3 +30,5 @@ Scenario:  Add New Transaction Alert
 	| Close          |
 	| Save Condition |
 	| Cross Button   |
+	And User clicks the close button on the Add Transaction Alerts Page
+	And User clicks the Dashboard Icon

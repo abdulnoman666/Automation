@@ -8,6 +8,7 @@
                 switch (item[0].Trim())
                 {
                     case " Settings":
+                        WaitForWebElementDisplayed(SettingsButton);
                         FluentWaitForWebElement(SettingsButton);
                         break;
                     case " Search and set date range ":
@@ -96,6 +97,7 @@
                 switch (item[0].Trim())
                 {
                     case " Reported":
+                        WaitForWebElementDisplayed(Reported);
                         FluentWaitForWebElement(Reported);
                         break;
                     case " Days ":
@@ -135,6 +137,7 @@
                 switch (item[0].Trim())
                 {
                     case " Reported":
+                        WaitForWebElementDisplayed(Reported);
                         FluentWaitForWebElement(Reported);
                         break;
                     case " Days":
@@ -171,6 +174,7 @@
                 switch (item[0].Trim())
                 {
                     case " Start Date":
+                        WaitForWebElementDisplayed(StartDate);
                         FluentWaitForWebElement(StartDate);
                         break;
                     case " End Date":
@@ -211,6 +215,7 @@
                 switch (item[0].Trim())
                 {
                     case " Research Status":
+                        WaitForWebElementDisplayed(ResearchStatus);
                         FluentWaitForWebElement(ResearchStatus);
                         break;
                     case " Documents":
@@ -316,6 +321,7 @@
                 switch (item[0].Trim())
                 {
                     case " Document List":
+                        WaitForWebElementDisplayed(DocumentsList);
                         FluentWaitForWebElement(DocumentsList);
                         break;
                 }
@@ -328,6 +334,7 @@
                 switch (item[0].Trim())
                 {
                     case " Date":
+                        WaitForWebElementDisplayed(Date);
                         FluentWaitForWebElement(Date);
                         break;
                     case " Description":
@@ -349,6 +356,7 @@
                 switch (item[0].Trim())
                 {
                     case " Pending":
+                        WaitForWebElementDisplayed(Pending);
                         FluentWaitForWebElement(Pending);
                         break;
                     case " Claim Approved":

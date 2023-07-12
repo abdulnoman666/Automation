@@ -13,5 +13,11 @@ namespace UITestAutomation
             ClickOnWebElement(SearchandsetdateRange_Button);
         }
 
+        public void ClickCloseButtononSearchPage()
+        {
+            WaitForWebElementDisplayed(Close_Button);
+            ClickOnWebElement(Close_Button);
+        }
+
     }
 }

@@ -9,6 +9,7 @@
                 switch (item[0].Trim())
                 {
                     case " FeeSelectionSettingsOption":
+                        WaitForWebElementDisplayed(FeeSelectionSettingsOption);
                         FluentWaitForWebElement(FeeSelectionSettingsOption);
                         break;
                     case " AddFeeSelection":
@@ -42,6 +43,7 @@
                 switch (item[0].Trim())
                 {
                     case " FeeSelectionReference":
+                        WaitForWebElementDisplayed(FeeSelectionReference);
                         FluentWaitForWebElement(FeeSelectionReference);
                         break;
                     case " Copy Transactions from Parent Submission":

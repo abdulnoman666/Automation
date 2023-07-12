@@ -14,5 +14,12 @@ namespace UITestAutomation
             WaitForWebElementDisplayed(AddCycleCodeMaps_Button);
             ClickOnWebElement(AddCycleCodeMaps_Button);
         }
+
+        public void ClickClosesButtononAddCycleCodeMap()
+        {
+            WaitForWebElementDisplayed(Close_Button);
+            ClickOnWebElement(Close_Button);
+        }
+
     }
 }

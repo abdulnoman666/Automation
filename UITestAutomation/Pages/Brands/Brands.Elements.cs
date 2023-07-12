@@ -5,7 +5,7 @@ namespace UITestAutomation
     internal partial class Brands
     {
         //UI Controls on Brands Page
-        By BrandsOption = By.XPath("//a[text='Brands']");
+        By BrandsOption = By.XPath("//a[@href=\"#/brands\"]");
         By AddNewCaseBrand = By.XPath("//button[@ng-click='addBrand()']");
         By DeleteBrand = By.XPath("//button[@ng-click='deleteBrand($event, brand)']");
         By EditBrand = By.XPath("//button[@ng-click='editBrand(brand)']");

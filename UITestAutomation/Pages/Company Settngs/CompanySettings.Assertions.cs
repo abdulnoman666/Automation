@@ -9,12 +9,14 @@
                 switch (item[0].Trim())
                 {
                     case "Add Credit Days":
+                        WaitForWebElementDisplayed(ProvisionalCreditDays_Field);
                         FluentWaitForWebElement(ProvisionalCreditDays_Field);
                         break;
                     case "Add Audit Start":
-                        FluentWaitForWebElement(AuditEnd_Field);
+                        FluentWaitForWebElement(AuditStart_Field);
                         break;
                     case "Audit End":
+                        WaitForWebElementDisplayed(AuditEnd_Field);
                         FluentWaitForWebElement(AuditEnd_Field);
                         break;
                     case "Daily GL Cut Off":

@@ -9,6 +9,7 @@
                 switch (item[0].Trim())
                 {
                     case " Date Range":
+                        WaitForWebElementDisplayed(DateRange);
                         FluentWaitForWebElement(DateRange);
                         break;
                     case " From":

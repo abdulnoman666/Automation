@@ -12,5 +12,10 @@
             WaitForWebElementDisplayed(AddConfiguration);
             ClickOnWebElement(AddConfiguration);
         }
+        public void ClickClosebuttononAddConfiguration()
+        {
+            WaitForWebElementDisplayed(CloseButton);
+            ClickOnWebElement(CloseButton);
+        }
     }
 }

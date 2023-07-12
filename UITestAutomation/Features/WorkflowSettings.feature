@@ -105,13 +105,13 @@ Scenario: Workflow Settings
 		| Automation Reference On Submission Complete   | SFFS        |
 		| Submission Screen Template                    | Default     |
 	And User validates the following Fields in Questionaire Dialog on Edit Setting Dialog
-		| Fields                             | Values      |
-		| Questionnaire Template             | Check Fraud |
-		| e-Consent Notice Template          | smart title |
-		| Read Only Questionnaire            |             |
-		| Hide Send To Customer              |             |
-		| Hide Customer Acknowledgement Form |             |
-		| Close Screen Message               |             |
+		| Fields                             | Values                          |
+		| Questionnaire Template             | Check Fraud                     |
+		| e-Consent Notice Template          | Electronic Signature Disclosure |
+		| Read Only Questionnaire            |                                 |
+		| Hide Send To Customer              |                                 |
+		| Hide Customer Acknowledgement Form |                                 |
+		| Close Screen Message               |                                 |
 	And User clicks the Event Triggers in Settings Page on Edit Setting Dialog
 	And User validates the following Controls in Event Triggers on Edit Setting Dialog
 		| UI Controls        |
@@ -146,7 +146,7 @@ Scenario: Workflow Settings
 		| Automation Reference                    |          |
 		| Automation Reference Box                | T1       |
 		| Letter Template Reference               |          |
-		| Template Reference                      | AM1      |
+		| Template Reference                      | ref      |
 		| GL Reference                            |          |
 		| GL Reference Box                        | FC       |
 		| Run Automation                          |          |

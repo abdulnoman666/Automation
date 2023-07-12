@@ -26,8 +26,6 @@ Scenario: GL Definitions
 	  | Source                     |
 	  | Branch                     |
 	  | Customer Type              |
-
-
 	And  User clicks the Add GL Definition Icon on the GL Definitions Page
 	And  User validates the following fields on the Add GL Definitions Page
 	| Fields                           |
@@ -53,7 +51,7 @@ Scenario: GL Definitions
 	| Save                             |
 	| Close                            |
 	| Delete Definition                |
-
+	And User clicks Close Button on the Add GL Definitions Page
 	And  User clicks the Download from Library Button on the GL Definitions Page
 	And  User validates the following fields on the Download from Library Button Page
 	| Fields                 |
@@ -65,3 +63,5 @@ Scenario: GL Definitions
 	| Description            |
 	| Download GL Definition |
 	| Close                  |
+	And User clicks Close Button on the Download from Library Button Page
+	And User clicks the Dashboard Icon

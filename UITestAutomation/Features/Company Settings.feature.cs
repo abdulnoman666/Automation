@@ -123,46 +123,49 @@ this.FeatureBackground();
 #line 9
  testRunner.And("User selects the Company Settings Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Control"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Provisional Credit Days"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Audit Start"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Audit End"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Daily GL Cut-Off Time"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Post On Saturdays"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Post 7 Days a Week"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Statement Date"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Use Last Business Date"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Customer Create/Update Settings"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Hide Address2"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Hide Address3"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Hide Address4"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Hide City"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Hide State"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Hide Zip"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Enable Task"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Display Task Configuration and Sections"});
-                table14.AddRow(new string[] {
+                table13.AddRow(new string[] {
                             "Save"});
 #line 10
- testRunner.And("User validates the following UI Controls on Company Settings Page", ((string)(null)), table14, "And ");
+ testRunner.And("User validates the following UI Controls on Company Settings Page", ((string)(null)), table13, "And ");
+#line hidden
+#line 30
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

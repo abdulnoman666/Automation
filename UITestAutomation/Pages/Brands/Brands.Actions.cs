@@ -10,6 +10,7 @@ namespace UITestAutomation
         }
         public void ClickAddNewCaseBrandButton()
         {
+            WaitForWebElementDisplayed(AddNewCaseBrand);
             ClickOnWebElement(AddNewCaseBrand);
             WaitForWebElementDisplayed(AddNewCaseBrand);
         }

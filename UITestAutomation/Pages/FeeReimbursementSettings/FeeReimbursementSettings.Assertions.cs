@@ -10,6 +10,7 @@ namespace UITestAutomation
                 switch (item[0].Trim())
                 {
                     case "Add Settings":
+                        WaitForWebElementDisplayed(AddFeeReimbursementSettings_Button);
                         FluentWaitForWebElement(AddFeeReimbursementSettings_Button);
                         break;
                     case "Delete Settings":
@@ -29,6 +30,7 @@ namespace UITestAutomation
                 switch (item[0].Trim())
                 {
                     case "Refrence":
+                        WaitForWebElementDisplayed(Reference_Field);
                         FluentWaitForWebElement(Reference_Field);
                         break;
                     case "Description":
@@ -46,7 +48,7 @@ namespace UITestAutomation
                     case "Create Disputes":
                         FluentWaitForWebElement(CreateDisputes_CheckBox);
                         break;
-                    case "Inclue In Claims Total":
+                    case "Include In Claim Total":
                         FluentWaitForWebElement(IncludeInClaimTotal_CheckBox);
                         break;
                     case "Save":

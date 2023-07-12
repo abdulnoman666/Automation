@@ -9,6 +9,7 @@
                 switch (item[0].Trim())
                 {
                     case " Add New Task":
+                        WaitForWebElementDisplayed(AddNewTask);
                         FluentWaitForWebElement(AddNewTask);
                         break;
                     case " Delete Task":
@@ -46,6 +47,7 @@
                 switch (item[0].Trim())
                 {
                     case " Task Name":
+                        WaitForWebElementDisplayed(TaskName);
                         FluentWaitForWebElement(TaskName);
                         break;
                     case " Reference":

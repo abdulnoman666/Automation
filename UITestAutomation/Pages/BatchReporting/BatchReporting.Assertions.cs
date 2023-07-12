@@ -9,6 +9,7 @@
                 switch (item[0].Trim())
                 {
                     case " Batch Reference":
+                        WaitForWebElementDisplayed(BatchReference);
                         FluentWaitForWebElement(BatchReference);
                         break;
                     case " Date Range":

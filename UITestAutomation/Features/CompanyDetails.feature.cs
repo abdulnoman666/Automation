@@ -123,295 +123,168 @@ this.FeatureBackground();
 #line 11
  testRunner.And("User selects the Company Details Option from the dropdown menu of ProfileIcon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table15.AddRow(new string[] {
+                table14.AddRow(new string[] {
                             "Company Details"});
-                table15.AddRow(new string[] {
+                table14.AddRow(new string[] {
                             "Basic Info"});
-                table15.AddRow(new string[] {
+                table14.AddRow(new string[] {
                             "General Settings"});
-                table15.AddRow(new string[] {
+                table14.AddRow(new string[] {
                             "Lookup Values"});
-                table15.AddRow(new string[] {
+                table14.AddRow(new string[] {
                             "Style"});
-                table15.AddRow(new string[] {
+                table14.AddRow(new string[] {
                             "Save"});
 #line 12
- testRunner.And("User validates the following UI Controls on Company Details Page", ((string)(null)), table15, "And ");
+ testRunner.And("User validates the following UI Controls on Company Details Page", ((string)(null)), table14, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Basic Info")]
-        public virtual void BasicInfo()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Basic Info", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 22
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 4
-this.FeatureBackground();
-#line hidden
-#line 23
+#line 20
  testRunner.And("User selects the Basic Info button on Company Details Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table15.AddRow(new string[] {
+                            "Company Name"});
+                table15.AddRow(new string[] {
+                            "Address"});
+                table15.AddRow(new string[] {
+                            "City"});
+                table15.AddRow(new string[] {
+                            "State"});
+                table15.AddRow(new string[] {
+                            "Zip"});
+                table15.AddRow(new string[] {
+                            "Phone"});
+                table15.AddRow(new string[] {
+                            "Email"});
+                table15.AddRow(new string[] {
+                            "Support Email"});
+                table15.AddRow(new string[] {
+                            "Email Distribution List"});
+                table15.AddRow(new string[] {
+                            "Time Zone"});
+                table15.AddRow(new string[] {
+                            "Read only Questionnaires"});
+#line 21
+ testRunner.And("User validates the following fields on Basic Info Page", ((string)(null)), table15, "And ");
+#line hidden
+#line 34
+ testRunner.Given("User clicks on the General Settings button on Company Details Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
                 table16.AddRow(new string[] {
-                            "Company Name"});
+                            "Signature Pad"});
                 table16.AddRow(new string[] {
-                            "Address"});
+                            "Enter max idle time in minutes"});
                 table16.AddRow(new string[] {
-                            "City"});
+                            "Month End Statement"});
                 table16.AddRow(new string[] {
-                            "State"});
-                table16.AddRow(new string[] {
-                            "Zip"});
-                table16.AddRow(new string[] {
-                            "Phone"});
-                table16.AddRow(new string[] {
-                            "Email"});
-                table16.AddRow(new string[] {
-                            "Support Email"});
-                table16.AddRow(new string[] {
-                            "Email Distribution List"});
-                table16.AddRow(new string[] {
-                            "Time Zone"});
-                table16.AddRow(new string[] {
-                            "Read only Questionnaires"});
-#line 24
- testRunner.And("User validates the following fields on Basic Info Page", ((string)(null)), table16, "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("General Settings")]
-        public virtual void GeneralSettings()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("General Settings", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 40
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 4
-this.FeatureBackground();
+                            "Select Logo File"});
+#line 35
+ testRunner.And("User validates the following fields on General Settings Page", ((string)(null)), table16, "And ");
 #line hidden
 #line 41
- testRunner.Given("User clicks on the General Settings button on Company Details Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table17.AddRow(new string[] {
-                            "Signature Pad"});
-                table17.AddRow(new string[] {
-                            "Enter max idle time in minutes"});
-                table17.AddRow(new string[] {
-                            "Month End Statement"});
-                table17.AddRow(new string[] {
-                            "Select Logo File"});
-#line 42
- testRunner.And("User validates the following fields on General Settings Page", ((string)(null)), table17, "And ");
-#line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Lookup Values")]
-        public virtual void LookupValues()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Lookup Values", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 50
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 4
-this.FeatureBackground();
-#line hidden
-#line 51
  testRunner.Given("User clicks on the Lookup Values button on Company Details Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Cross Button"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Add Submission Status"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Edit Submission Status"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Delete Submission Status"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Add Source"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Edit Source"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Delete Source"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Add Account Type"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Edit Account Type"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Delete Account Type"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Add Dispute Research Detail"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Edit Dispute Research Detail"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Delete Dispute Research Detail"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Add Branch"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Edit Branch"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Delete Branch"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Add Charter/Branding"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Edit Charter/Branding"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Delete Charter/Branding"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Contacts Lookup"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Edit Contacts Lookup"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Delete Contacts Lookup"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Transaction Decline Reason"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Edit Transaction Decline Reason"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Delete Transaction Decline Reason"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Batch Reporting Reference"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Edit Batch Reporting Reference"});
-                table18.AddRow(new string[] {
+                table17.AddRow(new string[] {
                             "Delete Batch Reporting Reference"});
-#line 52
- testRunner.And("User validates the following UI Controls on Lookup Values Page", ((string)(null)), table18, "And ");
+#line 42
+ testRunner.And("User validates the following UI Controls on Lookup Values Page", ((string)(null)), table17, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
+#line 72
+ testRunner.And("User clicks the add Submission status on Lookup Values Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table19.AddRow(new string[] {
+                table18.AddRow(new string[] {
                             "Text Area"});
-                table19.AddRow(new string[] {
+                table18.AddRow(new string[] {
                             "Save"});
-                table19.AddRow(new string[] {
+                table18.AddRow(new string[] {
                             "Close"});
-#line 84
- testRunner.And("User validates the following UI Controls on Add Lookup Values Page", ((string)(null)), table19, "And ");
+#line 73
+ testRunner.And("User validates the following UI Controls on Add Lookup Values Page", ((string)(null)), table18, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Style")]
-        public virtual void Style()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Style", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 91
-this.ScenarioInitialize(scenarioInfo);
+#line 78
+ testRunner.And("User clicks the close button on add Submission status", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 4
-this.FeatureBackground();
-#line hidden
-#line 92
+#line 79
  testRunner.Given("User clicks on Style Button on Company Details Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table20 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table20.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Primary Buttons Color"});
-                table20.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Secondary Buttons Color"});
-                table20.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Primary Buttons Font Color"});
-                table20.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "Secondary Buttons Font Color"});
-#line 93
- testRunner.And("User validates the following UI Controls on Style Button Page", ((string)(null)), table20, "And ");
+#line 80
+ testRunner.And("User validates the following UI Controls on Style Button Page", ((string)(null)), table19, "And ");
+#line hidden
+#line 86
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

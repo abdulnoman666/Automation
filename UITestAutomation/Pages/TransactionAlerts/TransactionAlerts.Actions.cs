@@ -9,8 +9,15 @@
         }
         public void ClickAddNewTransactionAlertButton()
         {
-            ClickOnWebElement(AddNewTransactionAlert);
             WaitForWebElementDisplayed(AddNewTransactionAlert);
+            ClickOnWebElement(AddNewTransactionAlert);
+        }
+
+        public void ClickCloseButtononAddNewTransactionAlert()
+        {
+            WaitForWebElementDisplayed(CloseButton);
+            ClickOnWebElement(CloseButton);
+           
         }
     }
 }

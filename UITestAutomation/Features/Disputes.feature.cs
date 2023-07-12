@@ -148,8 +148,6 @@ this.ScenarioInitialize(scenarioInfo);
                 table31.AddRow(new string[] {
                             "6"});
                 table31.AddRow(new string[] {
-                            "7"});
-                table31.AddRow(new string[] {
                             "Links"});
                 table31.AddRow(new string[] {
                             "Reported"});
@@ -184,105 +182,44 @@ this.ScenarioInitialize(scenarioInfo);
 #line 11
  testRunner.And("User validates the following UI Controls on the Disputes Page", ((string)(null)), table31, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Alerts Button")]
-        public virtual void AlertsButton()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Alerts Button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 42
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
- this.FeatureBackground();
-#line hidden
-#line 43
-    testRunner.Given("User clicks the Alerts Button on the Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 40
+    testRunner.And("User clicks the Settings Button on the Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
                 table32.AddRow(new string[] {
-                            "Customer"});
+                            "Reported"});
                 table32.AddRow(new string[] {
-                            "Submission ID"});
+                            "Days"});
                 table32.AddRow(new string[] {
                             "Status"});
                 table32.AddRow(new string[] {
-                            "Source"});
+                            "Detail"});
                 table32.AddRow(new string[] {
-                            "Alert"});
+                            "Resolution"});
                 table32.AddRow(new string[] {
-                            "Type"});
+                            "Amount"});
                 table32.AddRow(new string[] {
-                            "Deadline"});
+                            "Recovered"});
                 table32.AddRow(new string[] {
-                            "Close"});
-#line 44
- testRunner.And("User validates the following fields on the Alerts Page", ((string)(null)), table32, "And ");
+                            "Customer"});
+                table32.AddRow(new string[] {
+                            "Assigned To"});
+#line 41
+ testRunner.And("User validates the following fields on the Settings Page", ((string)(null)), table32, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Search Button")]
-        public virtual void SearchButton()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search Button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 55
-this.ScenarioInitialize(scenarioInfo);
+#line 52
+ testRunner.And("User clicks the close button on customized page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
- this.FeatureBackground();
-#line hidden
-#line 56
-    testRunner.Given("User clicks the Search Button on the Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 53
+    testRunner.And("User clicks the Search Button on the Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
                 table33.AddRow(new string[] {
-                            "Calendar"});
+                            "Start Date"});
+                table33.AddRow(new string[] {
+                            "End Date"});
                 table33.AddRow(new string[] {
                             "Search"});
                 table33.AddRow(new string[] {
@@ -299,271 +236,151 @@ this.ScenarioInitialize(scenarioInfo);
                             "Reset 2"});
                 table33.AddRow(new string[] {
                             "Close"});
-#line 57
+#line 54
  testRunner.And("User validates the following fields on the Search Page", ((string)(null)), table33, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Show Closed Disputes")]
-        public virtual void ShowClosedDisputes()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Show Closed Disputes", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 69
-this.ScenarioInitialize(scenarioInfo);
+#line 66
+ testRunner.And("user clicks the close button on search page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
- this.FeatureBackground();
-#line hidden
-#line 70
-    testRunner.Given("User clicks the Show Closed Disputes Button on the Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 67
+    testRunner.And("User clicks the Edit Disputes Button on the Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
+                            "UI Controls and Fields"});
                 table34.AddRow(new string[] {
-                            "<<"});
+                            "Research Status"});
                 table34.AddRow(new string[] {
-                            "8"});
+                            "Documents"});
                 table34.AddRow(new string[] {
-                            "9"});
+                            "History"});
                 table34.AddRow(new string[] {
-                            "10"});
+                            "Refresh"});
                 table34.AddRow(new string[] {
-                            "11"});
+                            "Submission Disputes"});
                 table34.AddRow(new string[] {
-                            "12"});
+                            "Save"});
                 table34.AddRow(new string[] {
-                            ">>"});
+                            "View Submission"});
                 table34.AddRow(new string[] {
-                            "Enter Page"});
+                            "Resolution Button"});
                 table34.AddRow(new string[] {
-                            "Go"});
-#line 71
- testRunner.And("User validates the following fields on the Show Closed Disputes Page", ((string)(null)), table34, "And ");
+                            "Print Letter"});
+                table34.AddRow(new string[] {
+                            "POS"});
+                table34.AddRow(new string[] {
+                            "Foreign Transaction"});
+                table34.AddRow(new string[] {
+                            "Research"});
+                table34.AddRow(new string[] {
+                            "Detail"});
+                table34.AddRow(new string[] {
+                            "Closed"});
+                table34.AddRow(new string[] {
+                            "Close Date"});
+                table34.AddRow(new string[] {
+                            "Pre-Arbitration"});
+                table34.AddRow(new string[] {
+                            "Final Resolution Date"});
+                table34.AddRow(new string[] {
+                            "Enter Notes"});
+                table34.AddRow(new string[] {
+                            "Customer Provisional Credit"});
+                table34.AddRow(new string[] {
+                            "Transaction Amount"});
+                table34.AddRow(new string[] {
+                            "Provisional Credit Amount"});
+                table34.AddRow(new string[] {
+                            "Consumer Liability"});
+                table34.AddRow(new string[] {
+                            "Denial Reason"});
+                table34.AddRow(new string[] {
+                            "PC Reversal Date"});
+                table34.AddRow(new string[] {
+                            "Provisional Credit Received"});
+                table34.AddRow(new string[] {
+                            "Provisional Date"});
+                table34.AddRow(new string[] {
+                            "Provisional Credit Removed"});
+                table34.AddRow(new string[] {
+                            "Removal Date"});
+                table34.AddRow(new string[] {
+                            "Final Credit"});
+                table34.AddRow(new string[] {
+                            "Final Date"});
+                table34.AddRow(new string[] {
+                            "Document Received from Processor"});
+                table34.AddRow(new string[] {
+                            "Documents Sent to Cardholder"});
+                table34.AddRow(new string[] {
+                            "Date Research Ended"});
+                table34.AddRow(new string[] {
+                            "Date Resolution Letter Sent"});
+#line 68
+ testRunner.And("User validates the following UI Controls and fields on the Edit Disputes Page", ((string)(null)), table34, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Edit Dispute")]
-        public virtual void EditDispute()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Edit Dispute", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 83
- this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
- this.FeatureBackground();
-#line hidden
-#line 84
-    testRunner.Given("User clicks the Edit Disputes Button on the Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 104
+    testRunner.And("User clicks the Resolution Button on the Edit Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
-                            "UI Controls and Fields"});
+                            "Fields"});
                 table35.AddRow(new string[] {
-                            "Research Status"});
+                            "Claim Result"});
                 table35.AddRow(new string[] {
-                            "Documents"});
+                            "Pending"});
                 table35.AddRow(new string[] {
-                            "History"});
+                            "Claim Approved"});
                 table35.AddRow(new string[] {
-                            "Refresh"});
+                            "Claim Declined"});
                 table35.AddRow(new string[] {
-                            "Submission Disputes"});
+                            "Merchant Credit"});
                 table35.AddRow(new string[] {
-                            "Save"});
+                            "Loss Status"});
                 table35.AddRow(new string[] {
-                            "View Submission"});
+                            "Not Selected"});
                 table35.AddRow(new string[] {
-                            "Resolution Button"});
+                            "Bank Loss"});
                 table35.AddRow(new string[] {
-                            "Print Letter"});
+                            "Merchant Loss"});
                 table35.AddRow(new string[] {
-                            "Dispute Details"});
-                table35.AddRow(new string[] {
-                            "POS"});
-                table35.AddRow(new string[] {
-                            "Foreign Transaction"});
-                table35.AddRow(new string[] {
-                            "Research"});
-                table35.AddRow(new string[] {
-                            "Detail"});
-                table35.AddRow(new string[] {
-                            "Closed"});
-                table35.AddRow(new string[] {
-                            "Close Date"});
-                table35.AddRow(new string[] {
-                            "Pre-Arbitration"});
-                table35.AddRow(new string[] {
-                            "Final Resolution Date"});
-                table35.AddRow(new string[] {
-                            "Notes"});
-                table35.AddRow(new string[] {
-                            "Enter Notes"});
-                table35.AddRow(new string[] {
-                            "Customer Provisional Credit"});
-                table35.AddRow(new string[] {
-                            "Transaction Amount"});
-                table35.AddRow(new string[] {
-                            "Provisional Credit Amount"});
-                table35.AddRow(new string[] {
-                            "Consumer Liability"});
-                table35.AddRow(new string[] {
-                            "Denial Reason"});
-                table35.AddRow(new string[] {
-                            "PC Reversal Date"});
-                table35.AddRow(new string[] {
-                            "Representment"});
-                table35.AddRow(new string[] {
-                            "Settlement / Representment Date"});
-                table35.AddRow(new string[] {
-                            "Merchant Chargeback"});
-                table35.AddRow(new string[] {
-                            "Chargeback Date"});
-                table35.AddRow(new string[] {
-                            "Merchant Response Date"});
-                table35.AddRow(new string[] {
-                            "Pre-Arbitration Details"});
-                table35.AddRow(new string[] {
-                            "Date Requested"});
-                table35.AddRow(new string[] {
-                            "Resolution"});
-                table35.AddRow(new string[] {
-                            "Date Research Ended"});
-                table35.AddRow(new string[] {
-                            "Date Resolution Letter Sent"});
-                table35.AddRow(new string[] {
-                            "Processor Chargeback"});
+                            "Consumer Loss"});
                 table35.AddRow(new string[] {
                             "Amount Recovered"});
                 table35.AddRow(new string[] {
                             "Provisional Date"});
                 table35.AddRow(new string[] {
                             "Final Date"});
-#line 85
- testRunner.And("User validates the following UI Controls and fields on the Edit Disputes Page", ((string)(null)), table35, "And ");
+                table35.AddRow(new string[] {
+                            "PC Reversal Date"});
+                table35.AddRow(new string[] {
+                            "Credit Customer Account For"});
+                table35.AddRow(new string[] {
+                            "Debit Customer Account For"});
+                table35.AddRow(new string[] {
+                            "Merchant Credited Customer For"});
+                table35.AddRow(new string[] {
+                            "Resolve and Post to GL"});
+                table35.AddRow(new string[] {
+                            "Close"});
+                table35.AddRow(new string[] {
+                            "Save"});
+#line 105
+ testRunner.And("User validates the following fields on the Resolution Page", ((string)(null)), table35, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Documents Button")]
-        public virtual void DocumentsButton()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Documents Button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 127
+ testRunner.And("user clicks the close button on resolution page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
 #line 128
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
- this.FeatureBackground();
-#line hidden
-#line 129
-    testRunner.Given("User clicks the Documents button on the Edit Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.And("User clicks the Documents button on the Edit Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table36 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
                 table36.AddRow(new string[] {
                             "Document List"});
-#line 130
+#line 129
  testRunner.And("User validates the following fields on the Documents Page", ((string)(null)), table36, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("History Button")]
-        public virtual void HistoryButton()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("History Button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 134
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
- this.FeatureBackground();
-#line hidden
-#line 135
-    testRunner.Given("User clicks the History button on the Edit Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 132
+    testRunner.And("User clicks the History button on the Edit Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table37 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
@@ -575,90 +392,11 @@ this.ScenarioInitialize(scenarioInfo);
                             "By"});
                 table37.AddRow(new string[] {
                             "Type"});
-#line 136
+#line 133
  testRunner.And("User validates the following fields on the History Page", ((string)(null)), table37, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Resolution Button")]
-        public virtual void ResolutionButton()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Resolution Button", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 143
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
- this.FeatureBackground();
-#line hidden
-#line 144
-    testRunner.Given("User clicks the Resolution Button on the Edit Disputes Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table38 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table38.AddRow(new string[] {
-                            "Claim Result"});
-                table38.AddRow(new string[] {
-                            "Pending"});
-                table38.AddRow(new string[] {
-                            "Claim Approved"});
-                table38.AddRow(new string[] {
-                            "Claim Declined"});
-                table38.AddRow(new string[] {
-                            "Merchant Credit"});
-                table38.AddRow(new string[] {
-                            "Loss Status"});
-                table38.AddRow(new string[] {
-                            "Not Selected"});
-                table38.AddRow(new string[] {
-                            "Bank Loss"});
-                table38.AddRow(new string[] {
-                            "Merchant Loss"});
-                table38.AddRow(new string[] {
-                            "Consumer Loss"});
-                table38.AddRow(new string[] {
-                            "Amount Recovered"});
-                table38.AddRow(new string[] {
-                            "Provisional Date"});
-                table38.AddRow(new string[] {
-                            "Final Date"});
-                table38.AddRow(new string[] {
-                            "PC Reversal Date"});
-                table38.AddRow(new string[] {
-                            "Credit Customer Account For"});
-                table38.AddRow(new string[] {
-                            "Debit Customer Account For"});
-                table38.AddRow(new string[] {
-                            "Merchant Credited Customer For"});
-                table38.AddRow(new string[] {
-                            "Resolve and Post to GL"});
-                table38.AddRow(new string[] {
-                            "Close"});
-                table38.AddRow(new string[] {
-                            "Save"});
-#line 145
- testRunner.And("User validates the following fields on the Resolution Page", ((string)(null)), table38, "And ");
+#line 139
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

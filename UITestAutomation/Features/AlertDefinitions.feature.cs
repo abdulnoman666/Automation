@@ -118,98 +118,73 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 9
- testRunner.Given("User clicks the Profile Icon on the Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User clicks the Profile Icon on Dashboard page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 10
  testRunner.And("User selects the Alert Definitions Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Add Alert Definitions"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Delete Alert Definitions"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Edit Alert Definitions"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Copy Alert Definitions"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Create Default Alert Definition"});
-                table1.AddRow(new string[] {
+                table2.AddRow(new string[] {
                             "Download from library"});
 #line 11
- testRunner.And("User validates the following UI Controls on Alert Definitions Page", ((string)(null)), table1, "And ");
+ testRunner.And("User validates the following UI Controls on Alert Definitions Page", ((string)(null)), table2, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add Definition")]
-        public virtual void AddDefinition()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Definition", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 20
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 21
+#line 19
  testRunner.And("User selects the Add Alert Definitions button on Company Details Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table2.AddRow(new string[] {
-                            "Definition Name"});
-                table2.AddRow(new string[] {
-                            "Alert Type"});
-                table2.AddRow(new string[] {
-                            "Table Name"});
-                table2.AddRow(new string[] {
-                            "Deadline Reference"});
-                table2.AddRow(new string[] {
-                            "Business Days"});
-                table2.AddRow(new string[] {
-                            "Calculate The Last Business Day"});
-                table2.AddRow(new string[] {
-                            "Days"});
-                table2.AddRow(new string[] {
-                            "Reference"});
-                table2.AddRow(new string[] {
-                            "Source List"});
-                table2.AddRow(new string[] {
-                            "Save"});
-                table2.AddRow(new string[] {
-                            "Close"});
-#line 22
- testRunner.And("User validates the following fields on General tab on Add Definition Popup", ((string)(null)), table2, "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
                 table3.AddRow(new string[] {
+                            "Definition Name"});
+                table3.AddRow(new string[] {
+                            "Alert Type"});
+                table3.AddRow(new string[] {
+                            "Table Name"});
+                table3.AddRow(new string[] {
+                            "Deadline Reference"});
+                table3.AddRow(new string[] {
+                            "Business Days"});
+                table3.AddRow(new string[] {
+                            "Calculate The Last Business Day"});
+                table3.AddRow(new string[] {
+                            "Days"});
+                table3.AddRow(new string[] {
+                            "Reference"});
+                table3.AddRow(new string[] {
+                            "Source List"});
+                table3.AddRow(new string[] {
+                            "Save"});
+                table3.AddRow(new string[] {
+                            "Close"});
+#line 20
+ testRunner.And("User validates the following fields on General tab on Add Definition Popup", ((string)(null)), table3, "And ");
+#line hidden
+#line 33
+ testRunner.And("User clicks the Explanation Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table4.AddRow(new string[] {
                             "Explanation"});
-#line 36
- testRunner.And("User validates the following fields on Explanation tab on Add Definition Popup", ((string)(null)), table3, "And ");
+#line 34
+ testRunner.And("User validates the following fields on Explanation tab on Add Definition Popup", ((string)(null)), table4, "And ");
+#line hidden
+#line 37
+ testRunner.And("User clicks the close Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 38
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

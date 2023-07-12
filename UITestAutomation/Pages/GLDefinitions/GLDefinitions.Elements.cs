@@ -4,13 +4,13 @@ namespace UITestAutomation
     internal partial class GLDefinitions
     {
         //UI Controls on GL Definitions Page
-        By GLDefinitionsOption = By.XPath("//a[text='GL Definitions']");
+        By GLDefinitionsOption = By.XPath("//a[text()='GL Definitions']");
         By AddGLDefinition = By.XPath("//button[@ng-click='addDefinition()']");
         By DeleteGLDefinition = By.XPath("//button[@ng-click='deleteTransactionType($event, definition)']");
         By EditGLDefinition = By.XPath("//button[@ng-click='editGLTransactionType(definition)']");
         By CopyGLDefinition = By.XPath("//button[@ng-click='copyGLTransactionType(definition)']");
         By RefreshIcon = By.XPath("//button[@ng-click='refreshGLAccounts()']");
-        By DownloadLetter = By.XPath("//button[title='Download Letter']");
+        By DownloadLetter = By.XPath("//button[@title='Download Letter']");
         By ShowDeletedGLDefinition = By.XPath("//input[@ng-model='showDeleted']");
         By ActionField = By.XPath("//th[1][1]");
         By TransferTypeField = By.XPath("//input[@ng-model='$.accountType']");
@@ -43,7 +43,7 @@ namespace UITestAutomation
         By CustomerType = By.XPath("(//select[@ng-model='newType.accountOwnershipType'])[1]");
         By CrossButton = By.XPath("//button[class='close'][2]");
         By SaveButton = By.XPath("//button[@ng-click='saveTransactionType()']");
-        By CloseButton = By.XPath("//button[class='btn btn-default'][2]");
+        By CloseButton = By.XPath("(//button[text()=\"Close\"])[2]");
         By DeleteDefinition = By.XPath("//button[@ng-click='toggleIsDeleted($event, newType, modal, $modal)']");
 
         // Fields on Download from Library Page
@@ -54,6 +54,6 @@ namespace UITestAutomation
         By IDField = By.XPath("//th[2][2]");
         By DescriptionField2 = By.XPath("//th[3][2]");
         By DownloadGLDefinitionField = By.XPath("//button[@ng-click='copygldefinitionToPackage({glDefinition: t})']");
-        By CloseButton2 = By.XPath("//button[class='btn btn-default'][4]");
+        By CloseButton2 = By.XPath("(//button[text()=\"Close\"])[1]");
     }
 }

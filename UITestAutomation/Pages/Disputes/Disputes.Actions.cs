@@ -9,13 +9,23 @@
         }
         public void ClickSettingsButton()
         {
-            ClickOnWebElement(SettingsButton);
             WaitForWebElementDisplayed(SettingsButton);
+            ClickOnWebElement(SettingsButton);   
+        }
+        public void ClickCloseButtononCustomizedPage()
+        {
+            WaitForWebElementDisplayed(closecustomizes_Button);
+            ClickOnWebElement(closecustomizes_Button);
         }
         public void ClickSearchButton()
         {
             WaitForWebElementDisplayed(SearchSetDateButton);
             ClickOnWebElement(SearchSetDateButton);
+        }
+        public void ClickCloseButtononSearch()
+        {
+            WaitForWebElementDisplayed(closesearch_Button);
+            ClickOnWebElement(closesearch_Button);
         }
         public void ClickShowClosedDisputesButton()
         {
@@ -29,18 +39,28 @@
         }
         public void ClickHistoryButton()
         {
-            ClickOnWebElement(HistoryButton);
             WaitForWebElementDisplayed(HistoryButton);
+            ClickOnWebElement(HistoryButton);
+            
         }
         public void ClickDocumentsButton()
         {
-            ClickOnWebElement(DocumentsButton);
             WaitForWebElementDisplayed(DocumentsButton);
+            ClickOnWebElement(DocumentsButton);
+           
         }
         public void ClickResolutionButton()
         {
-            ClickOnWebElement(ResolutionButton);
             WaitForWebElementDisplayed(ResolutionButton);
+            ClickOnWebElement(ResolutionButton);
+       
+        }
+
+        public void ClickCloseButtononResolution()
+        {
+            WaitForWebElementDisplayed(Close);
+            ClickOnWebElement(Close);
+
         }
     }
 }

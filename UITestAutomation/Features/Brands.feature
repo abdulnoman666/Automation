@@ -41,3 +41,4 @@
 	| Save             |
 	| Close            |
 	| Cross Button     |
+	And User clicks the Dashboard Icon

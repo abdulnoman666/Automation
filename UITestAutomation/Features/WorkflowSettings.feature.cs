@@ -123,374 +123,374 @@ this.FeatureBackground();
 #line 11
  testRunner.And("User selects the Workflow Settings Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table110 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table103 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table110.AddRow(new string[] {
+                table103.AddRow(new string[] {
                             "Add"});
-                table110.AddRow(new string[] {
+                table103.AddRow(new string[] {
                             "Edit"});
-                table110.AddRow(new string[] {
+                table103.AddRow(new string[] {
                             "Delete"});
-                table110.AddRow(new string[] {
+                table103.AddRow(new string[] {
                             "Download Letter"});
-                table110.AddRow(new string[] {
+                table103.AddRow(new string[] {
                             "Action"});
-                table110.AddRow(new string[] {
+                table103.AddRow(new string[] {
                             "ID"});
-                table110.AddRow(new string[] {
+                table103.AddRow(new string[] {
                             "Workflow"});
-                table110.AddRow(new string[] {
+                table103.AddRow(new string[] {
                             "Refresh"});
 #line 12
- testRunner.And("User validates the following UI Controls on Workflow Settings Page", ((string)(null)), table110, "And ");
+ testRunner.And("User validates the following UI Controls on Workflow Settings Page", ((string)(null)), table103, "And ");
 #line hidden
 #line 22
  testRunner.And("User clicks the Add Workflow Setting on on Workflow Settings Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table111 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table104 = new TechTalk.SpecFlow.Table(new string[] {
                             "Controls"});
-                table111.AddRow(new string[] {
+                table104.AddRow(new string[] {
                             "Settings"});
-                table111.AddRow(new string[] {
+                table104.AddRow(new string[] {
                             "Event Triggers"});
-                table111.AddRow(new string[] {
+                table104.AddRow(new string[] {
                             "Self-Service Verbiage"});
-                table111.AddRow(new string[] {
+                table104.AddRow(new string[] {
                             "Close"});
-                table111.AddRow(new string[] {
+                table104.AddRow(new string[] {
                             "Save"});
 #line 23
- testRunner.And("User validates the following Controls on Edit Setting Dialog", ((string)(null)), table111, "And ");
+ testRunner.And("User validates the following Controls on Edit Setting Dialog", ((string)(null)), table104, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table112 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table105 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Workflow"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Publish"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Allow Customer Access"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Search By"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Send Notifications"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Distribution List"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Transaction Type"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Account Types Allowed"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Closed Account Status"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Add Transactions"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Allow Manual Transactions"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Allow user to copy / duplicate transactions"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Copy Description to Merchant Field by Default"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Merchant Copy Source Field Name"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Transaction Filter Condition"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Transaction Not Allowed Condition"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Show Fraud / Non-Fraud Option"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Disable Customer Edit"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Has Questionnaire"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Has Provisional Credit Calculation"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Show Customer Type"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Hide Comments And Resolution"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Reimburse Fees"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Transaction Code Filter"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "GL Reference"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Interest Posting GL Reference"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Compliance Regulation Screen"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Dispute Screen Type"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Email Template Reference"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Confirmation Email Template Reference"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Post Submission Automation Reference"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Automation Reference On Submission Complete"});
-                table112.AddRow(new string[] {
+                table105.AddRow(new string[] {
                             "Submission Screen Template"});
 #line 30
- testRunner.And("User validates the following Fields in Settings Page on Edit Setting Dialog", ((string)(null)), table112, "And ");
+ testRunner.And("User validates the following Fields in Settings Page on Edit Setting Dialog", ((string)(null)), table105, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table113 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table106 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields",
                             "Values"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Workflow",
                             "Debit Card"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Publish",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Allow Customer Access",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Customer Description",
                             "Casual User"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Search By",
                             "Card"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Send Notifications",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Distribution List",
                             "abc"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Transaction Type",
                             "Default"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Account Types Allowed",
                             "Default"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Closed Account Status",
                             "Default"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Add Transactions",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Allow Manual Transactions",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Allow user to copy / duplicate transactions",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Copy Description to Merchant Field by Default",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Merchant Copy Source Field Name",
                             "Arshi"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Transaction Filter Condition",
                             "abc"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Transaction Not Allowed Condition",
                             "abc"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Show Fraud / Non-Fraud Option",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Verbiage for Fraud",
                             "donot"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Verbiage for Non-Fraud",
                             "problem"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Disable Customer Edit",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Has Questionnaire",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Has Provisional Credit Calculation",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Show Customer Type",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Hide Comments And Resolution",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Reimburse Fees",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Transaction Code Filter",
                             "123"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "GL Reference",
                             "Red1"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Interest Posting GL Reference",
                             "Red1"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Compliance Regulation Screen",
                             "None"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "PC Business Days",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Provisional Credit Days",
                             "4"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Resolution Business Days",
                             ""});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Resolution Days",
                             "12"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Dispute Screen Type",
                             "Default"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Email Template Reference",
                             "DC"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Confirmation Email Template Reference",
                             "PC"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Post Submission Automation Reference",
                             "AC"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Automation Reference On Submission Complete",
                             "SFFS"});
-                table113.AddRow(new string[] {
+                table106.AddRow(new string[] {
                             "Submission Screen Template",
                             "Default"});
 #line 65
- testRunner.And("User adds the following data to fields in Settings Page", ((string)(null)), table113, "And ");
+ testRunner.And("User adds the following data to fields in Settings Page", ((string)(null)), table106, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table114 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table107 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields",
                             "Values"});
-                table114.AddRow(new string[] {
+                table107.AddRow(new string[] {
                             "Questionnaire Template",
                             "Check Fraud"});
-                table114.AddRow(new string[] {
+                table107.AddRow(new string[] {
                             "e-Consent Notice Template",
-                            "smart title"});
-                table114.AddRow(new string[] {
+                            "Electronic Signature Disclosure"});
+                table107.AddRow(new string[] {
                             "Read Only Questionnaire",
                             ""});
-                table114.AddRow(new string[] {
+                table107.AddRow(new string[] {
                             "Hide Send To Customer",
                             ""});
-                table114.AddRow(new string[] {
+                table107.AddRow(new string[] {
                             "Hide Customer Acknowledgement Form",
                             ""});
-                table114.AddRow(new string[] {
+                table107.AddRow(new string[] {
                             "Close Screen Message",
                             ""});
 #line 107
  testRunner.And("User validates the following Fields in Questionaire Dialog on Edit Setting Dialog" +
-                        "", ((string)(null)), table114, "And ");
+                        "", ((string)(null)), table107, "And ");
 #line hidden
 #line 115
  testRunner.And("User clicks the Event Triggers in Settings Page on Edit Setting Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table115 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table108 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table115.AddRow(new string[] {
+                table108.AddRow(new string[] {
                             "Action"});
-                table115.AddRow(new string[] {
+                table108.AddRow(new string[] {
                             "Trigger Name"});
-                table115.AddRow(new string[] {
+                table108.AddRow(new string[] {
                             "Trigger Event Type"});
-                table115.AddRow(new string[] {
+                table108.AddRow(new string[] {
                             "Add"});
 #line 116
- testRunner.And("User validates the following Controls in Event Triggers on Edit Setting Dialog", ((string)(null)), table115, "And ");
+ testRunner.And("User validates the following Controls in Event Triggers on Edit Setting Dialog", ((string)(null)), table108, "And ");
 #line hidden
 #line 122
  testRunner.And("User clicks the Add Event Trigger in Event Triggers Page on on Edit Setting Dialo" +
                         "g", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table116 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table109 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "Trigger Name"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "Trigger Event Type"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "Additional Condition (search for below)"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "Account Type"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "Automation Reference"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "Letter Template Reference"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "GL Reference"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "Run Automation"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "AutomationReference"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "Send Email Notification"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "Email Letter Template Reference"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "Email Distribution List"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "Close"});
-                table116.AddRow(new string[] {
+                table109.AddRow(new string[] {
                             "Save"});
 #line 123
- testRunner.And("User validates the following Fields in Add Trigger Page on Edit Setting Dialog", ((string)(null)), table116, "And ");
+ testRunner.And("User validates the following Fields in Add Trigger Page on Edit Setting Dialog", ((string)(null)), table109, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table117 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table110 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields",
                             "Values"});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "Trigger Name",
                             "abc"});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "Trigger Event Type",
                             "ab"});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "Additional Condition (search for below)",
                             ""});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "Account Type",
                             ""});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "Account Type Restriction",
                             "Business"});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "Automation Reference",
                             ""});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "Automation Reference Box",
                             "T1"});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "Letter Template Reference",
                             ""});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "Template Reference",
-                            "AM1"});
-                table117.AddRow(new string[] {
+                            "ref"});
+                table110.AddRow(new string[] {
                             "GL Reference",
                             ""});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "GL Reference Box",
                             "FC"});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "Run Automation",
                             ""});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "AutomationReference",
                             "T1"});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "Send Email Notification",
                             ""});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "Email Letter Template Reference",
                             "ref"});
-                table117.AddRow(new string[] {
+                table110.AddRow(new string[] {
                             "Email Distribution List",
                             "abc"});
 #line 139
  testRunner.And("User adds the following data to fields in Add Trigger Page on Edit Setting Dialog" +
-                        "", ((string)(null)), table117, "And ");
+                        "", ((string)(null)), table110, "And ");
 #line hidden
 #line 157
  testRunner.And("User clicks the Save Button on Add Trigger Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -498,31 +498,31 @@ this.FeatureBackground();
 #line 158
  testRunner.And("User clicks the Self-Service Verbiage in Settings Page on Edit Setting Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table118 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table111 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fileds"});
-                table118.AddRow(new string[] {
+                table111.AddRow(new string[] {
                             "Self-Service Portal Submission Completion Title"});
-                table118.AddRow(new string[] {
+                table111.AddRow(new string[] {
                             "Self-Service Portal Submission Completion Note"});
-                table118.AddRow(new string[] {
+                table111.AddRow(new string[] {
                             "Close"});
-                table118.AddRow(new string[] {
+                table111.AddRow(new string[] {
                             "Save"});
 #line 159
  testRunner.And("User validates the following Fields in Self-Service Verbiage Page on Edit Setting" +
-                        " Dialog", ((string)(null)), table118, "And ");
+                        " Dialog", ((string)(null)), table111, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table119 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table112 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fileds",
                             "Value"});
-                table119.AddRow(new string[] {
+                table112.AddRow(new string[] {
                             "Self-Service Portal Submission Completion Title",
                             "Completion"});
-                table119.AddRow(new string[] {
+                table112.AddRow(new string[] {
                             "Self-Service Portal Submission Completion Note",
                             "Completion"});
 #line 165
- testRunner.And("User adds the following data to fields in Self-Service Verbiage Page", ((string)(null)), table119, "And ");
+ testRunner.And("User adds the following data to fields in Self-Service Verbiage Page", ((string)(null)), table112, "And ");
 #line hidden
 #line 169
  testRunner.And("User clicks the Save Button on Self-Service Verbiage Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

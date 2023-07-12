@@ -4,7 +4,7 @@ namespace UITestAutomation
     internal partial class TransactionAlerts
     {
         //UI Controls on Transaction Alerts Page
-        By TransactionAlertsButton = By.XPath("//a[text='Transaction Alerts']");
+        By TransactionAlertsButton = By.XPath("//a[text()='Transaction Alerts']");
         By AddNewTransactionAlert = By.XPath("//button[@ng-click='addNewAlert()']");
         By DeleteAlert = By.XPath("//button[@ng-click='removeAlert($event, t);']");
         By EditAlert = By.XPath("//button[@ng-click='editAlert(t)']");
@@ -24,7 +24,7 @@ namespace UITestAutomation
         By Tooltip = By.XPath("//input[@ng-model='newAlertCondition.tooltip']");
         By SaveCondition = By.XPath("//button[@ng-disabled='addScriptItem.$invalid']");
         By SaveButton = By.XPath("//button[@ng-click='saveAlert()']");
-        By CloseButton = By.XPath("//button[class='btn btn-default'][2]");
+        By CloseButton = By.XPath("(//button[text()=\"Close\"])[1]");
         By CrossButton = By.XPath("//button[class='close'][2]");
     }
 }

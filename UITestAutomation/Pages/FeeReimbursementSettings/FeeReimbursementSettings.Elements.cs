@@ -11,14 +11,14 @@ namespace UITestAutomation
 
         // on ADD Page
         By Reference_Field = By.XPath("/html//div[@id='addFeeReimbursement']//form[@name='workflowsettingform']//input[@name='reference']");
-        By Description_Field = By.XPath("/html//div[@id='addFeeReimbursement']//form[@name='workflowsettingform']//textarea[@name='alertName']");
+        By Description_Field = By.XPath("//textarea[@ng-model=\"feeSetting.description\"]");
         By AutoGenerateGL_CheckBox = By.XPath("/html//div[@id='addFeeReimbursement']//form[@name='workflowsettingform']//input[@name='autoGenerateGl']");
         By AutoFeeGLReference_DropDown = By.XPath("/html//div[@id='addFeeReimbursement']//form[@name='workflowsettingform']//select[@name='autoFeeGLReference']");
         By ShowOnDisputeForm_CheckBox = By.XPath("/html//div[@id='addFeeReimbursement']//form[@name='workflowsettingform']//input[@name='showOnDsputeForm']");
         By CreateDisputes_CheckBox = By.XPath("/html//div[@id='addFeeReimbursement']//form[@name='workflowsettingform']//input[@name='createDispute']");
         By IncludeInClaimTotal_CheckBox = By.XPath("/html//div[@id='addFeeReimbursement']//form[@name='workflowsettingform']//input[@name='includeInClaimTotal']");
-        By Save_Button = By.XPath("/html//div[@id='addFeeReimbursement']//form[@name='workflowsettingform']//div[@class='modal-footer']/button[2]");
-        By Close_Button = By.XPath("/html//div[@id='addFeeReimbursement']//form[@name='workflowsettingform']//div[@class='modal-footer']/button[1]");
+        By Save_Button = By.XPath("(//button[@ng-click=\"save()\"])");
+        By Close_Button = By.XPath("(//button[text()=\"Close\"])[1]");
 
     }
 }

@@ -123,24 +123,24 @@ this.FeatureBackground();
 #line 9
  testRunner.And("User selects the My Tasks Field from the dropdown menu of Submissions", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table72 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table68 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table72.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Show Closed Tasks"});
-                table72.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Actions"});
-                table72.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Status"});
-                table72.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Task"});
-                table72.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Case ID"});
-                table72.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Created On"});
-                table72.AddRow(new string[] {
+                table68.AddRow(new string[] {
                             "Assigned On"});
 #line 10
- testRunner.And("User validates the following Fields on My Tasks Page", ((string)(null)), table72, "And ");
+ testRunner.And("User validates the following Fields on My Tasks Page", ((string)(null)), table68, "And ");
 #line hidden
 #line 19
  testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

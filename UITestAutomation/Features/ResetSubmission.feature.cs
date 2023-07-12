@@ -123,14 +123,14 @@ this.FeatureBackground();
 #line 9
  testRunner.And("User selects the Reset Submission Field from the dropdown menu of Submissions", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table88 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table81 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table88.AddRow(new string[] {
+                table81.AddRow(new string[] {
                             "Submission ID"});
-                table88.AddRow(new string[] {
+                table81.AddRow(new string[] {
                             "Reset"});
 #line 10
- testRunner.And("User validates the following Fields on Reset Submission Page", ((string)(null)), table88, "And ");
+ testRunner.And("User validates the following Fields on Reset Submission Page", ((string)(null)), table81, "And ");
 #line hidden
 #line 14
  testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

@@ -124,43 +124,43 @@ this.FeatureBackground();
  testRunner.And("User selects the Submissions With Alerts Field from the dropdown menu of Submissi" +
                         "ons", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table92 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table85 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table92.AddRow(new string[] {
+                table85.AddRow(new string[] {
                             "Settings"});
-                table92.AddRow(new string[] {
+                table85.AddRow(new string[] {
                             "Refresh Alerts"});
-                table92.AddRow(new string[] {
+                table85.AddRow(new string[] {
                             "Enter Page"});
-                table92.AddRow(new string[] {
+                table85.AddRow(new string[] {
                             "Go"});
-                table92.AddRow(new string[] {
+                table85.AddRow(new string[] {
                             "Edit Submission"});
 #line 10
- testRunner.And("User validates the following UI Controls on Submissions With Alerts Page", ((string)(null)), table92, "And ");
+ testRunner.And("User validates the following UI Controls on Submissions With Alerts Page", ((string)(null)), table85, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table93 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table86 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table93.AddRow(new string[] {
+                table86.AddRow(new string[] {
                             "Action"});
-                table93.AddRow(new string[] {
+                table86.AddRow(new string[] {
                             "ID"});
-                table93.AddRow(new string[] {
+                table86.AddRow(new string[] {
                             "Customer"});
-                table93.AddRow(new string[] {
+                table86.AddRow(new string[] {
                             "Status"});
-                table93.AddRow(new string[] {
+                table86.AddRow(new string[] {
                             "Source"});
-                table93.AddRow(new string[] {
+                table86.AddRow(new string[] {
                             "Alert"});
-                table93.AddRow(new string[] {
+                table86.AddRow(new string[] {
                             "Alert Type"});
-                table93.AddRow(new string[] {
+                table86.AddRow(new string[] {
                             "Deadline"});
-                table93.AddRow(new string[] {
+                table86.AddRow(new string[] {
                             "Assigned To"});
 #line 17
- testRunner.And("User validates the following Fields on Submissions With Alerts Page", ((string)(null)), table93, "And ");
+ testRunner.And("User validates the following Fields on Submissions With Alerts Page", ((string)(null)), table86, "And ");
 #line hidden
 #line 28
  testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

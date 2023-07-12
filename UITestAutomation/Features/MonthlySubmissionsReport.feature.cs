@@ -123,22 +123,22 @@ this.FeatureBackground();
 #line 9
  testRunner.And("User selects the Monthly Report Field from the dropdown menu of Submissions", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table71 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table67 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table71.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Search By"});
-                table71.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Date Range"});
-                table71.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Workflow"});
-                table71.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "From"});
-                table71.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "To"});
-                table71.AddRow(new string[] {
+                table67.AddRow(new string[] {
                             "Export Disputes"});
 #line 10
- testRunner.And("User validates the following Fields on Monthly Report Page", ((string)(null)), table71, "And ");
+ testRunner.And("User validates the following Fields on Monthly Report Page", ((string)(null)), table67, "And ");
 #line hidden
 #line 18
  testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

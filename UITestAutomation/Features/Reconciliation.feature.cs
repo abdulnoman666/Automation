@@ -123,42 +123,42 @@ this.FeatureBackground();
 #line 9
  testRunner.And("User selects the Reconciliation Field from the dropdown menu of Submissions", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table87 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table80 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Reported On"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Customer"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Source"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Status"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Dispute Type"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Total"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "PC Amount"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "PC Rev Amount"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Merchant Credit"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Final Credit"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Insurance Amount"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Chargeback Amount"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Other Fees"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Action"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Reset"});
-                table87.AddRow(new string[] {
+                table80.AddRow(new string[] {
                             "Save"});
 #line 10
- testRunner.And("User validates the following Fields on Reconciliation Page", ((string)(null)), table87, "And ");
+ testRunner.And("User validates the following Fields on Reconciliation Page", ((string)(null)), table80, "And ");
 #line hidden
 #line 28
  testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

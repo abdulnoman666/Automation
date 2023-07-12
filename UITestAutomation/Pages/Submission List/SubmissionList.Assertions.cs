@@ -62,9 +62,17 @@
                         WaitForWebElementDisplayed(Action_Field);
                         FluentWaitForWebElement(Action_Field);
                         break;
-                    case "Sub Case":
-                        FluentWaitForWebElement(SubCase_Field);
-                        FluentWaitForWebElement(SubCase_TextField);
+                    case "ID":
+                        WaitForWebElementDisplayed(ID_Field);
+                        FluentWaitForWebElement(IDText_Field);
+                        break;
+                    case "Type":
+                        WaitForWebElementDisplayed(Type_Field);
+                        FluentWaitForWebElement(Type_TextField);
+                        break;
+                    case "Account Type":                     
+                        FluentWaitForWebElement(AccountType_Field);
+                        FluentWaitForWebElement(AcountType_TextField);
                         break;
                     case "Customer":
                         FluentWaitForWebElement(Customer_Field);
@@ -80,22 +88,16 @@
                     case "Days":
                         FluentWaitForWebElement(Days_Field);
                         break;
-                    case "Processor Case Reference":
-                        FluentWaitForWebElement(ProcessorCaseReference_Field);
-                        break;
                     case "Status":
                         FluentWaitForWebElement(Status_Field);
                         FluentWaitForWebElement(Status_Textbox);
-                        break;
-                    case "PT":
-                        FluentWaitForWebElement(PT_Field);
                         break;
                     case "Total":
                         FluentWaitForWebElement(Total_Field);
                         FluentWaitForWebElement(Total_TextboxField);
                         break;
-                    case "Orig":
-                        FluentWaitForWebElement(Orig_Field);
+                    case "Item Count":
+                        FluentWaitForWebElement(ItemCount_Field);
                         break;
                     case "Assigned To":
                         FluentWaitForWebElement(AssignedTo_Field);

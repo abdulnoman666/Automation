@@ -124,86 +124,58 @@ this.ScenarioInitialize(scenarioInfo);
  testRunner.And("User selects the Fee Selection Settings option from the drop down menu of the Pro" +
                         "fileIcon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table42 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table43.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "Add Fee Selection"});
-                table43.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "Edit Fee Selection"});
-                table43.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "Delete Fee Selection"});
-                table43.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "Refresh"});
-                table43.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "Actions"});
-                table43.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "ID"});
-                table43.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "Fee Selection Reference"});
 #line 11
- testRunner.And("User validates the following UI Controls on the Fee Selection Settings Page", ((string)(null)), table43, "And ");
+ testRunner.And("User validates the following UI Controls on the Fee Selection Settings Page", ((string)(null)), table42, "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Add Fee Selection")]
-        public virtual void AddFeeSelection()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add Fee Selection", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 21
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
- this.FeatureBackground();
-#line hidden
-#line 22
+#line 20
     testRunner.Given("User clicks the Add Fee Selection Icon on the Fee Selection Settings Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Fee Selection Reference"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Copy Transactions from Parent Submission"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Create Case for Interest Refund"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Search for Transactions using Parameters below"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Transaction Codes"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Search from Dates"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Search through Today"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Number of Days"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Save"});
-                table44.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "Close"});
-#line 23
- testRunner.And("User validates the following fields on the Add Fee Selection Page", ((string)(null)), table44, "And ");
+#line 21
+ testRunner.And("User validates the following fields on the Add Fee Selection Page", ((string)(null)), table43, "And ");
+#line hidden
+#line 33
+ testRunner.And("user clicks the Close Button on the Add Fee Selection Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 34
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

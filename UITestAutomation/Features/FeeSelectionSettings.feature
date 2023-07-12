@@ -17,8 +17,6 @@ Scenario: Fee Selection Settings
 	| Actions                 |
 	| ID                      |
 	| Fee Selection Reference |
-
-Scenario:  Add Fee Selection
     Given User clicks the Add Fee Selection Icon on the Fee Selection Settings Page
 	And User validates the following fields on the Add Fee Selection Page
 	| Fields                                         |
@@ -32,3 +30,5 @@ Scenario:  Add Fee Selection
 	| Number of Days                                 |
 	| Save                                           |
 	| Close                                          |
+	And user clicks the Close Button on the Add Fee Selection Page
+	And User clicks the Dashboard Icon 

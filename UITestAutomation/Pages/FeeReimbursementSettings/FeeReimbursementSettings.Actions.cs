@@ -13,7 +13,15 @@ namespace UITestAutomation
         {
             WaitForWebElementDisplayed(AddFeeReimbursementSettings_Button);
             ClickOnWebElement(AddFeeReimbursementSettings_Button);
+            WaitForWebElementDisplayed(Description_Field);
         
+        }
+
+        public void ClickCloseButtononAddReimbursement()
+        {
+            WaitForWebElementDisplayed(Close_Button);
+            ClickOnWebElement(Close_Button);
+
         }
     }
 }

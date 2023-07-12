@@ -13,6 +13,19 @@ namespace UITestAutomation
         {
             WaitForWebElementDisplayed(AddLetterTemplate);
             ClickOnWebElement(AddLetterTemplate);
+            WaitForWebElementDisplayed(SaveTemplateSheet);
+        }
+
+        public void ClickOnStyleinfoButton()
+        {
+            WaitForWebElementDisplayed(Stylesheeticon);
+            ClickOnWebElement(Stylesheeticon);
+        }
+
+        public void ClickOnLetterinfoButton()
+        {
+            WaitForWebElementDisplayed(Letterinfoicon);
+            ClickOnWebElement(Letterinfoicon);
         }
     }
 }

@@ -9,8 +9,14 @@
         }
         public void ClickAddNewTaskButton()
         {
-            ClickOnWebElement(AddNewTask);
             WaitForWebElementDisplayed(AddNewTask);
+            ClickOnWebElement(AddNewTask);
+        }
+        public void ClickCloseButtonAddNewTask()
+        {
+            WaitForWebElementDisplayed(CloseButton);
+            ClickOnWebElement(CloseButton);
+          
         }
     }
 }

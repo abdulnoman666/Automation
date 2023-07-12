@@ -9,6 +9,7 @@
                 switch (item[0].Trim())
                 {
                     case " Basic Info":
+                        WaitForWebElementDisplayed(BasicInfo);
                         FluentWaitForWebElement(BasicInfo);
                         break;
                     case " General Settings":
@@ -192,9 +193,11 @@
                 switch (item[0].Trim())
                 {
                     case "Text Area":
+                        WaitForWebElementDisplayed(TextArea);
                         FluentWaitForWebElement(TextArea);
-                        break;
+                       break;
                     case "Save":
+                        WaitForWebElementDisplayed(SaveButton);
                         FluentWaitForWebElement(SaveButton);
                         break;
                     case "Close":
@@ -211,6 +214,7 @@
                 switch (item[0].Trim())
                 {
                     case "Primary Buttons Color":
+                        WaitForWebElementDisplayed(Primary);
                         FluentWaitForWebElement(Primary);
                         break;
                     case "Secondary Buttons Color":

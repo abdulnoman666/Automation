@@ -123,25 +123,25 @@ this.FeatureBackground();
 #line 10
  testRunner.And("User selects the Change Password Field from the dropdown menu of Profile Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Control"});
-                table12.AddRow(new string[] {
+                table11.AddRow(new string[] {
                             "Change Password"});
-                table12.AddRow(new string[] {
+                table11.AddRow(new string[] {
                             "Submit"});
 #line 11
- testRunner.And("User validates the following UI Controls on Change Password Page", ((string)(null)), table12, "And ");
+ testRunner.And("User validates the following UI Controls on Change Password Page", ((string)(null)), table11, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table13.AddRow(new string[] {
+                table12.AddRow(new string[] {
                             "Current Password"});
-                table13.AddRow(new string[] {
+                table12.AddRow(new string[] {
                             "New Password"});
-                table13.AddRow(new string[] {
+                table12.AddRow(new string[] {
                             "Confirm Password"});
 #line 15
- testRunner.And("User validates the following Fields on Change Password Page", ((string)(null)), table13, "And ");
+ testRunner.And("User validates the following Fields on Change Password Page", ((string)(null)), table12, "And ");
 #line hidden
 #line 20
  testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

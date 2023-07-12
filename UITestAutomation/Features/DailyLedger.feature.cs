@@ -78,10 +78,10 @@ namespace UITestAutomation.Features
 #line 3
 #line hidden
 #line 4
-  testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("User log into Dispute Tracking Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
-  testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User should be able to see Dashboard in Application", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
         }
         
@@ -118,28 +118,34 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 9
-  testRunner.Given("User clicks the Daily Ledger Icon from the dropdown of Ledger", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+  testRunner.Given("User clicks the Ledger Icon on the Dashboard Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table30.AddRow(new string[] {
-                            "Refresh Ledger"});
-                table30.AddRow(new string[] {
-                            "Date"});
-                table30.AddRow(new string[] {
-                            "Account"});
-                table30.AddRow(new string[] {
-                            "Customer"});
-                table30.AddRow(new string[] {
-                            "Amount"});
-                table30.AddRow(new string[] {
-                            "Type"});
-                table30.AddRow(new string[] {
-                            "Tran Code"});
-                table30.AddRow(new string[] {
-                            "Description"});
 #line 10
- testRunner.And("User validates the following fields on the Daily Ledger Page", ((string)(null)), table30, "And ");
+ testRunner.And("User clicks the Daily Ledger Icon from the dropdown of Ledger", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table29.AddRow(new string[] {
+                            "Refresh Ledger"});
+                table29.AddRow(new string[] {
+                            "Date"});
+                table29.AddRow(new string[] {
+                            "Account"});
+                table29.AddRow(new string[] {
+                            "Customer"});
+                table29.AddRow(new string[] {
+                            "Amount"});
+                table29.AddRow(new string[] {
+                            "Type"});
+                table29.AddRow(new string[] {
+                            "Tran Code"});
+                table29.AddRow(new string[] {
+                            "Description"});
+#line 11
+ testRunner.And("User validates the following fields on the Daily Ledger Page", ((string)(null)), table29, "And ");
+#line hidden
+#line 21
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

@@ -10,7 +10,7 @@ namespace UITestAutomation
         By DeleteLettter = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-body']/table/tbody/tr[2]//button[@title='Delete Letter']");
         By EditLetter = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-body']/table/tbody/tr[2]//a[@title='Edit Letter']");
         By DownloadLetter = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//button[@title='Download Letter']");
-        By CopyLetter = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-body']/table/tbody/tr[2]//button[@title='Copy Letter']");
+        By CopyLetter = By.XPath("//button[@title='Copy Letter']");
         By Action = By.XPath("/html//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-body']/table/tbody/tr[1]/td[1]");
         By Refresh = By.XPath("/html//div[@id='main']/div[@class='container']/div[@class='ng-scope']//button[@title='Refresh']");
         By ID = By.XPath("/html//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-body']/table/tbody/tr[1]/td[2]/input[@type='text']");
@@ -19,6 +19,7 @@ namespace UITestAutomation
         By Reference = By.XPath("/html//div[@id='main']/div[@class='container']/div[@class='ng-scope']//div[@class='panel-body']/table/tbody/tr[1]/td[6]/input[@type='text']");
         By EnterPage = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//ul[@class='pagination']/li[15]//input[@type='text']");
         // Letter info Dialog
+        By Letterinfoicon = By.XPath("//a[@ng-click=\"tab=1\"]");
         By LetterTitle = By.XPath("/html//input[@id='title']");
         By LetterDescription = By.XPath("/html//input[@id='description']");
         By Author = By.XPath("/html//input[@id='author']");
@@ -38,7 +39,7 @@ namespace UITestAutomation
         By LetterTemplateForm = By.XPath("//div[@id='main']//div[@class='ng-scope']/form[@name='lettertTemplateForm']/div[@class='container']//div[@role='application']//div[@class='fr-element fr-view']");
 
         // Style Sheet Dialog
-
+        By Stylesheeticon = By.XPath("//a[@ng-click=\"tab=3\"]");
         By StyleSheetTitle = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']/form[@name='lettertTemplateForm']/div[@class='container']//input[@id='title']");
         By StyleSheet = By.XPath("/html//textarea[@id='styleSheet']");
         By DeleteTemplateSheet = By.XPath("//div[@id='main']//div[@class='ng-scope']/form[@name='lettertTemplateForm']/div[@class='container']//button[@title='Delete Template']");

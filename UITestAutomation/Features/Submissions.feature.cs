@@ -123,77 +123,77 @@ this.FeatureBackground();
 #line 9
  testRunner.And("User selects the Submissions List Field from the dropdown menu of Submissions", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table89 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table82 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table89.AddRow(new string[] {
+                table82.AddRow(new string[] {
                             "New Case"});
-                table89.AddRow(new string[] {
+                table82.AddRow(new string[] {
                             "Settings"});
-                table89.AddRow(new string[] {
+                table82.AddRow(new string[] {
                             "Search"});
-                table89.AddRow(new string[] {
+                table82.AddRow(new string[] {
                             "Refresh"});
-                table89.AddRow(new string[] {
+                table82.AddRow(new string[] {
                             "All Originators"});
-                table89.AddRow(new string[] {
+                table82.AddRow(new string[] {
                             "All Assignee"});
-                table89.AddRow(new string[] {
+                table82.AddRow(new string[] {
                             "Enter Page"});
-                table89.AddRow(new string[] {
+                table82.AddRow(new string[] {
                             "Go"});
-                table89.AddRow(new string[] {
+                table82.AddRow(new string[] {
                             "Show Closed Submissions"});
-                table89.AddRow(new string[] {
+                table82.AddRow(new string[] {
                             "View Submission"});
-                table89.AddRow(new string[] {
+                table82.AddRow(new string[] {
                             "Reassign Submission"});
-                table89.AddRow(new string[] {
+                table82.AddRow(new string[] {
                             "Delete or Withdraw Submission"});
 #line 10
- testRunner.And("User validates the following UI Controls on Submissions List Page", ((string)(null)), table89, "And ");
+ testRunner.And("User validates the following UI Controls on Submissions List Page", ((string)(null)), table82, "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table90 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table83 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table90.AddRow(new string[] {
+                table83.AddRow(new string[] {
                             "Action"});
-                table90.AddRow(new string[] {
-                            "Sub Case"});
-                table90.AddRow(new string[] {
+                table83.AddRow(new string[] {
+                            "ID"});
+                table83.AddRow(new string[] {
+                            "Type"});
+                table83.AddRow(new string[] {
+                            "Account Type"});
+                table83.AddRow(new string[] {
                             "Customer"});
-                table90.AddRow(new string[] {
+                table83.AddRow(new string[] {
                             "Workflow"});
-                table90.AddRow(new string[] {
+                table83.AddRow(new string[] {
                             "Reported"});
-                table90.AddRow(new string[] {
+                table83.AddRow(new string[] {
                             "Days"});
-                table90.AddRow(new string[] {
-                            "Processor Case Reference"});
-                table90.AddRow(new string[] {
+                table83.AddRow(new string[] {
                             "Status"});
-                table90.AddRow(new string[] {
-                            "PT"});
-                table90.AddRow(new string[] {
+                table83.AddRow(new string[] {
                             "Total"});
-                table90.AddRow(new string[] {
-                            "Orig"});
-                table90.AddRow(new string[] {
+                table83.AddRow(new string[] {
+                            "Item Count"});
+                table83.AddRow(new string[] {
                             "Assigned To"});
 #line 24
- testRunner.And("User validates the following Fields on Submissions List Page", ((string)(null)), table90, "And ");
+ testRunner.And("User validates the following Fields on Submissions List Page", ((string)(null)), table83, "And ");
 #line hidden
 #line 38
  testRunner.And("User clicks the Reassign Submission Icon on Submissions List Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table91 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table84 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table91.AddRow(new string[] {
+                table84.AddRow(new string[] {
                             "Processors"});
-                table91.AddRow(new string[] {
+                table84.AddRow(new string[] {
                             "Cancel"});
-                table91.AddRow(new string[] {
+                table84.AddRow(new string[] {
                             "Assign Case"});
 #line 39
- testRunner.And("User validates the following UI Controls on Reassign Submission Dialog", ((string)(null)), table91, "And ");
+ testRunner.And("User validates the following UI Controls on Reassign Submission Dialog", ((string)(null)), table84, "And ");
 #line hidden
 #line 44
  testRunner.And("User clicks the Cancel Button on Reassign Submission Dialog", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");

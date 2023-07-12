@@ -124,24 +124,27 @@ this.FeatureBackground();
  testRunner.And("User selects the Batch Reporting option from the drop down menu of the ProfileIco" +
                         "n", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
                             "UI Controls"});
-                table9.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "Batch Reporting"});
-                table9.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "Batch Reference"});
-                table9.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "Date Range"});
-                table9.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "Calendar Icon"});
-                table9.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "Down Arrow Icon"});
-                table9.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "Print Report"});
-                table9.AddRow(new string[] {
+                table8.AddRow(new string[] {
                             "Export Disputes"});
 #line 11
- testRunner.And("User validates the following UI Controls on the Batch Reporting Page", ((string)(null)), table9, "And ");
+ testRunner.And("User validates the following UI Controls on the Batch Reporting Page", ((string)(null)), table8, "And ");
+#line hidden
+#line 20
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

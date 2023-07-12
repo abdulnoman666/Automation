@@ -8,6 +8,7 @@
                 switch (item[0].Trim())
                 {   
                     case " Actions":
+                        WaitForWebElementDisplayed(ActionField);
                         FluentWaitForWebElement(ActionField);
                         break;
                     case " ID":
@@ -36,6 +37,7 @@
                 switch (item[0].Trim())
                 {
                     case " Name":
+                        WaitForWebElementDisplayed(Name);
                         FluentWaitForWebElement(Name);
                         break;
                     case " Workflows":

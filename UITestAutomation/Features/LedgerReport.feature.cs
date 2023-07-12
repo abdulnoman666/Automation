@@ -118,83 +118,58 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 10
- testRunner.Given("User clicks the Ledger Report button from the dropdown of Ledger Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("User clicks the Ledger Icon on the Dashboard Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-                TechTalk.SpecFlow.Table table60 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table60.AddRow(new string[] {
-                            "Date Range"});
-                table60.AddRow(new string[] {
-                            "Calendar Button"});
-                table60.AddRow(new string[] {
-                            "Triangle Button"});
-                table60.AddRow(new string[] {
-                            "Print Report"});
-                table60.AddRow(new string[] {
-                            "Ledger Entries"});
-                table60.AddRow(new string[] {
-                            "Export Entries"});
 #line 11
- testRunner.And("User validates the following fields on the Ledger Report Page", ((string)(null)), table60, "And ");
+ testRunner.And("User clicks the Ledger Report button from the dropdown of Ledger Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-            }
-            this.ScenarioCleanup();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Ledger Entries")]
-        public virtual void LedgerEntries()
-        {
-            string[] tagsOfScenario = ((string[])(null));
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Ledger Entries", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 20
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            bool isScenarioIgnored = default(bool);
-            bool isFeatureIgnored = default(bool);
-            if ((tagsOfScenario != null))
-            {
-                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((this._featureTags != null))
-            {
-                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
-            }
-            if ((isScenarioIgnored || isFeatureIgnored))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                this.ScenarioStart();
-#line 3
-this.FeatureBackground();
-#line hidden
-#line 21
- testRunner.Given("User clicks the Ledger Entries button on the Ledger Report Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line hidden
-                TechTalk.SpecFlow.Table table61 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table58 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table61.AddRow(new string[] {
+                table58.AddRow(new string[] {
+                            "Date Range"});
+                table58.AddRow(new string[] {
+                            "Calendar Button"});
+                table58.AddRow(new string[] {
+                            "Triangle Button"});
+                table58.AddRow(new string[] {
+                            "Print Report"});
+                table58.AddRow(new string[] {
+                            "Ledger Entries"});
+                table58.AddRow(new string[] {
+                            "Export Entries"});
+#line 12
+ testRunner.And("User validates the following fields on the Ledger Report Page", ((string)(null)), table58, "And ");
+#line hidden
+#line 20
+ testRunner.And("User clicks the Ledger Entries button on the Ledger Report Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table59 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table59.AddRow(new string[] {
                             "Date"});
-                table61.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Account"});
-                table61.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Customer"});
-                table61.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Amount"});
-                table61.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Type"});
-                table61.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Tran Code"});
-                table61.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Description"});
-                table61.AddRow(new string[] {
+                table59.AddRow(new string[] {
                             "Close"});
-#line 22
+#line 21
  testRunner.And("User validates the following fields on the Ledger Entries Page of Ledger Report P" +
-                        "age", ((string)(null)), table61, "And ");
+                        "age", ((string)(null)), table59, "And ");
+#line hidden
+#line 31
+ testRunner.And("User clicks the Close button on the Ledger Entries Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 32
+ testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }
             this.ScenarioCleanup();

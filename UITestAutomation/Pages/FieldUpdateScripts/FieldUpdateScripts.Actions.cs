@@ -16,5 +16,16 @@
             WaitForWebElementDisplayed(DownloadfromLibraryButton);
             ClickOnWebElement(DownloadfromLibraryButton);
         }
+
+        public void ClickCloseButtononAddPage()
+        {
+            WaitForWebElementDisplayed(CloseButton);
+            ClickOnWebElement(CloseButton);
+        }
+        public void ClickCloseButtononDownloadLibraryPage()
+        {
+            WaitForWebElementDisplayed(CloseButton2);
+            ClickOnWebElement(CloseButton2);
+        }
     }
 }

@@ -3,7 +3,7 @@ namespace UITestAutomation
 {
     internal partial class CycleCodeMaps
     {
-        By CycleCodeMapsOption = By.XPath("//div[@id='myNavbar']/ul[@class='nav navbar-nav navbar-right']/li[12]/ul[@class='dropdown-menu']//a[@href='#/cyclecodemaps']Cycle Code Maps");
+        By CycleCodeMapsOption = By.XPath("//a[@href=\"#/cyclecodemaps\"]");
         By AddCycleCodeMaps_Button = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//button[@title='Add Cycle Code Map']");
         By DeleteCycleCodeMaps_Button = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//table/tbody/tr[1]//button[@title='Delete Cycle Code Map']");
         By EditCycleCodeMaps_Button = By.XPath("//div[@id='main']/div[@class='container']/div[@class='ng-scope']//table/tbody/tr[1]//button[@title='Edit Cycle Code Map']");

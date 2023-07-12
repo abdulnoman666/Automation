@@ -22,21 +22,23 @@ namespace UITestAutomation
 
         //Fields (Submission Page)
         By Action_Field = By.XPath("//th[1]");
-        By SubCase_Field = By.XPath("//th[@ng-show=\"order.selectedColumns.indexOf('SubmissionCase')!=-1\"]");
-        By SubCase_TextField = By.XPath("//input[@ng-model=\"$.submissionCaseNumber\"]");
+        By Type_Field = By.XPath("//a[@ng-click=\"sorting('disputeType')\"]");
+        By Type_TextField = By.XPath("//select[@ng-model=\"$.disputeType\"]");
         By Customer_Field = By.XPath("//a[@ng-click=\"sorting('customerName')\"]");
         By Customer_TextField = By.XPath("//input[@ng-model=\"$.customerName\"]");
         By Workflow_Field = By.XPath("//a[@ng-click=\"sorting('source')\"]");
         By Workflow_TextField = By.XPath("//input[@ng-model=\"$.source\"]");
         By Reported_Field = By.XPath("//a[@ng-click=\"sorting('reportedOn')\"]");
         By Days_Field = By.XPath("//th[@ng-show=\"order.selectedColumns.indexOf('Days')!=-1\"]");
-        By ProcessorCaseReference_Field = By.XPath("//th[@ng-show=\"order.selectedColumns.indexOf('ProcessorCaseReference')!=-1\"]");
+        By ID_Field = By.XPath("//th[@ng-show=\"order.selectedColumns.indexOf('ID')!=-1\"]");
+        By IDText_Field = By.XPath("//input[@ng-model=\"$.id\"]");
         By Status_Field = By.XPath("//a[@ng-click=\"sorting('status')\"]");
         By Status_Textbox = By.XPath("//input[@ng-model=\"$.status\"]");
-        By PT_Field = By.XPath("//a[@ng-click=\"sorting('pendingTransactions')\"]");
+        By AccountType_Field = By.XPath("//th[@ng-show=\"order.selectedColumns.indexOf('AccountType')!=-1\"]");
+        By AcountType_TextField = By.XPath("//select[@ng-model=\"$.accountType\"]");
         By Total_Field = By.XPath("//a[@ng-click=\"sorting('sortTotal')\"]");
         By Total_TextboxField = By.XPath("//input[@ng-model=\"totalFilter\"]");
-        By Orig_Field = By.XPath("//th[@ng-show=\"order.selectedColumns.indexOf('Orig')!=-1\"]");
+        By ItemCount_Field = By.XPath("//a[@ng-click=\"sorting('ItemCount')\"]");
         By AssignedTo_Field = By.XPath("//th[@ng-show=\"order.selectedColumns.indexOf('AssignedTo')!=-1\"]");
 
         //reassign page
@@ -65,6 +67,7 @@ namespace UITestAutomation
         By YesDisputeForm_Button = By.XPath("(//input[@ng-model=\"val\"])[1]");
         By YesStolenCard_Button = By.XPath("(//input[@name=\"policeReport\"])[1]");
         By FiledDate_Field = By.XPath("(//input[@class=\"md-datepicker-input\"])[2]");
+        By DisputeDate_Field = By.XPath("(//input[@ng-required=\"inputRequired\"])[3]");
         By CityReport_Field = By.XPath("//input[@id=\"cityReportFiled\"]");
         By DiaputeReason_RadioButton = By.XPath("//input[@id=\"disputeOption\"]");
         By NoClose_Button = By.XPath("(//input[@id=\"cardClosed\"])[2]");
@@ -73,7 +76,7 @@ namespace UITestAutomation
         By Proceed_Button = By.XPath("//button[@ng-click=\"openConsentDialog()\"]");
         By Consent_Checkbox = By.XPath("//input[@ng-model=\"consent\"]");
         By Confirm_Button = By.XPath("(//button[@ng-click=\"close()\"])[2]");
-        By Signature_Textarea = By.XPath("//*[@ng-model=\"letterInput.cardholderSignature\"]");
+        By Signature_Textarea = By.XPath("//canvas[@id=\"customerSignature\"]");
         By Acknowledge_Checkbox = By.XPath("//input[@ng-model=\"acknowledged\"]");
         By Done_Button = By.XPath("(//button[@ng-click=\"done(acknowledged)\"])[2]");
 

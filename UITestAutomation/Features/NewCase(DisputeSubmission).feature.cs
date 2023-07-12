@@ -159,23 +159,23 @@ this.FeatureBackground();
 #line 21
  testRunner.And("User clicks the Transaction List on Dispute Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table73 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table69 = new TechTalk.SpecFlow.Table(new string[] {
                             "Field",
                             "Value"});
-                table73.AddRow(new string[] {
+                table69.AddRow(new string[] {
                             "Amount",
                             "1200"});
-                table73.AddRow(new string[] {
+                table69.AddRow(new string[] {
                             "Disputed Amount",
                             "1000"});
-                table73.AddRow(new string[] {
+                table69.AddRow(new string[] {
                             "Merchant",
                             "Abdul"});
-                table73.AddRow(new string[] {
+                table69.AddRow(new string[] {
                             "Detail",
                             "abc"});
 #line 22
- testRunner.And("User Enters the following data on Add Transaction Page", ((string)(null)), table73, "And ");
+ testRunner.And("User Enters the following data on Add Transaction Page", ((string)(null)), table69, "And ");
 #line hidden
 #line 28
  testRunner.And("User clicks the Save Button on Add Transaction Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
@@ -199,279 +199,276 @@ this.FeatureBackground();
  testRunner.And("User clicks the Button for Check appropriate dispute reason", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 35
- testRunner.And("User clicks No Button for Card has been closed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 36
- testRunner.And("User enters  \"abc\" in Date Card Closed on Debit Card Dispute Form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 37
- testRunner.And("User clicks the Customer Signature form Button on Debit Card Dispute Form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User enters \"4/31/2023\" in appropriate dispute reason", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 38
- testRunner.And("User clicks the Confirm Electronic Signautre Consent Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User clicks the Customer Signature form Button on Debit Card Dispute Form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 39
- testRunner.And("User clicks the Acknowledgment Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User clicks the Confirm Electronic Signautre Consent Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 40
- testRunner.And("User clicks the Confirm Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User clicks the Acknowledgment Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 41
- testRunner.And("User clicks in the Signature Field on Debit Card Dispute Form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User clicks the Confirm Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 42
- testRunner.And("User clicks the Acknowledge Button on Debit Card Dispute Form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("User clicks in the Signature Field on Debit Card Dispute Form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 43
+ testRunner.And("User clicks the Acknowledge Button on Debit Card Dispute Form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+#line 44
  testRunner.And("User clicks the Done Button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table70 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table70.AddRow(new string[] {
+                            "Print Letter"});
+                table70.AddRow(new string[] {
+                            "Select PC Calculation"});
+                table70.AddRow(new string[] {
+                            "Edit Submission"});
+                table70.AddRow(new string[] {
+                            "Process.Transactions"});
+                table70.AddRow(new string[] {
+                            "Run Automation"});
+                table70.AddRow(new string[] {
+                            "Edit Customer"});
+                table70.AddRow(new string[] {
+                            "All Submission"});
+                table70.AddRow(new string[] {
+                            "Activity History"});
+                table70.AddRow(new string[] {
+                            "Refresh Submissions"});
+                table70.AddRow(new string[] {
+                            "Transactions"});
+                table70.AddRow(new string[] {
+                            "Comments and Resolution"});
+                table70.AddRow(new string[] {
+                            "Save Comments"});
+                table70.AddRow(new string[] {
+                            "Public"});
+                table70.AddRow(new string[] {
+                            "Date"});
+                table70.AddRow(new string[] {
+                            "Created By"});
+                table70.AddRow(new string[] {
+                            "Notes"});
+                table70.AddRow(new string[] {
+                            "Add Note"});
+                table70.AddRow(new string[] {
+                            "View All"});
+                table70.AddRow(new string[] {
+                            "Status"});
+                table70.AddRow(new string[] {
+                            "Task Name"});
+                table70.AddRow(new string[] {
+                            "Created On"});
+                table70.AddRow(new string[] {
+                            "Assigned To"});
+                table70.AddRow(new string[] {
+                            "Assigned On"});
+                table70.AddRow(new string[] {
+                            "Closed On"});
+                table70.AddRow(new string[] {
+                            "Calculate Interest"});
+                table70.AddRow(new string[] {
+                            "Pre-Auth"});
+                table70.AddRow(new string[] {
+                            "Date Transaction"});
+                table70.AddRow(new string[] {
+                            "DeadlineTransaction"});
+                table70.AddRow(new string[] {
+                            "POS"});
+                table70.AddRow(new string[] {
+                            "FT"});
+                table70.AddRow(new string[] {
+                            "Amount"});
+                table70.AddRow(new string[] {
+                            "Disputed Amount"});
+                table70.AddRow(new string[] {
+                            "Merchant"});
+                table70.AddRow(new string[] {
+                            "Do Not Send"});
+#line 45
+ testRunner.And("User validates the following Fields in Submission Info Dialog on Edit Submission " +
+                        "Page", ((string)(null)), table70, "And ");
+#line hidden
+#line 81
+ testRunner.And("User clicks the Questionnaire on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table71 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table71.AddRow(new string[] {
+                            "Questionnaire"});
+                table71.AddRow(new string[] {
+                            "Save Questionaire to PDF"});
+                table71.AddRow(new string[] {
+                            "Print Questionaire"});
+                table71.AddRow(new string[] {
+                            "Email Questionaire"});
+#line 82
+ testRunner.And("User validates the following Fields in  Questionnaire Dialog", ((string)(null)), table71, "And ");
+#line hidden
+#line 88
+ testRunner.And("User clicks the Forms on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table72 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table72.AddRow(new string[] {
+                            "Select Form to View"});
+                table72.AddRow(new string[] {
+                            "Save Form Data"});
+                table72.AddRow(new string[] {
+                            "Save PDF"});
+                table72.AddRow(new string[] {
+                            "Send to Customer for E-Signature"});
+#line 89
+ testRunner.And("User validates the following Fields in Forms Dialog", ((string)(null)), table72, "And ");
+#line hidden
+#line 95
+ testRunner.And("User clicks the Disputes on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line hidden
+                TechTalk.SpecFlow.Table table73 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Fields"});
+                table73.AddRow(new string[] {
+                            "Select Automation"});
+                table73.AddRow(new string[] {
+                            "Run Selected Workflow Automation"});
+                table73.AddRow(new string[] {
+                            "Settings Dispute"});
+                table73.AddRow(new string[] {
+                            "Hide Closed Disputes"});
+                table73.AddRow(new string[] {
+                            "Submission Info"});
+                table73.AddRow(new string[] {
+                            "Action"});
+                table73.AddRow(new string[] {
+                            "Id"});
+                table73.AddRow(new string[] {
+                            "Transaction Date"});
+                table73.AddRow(new string[] {
+                            "Amount"});
+                table73.AddRow(new string[] {
+                            "Merchant"});
+                table73.AddRow(new string[] {
+                            "PC"});
+                table73.AddRow(new string[] {
+                            "Status"});
+                table73.AddRow(new string[] {
+                            "Research Detail"});
+                table73.AddRow(new string[] {
+                            "Notes"});
+#line 96
+ testRunner.And("User validates the following Fields in Disputes Dialog", ((string)(null)), table73, "And ");
+#line hidden
+#line 112
+ testRunner.And("User clicks the Customer Status on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table74 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
                 table74.AddRow(new string[] {
-                            "Print Letter"});
+                            "Case Number"});
                 table74.AddRow(new string[] {
-                            "Select PC Calculation"});
+                            "Third Party Breach Source"});
                 table74.AddRow(new string[] {
-                            "Edit Submission"});
+                            "CAMS Case Number"});
                 table74.AddRow(new string[] {
-                            "Process.Transactions"});
+                            "Amount Prevented by Fraud Detection System"});
                 table74.AddRow(new string[] {
-                            "Run Automation"});
+                            "Submission Status"});
                 table74.AddRow(new string[] {
-                            "Edit Customer"});
+                            "Provisional Credit Reversed"});
                 table74.AddRow(new string[] {
-                            "All Submission"});
+                            "Resolution Notice Sent"});
                 table74.AddRow(new string[] {
-                            "Activity History"});
+                            "Merchant Credit"});
                 table74.AddRow(new string[] {
-                            "Refresh Submissions"});
+                            "Merchant Credit Date"});
                 table74.AddRow(new string[] {
-                            "Transactions"});
+                            "Final Credit"});
                 table74.AddRow(new string[] {
-                            "Comments and Resolution"});
+                            "Final Credit Date"});
                 table74.AddRow(new string[] {
-                            "Save Comments"});
+                            "Insurance Amount"});
                 table74.AddRow(new string[] {
-                            "Public"});
+                            "Chargeback Amount"});
                 table74.AddRow(new string[] {
-                            "Date"});
+                            "Other Fees"});
                 table74.AddRow(new string[] {
-                            "Created By"});
+                            "Fee Reversal Amount"});
                 table74.AddRow(new string[] {
-                            "Notes"});
+                            "Interest Credit Amount"});
                 table74.AddRow(new string[] {
-                            "Add Note"});
+                            "Processor Resolution Date"});
                 table74.AddRow(new string[] {
-                            "View All"});
+                            "Processor Case Date"});
                 table74.AddRow(new string[] {
-                            "Status"});
-                table74.AddRow(new string[] {
-                            "Task Name"});
-                table74.AddRow(new string[] {
-                            "Created On"});
-                table74.AddRow(new string[] {
-                            "Assigned To"});
-                table74.AddRow(new string[] {
-                            "Assigned On"});
-                table74.AddRow(new string[] {
-                            "Closed On"});
-                table74.AddRow(new string[] {
-                            "Calculate Interest"});
-                table74.AddRow(new string[] {
-                            "Pre-Auth"});
-                table74.AddRow(new string[] {
-                            "Date Transaction"});
-                table74.AddRow(new string[] {
-                            "DeadlineTransaction"});
-                table74.AddRow(new string[] {
-                            "POS"});
-                table74.AddRow(new string[] {
-                            "FT"});
-                table74.AddRow(new string[] {
-                            "Amount"});
-                table74.AddRow(new string[] {
-                            "Disputed Amount"});
-                table74.AddRow(new string[] {
-                            "Merchant"});
-                table74.AddRow(new string[] {
-                            "Do Not Send"});
-#line 44
- testRunner.And("User validates the following Fields in Submission Info Dialog on Edit Submission " +
-                        "Page", ((string)(null)), table74, "And ");
+                            "Save"});
+#line 113
+ testRunner.And("User validates the following Fields in Customer Status Dialog", ((string)(null)), table74, "And ");
 #line hidden
-#line 80
- testRunner.And("User clicks the Questionnaire on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 134
+ testRunner.And("User clicks the Contacts on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table75 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
                 table75.AddRow(new string[] {
-                            "Questionnaire"});
+                            "Contact Name"});
                 table75.AddRow(new string[] {
-                            "Save Questionaire to PDF"});
+                            "Reference"});
                 table75.AddRow(new string[] {
-                            "Print Questionaire"});
+                            "Phone Contact"});
                 table75.AddRow(new string[] {
-                            "Email Questionaire"});
-#line 81
- testRunner.And("User validates the following Fields in  Questionnaire Dialog", ((string)(null)), table75, "And ");
+                            "Email"});
+                table75.AddRow(new string[] {
+                            "Action"});
+                table75.AddRow(new string[] {
+                            "Download"});
+#line 135
+ testRunner.And("User validates the following Fields in Contacts Dialog", ((string)(null)), table75, "And ");
 #line hidden
-#line 87
- testRunner.And("User clicks the Forms on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 143
+ testRunner.And("User clicks the GL Ledger on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table76 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
                 table76.AddRow(new string[] {
-                            "Select Form to View"});
+                            "Date"});
                 table76.AddRow(new string[] {
-                            "Save Form Data"});
+                            "Description"});
                 table76.AddRow(new string[] {
-                            "Save PDF"});
+                            "GL Account"});
                 table76.AddRow(new string[] {
-                            "Send to Customer for E-Signature"});
-#line 88
- testRunner.And("User validates the following Fields in Forms Dialog", ((string)(null)), table76, "And ");
+                            "Account"});
+                table76.AddRow(new string[] {
+                            "Transaction Code"});
+                table76.AddRow(new string[] {
+                            "Amount"});
+                table76.AddRow(new string[] {
+                            "Delete Ledger Entry"});
+                table76.AddRow(new string[] {
+                            "Add GL Transaction"});
+#line 144
+ testRunner.And("User validates the following Fields in GL Ledger Dialog", ((string)(null)), table76, "And ");
 #line hidden
-#line 94
- testRunner.And("User clicks the Disputes on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 154
+ testRunner.And("User clicks the Documents on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
                 TechTalk.SpecFlow.Table table77 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
                 table77.AddRow(new string[] {
-                            "Select Automation"});
-                table77.AddRow(new string[] {
-                            "Run Selected Workflow Automation"});
-                table77.AddRow(new string[] {
-                            "Settings Dispute"});
-                table77.AddRow(new string[] {
-                            "Hide Closed Disputes"});
-                table77.AddRow(new string[] {
-                            "Submission Info"});
-                table77.AddRow(new string[] {
-                            "Action"});
-                table77.AddRow(new string[] {
-                            "Id"});
-                table77.AddRow(new string[] {
-                            "Transaction Date"});
-                table77.AddRow(new string[] {
-                            "Amount"});
-                table77.AddRow(new string[] {
-                            "Merchant"});
-                table77.AddRow(new string[] {
-                            "PC"});
-                table77.AddRow(new string[] {
-                            "Status"});
-                table77.AddRow(new string[] {
-                            "Research Detail"});
-                table77.AddRow(new string[] {
-                            "Notes"});
-#line 95
- testRunner.And("User validates the following Fields in Disputes Dialog", ((string)(null)), table77, "And ");
-#line hidden
-#line 111
- testRunner.And("User clicks the Customer Status on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table78 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table78.AddRow(new string[] {
-                            "Case Number"});
-                table78.AddRow(new string[] {
-                            "Third Party Breach Source"});
-                table78.AddRow(new string[] {
-                            "CAMS Case Number"});
-                table78.AddRow(new string[] {
-                            "Amount Prevented by Fraud Detection System"});
-                table78.AddRow(new string[] {
-                            "Submission Status"});
-                table78.AddRow(new string[] {
-                            "Provisional Credit Reversed"});
-                table78.AddRow(new string[] {
-                            "Resolution Notice Sent"});
-                table78.AddRow(new string[] {
-                            "Merchant Credit"});
-                table78.AddRow(new string[] {
-                            "Merchant Credit Date"});
-                table78.AddRow(new string[] {
-                            "Final Credit"});
-                table78.AddRow(new string[] {
-                            "Final Credit Date"});
-                table78.AddRow(new string[] {
-                            "Insurance Amount"});
-                table78.AddRow(new string[] {
-                            "Chargeback Amount"});
-                table78.AddRow(new string[] {
-                            "Other Fees"});
-                table78.AddRow(new string[] {
-                            "Fee Reversal Amount"});
-                table78.AddRow(new string[] {
-                            "Interest Credit Amount"});
-                table78.AddRow(new string[] {
-                            "Processor Resolution Date"});
-                table78.AddRow(new string[] {
-                            "Processor Case Date"});
-                table78.AddRow(new string[] {
-                            "Save"});
-#line 112
- testRunner.And("User validates the following Fields in Customer Status Dialog", ((string)(null)), table78, "And ");
-#line hidden
-#line 133
- testRunner.And("User clicks the Contacts on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table79 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table79.AddRow(new string[] {
-                            "Contact Name"});
-                table79.AddRow(new string[] {
-                            "Reference"});
-                table79.AddRow(new string[] {
-                            "Phone Contact"});
-                table79.AddRow(new string[] {
-                            "Email"});
-                table79.AddRow(new string[] {
-                            "Action"});
-                table79.AddRow(new string[] {
-                            "Download"});
-#line 134
- testRunner.And("User validates the following Fields in Contacts Dialog", ((string)(null)), table79, "And ");
-#line hidden
-#line 142
- testRunner.And("User clicks the GL Ledger on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table80 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table80.AddRow(new string[] {
-                            "Date"});
-                table80.AddRow(new string[] {
-                            "Description"});
-                table80.AddRow(new string[] {
-                            "GL Account"});
-                table80.AddRow(new string[] {
-                            "Account"});
-                table80.AddRow(new string[] {
-                            "Transaction Code"});
-                table80.AddRow(new string[] {
-                            "Amount"});
-                table80.AddRow(new string[] {
-                            "Delete Ledger Entry"});
-                table80.AddRow(new string[] {
-                            "Add GL Transaction"});
-#line 143
- testRunner.And("User validates the following Fields in GL Ledger Dialog", ((string)(null)), table80, "And ");
-#line hidden
-#line 153
- testRunner.And("User clicks the Documents on Edit Submission Page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-                TechTalk.SpecFlow.Table table81 = new TechTalk.SpecFlow.Table(new string[] {
-                            "Fields"});
-                table81.AddRow(new string[] {
                             "Delete Document"});
-                table81.AddRow(new string[] {
+                table77.AddRow(new string[] {
                             "Download Document"});
-                table81.AddRow(new string[] {
+                table77.AddRow(new string[] {
                             "Edit Document Description"});
-#line 154
- testRunner.And("User validates the following Fields in Documents Dialog", ((string)(null)), table81, "And ");
+#line 155
+ testRunner.And("User validates the following Fields in Documents Dialog", ((string)(null)), table77, "And ");
 #line hidden
-#line 159
+#line 160
  testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             }

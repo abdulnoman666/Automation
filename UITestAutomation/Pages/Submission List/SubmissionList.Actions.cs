@@ -123,6 +123,11 @@ namespace UITestAutomation
             EnterValueinWebElement(FiledDate_Field, value);
         }
 
+        public void EnterValueinDisputeReasonDateField(string value)
+        {
+            EnterValueinWebElement(DisputeDate_Field, value);
+        }
+
         public void EnterValueinCityReportField(string value)
         {
             EnterValueinWebElement(CityReport_Field, value);
@@ -145,6 +150,7 @@ namespace UITestAutomation
 
         public void ClickNoButtononDisputeForm()
         {
+            Thread.Sleep(3000);
             ClickTheWebElement(NoClose_Button);
         }
 

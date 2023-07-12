@@ -27,3 +27,4 @@ Scenario: Company Settings
 		| Enable Task                             |
 		| Display Task Configuration and Sections |
 		| Save                                    |
+	And User clicks the Dashboard Icon

@@ -17,37 +17,27 @@ Scenario: Company Details
 		| Lookup Values    |
 		| Style            |
 		| Save             |
-	   
-
-Scenario: Basic Info
 	And User selects the Basic Info button on Company Details Page
 	And User validates the following fields on Basic Info Page
-
-		|Fields                   |
-		|Company Name             |
-		|Address                  |
-		|City                     |
-		|State                    |
-		|Zip                      |
-		|Phone                    |
-		|Email                    |
-		|Support Email            |
-		|Email Distribution List  |
-		|Time Zone                |
-		|Read only Questionnaires |
-	
-	 
-Scenario: General Settings
+		| Fields                   |
+		| Company Name             |
+		| Address                  |
+		| City                     |
+		| State                    |
+		| Zip                      |
+		| Phone                    |
+		| Email                    |
+		| Support Email            |
+		| Email Distribution List  |
+		| Time Zone                |
+		| Read only Questionnaires |
 	Given User clicks on the General Settings button on Company Details Page
 	And User validates the following fields on General Settings Page
-		|Fields                         |
-		|Signature Pad                  |
-		|Enter max idle time in minutes |
-		|Month End Statement            |
-		|Select Logo File               |
-
-
-Scenario: Lookup Values
+		| Fields                         |
+		| Signature Pad                  |
+		| Enter max idle time in minutes |
+		| Month End Statement            |
+		| Select Logo File               |
 	Given User clicks on the Lookup Values button on Company Details Page
 	And User validates the following UI Controls on Lookup Values Page
 		| UI Controls                       |
@@ -79,16 +69,13 @@ Scenario: Lookup Values
 		| Batch Reporting Reference         |
 		| Edit Batch Reporting Reference    |
 		| Delete Batch Reporting Reference  |
-		
-
+	And User clicks the add Submission status on Lookup Values Page
 	And User validates the following UI Controls on Add Lookup Values Page
 		| Fields    |
 		| Text Area |
 		| Save      |
 		| Close     |
-
-
-Scenario: Style
+	And User clicks the close button on add Submission status
 	Given User clicks on Style Button on Company Details Page
 	And User validates the following UI Controls on Style Button Page
 		| UI Controls                  |
@@ -96,3 +83,4 @@ Scenario: Style
 		| Secondary Buttons Color      |
 		| Primary Buttons Font Color   |
 		| Secondary Buttons Font Color |
+	And User clicks the Dashboard Icon

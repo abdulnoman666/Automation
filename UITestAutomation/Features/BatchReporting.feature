@@ -17,3 +17,4 @@ Scenario: Batch Reporting
 	| Down Arrow Icon |
 	| Print Report    |
 	| Export Disputes |
+	And User clicks the Dashboard Icon

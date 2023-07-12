@@ -6,10 +6,9 @@ Background:
 
 @Add
 Scenario: Letter Template
-	Given User clicks the Profile Icon on the Dashboard page
+	Given User clicks the Profile Icon on Dashboard page
 	And User selects the Letter Template Field from the dropdown menu of Profile Icon
 	And User validates the following UI Controls on Letter Template Page
-
 		| UI Controls           |
 		| Add                   |
 		| Delete                |
@@ -24,6 +23,7 @@ Scenario: Letter Template
 		| Reference             |
 		| Enter Page            |
 	And User clicks the Add Letter Template Icon on Letter Template Page
+	And User clicks the Letterinfo icon  
 	And User validates following fields on Letter info Dialog
 		| Field                                      |
 		| Title                                      |
@@ -39,11 +39,10 @@ Scenario: Letter Template
 		| Is Consent notice?                         |
 		| Use Cut-Off print date?                    |
 		| Eligible for E-Signature?                  |
-
 	And User validates following fields on Template Dialog
 		| Field                |
 		| Letter Template Form |
-
+	And User clicks the Style Sheet
 	And User validates following fields on Style Sheet Dialog
 		| Field           |
 		| Title           |
@@ -52,6 +51,7 @@ Scenario: Letter Template
 		| Copy Template   |
 		| Save Template   |
 		| Close Template  |
+	And User clicks the Dashboard Icon
 	
 		
 

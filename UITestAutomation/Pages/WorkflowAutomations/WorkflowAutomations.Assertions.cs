@@ -10,6 +10,7 @@ namespace UITestAutomation
                 switch (item[0].Trim())
                 {
                     case "Add workflow":
+                        WaitForWebElementDisplayed(AddWorkflowAutomations_Button);
                         FluentWaitForWebElement(AddWorkflowAutomations_Button);
                         break;
                     case "Delete Workflow":
@@ -22,6 +23,7 @@ namespace UITestAutomation
                         FluentWaitForWebElement(CopyAutomation_Button);
                         break;
                     case "Download Automation":
+                        WaitForWebElementDisplayed(DownloadAutomation_Button);
                         FluentWaitForWebElement(DownloadAutomation_Button);
                         break;
                     case "Condition Search":
@@ -37,6 +39,7 @@ namespace UITestAutomation
                 switch (item[0].Trim())
                 {
                     case "Name":
+                        WaitForWebElementDisplayed(Name_Field);
                         FluentWaitForWebElement(Name_Field);
                         break;
                     case "Conditions":

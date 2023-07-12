@@ -6,10 +6,9 @@ Background:
 
 @Add
 Scenario: Fee Reimbursement Settings
-	Given User clicks the Profile Icon on the dashboard page
+	Given User clicks the Profile Icon on Dashboard page
 	And User Selects the Fee Reimbursement Settings from the dropdown menu of the Page
 	And User validates following UI controls on Fee Reimbursement Settings Page
-	
 		| UI Controls |
 		| Add         |
 		| Delete      |
@@ -24,6 +23,10 @@ Scenario: Fee Reimbursement Settings
 		| Show On Dispute Form   |
 		| Create Disputes        |
 		| Include In Claim Total |
+		| Save                   |
+		| Close                  |
+	And User clicks the close button on Add Fee Reimbursement Settings Dialog
+	And User clicks the Dashboard Icon
 
 #@Edit
 #Scenario: FeeRUpdate

@@ -9,8 +9,16 @@
         }
         public void ClickAddFeeSelectionButton()
         {
-            ClickOnWebElement(AddFeeSelection);
             WaitForWebElementDisplayed(AddFeeSelection);
+            ClickOnWebElement(AddFeeSelection);
+           
+        }
+
+        public void ClickCloseButtononAddFeeSelection()
+        {
+            WaitForWebElementDisplayed(CloseButton);
+            ClickOnWebElement(CloseButton);
+
         }
     }
 }

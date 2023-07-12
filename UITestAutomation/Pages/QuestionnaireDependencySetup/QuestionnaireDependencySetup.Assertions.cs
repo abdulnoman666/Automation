@@ -9,6 +9,7 @@ namespace UITestAutomation
                 switch (item[0].Trim())
                 {
                     case "Add Form":
+                        WaitForWebElementDisplayed(AddFormDependancyList);
                         FluentWaitForWebElement(AddFormDependancyList);
                         break;
                     case "Delete List":
@@ -37,6 +38,7 @@ namespace UITestAutomation
                 switch (item[0].Trim())
                 {
                     case "Workflow Name":
+                        WaitForWebElementDisplayed(WorkFlowName);
                         FluentWaitForWebElement(WorkFlowName);
                         break;
                     case "Save":

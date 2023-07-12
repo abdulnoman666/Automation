@@ -11,6 +11,7 @@ namespace UITestAutomation
                 {
 
                     case "Add Alert Definition":
+                        WaitForWebElementDisplayed(AddAlertDefinitions_Button);
                         FluentWaitForWebElement(AddAlertDefinitions_Button);
                         break;
                     case "Delete Alert Definition":
@@ -38,6 +39,7 @@ namespace UITestAutomation
                 switch (item[0].Trim())
                 {
                     case "Definition Name":
+                        WaitForWebElementDisplayed(DefinitionName_Field);
                         FluentWaitForWebElement(DefinitionName_Field);
                         break;
                     case "Alert Type":
@@ -70,7 +72,19 @@ namespace UITestAutomation
                     case "Close":
                         FluentWaitForWebElement(Close_Button);
                         break;
+
+                }
+            }
+        }
+
+        public void AssertFieldssOnExplanationAddDefinitionDailog(Table table)
+        {
+            foreach (var item in table.Rows)
+            {
+                switch (item[0].Trim())
+                {
                     case "Explanation":
+                        WaitForWebElementDisplayed(Explanation_Form);
                         FluentWaitForWebElement(Explanation_Form);
                         break;
                 }

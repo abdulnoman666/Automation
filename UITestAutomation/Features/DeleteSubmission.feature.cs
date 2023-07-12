@@ -123,14 +123,14 @@ this.FeatureBackground();
 #line 9
  testRunner.And("User selects the Delete Submission Field from the dropdown menu of Submissions", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
                             "Fields"});
-                table32.AddRow(new string[] {
+                table30.AddRow(new string[] {
                             "Submission ID"});
-                table32.AddRow(new string[] {
+                table30.AddRow(new string[] {
                             "Delete"});
 #line 10
- testRunner.And("User validates the following Fields on Delete Submission Page", ((string)(null)), table32, "And ");
+ testRunner.And("User validates the following Fields on Delete Submission Page", ((string)(null)), table30, "And ");
 #line hidden
 #line 14
  testRunner.And("User clicks the Dashboard Icon", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
